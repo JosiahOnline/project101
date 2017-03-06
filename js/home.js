@@ -1284,7 +1284,7 @@
             if (mode === 'frame') return window !== window.top;
         };
 
-        // Feature detects + browser sniffs  à² _à² 
+        // Feature detects + browser sniffs  ಠ_ಠ
         var userAgent = navigator.userAgent.toLowerCase();
         var appVersion = navigator.appVersion.toLowerCase();
         var touch = Webflow.env.touch = ('ontouchstart' in window) || window.DocumentTouch && document instanceof window.DocumentTouch;
@@ -1696,11 +1696,27 @@
             var stateOpen = 'w--open';
             var closeEvent = 'w-close' + namespace;
             var ix = IXEvents.triggers;
+            var defaultZIndex = 900; // @dropdown-depth
+            var inPreview = false;
 
             // -----------------------------------
             // Module methods
 
-            api.ready = api.design = api.preview = init;
+            api.ready = init;
+
+            api.design = function() {
+                // Close all when returning from preview
+                if (inPreview) {
+                    closeAll();
+                }
+                inPreview = false;
+                init();
+            };
+
+            api.preview = function() {
+                inPreview = true;
+                init();
+            };
 
             // -----------------------------------
             // Private methods
@@ -1756,6 +1772,10 @@
             }
 
             function configure(data) {
+                // Determine if z-index should be managed
+                const zIndex = Number(data.el.css('z-index'));
+                data.manageZ = zIndex === defaultZIndex || zIndex === defaultZIndex + 1;
+
                 data.config = {
                     hover: Boolean(data.el.attr('data-hover')) && !touch,
                     delay: Number(data.el.attr('data-delay')) || 0
@@ -1794,6 +1814,9 @@
                 ix.intro(0, data.el[0]);
                 Webflow.redraw.up();
 
+                // Increase z-index to keep above other managed dropdowns
+                data.manageZ && data.el.css('z-index', defaultZIndex + 1);
+
                 // Listen for tap outside events
                 if (!designer) $doc.on('tap' + namespace, data.outside);
                 if (data.hovering) data.el.on('mouseleave' + namespace, data.leave);
@@ -1826,6 +1849,12 @@
                 data.delayId = window.setTimeout(data.complete, config.delay);
             }
 
+            function closeAll() {
+                $doc.find(namespace).each(function(i, el) {
+                    $(el).triggerHandler(closeEvent);
+                });
+            }
+
             function closeOthers(data) {
                 var self = data.el[0];
                 $dropdowns.each(function(i, other) {
@@ -1854,6 +1883,9 @@
                 return function() {
                     data.list.removeClass(stateOpen);
                     data.toggle.removeClass(stateOpen);
+
+                    // Reset z-index for managed dropdowns
+                    data.manageZ && data.el.css('z-index', '');
                 };
             }
 
@@ -2108,10 +2140,11 @@
             // MailChimp domains: list-manage.com + mirrors
             var chimpRegex = /list-manage[1-9]?.com/i;
 
-            var disconnected = _.debounce(function() {
+            /*var disconnected = _.debounce(function() {
                 alert('Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.');
             }, 100);
-
+            */
+            
             api.ready = api.design = api.preview = function() {
                 // Init forms
                 init();
@@ -3053,7 +3086,7 @@
                 spinner.show();
 
                 // For videos, load an empty SVG with the video dimensions to preserve
-                // the videoâ€™s aspect ratio while being responsive.
+                // the video’s aspect ratio while being responsive.
                 var url = item.html && svgDataUri(item.width, item.height) || item.url;
                 loadImage(url, function($image) {
                     // Make sure this is the last item requested to be shown since
@@ -3212,11 +3245,11 @@
                 if (keyCode === 27) {
                     lightbox.hide();
 
-                    // [â—€]
+                    // [◀]
                 } else if (keyCode === 37) {
                     lightbox.prev();
 
-                    // [â–¶]
+                    // [▶]
                 } else if (keyCode === 39) {
                     lightbox.next();
                 }
@@ -4316,7 +4349,7 @@
                     }
 
                     // The href property always contains the full url so we can compare
-                    // with the documentâ€™s location to only target links on this page.
+                    // with the document’s location to only target links on this page.
                     var parts = this.href.split('#');
                     var hash = parts[0] === locHref ? parts[1] : null;
                     if (hash) {
@@ -5302,7 +5335,7 @@
                 el.addEventListener('mouseout', cancel, false);
 
                 function start(evt) {
-                    // We donâ€™t handle multi-touch events yet.
+                    // We don’t handle multi-touch events yet.
                     var touches = evt.touches;
                     if (touches && touches.length > 1) {
                         return;
@@ -5410,150 +5443,316 @@
  * Webflow: Interactions: Init
  */
 Webflow.require('ix').init([{
-    "slug": "smaller",
-    "name": "smaller",
+    "slug": "welcome-message",
+    "name": "Welcome Message",
     "value": {
         "style": {},
         "triggers": [{
             "type": "load",
-            "loopA": true,
+            "preload": true,
             "stepsA": [{
-                "opacity": 1,
-                "transition": "transform 200 ease 0, opacity 400ms ease 0",
-                "scaleX": 0.78,
-                "scaleY": 0.78,
-                "scaleZ": 1
+                "opacity": 0,
+                "transition": "opacity 3500ms ease-in-quad 0"
             }, {
-                "opacity": 1,
-                "transition": "transform 400ms ease 0, opacity 200 ease 0",
-                "scaleX": 1,
-                "scaleY": 1,
-                "scaleZ": 1
+                "display": "none"
             }],
             "stepsB": []
         }]
     }
 }, {
-    "slug": "bigger",
-    "name": "bigger",
-    "value": {
-        "style": {},
-        "triggers": [{
-            "type": "load",
-            "loopA": true,
-            "stepsA": [{
-                "transition": "transform 300ms ease 0",
-                "scaleX": 1.21,
-                "scaleY": 1.21,
-                "scaleZ": 1
-            }, {
-                "transition": "transform 300ms ease 0",
-                "scaleX": 1,
-                "scaleY": 1,
-                "scaleZ": 1
-            }],
-            "stepsB": []
-        }]
-    }
-}, {
-    "slug": "hide",
-    "name": "hide",
+    "slug": "left-pgraph-link",
+    "name": "Left Pgraph Link",
     "value": {
         "style": {
-            "opacity": 1,
+            "display": "none",
+            "x": "-500%",
+            "y": "0px",
+            "z": "0px"
+        },
+        "triggers": [{
+            "type": "load",
+            "preload": true,
+            "stepsA": [{
+                "wait": "3500ms",
+                "display": "block",
+                "opacity": 1,
+                "transition": "opacity 1000ms ease-in-quad 0"
+            }, {
+                "transition": "transform 1000ms ease-in-quad 0",
+                "x": "0px",
+                "y": "0px",
+                "z": "0px"
+            }],
+            "stepsB": []
+        }]
+    }
+}, {
+    "slug": "right-pgraph-link",
+    "name": "Right Pgraph Link",
+    "value": {
+        "style": {
+            "display": "none",
+            "opacity": 0,
+            "x": "400%",
+            "y": "0px",
+            "z": "0px"
+        },
+        "triggers": [{
+            "type": "load",
+            "preload": true,
+            "stepsA": [{
+                "wait": "3500ms",
+                "display": "block",
+                "opacity": 1,
+                "transition": "opacity 200 ease 0"
+            }, {
+                "transition": "transform 1000ms ease-in-quad 0",
+                "x": "0px",
+                "y": "0px",
+                "z": "0px"
+            }],
+            "stepsB": []
+        }]
+    }
+}, {
+    "slug": "contact-start-a-project",
+    "name": "Contact Start a Project",
+    "value": {
+        "style": {},
+        "triggers": [{
+            "type": "click",
+            "selector": ".contact-pgraph-2",
+            "preserve3d": true,
+            "stepsA": [{
+                "display": "none",
+                "opacity": 0,
+                "x": "0px",
+                "y": "-100px",
+                "z": "0px"
+            }],
+            "stepsB": []
+        }, {
+            "type": "click",
+            "selector": ".tabs-content",
+            "preserve3d": true,
+            "stepsA": [{
+                "display": "block",
+                "opacity": 1,
+                "transition": "transform 100ms ease 0",
+                "x": "0px",
+                "y": "0px",
+                "z": "0px"
+            }],
+            "stepsB": []
+        }, {
+            "type": "click",
+            "selector": ".contact-pgraph-1",
+            "preserve3d": true,
+            "stepsA": [{
+                "x": "0px",
+                "y": "-200px",
+                "z": "0px"
+            }],
+            "stepsB": []
+        }, {
+            "type": "click",
+            "selector": ".contact-tabs-container",
+            "preserve3d": true,
+            "stepsA": [{
+                "transition": "transform 200 ease 0",
+                "x": "0px",
+                "y": "-200px",
+                "z": "0px"
+            }],
+            "stepsB": []
+        }]
+    }
+}, {
+    "slug": "mobile-contact-start-project",
+    "name": "Mobile Contact Start Project",
+    "value": {
+        "style": {},
+        "triggers": [{
+            "type": "click",
+            "selector": ".contact-pgraph-2",
+            "preserve3d": true,
+            "stepsA": [{
+                "display": "none",
+                "opacity": 0,
+                "transition": "opacity 200 ease 0, transform 200 ease 0",
+                "x": "0px",
+                "y": "-100px",
+                "z": "0px"
+            }],
+            "stepsB": []
+        }, {
+            "type": "click",
+            "selector": ".tabs-content",
+            "preserve3d": true,
+            "stepsA": [{
+                "display": "block",
+                "opacity": 1,
+                "transition": "transform 100ms ease 0",
+                "x": "0px",
+                "y": "0px",
+                "z": "0px"
+            }],
+            "stepsB": []
+        }]
+    }
+}, {
+    "slug": "ti-main-wrapper",
+    "name": "TI Main Wrapper",
+    "value": {
+        "style": {},
+        "triggers": [{
+            "type": "load",
+            "preload": true,
+            "stepsA": [{
+                "wait": "3000ms",
+                "transition": "transform 200 ease 0",
+                "x": "0px",
+                "y": "0px",
+                "z": "0px"
+            }, {
+                "transition": "transform 1000ms ease-out 0",
+                "x": "0px",
+                "y": "-280px",
+                "z": "0px"
+            }],
+            "stepsB": []
+        }]
+    }
+}, {
+    "slug": "contact-tabs-hide",
+    "name": "Contact Tabs Hide",
+    "value": {
+        "style": {
+            "display": "none",
+            "opacity": 0,
             "x": "0px",
-            "y": "-100px",
+            "y": "100px",
             "z": "0px"
         },
         "triggers": []
     }
 }, {
-    "slug": "show",
-    "name": "show",
-    "value": {
-        "style": {},
-        "triggers": [{
-            "type": "scroll",
-            "selector": ".fixed-navbar",
-            "offsetTop": "70%",
-            "offsetBot": "0%",
-            "preserve3d": true,
-            "stepsA": [{
-                "opacity": 0,
-                "transition": "transform 200 ease 0, opacity 100ms ease 0",
-                "x": "0px",
-                "y": "-100px",
-                "z": "0px"
-            }],
-            "stepsB": [{
-                "opacity": 1,
-                "transition": "transform 200 ease 0, opacity 200 ease 0",
-                "x": "0px",
-                "y": "0px",
-                "z": "0px"
-            }]
-        }]
-    }
-}, {
-    "slug": "sign-up-container",
-    "name": "Sign Up Container",
+    "slug": "ti-introduction",
+    "name": "TI Introduction",
     "value": {
         "style": {
-            "display": "none",
-            "opacity": 0,
-            "scaleX": 1.11,
-            "scaleY": 1.11,
-            "scaleZ": 1
+            "x": "0px",
+            "y": "-200px",
+            "z": "0px"
         },
-        "triggers": []
-    }
-}, {
-    "slug": "sign-up-interaction",
-    "name": "Sign Up Interaction",
-    "value": {
-        "style": {},
         "triggers": [{
-            "type": "click",
-            "selector": ".sign-up-container",
-            "preserve3d": true,
+            "type": "load",
             "stepsA": [{
-                "wait": "150ms",
                 "display": "block",
                 "opacity": 1,
-                "transition": "opacity 200 ease 0, transform 200 ease 0",
-                "scaleX": 1.05,
-                "scaleY": 1.05,
+                "transition": "transform 1000ms ease 0",
+                "x": "0px",
+                "y": "100px",
+                "z": "0px",
+                "scaleX": 1.49,
+                "scaleY": 1.49,
+                "scaleZ": 1
+            }, {
+                "display": "block",
+                "opacity": 1,
+                "transition": "transform 1000ms ease 0",
+                "x": "0px",
+                "y": "0px",
+                "z": "0px",
+                "scaleX": 1,
+                "scaleY": 1,
                 "scaleZ": 1
             }],
             "stepsB": []
         }]
     }
 }, {
-    "slug": "close-sign-up",
-    "name": "Close Sign Up",
+    "slug": "time-is-now",
+    "name": "Time is Now",
     "value": {
-        "style": {},
+        "style": {
+            "display": "none",
+            "opacity": 0,
+            "x": "-100px",
+            "y": "0px",
+            "z": "0px"
+        },
         "triggers": [{
-            "type": "click",
-            "selector": ".sign-up-container",
-            "preserve3d": true,
+            "type": "load",
             "stepsA": [{
                 "display": "block",
-                "opacity": 0,
-                "transition": "opacity 200 ease 0, transform 200 ease 0",
+                "opacity": 1,
+                "transition": "transform 1000ms ease-in-cubic 0",
+                "x": "175px",
+                "y": "0px",
+                "z": "0px",
+                "scaleX": 2,
+                "scaleY": 2,
+                "scaleZ": 1
+            }, {
+                "transition": "transform 500ms ease 0",
                 "x": "0px",
                 "y": "0px",
-                "z": "0px"
-            }, {
-                "display": "none",
-                "transition": "transform 200 ease 0"
+                "z": "0px",
+                "scaleX": 1,
+                "scaleY": 1,
+                "scaleZ": 1
             }],
             "stepsB": []
         }]
     }
 }, {
-    "slug": "learn-more-container",
-    "name": "Learn More Container",
+    "slug": "nav-bar-hide",
+    "name": "Nav Bar Hide",
+    "value": {
+        "style": {
+            "display": "none",
+            "opacity": 0
+        },
+        "triggers": [{
+            "type": "load",
+            "preload": true,
+            "stepsA": [{
+                "wait": "4000ms",
+                "display": "block"
+            }, {
+                "opacity": 1,
+                "transition": "opacity 1000ms ease-in-quad 0"
+            }],
+            "stepsB": []
+        }]
+    }
+}, {
+    "slug": "show-latest-article",
+    "name": " Show  Latest Article",
+    "value": {
+        "style": {},
+        "triggers": [{
+            "type": "scroll",
+            "selector": ".ti-latest-articles-container",
+            "preserve3d": true,
+            "stepsA": [{
+                "transition": "transform 500ms ease-in 0",
+                "x": "0px",
+                "y": "64px",
+                "z": "0px"
+            }],
+            "stepsB": [{
+                "transition": "transform 500ms ease-out 0",
+                "x": "0px",
+                "y": "-64px",
+                "z": "0px"
+            }]
+        }]
+    }
+}, {
+    "slug": "ti-ad-hide",
+    "name": "TI Ad Hide",
     "value": {
         "style": {
             "display": "none",
@@ -5562,94 +5761,34 @@ Webflow.require('ix').init([{
         "triggers": []
     }
 }, {
-    "slug": "learn-more-interaction",
-    "name": "Learn More Interaction",
+    "slug": "show-ti-ads",
+    "name": "Show TI ADs",
     "value": {
         "style": {},
         "triggers": [{
-            "type": "click",
-            "selector": ".learn-more-container",
-            "preserve3d": true,
-            "stepsA": [{
-                "wait": "150ms",
-                "display": "block",
-                "opacity": 1,
-                "transition": "transform 200 ease 0, opacity 200 ease 0",
-                "scaleX": 1,
-                "scaleY": 1,
-                "scaleZ": 1
-            }],
-            "stepsB": []
-        }]
-    }
-}, {
-    "slug": "close-learn-more",
-    "name": "Close Learn More",
-    "value": {
-        "style": {},
-        "triggers": [{
-            "type": "click",
-            "selector": ".learn-more-container",
-            "stepsA": [{
-                "wait": "150ms",
-                "display": "block",
-                "opacity": 0.07,
-                "transition": "transform 200 ease 0, opacity 200 ease 0"
-            }, {
-                "display": "none"
-            }],
-            "stepsB": []
-        }]
-    }
-}, {
-    "slug": "features-container",
-    "name": "Features Container",
-    "value": {
-        "style": {
-            "display": "none",
-            "opacity": 0,
-            "scaleX": 0.78,
-            "scaleY": 0.78,
-            "scaleZ": 1
-        },
-        "triggers": []
-    }
-}, {
-    "slug": "features-interaction",
-    "name": "Features Interaction",
-    "value": {
-        "style": {},
-        "triggers": [{
-            "type": "click",
-            "selector": ".our-features-container",
-            "preserve3d": true,
+            "type": "scroll",
+            "selector": ".ti-ads",
             "stepsA": [{
                 "display": "block"
             }, {
+                "display": "block",
                 "opacity": 1,
-                "transition": "opacity 200 ease 0, transform 200 ease 0",
-                "scaleX": 1,
-                "scaleY": 1,
-                "scaleZ": 1
+                "transition": "opacity 200ms ease-in-out 0"
             }],
             "stepsB": []
         }]
     }
 }, {
-    "slug": "close-features",
-    "name": "Close Features",
+    "slug": "close-ti-ads",
+    "name": "Close Ti Ads",
     "value": {
         "style": {},
         "triggers": [{
             "type": "click",
-            "selector": ".our-features-container",
-            "preserve3d": true,
+            "selector": ".ti-ads",
             "stepsA": [{
                 "opacity": 0,
-                "transition": "transform 200 ease 0, opacity 200 ease 0",
-                "scaleX": 0.78,
-                "scaleY": 0.78,
-                "scaleZ": 1
+                "transition": "opacity 500ms ease-out 0"
             }, {
                 "display": "none"
             }],

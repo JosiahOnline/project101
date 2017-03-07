@@ -3675,8 +3675,8 @@ textarea.w-select {
     margin-left: auto;
     border: 1px solid #eee;
     border-radius: 5px;
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58a453fc62641fda6d996240_blog-3.jpg"), -webkit-linear-gradient(270deg, #fff, #fff);
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58a453fc62641fda6d996240_blog-3.jpg"), linear-gradient(180deg, #fff, #fff);
+    background-image: url("../img/Blog/ad-1.jpg"), -webkit-linear-gradient(270deg, #fff, #fff);
+    background-image: url("../img/Blog/ad-1.jpg"), linear-gradient(180deg, #fff, #fff);
     background-position: -86px -138px, 0px 0px;
     background-size: auto, auto;
     background-repeat: no-repeat, repeat;
@@ -3696,8 +3696,8 @@ textarea.w-select {
     margin-left: auto;
     border: 1px solid #eee;
     border-radius: 5px;
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58a453fc62641fda6d996226_ad%202.jpg"), -webkit-linear-gradient(270deg, #fff, #fff);
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58a453fc62641fda6d996226_ad%202.jpg"), linear-gradient(180deg, #fff, #fff);
+    background-image: url("../img/Blog/ad-2.jpg"), -webkit-linear-gradient(270deg, #fff, #fff);
+    background-image: url("../img/Blog/ad-2.jpg"), linear-gradient(180deg, #fff, #fff);
     background-position: 50% 50%, 0px 0px;
     background-size: cover, auto;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, .1);
@@ -3930,6 +3930,7 @@ textarea.w-select {
     flex: 0 auto;
     background-color: #fafaf8;
     text-align: left;
+    margin-bottom: 40px;
 }
 
 .blog-wrapper-2-1 {
@@ -5150,6 +5151,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
     .blog-section-2 {
         padding-right: 0px;
         padding-left: 0px;
+        margin-bottom: 70px;
     }
     .blog-pgraph-2-1 {
         line-height: 26px;
@@ -6859,7 +6861,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         margin-top: 0px;
         margin-right: auto;
         margin-left: auto;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58a453fc62641fda6d996226_ad%202.jpg");
+        background-image: url("../img/Blog/ad-2.jpg");
         background-position: 50% 50%;
         background-size: cover;
         background-repeat: no-repeat;

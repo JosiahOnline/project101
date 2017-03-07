@@ -2026,28 +2026,7 @@ textarea.w-select {
     color: #e9ff00;
 }
 
-.social-media-link {
-    position: static;
-    display: block;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background-image: -webkit-linear-gradient(270deg, #fff, #fff);
-    background-image: linear-gradient(180deg, #fff, #fff);
-    font-family: 'Droid Serif', serif;
-    color: #ff5c5c;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-}
 
-.social-media-link:hover {
-    background-image: -webkit-linear-gradient(270deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-    background-image: linear-gradient(180deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-    color: #fff;
-}
 
 .ow-section-1 {
     position: relative;
@@ -2075,7 +2054,7 @@ textarea.w-select {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae71fa3c47fa52784e5372_SplitShire-8335_Easy-Resize.com.jpg");
+    background-image: url("../img/Services/services1.jpg");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2264,8 +2243,8 @@ textarea.w-select {
     -webkit-flex-basis: 70%;
     -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58a453fc62641fda6d99624b_Services%202.jpg"), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3));
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58a453fc62641fda6d99624b_Services%202.jpg"), linear-gradient(180deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3));
+    background-image: url("../img/Services/services2.jpg"), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3));
+    background-image: url("../img/Services/services2.jpg"), linear-gradient(180deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3));
     background-position: 50% 28%, 0px 0px;
     background-size: cover, auto;
     background-repeat: no-repeat, repeat;
@@ -2418,7 +2397,7 @@ textarea.w-select {
     -ms-flex-preferred-size: 65%;
     flex-basis: 65%;
     border-bottom: 2px solid #fff;
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58a453fc62641fda6d99624c_Services%203.jpg");
+    background-image: url("../img/Services/services3.jpg");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2707,115 +2686,6 @@ textarea.w-select {
     -webkit-flex-basis: 92%;
     -ms-flex-preferred-size: 92%;
     flex-basis: 92%;
-}
-
-.ow-container-5 {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -webkit-flex-basis: 92%;
-    -ms-flex-preferred-size: 92%;
-    flex-basis: 92%;
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58b027f3165efac83b24d7a3_maliha-mannan-63635_Easy-Resize.com.jpg");
-    background-position: 50% 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.ow-heading-5 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 6px;
-    font-family: Merriweather, serif;
-    color: #fff;
-    font-size: 54px;
-    font-weight: 700;
-    text-align: center;
-    text-shadow: 1px 1px 1px #000;
-}
-
-.follow-container {
-    position: static;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: 80px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 15px 0px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-radius: 5px;
-    -webkit-perspective: 204px;
-    perspective: 204px;
-}
-
-.e-newsletter {
-    position: static;
-    display: block;
-    margin-right: 10px;
-    margin-left: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    background-image: -webkit-linear-gradient(270deg, #fff, #fff);
-    background-image: linear-gradient(180deg, #fff, #fff);
-    font-family: 'Droid Serif', serif;
-    color: #ff5c5c;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-}
-
-.e-newsletter:hover {
-    background-image: -webkit-linear-gradient(270deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-    background-image: linear-gradient(180deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-    color: #fff;
-}
-
-.blog-link {
-    position: static;
-    display: block;
-    margin-right: 5px;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background-image: -webkit-linear-gradient(270deg, #fff, #fff);
-    background-image: linear-gradient(180deg, #fff, #fff);
-    font-family: 'Droid Serif', serif;
-    color: #ff5c5c;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-}
-
-.blog-link:hover {
-    background-image: -webkit-linear-gradient(270deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-    background-image: linear-gradient(180deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-    color: #fff;
 }
 
 .footer {
@@ -3141,23 +3011,6 @@ textarea.w-select {
     text-decoration: none;
 }
 
-.ow-wrapper-5 {
-    display: block;
-    width: 550px;
-    margin-top: 204px;
-    padding-top: 45px;
-    padding-bottom: 20px;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0;
-    -ms-flex: 0 0;
-    flex: 0 0;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, .22);
-    text-align: center;
-}
 
 .learn-more-container {
     position: fixed;
@@ -3365,21 +3218,7 @@ textarea.w-select {
     line-height: 24px;
 }
 
-.ow-pgraph-51 {
-    position: static;
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: 'Droid Serif', serif;
-    color: #062329;
-    font-size: 30px;
-    line-height: 38px;
-    font-weight: 700;
-    text-align: center;
-    text-shadow: 1px 1px 1px #fff, 0 1px 6px #fff, 0 -1px 1px #fff;
-}
+
 
 .blog-section-1 {
     position: relative;
@@ -4269,7 +4108,7 @@ textarea.w-select {
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     border-left: 1px solid #fff;
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58b2ad76ceab253c48c94e83_iziqby-fcgu-brooke-cagle_Easy-Resize.com.jpg");
+    background-image: url("../img/Services/services4.jpg");
     background-position: 0px 0px;
     background-size: cover;
 }
@@ -4594,13 +4433,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         font-size: 35px;
         line-height: 35px;
     }
-    .social-media-link {
-        position: relative;
-        padding: 13px 15px;
-        -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-        align-self: flex-start;
-    }
+    
     .ow-section-1 {
         margin-bottom: 30px;
         background-position: 68% 50%;
@@ -4786,65 +4619,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         left: -315px;
         width: 100px;
     }
-    .ow-container-5 {
-        -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58b027f3165efac83b24d7a3_maliha-mannan-63635_Easy-Resize.com.jpg");
-        background-position: 50% 50%;
-        background-size: cover;
-    }
-    .ow-heading-5 {
-        top: 114px;
-        font-size: 70px;
-        text-shadow: 1px 1px 6px #000;
-    }
-    .follow-container {
-        left: 41px;
-        top: 273px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        border-radius: 5px;
-        text-align: center;
-    }
-    .e-newsletter {
-        position: relative;
-        padding: 13px 15px;
-        -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-        align-self: flex-start;
-    }
-    .blog-link {
-        position: relative;
-        padding: 13px 15px;
-        -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-        align-self: flex-start;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-        font-size: 20px;
-        font-weight: 100;
-    }
+    
     .copyright {
         font-size: 22px;
     }
@@ -4944,7 +4719,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         -webkit-align-self: center;
         -ms-flex-item-align: center;
         align-self: center;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae963e3c47fa52784e598f_menu-1.png");
+        background-image: url("../img/Services/Icons/menu1.png");
         background-position: 50% 50%;
         background-size: 32px;
         background-repeat: no-repeat;
@@ -4952,7 +4727,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
     .menu-button.w--open {
         position: relative;
         background-color: #131321;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae96e61b8fc1194b2d2a33_error.png");
+        background-image: url("../img/Services/Icons/error.png");
         background-position: 50% 50%;
         background-size: 45px 45px;
         background-repeat: no-repeat;
@@ -5010,17 +4785,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
     .close-link {
         margin-top: 0px;
     }
-    .ow-wrapper-5 {
-        position: relative;
-        right: 0px;
-        bottom: -216px;
-        width: 100%;
-        margin-top: 0px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        border-radius: 0px;
-    }
+    
     .learn-more-container {
         position: fixed;
     }
@@ -5114,15 +4879,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         line-height: 24px;
         text-align: justify;
     }
-    .ow-pgraph-51 {
-        top: 193px;
-        margin-top: 13px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        color: #13353c;
-        font-size: 40px;
-        line-height: 35px;
-    }
+    
     .blog-container-1-1 {
         top: -21px;
         margin-top: 20px;
@@ -5311,14 +5068,14 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         top: 2px;
         z-index: 10;
         padding: 3px 5px 0px;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae963e3c47fa52784e598f_menu-1.png");
+        background-image: url("../img/Services/Icons/menu1.png");
         background-position: 50% 50%;
         background-size: 32px;
         background-repeat: no-repeat;
     }
     .menu-button-2.w--open {
         background-color: #131321;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae96e61b8fc1194b2d2a33_error.png");
+        background-image: url("../img/Services/Icons/error.png");
         background-size: 32px;
     }
     .cs-pgraph-1 {
@@ -5402,26 +5159,8 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         margin-top: 10px;
         font-size: 28px;
     }
-    .social-media-link {
-        position: static;
-        margin-right: 10px;
-        margin-left: 10px;
-        padding: 15px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-        border-radius: 5px;
-        font-family: 'Droid Serif', serif;
-        color: #ff5c5c;
-        font-size: 20px;
-        line-height: 20px;
-        text-align: center;
-        text-decoration: none;
-    }
+    
+    
     .ow-section-1 {
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
@@ -5646,46 +5385,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
-    .ow-container-5 {
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58b027f3165efac83b24d7a3_maliha-mannan-63635_Easy-Resize.com.jpg");
-        background-position: 50% 50%;
-        background-size: cover;
-    }
-    .ow-heading-5 {
-        top: 70px;
-        width: 100%;
-        font-size: 60px;
-    }
-    .follow-container {
-        left: 0px;
-        top: 195px;
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .e-newsletter {
-        position: static;
-        margin-right: 10px;
-        margin-left: 0px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        font-size: 20px;
-    }
-    .blog-link {
-        position: static;
-        margin-right: 0px;
-        margin-left: 10px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        font-size: 20px;
-    }
+    
     .copyright {
         font-size: 20px;
     }
@@ -5809,19 +5509,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
     .sign-up-wrapper {
         top: 96px;
     }
-    .ow-wrapper-5 {
-        bottom: 6px;
-        width: 100%;
-        margin-top: 151px;
-        padding-right: 0px;
-        padding-left: 0px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        border-radius: 0px;
-        background-color: rgba(0, 0, 0, .32);
-        text-align: center;
-    }
+    
     .our-features-container {
         display: none;
     }
@@ -5851,12 +5539,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         font-size: 18px;
         text-align: left;
     }
-    .ow-pgraph-51 {
-        top: 123px;
-        width: 100%;
-        color: #073b46;
-        font-size: 35px;
-    }
+    
     .blog-wrapper-1 {
         padding-top: 10px;
         padding-right: 0px;
@@ -6128,7 +5811,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         padding-top: 3px;
         padding-bottom: 11px;
         background-color: transparent;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae96e61b8fc1194b2d2a33_error.png");
+        background-image: url("../img/Services/Icons/error.png");
         background-size: 32px;
     }
     .ow-pgraph-3-12-mobile {
@@ -6215,29 +5898,12 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         padding-bottom: 15px;
         font-size: 25px;
     }
-    .social-media-link {
-        position: static;
-        width: 180px;
-        margin-right: 0px;
-        margin-bottom: 10px;
-        margin-left: 0px;
-        border-width: 2px;
-        background-image: -webkit-linear-gradient(270deg, #fff, #fff);
-        background-image: linear-gradient(180deg, #fff, #fff);
-        color: #ff5c5c;
-        font-size: 18px;
-        font-weight: 600;
-    }
-    .social-media-link:hover {
-        background-image: -webkit-linear-gradient(270deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-        background-image: linear-gradient(180deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-        color: #fff;
-    }
+    
     .ow-section-1 {
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae71fa3c47fa52784e5372_SplitShire-8335_Easy-Resize.com.jpg");
+        background-image: url("../img/Services/services1.jpg");
         background-position: 57% 50%;
     }
     .ow-container-1 {
@@ -6313,7 +5979,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         -webkit-flex-basis: 70%;
         -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58a453fc62641fda6d996236_v1_skooa1rm-william-iven_Easy-Resize.com.jpg");
+        background-image: url("../img/Services/services2.jpg");
         background-position: 71% 50%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -6505,75 +6171,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         border-top: 1px solid #000;
         background-color: rgba(0, 0, 0, .25);
     }
-    .ow-container-5 {
-        margin-top: 0px;
-        -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    }
-    .ow-heading-5 {
-        top: 40px;
-        display: block;
-        margin: 0px auto;
-        padding-right: 30px;
-        padding-bottom: 10px;
-        padding-left: 30px;
-        font-size: 50px;
-        line-height: 55px;
-    }
-    .follow-container {
-        position: static;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        height: 200px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        background-color: transparent;
-    }
-    .e-newsletter {
-        position: static;
-        width: 180px;
-        margin-top: 20px;
-        margin-right: 0px;
-        margin-bottom: 10px;
-        border: 2px none #fff;
-        background-image: -webkit-linear-gradient(270deg, #fff, #fff);
-        background-image: linear-gradient(180deg, #fff, #fff);
-        color: #ff5c5c;
-        font-size: 18px;
-        font-weight: 700;
-    }
-    .e-newsletter:hover {
-        background-image: -webkit-linear-gradient(270deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-        background-image: linear-gradient(180deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-        color: #fff;
-    }
-    .blog-link {
-        position: static;
-        width: 180px;
-        margin-bottom: 20px;
-        margin-left: 0px;
-        border: 2px none #fff;
-        background-image: -webkit-linear-gradient(270deg, #fff, #fff);
-        background-image: linear-gradient(180deg, #fff, #fff);
-        color: #ff5c5c;
-        font-size: 18px;
-        font-weight: 700;
-    }
-    .blog-link:hover {
-        background-image: -webkit-linear-gradient(270deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-        background-image: linear-gradient(180deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-        color: #fff;
-    }
+    
     .footer {
         min-height: 8%;
     }
@@ -6739,17 +6337,8 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         line-height: 24px;
         text-align: center;
     }
-    .ow-wrapper-5 {
-        position: static;
-        top: 10px;
-        margin-top: 0px;
-        padding-top: 90px;
-        padding-bottom: 10px;
-        -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        background-color: rgba(0, 0, 0, .17);
-    }
+    
+    
     .learn-more-container {
         display: none;
     }
@@ -6785,18 +6374,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         line-height: 22px;
         text-align: center;
     }
-    .ow-pgraph-51 {
-        position: static;
-        top: 30px;
-        display: block;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-right: 30px;
-        padding-left: 30px;
-        color: #11292f;
-        font-size: 36px;
-        line-height: 34px;
-    }
+    
     .blog-heading-1 {
         padding-right: 20px;
         padding-left: 20px;

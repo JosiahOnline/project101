@@ -4174,7 +4174,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         -webkit-align-self: center;
         -ms-flex-item-align: center;
         align-self: center;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae963e3c47fa52784e598f_menu-1.png");
+        background-image: url("../img/Services/Icons/menu1.png");
         background-position: 50% 50%;
         background-size: 32px;
         background-repeat: no-repeat;
@@ -4182,7 +4182,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
     .menu-button-2.w--open {
         position: relative;
         background-color: #131321;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae96e61b8fc1194b2d2a33_error.png");
+        background-image: url("../img/Services/Icons/error.png");
         background-position: 50% 50%;
         background-size: 45px 45px;
         background-repeat: no-repeat;
@@ -4968,7 +4968,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         position: static;
         width: 100%;
         height: 400px;
-        background-image: url("http://uploads.webflow.com/58931cf225fabac303b3a27a/58b7e6fffde5fda107f58d8b_Services%201_Easy-Resize.com.jpg");
+        background-image: url("../img/Contact/Contact1.jpg");
         background-position: 50% 50%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -5636,7 +5636,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin: 0px auto;
         padding: 20px;
         background-image: none;
-        font-size: 30px;
+        font-size: 25px;
     }
     .nav-container-2 {
         position: static;

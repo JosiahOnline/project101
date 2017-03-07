@@ -2027,7 +2027,6 @@ textarea.w-select {
 }
 
 
-
 .ow-section-1 {
     position: relative;
     z-index: 2;
@@ -6747,4 +6746,5 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         margin-bottom: 10px;
         font-size: 15px;
     }
+    
 }

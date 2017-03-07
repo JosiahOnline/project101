@@ -3733,7 +3733,7 @@ textarea.w-select {
     padding: 15px;
     font-family: Merriweather, serif;
     color: #fff;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
 }
@@ -3859,7 +3859,7 @@ textarea.w-select {
 
 .ti-ad-close-link {
     position: relative;
-    top: -4px;
+    top: 0px;
     display: block;
     width: 80%;
     margin-right: auto;
@@ -5521,7 +5521,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-right: auto;
         margin-left: auto;
         padding: 20px;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 35px;
     }
     .nav-link.w--current {
@@ -5531,7 +5531,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin: 0px auto;
         padding: 20px;
         background-image: none;
-        font-size: 30px;
+        font-size: 25px;
     }
     .nav-container {
         left: 0px;
@@ -5576,7 +5576,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         -webkit-flex: 0 auto;
         -ms-flex: 0 auto;
         flex: 0 auto;
-        font-size: 28px;
+        font-size: 25px;
         text-align: center;
     }
     .fixed-navbar {
@@ -5623,7 +5623,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-top: 0px;
         margin-right: auto;
         margin-left: auto;
-        padding-top: 90px;
+        padding-top: 0px;
         padding-left: 0px;
         -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
@@ -6440,16 +6440,14 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         width: 100%;
         margin-top: 5px;
     }
-    .ti-ad-close-link {
-        top: -13px;
-    }
+   
     .ti-ads-container {
         position: static;
         display: block;
         width: 96%;
-        height: 580px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        height: 570px;
+        margin-top: 0px;
+        margin-bottom: 0px;
         padding-top: 10px;
         padding-bottom: 10px;
     }

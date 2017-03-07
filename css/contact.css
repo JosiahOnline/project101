@@ -2193,8 +2193,8 @@ textarea.w-select {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    background-image: -webkit-radial-gradient(circle farthest-side at 61% 50%, transparent, #0f0f26), url("http://uploads.webflow.com/58931cf225fabac303b3a27a/58a2ffb2512f55ad31ffb96d_Homepage%201.jpg");
-    background-image: radial-gradient(circle farthest-side at 61% 50%, transparent, #0f0f26), url("http://uploads.webflow.com/58931cf225fabac303b3a27a/58a2ffb2512f55ad31ffb96d_Homepage%201.jpg");
+    background-image: -webkit-radial-gradient(circle farthest-side at 61% 50%, transparent, #0f0f26), url("../img/Home/homepage1.jpg");
+    background-image: radial-gradient(circle farthest-side at 61% 50%, transparent, #0f0f26), url("../img/Home/homepage1.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -2355,7 +2355,7 @@ textarea.w-select {
     -webkit-flex-basis: 40%;
     -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
-    background-image: url("http://uploads.webflow.com/58931cf225fabac303b3a27a/58b7e6fffde5fda107f58d8b_Services%201_Easy-Resize.com.jpg");
+    background-image: url("../img/Contact/Contact1.jpg");
     background-position: 49% 50%;
     background-size: cover;
     background-repeat: no-repeat;

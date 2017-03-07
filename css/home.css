@@ -2184,8 +2184,8 @@ textarea.w-select {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    background-image: -webkit-radial-gradient(circle farthest-side at 61% 50%, transparent, #0f0f26), url("../img/Home/homepage1.jpg");
-    background-image: radial-gradient(circle farthest-side at 61% 50%, transparent, #0f0f26), url("../img/Home/homepage1.jpg");
+    background-image: -webkit-radial-gradient(circle farthest-side at 61% 50%, transparent, #0f0f26), url("../img/home/homepage1.jpg");
+    background-image: radial-gradient(circle farthest-side at 61% 50%, transparent, #0f0f26), url("../img/home/homepage1.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -4174,8 +4174,8 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
     }
     .home-section {
         position: static;
-        background-image: -webkit-radial-gradient(circle closest-corner at 52% 58%, transparent, #0c0c24), url("http://uploads.webflow.com/58931cf225fabac303b3a27a/58a2ffb2512f55ad31ffb96d_Homepage%201.jpg");
-        background-image: radial-gradient(circle closest-corner at 52% 58%, transparent, #0c0c24), url("http://uploads.webflow.com/58931cf225fabac303b3a27a/58a2ffb2512f55ad31ffb96d_Homepage%201.jpg");
+        background-image: -webkit-radial-gradient(circle closest-corner at 52% 58%, transparent, #0c0c24), url("../img/home/homepage1.jpg");
+        background-image: radial-gradient(circle closest-corner at 52% 58%, transparent, #0c0c24), url("../img/home/homepage1.jpg");
         background-position: 0px 0px, 50% 50%;
         background-size: auto, cover;
         background-repeat: repeat, no-repeat;
@@ -5587,8 +5587,8 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         align-items: stretch;
     }
     .home-section {
-        background-image: -webkit-radial-gradient(circle closest-corner at 50% 37%, transparent 55%, #0c0c24 79%), url("http://uploads.webflow.com/58931cf225fabac303b3a27a/58a2ffb2512f55ad31ffb96d_Homepage%201.jpg");
-        background-image: radial-gradient(circle closest-corner at 50% 37%, transparent 55%, #0c0c24 79%), url("http://uploads.webflow.com/58931cf225fabac303b3a27a/58a2ffb2512f55ad31ffb96d_Homepage%201.jpg");
+        background-image: -webkit-radial-gradient(circle closest-corner at 50% 37%, transparent 55%, #0c0c24 79%), url("../img/home/homepage1.jpg");
+        background-image: radial-gradient(circle closest-corner at 50% 37%, transparent 55%, #0c0c24 79%), url("../img/home/homepage1.jpg");
         background-position: 0px 0px, 47% 50%;
         background-size: auto, cover;
         background-repeat: repeat, no-repeat;

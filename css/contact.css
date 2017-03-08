@@ -1999,7 +1999,7 @@ textarea.w-select {
     left: 0px;
     display: inline-block;
     overflow: visible;
-    padding: 20px 0px 10px 0px;
+    padding: 20px 0px 10px;
     margin-left: 10px;
     margin-right: 10px;
     -webkit-box-flex: 0;
@@ -2116,7 +2116,7 @@ textarea.w-select {
     padding: 20px 0px 0px;
     font-family: 'Berkshire Swash', sans-serif;
     color: #fff;
-    font-size: 25px;
+    font-size: 24px;
     text-decoration: none;
 }
 

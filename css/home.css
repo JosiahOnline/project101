@@ -1860,7 +1860,8 @@ textarea.w-select {
 
 @media screen and (max-width:991px) {
     .w-nav[data-collapse="medium"] .w-nav-menu {
-        display: none
+        display: none;
+            padding-top: 100px;
     }
     .w-nav[data-collapse="medium"] .w-nav-button {
         display: block
@@ -1869,7 +1870,8 @@ textarea.w-select {
 
 @media screen and (max-width:767px) {
     .w-nav[data-collapse="small"] .w-nav-menu {
-        display: none
+        display: none;
+        padding-top: 100px;
     }
     .w-nav[data-collapse="small"] .w-nav-button {
         display: block
@@ -1881,7 +1883,8 @@ textarea.w-select {
 
 @media screen and (max-width:479px) {
     .w-nav[data-collapse="tiny"] .w-nav-menu {
-        display: none
+        display: none;
+            padding-top: 80px;
     }
     .w-nav[data-collapse="tiny"] .w-nav-button {
         display: block
@@ -2366,7 +2369,7 @@ textarea.w-select {
     }
     .menu-button-2.w--open {
         position: relative;
-        background-color: #131321;
+        background-color: transparent;
         background-image: url("../img/Services/Icons/error.png");
         background-position: 50% 50%;
         background-size: 45px 45px;
@@ -2614,13 +2617,14 @@ textarea.w-select {
     .menu-button-2 {
         position: relative;
         left: -20px;
-        top: -55px;
+        top: -59px;
         padding-top: 17px;
         padding-right: 0px;
         padding-bottom: 8px;
     }
     .menu-button-2.w--open {
         background-size: 30px;
+        margin-top: 0px;
     }
     .nav-menu-2 {
         right: 0px;

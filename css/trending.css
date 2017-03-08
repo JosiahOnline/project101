@@ -1787,7 +1787,7 @@ textarea.w-select {
     background: #C8C8C8;
     text-align: center;
     overflow: visible;
-    min-width: 200px
+    min-width: 200px;
 }
 
 .w--nav-link-open {
@@ -1995,31 +1995,50 @@ textarea.w-select {
 }
 
 .nav-link {
-    position: static;
-    left: 254px;
+    left:0px;
     display: inline-block;
     overflow: visible;
-    padding: 20px 10px 15px;
+    padding: 20px 0px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 20%;
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     font-family: Merriweather, serif;
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
     text-shadow: 0 1px 1px #000, 1px 1px 6px #000;
 }
 
+
 .nav-link.w--current {
-    position: static;
     padding-top: 20px;
     color: #e9ff00;
     font-size: 20px;
     font-weight: 700;
     text-shadow: 0 1px 1px #000, 1px 1px 1px #000;
+}
+.addborder{
+    position:relative;
+    display:inline-block;
+}
+.addborder:before{
+  content:'';
+  width:0;
+  height:2px;
+  background:#e9ff00;
+  position:absolute;
+  left:20%;
+  bottom:0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.addborder:hover:before {
+    width: 60%;
 }
 
 .active {
@@ -2093,7 +2112,7 @@ textarea.w-select {
     flex-basis: 20%;
     font-family: Merriweather, serif;
     color: #fff;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 700;
     text-decoration: none;
     text-shadow: 1px 1px 1px #000, 0 1px 1px #000;
@@ -2106,7 +2125,7 @@ textarea.w-select {
     padding: 20px 0px 0px;
     font-family: 'Berkshire Swash', sans-serif;
     color: #fff;
-    font-size: 25px;
+    font-size: 24px;
     text-decoration: none;
 }
 
@@ -3523,11 +3542,10 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
     }
     
     .menu-button-2.w--open {
-        position: relative;
         background-color: transparent;
         background-image: url("../img/Services/Icons/error.png");
         background-position: 50% 50%;
-        background-size: 45px 45px;
+        
         background-repeat: no-repeat;
         color: transparent;
     }
@@ -3970,7 +3988,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         -webkit-flex: 0 auto;
         -ms-flex: 0 auto;
         flex: 0 auto;
-        font-size: 30px;
+        font-size: 24px;
         text-align: center;
     }
     .fixed-navbar {
@@ -4580,7 +4598,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         -webkit-flex: 0 auto;
         -ms-flex: 0 auto;
         flex: 0 auto;
-        font-size: 25px;
+        font-size: 24px;
         text-align: center;
     }
     .fixed-navbar {

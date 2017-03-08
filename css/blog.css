@@ -2134,6 +2134,7 @@ textarea.w-select {
     border-top: 2px none #fff;
     color: #fff;
     text-align: center;
+    height: 140px;
 }
 
 .blog-heading-1 {

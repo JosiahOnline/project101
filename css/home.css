@@ -270,7 +270,7 @@ html {
 body {
     margin: 0;
     min-height: 100%;
-    background-color: #fff;
+    transition: background-color .5s;
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -1976,6 +1976,9 @@ textarea.w-select {
 /* ==========================================================================
    Start of custom CSS
    ========================================================================== */
+#main {
+    transition: margin-left .5s;
+}
 
 .main-wrapper {
     position: relative;
@@ -1993,17 +1996,150 @@ textarea.w-select {
     flex-direction: column;
 }
 
-.nav-link {
+.bgcolor {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: background-color .5s;
+    z-index: 99;
+}
+
+
+.top-nav {
+    position: fixed;
     left: 0px;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 100%;
+    height: 100px;
+    border-style: none;
+    border-bottom-width: 1px;
+    border-bottom-color: transparent;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.nav-container {
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+.brand-logo {
+    flex: 1;
+    padding: 20px 30px 10px;
+    font-family: Merriweather, serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+}
+
+
+.brand-logo.w--current {
+    left: -200px;
+    margin-top: 0px;
+    padding: 20px 0px 0px;
+  
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: flex-end;
+    padding: 10px 30px 10px;
+        
+}
+
+.navburger {
+    flex-basis: 140px;
+    justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navburger p{
+    padding: 20px 0px 10px 0px;
+    flex-basis: 100px;
+    font-family: Merriweather, serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+    transition: all 0.3s ease-out;
+    border-bottom:solid transparent 5px;
+}
+
+.hamburger {
+    flex-basis: 50px;
+    padding: 50px 0px 10px 0px;
+    background-image: url("../img/Services/Icons/menu1.png");
+    background-position: 50% 50%;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    height: 32px;
+}
+
+.menu-links {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #131321;
+    overflow-x: hidden;
+    transition: 0.05s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.menu-links a {
+    padding: 20px 0px 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
     display: inline-block;
+    transition: 0.05s
+}
+.menu-links .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    padding: 25px;
+    margin-top: 14px;
+    background-image: url("../img/Services/Icons/error.png");
+    background-position: 50% 50%;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    
+}
+
+.nav-link {
     overflow: visible;
     padding: 20px 0px 10px 0px;
     margin-left: 10px;
     margin-right: 10px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 20%;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
+    flex-basis: 50px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -2015,6 +2151,9 @@ textarea.w-select {
     border-bottom:solid transparent 5px;
 }
 
+.addwidth {
+  
+}
 .addborder{
     position:relative;
     display:inline-block;
@@ -2034,87 +2173,8 @@ textarea.w-select {
     width: 60%;
 }
 
-.nav-link.w--current {
+.menu-links .active {
     color: #e9ff00;
-}
-
-.active {
-    color: #e9ff00;
-}
-
-.nav-container {
-    position: relative;
-    left: -18px;
-    top: -3px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 10px;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-}
-
-
-.body {
-    background-color: #fafaf8;
-}
-
-.top-navbar {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    display: block;
-    width: 100%;
-    padding: 0px 12% 10px;
-    border-style: none;
-    border-bottom-width: 1px;
-    border-bottom-color: transparent;
-    background-color: transparent;
-}
-
-.brand-logo-2 {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    display: inline-block;
-    padding: 20px 15px 15px;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -webkit-flex-basis: 30%;
-    -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
-    font-family: Merriweather, serif;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
-}
-
-
-.brand-logo-2.w--current {
-    position: relative;
-    left: -200px;
-    margin-top: 0px;
-    padding: 20px 0px 0px;
-    font-family: 'Berkshire Swash', sans-serif;
-    color: #fff;
-    font-size: 25px;
-    text-decoration: none;
 }
 
 
@@ -2137,6 +2197,7 @@ textarea.w-select {
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
+    
 }
 
 .home-container {
@@ -2296,42 +2357,15 @@ textarea.w-select {
     line-height: 71px;
 }
 
+@media screen and (max-width: 991px) , screen and (min-height: 1024px) {
+    .menu-links .closebtn {
+        margin-top: 24px;
+        margin-right: 4px;
+        
+    }
+}
 @media (max-width: 991px) {
-    .nav-link {
-        left: 0px;
-        right: 0px;
-        display: block;
-        margin-top: 0px;
-        padding-top: 20px;
-        padding-bottom: 25px;
-        -webkit-flex-basis: 20%;
-        -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-        font-size: 35px;
-        line-height: 35px;
-    }
-    .nav-link.w--current {
-        display: block;
-        margin-top: 130px;
-    }
-    .nav-link: hover {
-        color: #e9ff00;
-    }
-    .nav-container {
-        position: static;
-        display: block;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 10px;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .top-navbar {
+    .top-nav {
         position: fixed;
         left: 0px;
         top: 0px;
@@ -2339,43 +2373,18 @@ textarea.w-select {
         border-bottom-color: #fff;
         background-color: transparent;
     }
-    .brand-logo-2 {
-        position: relative;
-        left: 20px;
-        display: inline-block;
-        -webkit-flex-basis: 30%;
-        -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    .brand-logo {
+        
     }
-    .brand-logo-2.w--current {
+    .brand-logo.w--current {
         left: -150px;
         right: 0px;
     }
      
-    .menu-button-2 {
-        left: -163px;
-        top: 2px;
-        z-index: 10;
-        display: block;
-        margin-top: 0px;
-        padding: 3px 5px 0px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        background-image: url("../img/Services/Icons/menu1.png");
-        background-position: 50% 50%;
-        background-size: 32px;
-        background-repeat: no-repeat;
-    }
-    .menu-button-2.w--open {
-        position: relative;
-        background-color: transparent;
-        background-image: url("../img/Services/Icons/error.png");
-        background-position: 50% 50%;
-        background-size: 45px 45px;
-        background-repeat: no-repeat;
-        color: transparent;
-    }
+    /*.closebtn {
+        margin-top: 24px;
+        margin-right: 4px;
+    }*/
     
     .home-section {
         position: static;
@@ -2465,7 +2474,7 @@ textarea.w-select {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-    .top-navbar {
+    .top-nav {
         display: block;
         -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
@@ -2475,29 +2484,11 @@ textarea.w-select {
         -ms-flex: 0 auto;
         flex: 0 auto;
     }
-    .brand-logo-2 {
-        left: -15px;
-        top: 1px;
-        margin-left: 69px;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-        font-size: 25px;
+    .brand-logo {
+        
     }
 
-    .menu-button-2 {
-        left: -100px;
-        top: -1px;
-        margin-top: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-    .menu-button-2.w--open {
-        padding-bottom: 22px;
-    }
+    
     
     .home-container {
         padding-top: 65px;
@@ -2597,52 +2588,32 @@ textarea.w-select {
         font-size: 25px;
     }
     
-    .top-navbar {
+    .top-nav {
         padding-top: 0px;
     }
-    .brand-logo-2 {
-        position: relative;
-        left: 0px;
-        top: 0px;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 16px;
-    }
-    .brand-logo-2.w--current {
-        left: -6px;
-        top: 5px;
+    
+    .navburger {
+        flex-basis: 100px;
     }
     
-    .menu-button-2 {
-        position: relative;
-        left: -20px;
-        top: -59px;
-        padding-top: 17px;
-        padding-right: 0px;
-        padding-bottom: 8px;
+    .navburger p {
+        font-size: 18px;
     }
-    .menu-button-2.w--open {
-        background-size: 30px;
-        margin-top: 0px;
+    
+    .hamburger {
+        background-size: 24px;
+        height: 24px;
     }
-    .nav-menu-2 {
-        right: 0px;
-        display: block;
-        width: 100%;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 90px;
-        padding-left: 0px;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
+    .brand-logo {
+       font-size: 18px;
     }
+    
+    .menu-links .closebtn {
+        margin-top: 16px;
+        margin-right: -5px;
+    }
+    
+    
     .home-section {
         background-image: -webkit-radial-gradient(circle closest-corner at 50% 37%, transparent 55%, #0c0c24 79%), url("../img/home/homepage1.jpg");
         background-image: radial-gradient(circle closest-corner at 50% 37%, transparent 55%, #0c0c24 79%), url("../img/home/homepage1.jpg");
@@ -2718,11 +2689,5 @@ textarea.w-select {
         padding-top: 60px;
         font-size: 56px;
         line-height: 40px;
-    }
-    
-    .nav-icon {
-        font-size: 40px;
-        line-height: 20px;
-        text-align: right;
     }
 }

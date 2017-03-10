@@ -273,7 +273,7 @@ html {
 body {
     margin: 0;
     min-height: 100%;
-    background-color: #fff;
+    transition: background-color .5s;
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -1994,27 +1994,187 @@ textarea.w-select {
     background-color: #fafaf8;
 }
 
-.nav-link {
+.bgcolor {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    transition: background-color .5s;
+    z-index: 99;
+}
+
+
+.top-nav {
+    display: block;
+    position: fixed;
     left: 0px;
-    display: inline-block;
-    overflow: visible;
-    padding: 20px 10px 15px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 20%;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 100%;
+    height: 80px;
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    background-color: transparent;
+    transition: background-color .5s;
+    z-index: 100;
+}
+
+.nav-container {
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+.brand-logo {
+    flex: 1;
+    padding: 20px 30px 10px;
+    font-family: Merriweather, serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+}
+
+
+.brand-logo.w--current {
+    left: -200px;
+    margin-top: 0px;
+    padding: 20px 0px 0px;
+  
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: flex-end;
+    padding: 10px 30px 10px;
+        
+}
+
+.navburger {
+    flex-basis: 140px;
+    justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navburger p{
+    padding: 20px 0px 10px 0px;
+    flex-basis: 100px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-    text-shadow: 1px 1px 6px #000, 0 1px 2px #000;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+    transition: all 0.3s ease-out;
+    border-bottom:solid transparent 5px;
 }
 
-.nav-link.w--current {
+.hamburger {
+    flex-basis: 50px;
+    padding: 50px 0px 10px 0px;
+    background-image: url("../img/Services/Icons/menu1.png");
+    background-position: 50% 50%;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    height: 32px;
+}
+
+.menu-links {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #131321;
+    overflow-x: hidden;
+    transition: 0.05s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.menu-links a {
+    padding: 20px 0px 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    transition: 0.05s
+}
+.menu-links .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    padding: 25px;
+    margin-top: 14px;
+    background-image: url("../img/Services/Icons/error.png");
+    background-position: 50% 50%;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    
+}
+
+.nav-link {
+    overflow: visible;
+    padding: 20px 0px 10px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-basis: 50px;
+    font-family: Merriweather, serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+    transition: all .3s ease-out;
+    border-bottom:solid transparent 5px;
+}
+
+.addborder{
+    position:relative;
+    display:inline-block;
+}
+.addborder:before{
+  content:'';
+  width:0;
+  height:2px;
+  background:#e9ff00;
+  position:absolute;
+  left:20%;
+  bottom:0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.addborder:hover:before {
+    width: 60%;
+}
+
+.menu-links .active {
     color: #e9ff00;
 }
+
+
 
 .active {
     color: #e9ff00;
@@ -2689,22 +2849,10 @@ textarea.w-select {
 
 .body {
     background-color: white;
+    transition: background-color .5s;
 }
 
-.top-navbar {
-    position: relative;
-    z-index: 7;
-    width: 100%;
-    height: 71px;
-    padding-right: 12%;
-    padding-bottom: 10px;
-    padding-left: 12%;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    background-color: transparent;
-    text-align: center;
-}
+
 
 .email-sign-up {
     width: 200px;
@@ -2801,83 +2949,12 @@ textarea.w-select {
     text-shadow: 1px 1px 6px #000;
 }
 
-.brand-logo-2 {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    display: inline-block;
-    padding: 20px 15px 15px;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -webkit-flex-basis: 30%;
-    -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
-    font-family: Merriweather, serif;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 1px 1px 6px #000, 0 1px 2px #000;
-}
 
-.fixed-navbar {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 8;
-    display: block;
-    overflow: visible;
-    width: 100%;
-    height: 71px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 0px;
-    padding-right: 12%;
-    padding-left: 12%;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    border-bottom: 1px solid #fff;
-    background-color: #131321;
-    opacity: 1;
-}
 
-.nav-container-2 {
-    position: relative;
-    left: -18px;
-    top: -3px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 10px;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-}
 
-.nav-menu {
-    padding-right: 15px;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -webkit-flex-basis: 70%;
-    -ms-flex-preferred-size: 70%;
-    flex-basis: 70%;
-    text-align: right;
-}
+
+
+
 
 .ow-heading-2-2 {
     position: static;
@@ -3290,19 +3367,6 @@ textarea.w-select {
     text-align: center;
 }
 
-.brand-logo-1 {
-    position: relative;
-    left: 75px;
-    top: 1px;
-    display: inline-block;
-    padding: 20px 15px 15px;
-    font-family: Merriweather, serif;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-}
 
 .contact-form-box-1 {
     width: 50%;
@@ -3433,7 +3497,7 @@ textarea.w-select {
 .follow-us-text {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 0px;
     -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
@@ -3672,20 +3736,29 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
     transform: translate(0px, -700%);
 }
 
+@media screen and (max-width: 991px) , screen and (min-height: 1024px) {
+    .menu-links .closebtn {
+        margin-top: 24px;
+        margin-right: 4px;    
+    }
+}
+
 @media (max-width: 991px) {
-    .nav-link {
+    .top-nav {
+        position: fixed;
         left: 0px;
-        top: 80px;
+        top: 0px;
+        padding: 10px 0px 0px;
+        border-bottom-color: #fff;
+        background-color: transparent;
+    }
+    .follow-us-text {
+        padding-top:120px;
+    }
+  
+    .brand-logo.w--current {
+        left: -150px;
         right: 0px;
-        display: block;
-        margin-top: 0px;
-        padding-top: 20px;
-        padding-bottom: 25px;
-        -webkit-flex-basis: 20%;
-        -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-        font-size: 35px;
-        line-height: 35px;
     }
     
     .ow-section-1 {
@@ -3879,15 +3952,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         font-size: 22px;
         padding-top: 35px;
     }
-    .top-navbar {
-        display: block;
-        height: 71px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 0%;
-        padding-bottom: 0px;
-        padding-left: 0%;
-    }
+    
     .email-sign-up {
         left: 165px;
         top: auto;
@@ -3924,104 +3989,12 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         font-size: 26px;
         line-height: 31px;
     }
-    .brand-logo-2 {
-        position: relative;
-        left: 20px;
-        display: inline-block;
-        -webkit-flex-basis: 30%;
-        -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-    }
-    .fixed-navbar {
-        top: 0px;
-        display: block;
-        height: 71px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 0%;
-        padding-left: 0%;
-    }
-    .nav-container-2 {
-        position: static;
-        display: block;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 10px;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .nav-icon {
-        position: static;
-        display: block;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        color: transparent;
-        font-size: 50px;
-    }
-    .menu-button {
-        left: -163px;
-        top: 2px;
-        z-index: 10;
-        display: block;
-        margin-top: 0px;
-        padding: 3px 5px 0px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        background-image: url("../img/Services/Icons/menu1.png");
-        background-position: 50% 50%;
-        background-size: 32px;
-        background-repeat: no-repeat;
-    }
-    .menu-button.w--open {
-        position: relative;
-        background-color: #131321;
-        background-image: url("../img/Services/Icons/error.png");
-        background-position: 50% 50%;
-        background-size: 45px 45px;
-        background-repeat: no-repeat;
-        color: transparent;
-    }
-    .nav-menu {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        padding-top: 5%;
-        padding-right: 10%;
-        padding-left: 10%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-        background-color: #131321;
-        font-size: 35px;
-        text-align: center;
-    }
+    
+    
+    
+    
+    
+    
     .ow-heading-2-2 {
         width: 320px;
         margin-bottom: 20px;
@@ -4223,9 +4196,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         width: 768px;
         font-size: 100px;
     }
-    .brand-logo-1 {
-        left: 20px;
-    }
+    
     .contact-form-box-1 {
         width: 45%;
         margin-right: 15px;
@@ -4235,21 +4206,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         -ms-flex-preferred-size: 52%;
         flex-basis: 52%;
     }
-    .menu-button-2 {
-        left: -163px;
-        top: 2px;
-        z-index: 10;
-        padding: 3px 5px 0px;
-        background-image: url("../img/Services/Icons/menu1.png");
-        background-position: 50% 50%;
-        background-size: 32px;
-        background-repeat: no-repeat;
-    }
-    .menu-button-2.w--open {
-        background-color: #131321;
-        background-image: url("../img/Services/Icons/error.png");
-        background-size: 32px;
-    }
+    
     .cs-pgraph-1 {
         display: block;
         width: 99%;
@@ -4306,12 +4263,41 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
 }
 
 @media (max-width: 767px) {
+    .top-nav {
+        display: block;
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        align-self: stretch;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 auto;
+        -ms-flex: 0 auto;
+        flex: 0 auto;
+    }
+    
+    .nav-container {
+        left: 0px;
+        top: 0px;
+        padding-top: 10px;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    
     .nav-link {
         display: block;
         width: 540px;
         min-width: 0%;
         margin-top: 10px;
         font-size: 28px;
+    }
+    
+    .nav-link.w--current {
+        margin-top: 50px;
+        font-size: 35px;
     }
     
     
@@ -4543,18 +4529,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
     .footer-copyright {
         font-size: 20px;
     }
-    .top-navbar {
-        display: block;
-        padding-right: 0%;
-        padding-left: 0%;
-        -webkit-align-self: stretch;
-        -ms-flex-item-align: stretch;
-        align-self: stretch;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-    }
+    
     .email-sign-up {
         left: 129px;
         top: 52px;
@@ -4597,54 +4572,12 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         margin-bottom: 20px;
         line-height: 32px;
     }
-    .brand-logo-2 {
-        left: -15px;
-        top: 1px;
-        margin-left: 69px;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-        font-size: 25px;
-    }
-    .fixed-navbar {
-        display: block;
-    }
-    .nav-container-2 {
-        left: 0px;
-        top: 0px;
-        width: 550px;
-        padding-top: 10px;
-        -webkit-box-pack: end;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-    .nav-icon {
-        font-size: 40px;
-        line-height: 20px;
-        text-align: right;
-    }
-    .menu-button {
-        left: -39px;
-        top: -1px;
-        margin-top: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-    .menu-button.w--open {
-        padding-bottom: 22px;
-    }
-    .nav-menu {
-        padding-top: 0%;
-        padding-right: 0%;
-        padding-left: 0%;
-    }
+    
+    
+    
+    
+    
+   
     .ow-heading-2-2 {
         width: 280px;
         margin-top: 40px;
@@ -4775,18 +4708,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         line-height: 30px;
         text-align: center;
     }
-    .menu-button-2 {
-        left: -39px;
-        top: 18px;
-    }
-    .menu-button-2.w--open {
-        margin-top: 0px;
-        padding-top: 3px;
-        padding-bottom: 11px;
-        background-color: transparent;
-        background-image: url("../img/Services/Icons/error.png");
-        background-size: 32px;
-    }
+    
     .ow-pgraph-3-12-mobile {
         display: block;
         font-family: 'Droid Serif', serif;
@@ -4844,12 +4766,47 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
 }
 
 @media (max-width: 479px) {
+    .top-nav {
+        padding-top: 0px;
+    }
+    
+    .brand-logo {
+       font-size: 18px;
+    }
+    
+    .navburger {
+        flex-basis: 100px;
+    }
+    
+    .navburger p {
+        font-size: 18px;
+    }
+    
+    .hamburger {
+        background-size: 24px;
+        height: 24px;
+    }
+    
+    .menu-links .closebtn {
+        margin-top: 16px;
+        margin-right: -5px;
+    }
+    
     .nav-link {
         display: block;
         width: 240px;
-        margin-top: 10px;
+        margin: 0 auto;
         padding-top: 10px;
         padding-bottom: 15px;
+        font-size: 25px;
+    }
+    .nav-link.w--current {
+        top: 0px;
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px;
+        background-image: none;
         font-size: 25px;
     }
     
@@ -5135,9 +5092,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         font-size: 16px;
         line-height: 20px;
     }
-    .top-navbar {
-        position: static;
-    }
+    
     .email-sign-up {
         position: static;
         left: 0px;
@@ -5201,42 +5156,10 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         text-align: center;
         text-shadow: 1px 1px 1px #000;
     }
-    .brand-logo-2 {
-        position: relative;
-        left: 0px;
-        top: 0px;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 16px;
-    }
-    .brand-logo-2.w--current {
-        left: -6px;
-        top: 5px;
-    }
-    .fixed-navbar {
-        top: -4px;
-        z-index: 11;
-        display: block;
-        margin-top: 0px;
-        background-color: #131321;
-    }
-    .nav-container-2 {
-        position: static;
-        width: 100%;
-        text-align: center;
-    }
-    .menu-button {
-        position: relative;
-        left: -30px;
-        top: 0px;
-        padding-top: 17px;
-        padding-right: 0px;
-        padding-bottom: 8px;
-    }
-    .menu-button.w--open {
-        background-size: 30px;
-    }
+    
+    
+    
+    
     .ebook-form {
         top: 42px;
         width: 100%;
@@ -5348,11 +5271,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         font-size: 51px;
         line-height: 36px;
     }
-    .brand-logo-1 {
-        left: 23px;
-        top: 4px;
-        padding-left: 2px;
-    }
+    
     .contact-form-box-2 {
         margin-top: 0px;
         padding-top: 0px;
@@ -5397,13 +5316,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
     .ow-pgraph-mobile-22 {
         display: none;
     }
-    .menu-button-2 {
-        position: relative;
-        left: -30px;
-        top: -36px;
-        z-index: 10;
-        padding-right: 0px;
-    }
+    
     .ow-pgraph-3-12-mobile {
         display: none;
         margin-right: auto;

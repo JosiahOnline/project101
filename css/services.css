@@ -1466,7 +1466,7 @@ textarea.w-select {
 .w-lightbox-close {
     right: 0;
     height: 2.6em;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMTggMTciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMCAwaDd2LTdoNXY3aDd2NWgtN3Y3aC01di03aC03eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDd2LTdoM3Y3aDd2M2gtN3Y3aC0zdi03aC03eiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=");
+    background-image: url("../img/Services/Icons/error.png");
     background-size: 18px
 }
 
@@ -2019,6 +2019,10 @@ textarea.w-select {
     background-color: transparent;
     transition: background-color .5s;
     z-index: 100;
+       -webkit-box-shadow: 0 8px 6px -6px transparent;
+        -moz-box-shadow: 0 8px 6px -6px transparent;
+          box-shadow: 0 8px 6px -6px transparent;
+    transition: box-shadow .5s;
 }
 
 .nav-container {
@@ -3311,7 +3315,7 @@ textarea.w-select {
     padding-top: 115px;
     padding-right: 15px;
     padding-left: 15px;
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58b63d350ff76d41426a3862_CS%202%20Black.png");
+    background-image: url("../img/Services/CaseStudies/CS2.png");
     background-position: 50% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3321,7 +3325,7 @@ textarea.w-select {
     padding-top: 115px;
     padding-right: 15px;
     padding-left: 15px;
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58b64e75ee258abb1c0a2d26_CS%203%20Black.png");
+    background-image: url("../img/Services/CaseStudies/CS3.png");
     background-position: 50% 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3331,7 +3335,7 @@ textarea.w-select {
     padding-top: 157px;
     padding-right: 15px;
     padding-left: 15px;
-    background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58b6513a02d86a5042865e97_CS%204%20Black.png");
+    background-image: url("../img/Services/CaseStudies/CS4.png");
     background-position: 50% -34px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4142,7 +4146,8 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58b171c4fbbec15a489e6f8a_CS%201%20Black.png");
+        background-image: url("../img/Services/services1.jpg");
+        background-image: url("../img/Services/CaseStudies/CS1.png");
         background-position: 0px 0px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -4768,10 +4773,18 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
 @media (max-width: 479px) {
     .top-nav {
         padding-top: 0px;
+        height: 60px;
     }
     
     .brand-logo {
-       font-size: 18px;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    
+    .navbar {
+        padding: 0px 15px;
+        width: 120px;
     }
     
     .navburger {
@@ -4788,8 +4801,8 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
     }
     
     .menu-links .closebtn {
-        margin-top: 16px;
-        margin-right: -5px;
+        margin-top: 5px;
+        margin-right: -20px;
     }
     
     .nav-link {
@@ -4820,7 +4833,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
     .ow-container-1 {
         display: block;
         width: 100%;
-        padding-top: 30px;
+        padding-top: 120px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
@@ -4979,12 +4992,12 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
     }
     .ow-heading-3-2 {
         top: -61px;
-        width: 90%;
-        padding: 5px 0px;
+        width: 230px;
+        padding: 5px 25px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        font-size: 18px;
-        text-align: center;
+        font-size: 26px;
+        text-align: left;
     }
     .ebook-pgraph-1 {
         position: relative;
@@ -5100,7 +5113,7 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         display: block;
         width: 65%;
         margin: 0px auto 10px;
-        padding-top: 10px;
+        padding-top: 7px;
         padding-bottom: 10px;
     }
     .learn-more {
@@ -5328,12 +5341,12 @@ html.w-mod-js *[data-ix="ow-welcome-pgraph-2"] {
         margin-right: auto;
         margin-bottom: 35px;
         margin-left: auto;
-        padding: 10px 15px;
+        padding: 10px 25px;
         font-family: 'Droid Serif', serif;
         color: #fff;
         font-size: 22px;
         line-height: 27px;
-        text-align: center;
+        text-align: left;
         text-shadow: 1px 1px 1px #000;
     }
     .follow-us-image {

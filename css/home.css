@@ -2543,10 +2543,19 @@ textarea.w-select {
     
     .top-nav {
         padding-top: 0px;
+        height: 60px;
     }
     
     .brand-logo {
-       font-size: 18px;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    
+    
+    .navbar {
+        padding: 0px 15px;
+        width: 120px;
     }
     
     .navburger {
@@ -2563,8 +2572,8 @@ textarea.w-select {
     }
     
     .menu-links .closebtn {
-        margin-top: 16px;
-        margin-right: -5px;
+        margin-top: 5px;
+        margin-right: -20px;
     }
     
     .nav-link {
@@ -2584,6 +2593,7 @@ textarea.w-select {
         background-image: none;
         font-size: 25px;
     }
+    
     
     .home-section {
         background-image: -webkit-radial-gradient(circle closest-corner at 50% 37%, transparent 55%, #0c0c24 79%), url("../img/home/homepage1.jpg");

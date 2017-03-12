@@ -2003,7 +2003,6 @@ textarea.w-select {
 
 
 .top-nav {
-    display: block;
     position: fixed;
     left: 500px;
     top: 0px;
@@ -2127,7 +2126,8 @@ textarea.w-select {
     top: 0;
     right: 25px;
     padding: 25px;
-    margin-top: 14px;
+    margin-top: 16px;
+    margin-right: 4px;
     background-image: url("../img/Services/Icons/error.png");
     background-position: 50% 50%;
     background-size: 32px;
@@ -2647,6 +2647,10 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
                 box-shadow: 0 0px 0px 0px transparent;
     }
     
+     .menu-links .closebtn {
+        margin-top: 16px;
+        margin-right: 4px;
+    }
     
     .contact-container-1 {
         position: relative;

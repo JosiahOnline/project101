@@ -1,4 +1,3 @@
-
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -258,8 +257,6 @@ th {
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box
 }
 
@@ -307,7 +304,8 @@ html.w-mod-touch * {
 }
 
 .w-preserve-3d {
-    transform-style: preserve-3d
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d
 }
 
 .w-hidden {
@@ -324,7 +322,6 @@ html.w-mod-touch * {
     text-decoration: none;
     cursor: pointer;
     border-radius: 0
-        
 }
 
 input.w-button {
@@ -689,7 +686,6 @@ textarea.w-select {
 .w-hidden-main {
     display: none !important
 }
-
 
 @media screen and (max-width:991px) {
     .w-container {
@@ -1137,6 +1133,7 @@ textarea.w-select {
     background-color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
     margin: 0 3px .5em;
+    -webkit-transition: background-color 100ms, color 100ms;
     transition: background-color 100ms, color 100ms
 }
 
@@ -1503,7 +1500,6 @@ textarea.w-select {
     top: 50%;
     width: 100%;
     -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
     transform: translate(0, -50%)
 }
 
@@ -1511,7 +1507,6 @@ textarea.w-select {
     left: 50%;
     height: 100%;
     -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0)
 }
 
@@ -1856,8 +1851,6 @@ textarea.w-select {
     display: block
 }
 
-
-
 @media screen and (max-width:991px) {
     .w-nav[data-collapse="medium"] .w-nav-menu {
         display: none;
@@ -1871,7 +1864,7 @@ textarea.w-select {
 @media screen and (max-width:767px) {
     .w-nav[data-collapse="small"] .w-nav-menu {
         display: none;
-            padding-top: 100px;
+        padding-top: 100px;
     }
     .w-nav[data-collapse="small"] .w-nav-button {
         display: block
@@ -1884,7 +1877,7 @@ textarea.w-select {
 @media screen and (max-width:479px) {
     .w-nav[data-collapse="tiny"] .w-nav-menu {
         display: none;
-            padding-top: 80px;
+        padding-top: 80px;
     }
     .w-nav[data-collapse="tiny"] .w-nav-button {
         display: block
@@ -1950,12 +1943,25 @@ textarea.w-select {
     content: ""
 }
 
-@keyframes spin {
+@-webkit-keyframes spin {
     0% {
-        transform: rotate(0deg)
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
     }
     100% {
-        transform: rotate(360deg)
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
     }
 }
 
@@ -1980,14 +1986,12 @@ textarea.w-select {
 .main-wrapper {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     overflow: visible;
     float: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
 }
@@ -1997,10 +2001,10 @@ textarea.w-select {
     display: none;
     height: 100%;
     width: 100%;
+    -webkit-transition: background-color .5s;
     transition: background-color .5s;
     z-index: 99;
 }
-
 
 .top-nav {
     position: fixed;
@@ -2015,24 +2019,27 @@ textarea.w-select {
     background-color: transparent;
     z-index: 100;
     background: #131321;
-     -webkit-box-shadow: 0 8px 6px -6px grey;
-     -moz-box-shadow: 0 8px 6px -6px grey;
-          box-shadow: 0 8px 6px -6px grey;
+    box-shadow: 0 8px 6px -6px grey;
 }
-
 
 .nav-container {
     height: auto;
     position: relative;
     margin: 0 auto;
     padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
 }
 
 .brand-logo {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding: 20px 30px 10px;
     font-family: Merriweather, serif;
     color: #fff;
@@ -2043,36 +2050,52 @@ textarea.w-select {
     text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
 }
 
-
 .brand-logo.w--current {
     left: -200px;
     margin-top: 0px;
     padding: 20px 0px 0px;
-  
 }
+
 .navbar {
     position: absolute;
     top: 0;
     right: 0;
     width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: stretch;
-    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding: 10px 30px 10px;
-        
 }
 
 .navburger {
-    flex-basis: 140px;
-    justify-content: center;
+    -ms-flex-preferred-size: 140px;
+        flex-basis: 140px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
 }
 
-.navburger p{
+.navburger p {
     padding: 20px 0px 10px 0px;
-    flex-basis: 100px;
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -2080,12 +2103,14 @@ textarea.w-select {
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    border-bottom:solid transparent 5px;
+    border-bottom: solid transparent 5px;
 }
 
 .hamburger {
-    flex-basis: 50px;
+    -ms-flex-preferred-size: 50px;
+        flex-basis: 50px;
     padding: 50px 0px 10px 0px;
     background-image: url("../img/Services/Icons/menu1.png");
     background-position: 50% 50%;
@@ -2103,11 +2128,18 @@ textarea.w-select {
     right: 0;
     background-color: #131321;
     overflow-x: hidden;
+    -webkit-transition: 0.05s;
     transition: 0.05s;
     padding-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
 }
 
 .menu-links a {
@@ -2119,8 +2151,10 @@ textarea.w-select {
     font-size: 25px;
     color: white;
     display: inline-block;
+    -webkit-transition: 0.05s;
     transition: 0.05s
 }
+
 .menu-links .closebtn {
     position: absolute;
     top: 0;
@@ -2132,7 +2166,6 @@ textarea.w-select {
     background-position: 50% 50%;
     background-size: 32px;
     background-repeat: no-repeat;
-    
 }
 
 .nav-link {
@@ -2140,7 +2173,8 @@ textarea.w-select {
     padding: 20px 0px 10px 0px;
     margin-left: 10px;
     margin-right: 10px;
-    flex-basis: 50px;
+    -ms-flex-preferred-size: 50px;
+        flex-basis: 50px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -2148,25 +2182,28 @@ textarea.w-select {
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+    -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
-    border-bottom:solid transparent 5px;
+    border-bottom: solid transparent 5px;
 }
 
-.addborder{
-    position:relative;
-    display:inline-block;
+.addborder {
+    position: relative;
+    display: inline-block;
 }
-.addborder:before{
-  content:'';
-  width:0;
-  height:2px;
-  background:#e9ff00;
-  position:absolute;
-  left:20%;
-  bottom:0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+
+.addborder:before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #e9ff00;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
+
 .addborder:hover:before {
     width: 60%;
 }
@@ -2174,8 +2211,6 @@ textarea.w-select {
 .menu-links .active {
     color: #e9ff00;
 }
-
-
 
 .active {
     color: #e9ff00;
@@ -2196,7 +2231,6 @@ textarea.w-select {
     display: block;
     width: 100%;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
 }
@@ -2208,17 +2242,14 @@ textarea.w-select {
     display: block;
     width: 500px;
     height: 100%;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 40%;
     -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
     background-image: url("../img/Contact/Contact1.jpg");
     background-position: 49% 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .quoted {
@@ -2254,21 +2285,16 @@ textarea.w-select {
     margin-bottom: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 60%;
     -ms-flex-preferred-size: 60%;
     flex-basis: 60%;
     font-family: 'Droid Serif', serif;
@@ -2281,11 +2307,9 @@ textarea.w-select {
     margin-left: auto;
     padding-top: 10px;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
     font-family: 'Droid Serif', serif;
@@ -2305,6 +2329,7 @@ textarea.w-select {
     font-size: 20px;
     line-height: 26px;
     text-align: center;
+    -webkit-transition: display .5s;
     transition: display .5s;
 }
 
@@ -2334,14 +2359,13 @@ textarea.w-select {
     color: #fff;
 }
 
-
-
 .contact-link.w--current {
     margin-left: 20px;
     border-style: solid;
     border-color: rgba(16, 191, 244, .5);
     background-color: #fff;
     background-image: -webkit-linear-gradient(270deg, rgba(16, 191, 244, .5), rgba(16, 191, 244, .5));
+    background-image: -webkit-linear-gradient(top, rgba(16, 191, 244, .5), rgba(16, 191, 244, .5));
     background-image: linear-gradient(180deg, rgba(16, 191, 244, .5), rgba(16, 191, 244, .5));
     color: #fff;
 }
@@ -2351,6 +2375,7 @@ textarea.w-select {
     color: white;
     border-color: #369;
 }
+
 .tabs-section {
     display: none;
     width: 100%;
@@ -2358,9 +2383,9 @@ textarea.w-select {
     margin-top: 20px;
 }
 
-.tabs-section.current{
-			display: inherit;
-		}
+.tabs-section.current {
+    display: inherit;
+}
 
 .project-heading {
     display: block;
@@ -2398,23 +2423,18 @@ textarea.w-select {
 
 .project-form-wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
     align-content: flex-start;
 }
@@ -2435,10 +2455,8 @@ textarea.w-select {
     min-height: 150px;
     margin: 0px auto 10px;
     padding-left: 17px;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 95%;
     -ms-flex-preferred-size: 95%;
     flex-basis: 95%;
 }
@@ -2450,7 +2468,8 @@ textarea.w-select {
     padding-bottom: 15px;
     -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
-    align-self: stretch;
+    -ms-grid-row-align: stretch;
+        align-self: stretch;
     text-align: center;
     border-radius: 5px;
     font-size: 16px;
@@ -2458,7 +2477,7 @@ textarea.w-select {
 
 .project-submit:hover {
     border-color: rgba(16, 191, 244, .5);
-    background-color: rgba(16, 191, 244, .5); 
+    background-color: rgba(16, 191, 244, .5);
 }
 
 .tabs-section {
@@ -2468,15 +2487,12 @@ textarea.w-select {
     margin-top: 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
 }
@@ -2509,27 +2525,21 @@ textarea.w-select {
 
 .message-form-wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
     align-content: flex-start;
 }
@@ -2562,13 +2572,13 @@ textarea.w-select {
     padding-bottom: 15px;
     border-radius: 5px;
     font-size: 16px;
-    
 }
 
 .message-submit:hover {
     border-color: rgba(16, 191, 244, .5);
     background-color: rgba(16, 191, 244, .5);
 }
+
 .footer-copyright {
     padding: 15px;
     font-family: Merriweather, serif;
@@ -2581,18 +2591,16 @@ textarea.w-select {
 .footer {
     display: none;
     min-height: 8%;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: auto;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     border-top: 2px solid #fff;
     background-image: -webkit-linear-gradient(270deg, #131321, #131321);
+    background-image: -webkit-linear-gradient(top, #131321, #131321);
     background-image: linear-gradient(180deg, #131321, #131321);
     margin-top: 50px;
 }
-
 
 .contactcontainer {
     display: absolute;
@@ -2603,18 +2611,15 @@ textarea.w-select {
 
 .tabs-menu-wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin: 20px auto 15px;
     padding-top: 0px;
     padding-bottom: 0px;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
@@ -2624,15 +2629,12 @@ textarea.w-select {
     width: 100%;
 }
 
-
 html.w-mod-js *[data-ix="contact-tabs-hide"] {
     display: none;
     opacity: 0;
     -webkit-transform: translate(0px, 100px);
-    -ms-transform: translate(0px, 100px);
     transform: translate(0px, 100px);
 }
-
 
 @media (max-width: 991px) {
     .top-nav {
@@ -2642,16 +2644,12 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         border-bottom-style: none;
         border-bottom-width: 0;
         border-bottom-color: transparent;
-            -webkit-box-shadow: 0 0px 0px 0px transparent;
-              -moz-box-shadow: 0 0px 0px 0px transparent;
-                box-shadow: 0 0px 0px 0px transparent;
+        box-shadow: 0 0px 0px 0px transparent;
     }
-    
-     .menu-links .closebtn {
+    .menu-links .closebtn {
         margin-top: 16px;
         margin-right: 4px;
     }
-    
     .contact-container-1 {
         position: relative;
         width: 100%;
@@ -2665,11 +2663,9 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         margin-left: 0px;
         padding-top: 5px;
         -webkit-box-ordinal-group: 0;
-        -webkit-order: -1;
         -ms-flex-order: -1;
         order: -1;
         -webkit-box-flex: 1;
-        -webkit-flex: 1;
         -ms-flex: 1;
         flex: 1;
         font-size: 24px;
@@ -2677,7 +2673,6 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
     }
     .quoted-container {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         width: 550px;
@@ -2686,15 +2681,12 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         margin-left: 0px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
         -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
         justify-content: flex-start;
         -webkit-box-align: center;
-        -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
         border-radius: 0px;
@@ -2704,13 +2696,10 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         margin-left: 0px;
         padding-top: 0;
         -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
         justify-content: flex-start;
-        -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        -webkit-flex-basis: 60%;
         -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
     }
@@ -2728,7 +2717,6 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         padding-right: 20px;
         padding-left: 20px;
     }
-    
     .contact-link {
         margin-right: 0px;
         margin-left: 15px;
@@ -2739,7 +2727,7 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         margin-left: 15px;
     }
     /*.tabs-section {
-        
+
         margin-bottom: 15px;
     }*/
     .project-heading {
@@ -2789,7 +2777,6 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
     .message-form-wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
     }
@@ -2815,18 +2802,15 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         padding-top: 15px;
         padding-bottom: 15px;
         font-size: 18px;
-        
     }
     .footer-copyright {
         position: static;
     }
     .tabs-menu-wrapper {
         -webkit-box-pack: center;
-        -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
         -webkit-box-align: center;
-        -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
         text-align: center;
@@ -2835,16 +2819,12 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         padding-right: 10px;
         padding-left: 10px;
     }
-    
-    
 }
 
 @media (max-width: 767px) {
-    
     .contact-section {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
     }
@@ -2861,10 +2841,8 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         margin-right: 10px;
         margin-bottom: 0px;
         padding-top: 0px;
-        -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
         flex-shrink: 0;
-        -webkit-flex-basis: 45%;
         -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
         font-size: 18px;
@@ -2872,7 +2850,6 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
     }
     .quoted-container {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         width: 430px;
@@ -2883,17 +2860,14 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         padding: 15px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
         border-radius: 0px;
     }
     .quoted-image {
         width: 100px;
-        -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
         flex-shrink: 0;
-        -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     }
@@ -2911,14 +2885,11 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         font-size: 26px;
         text-shadow: none;
     }
-    
     .contact-pgraph-2 {
         color: #131321;
         font-size: 18px;
     }
-    
     .contact-link {
-        
         font-size: 18px;
     }
     .project-heading {
@@ -2942,7 +2913,6 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
     }
     .project-input-textarea {
         padding-left: 16px;
-        -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         background-color: transparent;
@@ -2962,61 +2932,47 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
     .message-pgraph {
         font-size: 18px;
     }
-    
-    
 }
 
 @media (max-width: 479px) {
     .main-wrapper {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         overflow: visible;
-        -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        -webkit-align-content: center;
         -ms-flex-line-pack: center;
         align-content: center;
     }
-    
-    
     .top-nav {
         padding-top: 0px;
         height: 60px;
     }
-    
     .brand-logo {
         font-size: 18px;
         padding-top: 10px;
         padding-left: 15px;
     }
-    
-    
     .navbar {
         padding: 0px 15px;
         width: 120px;
     }
-    
     .navburger {
-        flex-basis: 100px;
+        -ms-flex-preferred-size: 100px;
+            flex-basis: 100px;
     }
-    
     .navburger p {
         font-size: 18px;
     }
-    
     .hamburger {
         background-size: 24px;
         height: 24px;
     }
-    
     .menu-links .closebtn {
         margin-top: 5px;
         margin-right: -20px;
     }
-    
     .nav-link {
         display: block;
         width: 240px;
@@ -3034,7 +2990,6 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         background-image: none;
         font-size: 25px;
     }
-    
     .contact-container-1 {
         height: 300px;
         background-position: 50% 0%;
@@ -3045,10 +3000,8 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         padding-top: 5px;
         padding-left: 10px;
         -webkit-box-ordinal-group: 2;
-        -webkit-order: 1;
         -ms-flex-order: 1;
         order: 1;
-        -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
         font-size: 14px;
@@ -3062,11 +3015,9 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         margin-top: 160px;
         padding: 5px;
         -webkit-box-pack: center;
-        -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
         -webkit-box-align: center;
-        -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
         border-radius: 0px;
@@ -3075,11 +3026,9 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         margin-right: 5px;
         margin-left: 5px;
         -webkit-box-flex: 0;
-        -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
     }
-   
     .contact-pgraph-1 {
         position: static;
         display: block;
@@ -3092,14 +3041,11 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         text-align: center;
         text-shadow: none;
     }
-    
-    
     .contact-link {
         display: block;
         width: 90%;
         margin: 10px auto;
         -webkit-box-flex: 0;
-        -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
     }
@@ -3133,29 +3079,22 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         display: block;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
         -ms-flex-align: stretch;
         align-items: stretch;
     }
-    
-    
     .tabs-menu-wrapper {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         margin-top: 5px;
         margin-bottom: 5px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
         padding-top: 30px;
@@ -3164,6 +3103,4 @@ html.w-mod-js *[data-ix="contact-tabs-hide"] {
         padding-right: 0px;
         padding-left: 0px;
     }
-
-    
 }

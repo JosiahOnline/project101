@@ -1981,7 +1981,7 @@ textarea.w-select {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh;
+   
     float: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1990,27 +1990,163 @@ textarea.w-select {
     flex-direction: column;
     background-color: #fafaf8;
 }
+.bgcolor {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    transition: background-color .5s;
+    z-index: 99;
+}
 
-.nav-link {
+
+.top-nav {
+    position: fixed;
+    width: 100%;
     left: 0px;
-    display: inline-block;
-    overflow: visible;
-    padding: 20px 10px 10px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 20%;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
+    top: 0px;
+    right: 0px;
+    display: block;
+    height: 80px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    background-color: transparent;
+    z-index: 100;
+    background: #131321;
+}
+
+
+.nav-container {
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    
+    
+}
+
+.brand-logo {
+    flex: 1;
+    padding: 20px 30px 10px;
+    font-family: Merriweather, serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+}
+
+
+.brand-logo.w--current {
+    left: -200px;
+    margin-top: 0px;
+    padding: 20px 0px 0px;
+  
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: flex-end;
+    padding: 10px 30px 10px;
+        
+}
+
+.navburger {
+    flex-basis: 140px;
+    justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navburger p{
+    padding: 20px 0px 10px 0px;
+    flex-basis: 100px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-    text-shadow: 1px 1px 6px #000, 0 1px 2px #000;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+    transition: all 0.3s ease-out;
+    border-bottom:solid transparent 5px;
 }
 
-.nav-link.w--current {
-    color: #e9ff00;
+.hamburger {
+    flex-basis: 50px;
+    padding: 50px 0px 10px 0px;
+    background-image: url("../img/Services/Icons/menu1.png");
+    background-position: 50% 50%;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    height: 32px;
+}
+
+.menu-links {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #131321;
+    overflow-x: hidden;
+    transition: 0.05s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.menu-links a {
+    padding: 20px 0px 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    transition: 0.05s
+}
+.menu-links .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    padding: 25px;
+    margin-top: 16px;
+    margin-right: 4px;
+    background-image: url("../img/Services/Icons/error.png");
+    background-position: 50% 50%;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    
+}
+
+.nav-link {
+    overflow: visible;
+    padding: 20px 0px 10px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-basis: 50px;
+    font-family: Merriweather, serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+    transition: all .3s ease-out;
+    border-bottom:solid transparent 5px;
 }
 
 .addborder{
@@ -2032,38 +2168,21 @@ textarea.w-select {
     width: 60%;
 }
 
+.menu-links .active {
+    color: #e9ff00;
+}
+
 .active {
     color: #e9ff00;
 }
 
 
-.blog-link {
-    position: static;
-    display: block;
-    margin-right: 5px;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background-image: -webkit-linear-gradient(270deg, #fff, #fff);
-    background-image: linear-gradient(180deg, #fff, #fff);
-    font-family: 'Droid Serif', serif;
-    color: #ff5c5c;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-}
 
-.blog-link:hover {
-    background-image: -webkit-linear-gradient(270deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-    background-image: linear-gradient(180deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-    color: #fff;
-}
 
 .footer {
-    min-height: 10%;
+    height: 80px;
     margin-top: 0px;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 5px;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
@@ -2128,13 +2247,13 @@ textarea.w-select {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 0px;
+    padding-top: 10px;
     padding-right: 130px;
     padding-left: 130px;
     border-top: 2px none #fff;
     color: #fff;
     text-align: center;
-    height: 140px;
+    height: 160px;
 }
 
 .blog-heading-1 {
@@ -2760,19 +2879,7 @@ textarea.w-select {
     font-weight: 100;
 }
 
-.brand-logo {
-    position: relative;
-    left: 75px;
-    top: 1px;
-    display: inline-block;
-    padding: 20px 15px 15px;
-    font-family: Merriweather, serif;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-}
+
 
 
 
@@ -2794,137 +2901,23 @@ textarea.w-select {
     flex: 0 0 auto;
 }
 
-.blog-fixed-nav {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    display: block;
-    width: 100%;
-    height: 71px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 12%;
-    padding-left: 12%;
-    padding-top: 8px;
-    border-bottom: 1px solid #fff;
-    background-color: #131321;
-}
+
 
 @media (max-width: 991px) {
-    .nav-link {
-        left: 0px;
-        top: 80px;
-        right: 0px;
-        display: block;
-        margin-top: 0px;
-        padding-top: 20px;
-        padding-bottom: 25px;
-        -webkit-flex-basis: 20%;
-        -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-        font-size: 35px;
-        line-height: 35px;
+ 
+    
+     .menu-links .closebtn {
+        margin-top: 16px;
+        margin-right: 4px;
     }
     
     
-    .blog-link {
-        position: relative;
-        padding: 13px 15px;
-        -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-        align-self: flex-start;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-        font-size: 20px;
-        font-weight: 100;
-    }
+    
     .footer-copyright {
         font-size: 22px;
     }
     
-    .nav-container-2 {
-        position: static;
-        display: block;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 10px;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .nav-icon {
-        position: static;
-        display: block;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        color: transparent;
-        font-size: 50px;
-    }
-    .menu-button {
-        left: -163px;
-        top: 2px;
-        z-index: 10;
-        display: block;
-        margin-top: 0px;
-        padding: 3px 5px 0px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae963e3c47fa52784e598f_menu-1.png");
-        background-position: 50% 50%;
-        background-size: 32px;
-        background-repeat: no-repeat;
-    }
-    .menu-button.w--open {
-        position: relative;
-        background-color: #131321;
-        background-image: url("http://uploads.webflow.com/58a453fc62641fda6d996216/58ae96e61b8fc1194b2d2a33_error.png");
-        background-position: 50% 50%;
-        background-size: 45px 45px;
-        background-repeat: no-repeat;
-        color: transparent;
-    }
-    .nav-menu {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        padding-top: 5%;
-        padding-right: 10%;
-        padding-left: 10%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-        background-color: #131321;
-        font-size: 35px;
-        text-align: center;
-    }
+    
     
     .blog-container-1-1 {
         top: -21px;
@@ -2982,7 +2975,7 @@ textarea.w-select {
     .blog-section-2 {
         padding-right: 0px;
         padding-left: 0px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
     .blog-pgraph-2-1 {
         line-height: 26px;
@@ -3013,9 +3006,6 @@ textarea.w-select {
         text-align: center;
     }
     
-    .brand-logo {
-        left: 20px;
-    }
     
     .blog-wrapper-1-2 {
         width: 700px;
@@ -3039,74 +3029,21 @@ textarea.w-select {
         -ms-flex-line-pack: start;
         align-content: flex-start;
     }
-    .blog-fixed-nav {
-        padding-right: 0%;
-        padding-left: 0%;
-        padding-top: 0px;
-    }
     
     .footer {
-        padding-top: 20px;
+        padding-top: 10px;
     }
 }
 
 @media (max-width: 767px) {
-    .nav-link {
-        display: block;
-        width: 540px;
-        min-width: 0%;
-        margin-top: 10px;
-        font-size: 28px;
-    }
     
-    .blog-link {
-        position: static;
-        margin-right: 0px;
-        margin-left: 10px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        font-size: 20px;
-    }
+    
+    
     .footer-copyright {
         font-size: 20px;
     }
     
-    .nav-container-2 {
-        left: 0px;
-        top: 0px;
-        width: 550px;
-        padding-top: 10px;
-        -webkit-box-pack: end;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-    .nav-icon {
-        font-size: 40px;
-        line-height: 20px;
-        text-align: right;
-    }
-    .menu-button {
-        left: -39px;
-        top: -1px;
-        margin-top: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-    .menu-button.w--open {
-        
-    }
-    .nav-menu {
-        padding-top: 0%;
-        padding-right: 0%;
-        padding-left: 0%;
-    }
+    
     
     .blog-wrapper-1 {
         padding-top: 10px;
@@ -3312,39 +3249,66 @@ textarea.w-select {
 }
 
 @media (max-width: 479px) {
+    .top-nav {
+        padding-top: 0px;
+        height: 60px;
+    }
+    
+    .brand-logo {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    
+    
+    .navbar {
+        padding: 0px 15px;
+        width: 120px;
+    }
+    
+    .navburger {
+        flex-basis: 100px;
+    }
+    
+    .navburger p {
+        font-size: 18px;
+    }
+    
+    .hamburger {
+        background-size: 24px;
+        height: 24px;
+    }
+    
+    .menu-links .closebtn {
+        margin-top: 5px;
+        margin-right: -20px;
+    }
+    
     .nav-link {
         display: block;
         width: 240px;
-        margin-top: 10px;
+        margin: 0 auto;
         padding-top: 10px;
         padding-bottom: 15px;
         font-size: 25px;
     }
-    
-    .blog-fixed-nav {
-        padding-top: 0px;
+    .nav-link.w--current {
+        top: 0px;
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px;
+        background-image: none;
+        font-size: 25px;
     }
-    .blog-link {
-        position: static;
-        width: 180px;
+    .blog-section-2 {
         margin-bottom: 20px;
-        margin-left: 0px;
-        border: 2px none #fff;
-        background-image: -webkit-linear-gradient(270deg, #fff, #fff);
-        background-image: linear-gradient(180deg, #fff, #fff);
-        color: #ff5c5c;
-        font-size: 18px;
-        font-weight: 700;
     }
-    .blog-link:hover {
-        background-image: -webkit-linear-gradient(270deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-        background-image: linear-gradient(180deg, rgba(255, 92, 92, .88), rgba(255, 92, 92, .88));
-        color: #fff;
-    }
+    
+    
     .footer {
-        min-height: 8%;
-        margin-top: 30px;
-        padding-top: 8px;
+        height: 60px;
+        padding-top: 5px;
     }
     .footer-copyright {
         padding-top: 15px;
@@ -3353,23 +3317,7 @@ textarea.w-select {
         line-height: 20px;
     }
     
-    .nav-container-2 {
-        position: static;
-        width: 100%;
-        text-align: center;
-        padding-top: 5px;
-    }
-    .menu-button {
-        position: relative;
-        left: -30px;
-        top: 0px;
-        padding-top: 17px;
-        padding-right: 0px;
-        padding-bottom: 8px;
-    }
-    .menu-button.w--open {
-        background-size: 30px;
-    }
+    
     
     .blog-heading-1 {
         padding-right: 20px;
@@ -3606,11 +3554,6 @@ textarea.w-select {
         width: 90%;
     }
     
-    .brand-logo {
-        left: 23px;
-        top: 4px;
-        padding-left: 2px;
-    }
     
     
     .blog-wrapper-1-2 {

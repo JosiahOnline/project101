@@ -23,10 +23,10 @@
 </head>
 
 <body class="body">
-    <div class="main-wrapper" data-ix="ti-main-wrapper">
-        <div class="ti-introduction" data-ix="ti-introduction">
-            <h1 class="ti-online-bah">Online &nbsp;&nbsp;Bah!</h1>
-            <div class="ti-time-is-now" data-ix="time-is-now">Time is Now</div>
+    <div class="main-wrapper">
+        <div id="hideAd" class="ti-introduction">
+            <h1 class="ti-online-bah">Online Bah!</h1>
+            <div class="ti-time-is-now">Time is Now</div>
         </div>
         <div class="ti-section-1">
             <div id="myDiv" class="bgcolor"></div>
@@ -196,21 +196,24 @@
                     <div class="w-form-fail">
                         <div>Oops! Something went wrong while submitting the form</div>
                     </div>
-                </div><a class="ti-ad-close-link" data-ix="close-ti-ads" href="#">Close X</a></div>
+                </div><a class="ti-ad-close-link" id="close-ti-ads">Close X</a></div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
     <script>
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
         function openNav() {
-
             document.getElementById("mySidenav").style.borderLeft = "5px";
             document.getElementById("mySidenav").style.borderLeftColor = "#e9ff00";
             document.getElementById("mySidenav").style.borderLeftStyle = "solid";
-            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.width = "285px";
+            document.getElementById("mySidenav").style.minHeight = "110%";
+            document.getElementById("mySidenav").style.marginTop = "285px";
             document.getElementById("myDiv").style.display = "block";
+            document.getElementById("myDiv").style.minHeight = "110%";
             document.getElementById("myDiv").style.backgroundColor = "rgba(19,19,42,0.4)";
             document.getElementsByTagName("body")[0].style.overflow = "hidden";
+            
         }
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
         function closeNav() {
@@ -219,10 +222,29 @@
             document.getElementById("mySidenav").style.borderLeftColor = "0";
             document.getElementById("mySidenav").style.borderLeftStyle = "0";
             document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.minHeight = "0";
             document.getElementById("myDiv").style.backgroundColor = "transparent";
             document.getElementById("myDiv").style.display = "none";
             document.getElementsByTagName("body")[0].style.overflow = "visible";
         }
+    </script>
+    <script>
+         $(window).scroll(function() {   
+            if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+            $(".ti-section-2").mouseenter(function(){
+                $(".ti-ads").show(500).css("display", "block");
+            });
+            };
+         });
+        
+          
+        $(document).ready(function(){
+            $("#close-ti-ads").on("click", (function(){
+                $(".ti-ads").css("display", "none");
+            }));
+    
+        });
+        
     </script>
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>

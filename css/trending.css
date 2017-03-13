@@ -1,4 +1,4 @@
-/* Generated on: Fri Mar 03 2017 10:02:12 GMT+0000 (UTC) */
+    /* Generated on: Fri Mar 03 2017 10:02:12 GMT+0000 (UTC) */
 
 
 /* ==========================================================================
@@ -260,8 +260,6 @@ th {
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box
 }
 
@@ -309,7 +307,8 @@ html.w-mod-touch * {
 }
 
 .w-preserve-3d {
-    transform-style: preserve-3d
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d
 }
 
 .w-hidden {
@@ -1139,6 +1138,7 @@ textarea.w-select {
     background-color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
     margin: 0 3px .5em;
+    -webkit-transition: background-color 100ms, color 100ms;
     transition: background-color 100ms, color 100ms
 }
 
@@ -1505,7 +1505,6 @@ textarea.w-select {
     top: 50%;
     width: 100%;
     -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
     transform: translate(0, -50%)
 }
 
@@ -1513,7 +1512,6 @@ textarea.w-select {
     left: 50%;
     height: 100%;
     -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0)
 }
 
@@ -1866,14 +1864,14 @@ textarea.w-select {
     }
     .w-nav[data-collapse="medium"] .w-nav-button {
         display: block;
-            height: 32px;
+        height: 32px;
     }
 }
 
 @media screen and (max-width:767px) {
     .w-nav[data-collapse="small"] .w-nav-menu {
         display: none;
-            padding-top: 100px;
+        padding-top: 100px;
     }
     .w-nav[data-collapse="small"] .w-nav-button {
         display: block
@@ -1951,12 +1949,25 @@ textarea.w-select {
     content: ""
 }
 
-@keyframes spin {
+@-webkit-keyframes spin {
     0% {
-        transform: rotate(0deg)
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
     }
     100% {
-        transform: rotate(360deg)
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
     }
 }
 
@@ -1981,7 +1992,6 @@ textarea.w-select {
 .main-wrapper {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     overflow: visible;
@@ -1989,202 +1999,227 @@ textarea.w-select {
     float: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
 }
 
-.nav-link {
-    left:0px;
-    display: inline-block;
-    overflow: visible;
-    padding: 20px 0px 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 20%;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
-    font-family: Merriweather, serif;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 1px 1px #000, 1px 1px 6px #000;
+.bgcolor {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+    z-index: 199;
 }
 
-
-.nav-link.w--current {
-    padding-top: 20px;
-    color: #e9ff00;
-    font-size: 22px;
-    font-weight: 700;
-    text-shadow: 0 1px 1px #000, 1px 1px 1px #000;
-}
-.addborder{
-    position:relative;
-    display:inline-block;
-}
-.addborder:before{
-  content:'';
-  width:0;
-  height:2px;
-  background:#e9ff00;
-  position:absolute;
-  left:20%;
-  bottom:0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-.addborder:hover:before {
-    width: 60%;
-}
-
-.active {
-    color: #e9ff00;
+.top-nav {
+    display: block;
+    padding: 0px 10px;
+    width: 100%;
+    height: 80px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: white;
+    z-index: 100;
 }
 
 .nav-container {
-    position: static;
-    left: 0px;
-    top: 0px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+}
+
+.brand-logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 20px 30px 10px;
+    font-family: Merriweather, serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+}
+
+.brand-logo.w--current {
+    left: -200px;
     margin-top: 0px;
-    padding: 10px 0px 10px 10px;
-    float: none;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    padding: 20px 0px 0px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    -webkit-flex-shrink: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 10px 30px 10px;
+}
+
+.navburger {
+    -ms-flex-preferred-size: 140px;
+        flex-basis: 140px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+}
+
+.navburger p {
+    padding: 20px 0px 10px 0px;
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+    font-family: Merriweather, serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
     text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-bottom: solid transparent 5px;
 }
 
-.footer {
-    display: none;
-    min-height: 8%;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -webkit-flex-basis: auto;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    border-top: 2px solid #fff;
-    background-image: -webkit-linear-gradient(270deg, #131321, #131321);
-    background-image: linear-gradient(180deg, #131321, #131321);
+.hamburger {
+    -ms-flex-preferred-size: 50px;
+        flex-basis: 50px;
+    padding: 50px 0px 10px 0px;
+    background-image: url("../img/Services/Icons/menu1.png");
+    background-position: 50% 50%;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    height: 32px;
 }
 
+.menu-links {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #131321;
+    overflow-x: hidden;
+    -webkit-transition: 0.05s;
+    transition: 0.05s;
+    padding-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+
+.menu-links a {
+    padding: 20px 0px 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    -webkit-transition: 0.05s;
+    transition: 0.05s
+}
+
+.menu-links .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    padding: 25px;
+    margin-top: 14px;
+    background-image: url("../img/Services/Icons/error.png");
+    background-position: 50% 50%;
+    background-size: 32px;
+    background-repeat: no-repeat;
+}
+
+.menu-links .active {
+    color: #e9ff00;
+}
+
+.nav-link {
+    overflow: visible;
+    padding: 20px 0px 10px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    -ms-flex-preferred-size: 50px;
+        flex-basis: 50px;
+    font-family: Merriweather, serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    border-bottom: solid transparent 5px;
+}
+
+.addborder {
+    position: relative;
+    display: inline-block;
+}
+
+.addborder:before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #e9ff00;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.addborder:hover:before {
+    width: 60%;
+}
 
 .body {
     background-color: #fafaf8;
 }
 
-.brand-logo-2 {
-    position: static;
-    left: 0px;
-    display: inline-block;
-    margin-top: 0px;
-    padding: 20px 10px 15px;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -webkit-flex-basis: 20%;
-    -ms-flex-preferred-size: 20%;
-    flex-basis: 20%;
-    font-family: Merriweather, serif;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #000, 0 1px 1px #000;
-}
-
-.brand-logo-2.w--current {
-    position: relative;
-    left: -200px;
-    margin-top: 0px;
-    padding: 20px 0px 0px;
-    font-family: 'Berkshire Swash', sans-serif;
-    color: #fff;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-.fixed-navbar {
-    position: static;
-    left: 0px;
-    top: -1px;
-    right: 0px;
-    display: inline-block;
-    overflow: visible;
-    width: 100%;
-    height: 70px;
-    padding-top: 10px;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    border-bottom: 2px solid #fff;
-    background-color: #131321;
-}
-
-.nav-container-2 {
-    position: relative;
-    left: -18px;
-    top: -3px;
-    display: block;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-left: auto;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-}
-
-.nav-menu-2 {
-    position: static;
-    left: 0px;
-    padding-right: 15px;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -webkit-flex-basis: 80%;
-    -ms-flex-preferred-size: 80%;
-    flex-basis: 80%;
-    background-color: transparent;
-    text-align: right;
-}
-
-
 .ti-section-1 {
     position: relative;
-    z-index: 2;
+    z-index: 4;
     display: block;
     width: 100%;
     height: 1450px;
@@ -2199,7 +2234,6 @@ textarea.w-select {
     position: relative;
     z-index: 3;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 95%;
@@ -2208,13 +2242,10 @@ textarea.w-select {
     padding: 2px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-align-content: stretch;
     -ms-flex-line-pack: stretch;
     align-content: stretch;
     border: 0px none #f1ff03;
@@ -2224,14 +2255,12 @@ textarea.w-select {
 
 .ti-topic-1 {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: 300px;
     margin-right: 0px;
     margin-bottom: 2px;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 63.7%;
     -ms-flex: 0 0 63.7%;
     flex: 0 0 63.7%;
     border-style: none;
@@ -2243,7 +2272,6 @@ textarea.w-select {
 
 .ti-topic-2 {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: 300px;
@@ -2251,11 +2279,9 @@ textarea.w-select {
     margin-left: 2px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 36%;
     -ms-flex: 0 0 36%;
     flex: 0 0 36%;
     border-bottom: 2px none #ff5c5c;
@@ -2270,15 +2296,12 @@ textarea.w-select {
     margin-bottom: 2px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 32%;
     -ms-flex: 0 0 32%;
     flex: 0 0 32%;
     border-right: 2px none #cf9c1e;
@@ -2290,7 +2313,6 @@ textarea.w-select {
 
 .ti-topic-4 {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: 300px;
@@ -2299,11 +2321,9 @@ textarea.w-select {
     margin-left: 2px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 34%;
     -ms-flex: 0 0 34%;
     flex: 0 0 34%;
     border-top: 2px none #cf9c1e;
@@ -2316,7 +2336,6 @@ textarea.w-select {
     margin-right: 0px;
     margin-bottom: 2px;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.7%;
     -ms-flex: 0 0 33.7%;
     flex: 0 0 33.7%;
     border-left: 2px none #cf9c1e;
@@ -2329,7 +2348,6 @@ textarea.w-select {
     margin-right: 0px;
     margin-bottom: 2px;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.37%;
     -ms-flex: 0 0 33.37%;
     flex: 0 0 33.37%;
     border-top: 2px none #cf9c1e;
@@ -2343,10 +2361,8 @@ textarea.w-select {
     margin-right: 2.5px;
     margin-bottom: 2px;
     margin-left: 2.5px;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 33%;
     -ms-flex-preferred-size: 33%;
     flex-basis: 33%;
     border-top: 2px none #b44d35;
@@ -2360,10 +2376,8 @@ textarea.w-select {
 .ti-topic-8 {
     height: 300px;
     margin-bottom: 2px;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 33%;
     -ms-flex-preferred-size: 33%;
     flex-basis: 33%;
     border-top: 2px none #ff5c5c;
@@ -2373,7 +2387,6 @@ textarea.w-select {
 
 .ti-topics {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 90%;
@@ -2387,22 +2400,16 @@ textarea.w-select {
 }
 
 .box-shadow {
-    -webkit-box-shadow: 0 4px 6px -6px #131321;
-       -moz-box-shadow: 0 4px 6px -6px #131321;
-          box-shadow: 0 4px 6px -6px #131321;
+    box-shadow: 0 4px 6px -6px #131321;
 }
 
 .box-shadow:hover {
-    -webkit-box-shadow: 0 8px 6px -6px #131321;
-     -moz-box-shadow: 0 8px 6px -6px #131321;
-          box-shadow: 0 8px 6px -6px #131321;
+    box-shadow: 0 8px 6px -6px #131321;
 }
 
 .ti-wrapper-1-1 {
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     border-style: none;
@@ -2416,13 +2423,10 @@ textarea.w-select {
     margin-left: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
 }
@@ -2436,9 +2440,9 @@ textarea.w-select {
     padding-left: 5px;
     -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
-    align-self: stretch;
+    -ms-grid-row-align: stretch;
+        align-self: stretch;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
     font-family: 'Droid Serif', serif;
@@ -2455,17 +2459,13 @@ textarea.w-select {
 
 .ti-wrapper-4 {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 15%;
     -ms-flex-preferred-size: 15%;
     flex-basis: 15%;
 }
@@ -2528,10 +2528,8 @@ textarea.w-select {
     width: 100%;
     height: 70%;
     margin-top: 5px;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 70%;
     -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
     background-image: url("../img/Trending/TI-2.jpg");
@@ -2588,10 +2586,8 @@ textarea.w-select {
 
 .ti-image-3 {
     height: 76%;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 60%;
     -ms-flex-preferred-size: 60%;
     flex-basis: 60%;
     background-image: url("../img/Trending/TI-5.jpg");
@@ -2604,7 +2600,6 @@ textarea.w-select {
     position: static;
     z-index: 2;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 95%;
@@ -2615,15 +2610,12 @@ textarea.w-select {
     padding: 4px 10px 10px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
     background-image: -webkit-linear-gradient(358deg, #d8e509, #fc0000);
@@ -2772,10 +2764,8 @@ textarea.w-select {
     display: block;
     width: 100%;
     height: 100%;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 35%;
     -ms-flex-preferred-size: 35%;
     flex-basis: 35%;
 }
@@ -2792,10 +2782,8 @@ textarea.w-select {
 .ti-wrapper-2-2 {
     padding-top: 15px;
     padding-left: 15px;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 65%;
     -ms-flex-preferred-size: 65%;
     flex-basis: 65%;
     background-color: #000;
@@ -2839,12 +2827,10 @@ textarea.w-select {
 
 .ti-form-wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: left;
@@ -2852,7 +2838,6 @@ textarea.w-select {
 
 .ti-section-2 {
     position: relative;
-    top: -65px;
     z-index: 1;
     display: block;
     width: 80%;
@@ -2867,7 +2852,6 @@ textarea.w-select {
 
 .ti-hero-topic {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: 28%;
@@ -2878,36 +2862,28 @@ textarea.w-select {
 .ti-hero-topic-container-1 {
     position: static;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
 }
 
 .ti-hero-topic-image {
     position: static;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     background-image: url("../img/Trending/TI-7.jpg");
@@ -2941,7 +2917,6 @@ textarea.w-select {
 
 .ti-containers {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
@@ -2953,7 +2928,6 @@ textarea.w-select {
     padding-left: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     border: 1px solid #e4e3e3;
@@ -2987,10 +2961,8 @@ textarea.w-select {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 30%;
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     border-radius: 0px;
@@ -3002,7 +2974,6 @@ textarea.w-select {
 
 .by-wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 }
@@ -3033,9 +3004,7 @@ textarea.w-select {
     display: block;
     width: 95%;
     height: 10%;
-    margin-right: auto;
-    margin-bottom: 15px;
-    margin-left: auto;
+    margin: 0px auto 15px;
     padding: 10px;
     background-color: #fff;
     color: #131321;
@@ -3064,7 +3033,6 @@ textarea.w-select {
     padding-top: 40px;
     padding-bottom: 40px;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 30%;
     -ms-flex: 0 0 30%;
     flex: 0 0 30%;
     border-bottom: 2px solid #fff;
@@ -3159,10 +3127,8 @@ textarea.w-select {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 30%;
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     background-image: url("../img/Trending/TI-9.png");
@@ -3174,10 +3140,8 @@ textarea.w-select {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 30%;
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     background-image: url("../img/Trending/TI-10.jpg");
@@ -3189,10 +3153,8 @@ textarea.w-select {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 30%;
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     background-image: url("../img/Trending/TI-11.jpg");
@@ -3201,15 +3163,10 @@ textarea.w-select {
 }
 
 .ti-footer {
-    position: relative;
-    left: 0px;
-    top: -28px;
-    right: 0px;
-    bottom: -6px;
-    z-index: 3;
+    height: 80px;
     display: block;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 10px;
     background-color: #131321;
 }
 
@@ -3242,11 +3199,11 @@ textarea.w-select {
 
 .ti-ads {
     position: relative;
-    top: -106%;
+    top: -100%;
     z-index: 10;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 660px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 0px;
@@ -3292,24 +3249,19 @@ textarea.w-select {
 
 .ti-ad-form-wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     margin-top: 15px;
     margin-bottom: 30px;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
     align-content: flex-start;
 }
@@ -3317,10 +3269,8 @@ textarea.w-select {
 .ti-ad-form-input {
     display: block;
     margin-right: 10px;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 42%;
     -ms-flex-preferred-size: 42%;
     flex-basis: 42%;
 }
@@ -3331,10 +3281,8 @@ textarea.w-select {
     width: 10%;
     height: 38px;
     padding: 0px;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-flex-basis: 13%;
     -ms-flex-preferred-size: 13%;
     flex-basis: 13%;
     font-size: 14px;
@@ -3380,7 +3328,6 @@ textarea.w-select {
     box-shadow: 1px 1px 2px 0 #131321, 1px 2px 6px 0 #131321;
 }
 
-
 .arrow-up {
     display: none;
 }
@@ -3390,15 +3337,14 @@ textarea.w-select {
 }
 
 .ti-latest-articles-container {
+    height: 70px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 270px;
     margin-top: 0px;
-    padding: 15px 0px 13px;
+    padding: 25px 0px 13px;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     border-bottom-left-radius: 5px;
@@ -3407,10 +3353,8 @@ textarea.w-select {
     text-align: center;
 }
 
-
 html.w-mod-js *[data-ix="ti-introduction"] {
     -webkit-transform: translate(0px, -200px);
-    -ms-transform: translate(0px, -200px);
     transform: translate(0px, -200px);
 }
 
@@ -3418,9 +3362,9 @@ html.w-mod-js *[data-ix="time-is-now"] {
     display: none;
     opacity: 0;
     -webkit-transform: translate(-100px, 0px);
-    -ms-transform: translate(-100px, 0px);
     transform: translate(-100px, 0px);
 }
+
 
 /*html.w-mod-js *[data-ix="nav-bar-hide"] {
     display: none;
@@ -3433,153 +3377,13 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
 }
 
 @media (max-width: 991px) {
-    .nav-link {
-        left: 0px;
-        top: 80px;
-        right: 0px;
-        display: block;
-        padding-top: 20px;
-        padding-bottom: 25px;
-        -webkit-flex-basis: 20%;
-        -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-        font-size: 35px;
-        line-height: 35px;
+    .top-nav {
+        padding: 0px;
     }
-    .nav-link.w--current {
-        display: block;
-        margin-top: 80px;
-    }
-    
-    .footer {
-        display: none;
-    }
-    
-    .brand-logo-2 {
-        position: relative;
-        left: 0px;
-        display: inline-block;
-        margin-top: 5px;
-        margin-right: 0px;
-        margin-left: 0px;
-        padding: 10px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        -webkit-flex-basis: auto;
-        -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-        font-size: 30px;
-        text-shadow: 1px 1px 1px #000, 0 1px 1px #000;
-    }
-    .brand-logo-2.w--current {
+    .brand-logo.w--current {
         left: -150px;
         right: 0px;
     }
-    .fixed-navbar {
-        position: relative;
-        left: 0px;
-        top: 0px;
-        right: 0px;
-        z-index: 10;
-        display: block;
-        background-color: #131321;
-        text-align: center;
-    }
-    .nav-container-2 {
-        position: static;
-        left: 0px;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        display: block;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    .nav-icon-2 {
-        position: relative;
-        left: -9px;
-        top: 6px;
-        display: block;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        color: transparent;
-        font-size: 50px;
-       
-    }
-    
-    .menu-button-2 {
-        position: relative;
-        left: -165px;
-        top: 12px;
-        padding: 2px 5px 0px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-        flex-shrink: 0;
-        -webkit-flex-basis: 10%;
-        -ms-flex-preferred-size: 10%;
-        flex-basis: 10%;
-        background-image: url("../img/Services/Icons/menu1.png");
-        background-position: 50% 50%;
-        background-size: 32px;
-        background-repeat: no-repeat;
-        z-index: 10;
-    }
-    
-    .menu-button-2.w--open {
-        background-color: transparent;
-        background-image: url("../img/Services/Icons/error.png");
-        background-position: 50% 50%;
-        
-        background-repeat: no-repeat;
-        color: transparent;
-    }
-    .nav-menu-2 {
-        position: relative;
-        left: 0px;
-        top: 0px;
-        right: -74px;
-        bottom: 0px;
-        display: block;
-        width: 100%;
-        height: 100%;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 0px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 auto;
-        -ms-flex: 0 0 auto;
-        flex: 0 0 auto;
-        background-color: #131321;
-        font-size: 35px;
-        text-align: center;
-    }
-    
-    
     .ti-section-1 {
         height: 2350px;
         padding-right: 30px;
@@ -3587,7 +3391,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
     }
     .ti-container-1 {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         margin-right: auto;
@@ -3595,24 +3398,19 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         padding-right: 1px;
         padding-left: 1px;
         -webkit-box-pack: center;
-        -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
-        -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-align-content: flex-start;
         -ms-flex-line-pack: start;
         align-content: flex-start;
     }
     .ti-topic-1 {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         margin-right: 0px;
         margin-left: 2px;
-        -webkit-flex-basis: 99.8%;
         -ms-flex-preferred-size: 99.8%;
         flex-basis: 99.8%;
         background-color: transparent;
@@ -3623,7 +3421,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         height: 300px;
         margin-right: 2px;
         margin-left: 0px;
-        -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     }
@@ -3633,38 +3430,32 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         display: block;
         margin-right: 1px;
         margin-left: 0px;
-        -webkit-flex-basis: 49%;
         -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
     }
     .ti-topic-4 {
         margin-left: 0px;
         -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
         -ms-flex-align: stretch;
         align-items: stretch;
-        -webkit-flex-basis: 54.5%;
         -ms-flex-preferred-size: 54.5%;
         flex-basis: 54.5%;
     }
     .ti-topic-5 {
         display: block;
         margin-right: 1px;
-        -webkit-flex-basis: 44.8%;
         -ms-flex-preferred-size: 44.8%;
         flex-basis: 44.8%;
     }
     .ti-topic-6 {
         margin-right: 2px;
         margin-left: 0px;
-        -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     }
     .ti-topic-7 {
         margin-right: 1px;
         margin-left: 0px;
-        -webkit-flex-basis: 49%;
         -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
     }
@@ -3672,13 +3463,11 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         height: 500px;
         margin-right: 1px;
         margin-left: 0px;
-        -webkit-flex-basis: 99.26%;
         -ms-flex-preferred-size: 99.26%;
         flex-basis: 99.26%;
     }
     .ti-wrapper-1-1 {
         margin-right: 0px;
-        -webkit-flex-basis: 55.4%;
         -ms-flex-preferred-size: 55.4%;
         flex-basis: 55.4%;
     }
@@ -3686,7 +3475,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-right: 0px;
         margin-left: 0px;
         padding-top: 34px;
-        -webkit-flex-basis: 44.15%;
         -ms-flex-preferred-size: 44.15%;
         flex-basis: 44.15%;
         background-color: #000;
@@ -3785,12 +3573,10 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         font-size: 18px;
     }
     .ti-wrapper-2-1 {
-        -webkit-flex-basis: 35.8%;
         -ms-flex-preferred-size: 35.8%;
         flex-basis: 35.8%;
     }
     .ti-wrapper-2-2 {
-        -webkit-flex-basis: 64%;
         -ms-flex-preferred-size: 64%;
         flex-basis: 64%;
     }
@@ -3809,7 +3595,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
     }
     .ti-hero-topic {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         height: 500px;
@@ -3819,17 +3604,15 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
     .ti-hero-topic-container-1 {
         position: relative;
         z-index: 2;
-        -webkit-flex-basis: 45%;
         -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
     }
     .ti-hero-topic-image {
         position: static;
         left: 0px;
-        -webkit-flex-basis: 55%;
-        -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
-        background-position: 95% 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        background-position: 90% 50%;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -3896,6 +3679,10 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-top: 65px;
         line-height: 46px;
     }
+    .ti-ads {
+        top: -75%;
+        height: 90%;
+    }
     .ti-ad-heading {
         width: 90%;
         font-size: 34px;
@@ -3916,7 +3703,8 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
     }
     .ti-ads-container {
         width: 76%;
-        height: 81%;
+        height: 600px;
+        padding: 40px 25px;
     }
     .welcome-message-container {
         display: block;
@@ -3936,108 +3724,40 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-top: 0px;
         margin-left: 25px;
     }
-    
 }
 
 @media (max-width: 767px) {
+    .top-nav {
+        display: block;
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+            align-self: stretch;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 auto;
+        flex: 0 auto;
+    }
+    .nav-container {
+        left: 0px;
+        top: 0px;
+        padding-top: 10px;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
     .nav-link {
         display: block;
         width: 540px;
         min-width: 0%;
         margin-top: 10px;
-        font-size: 35px;
+        font-size: 28px;
     }
     .nav-link.w--current {
         margin-top: 50px;
         font-size: 35px;
     }
-    .nav-container {
-        position: relative;
-        left: 0px;
-        top: 4px;
-        right: 0px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        width: 550px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    
-    .brand-logo-2 {
-        position: static;
-        left: auto;
-        top: 1px;
-        right: -157px;
-        bottom: 1px;
-        display: block;
-        width: 250px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 0px;
-        padding-left: 0px;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-        font-size: 24px;
-        text-align: center;
-    }
-    .fixed-navbar {
-        display: block;
-    }
-    .nav-container-2 {
-        left: 0px;
-        top: 0px;
-        display: inline-block;
-        width: 550px;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    .nav-icon-2 {
-        position: absolute;
-        left: 1px;
-        top: -1px;
-        font-size: 40px;
-        line-height: 20px;
-        text-align: right;
-    }
-    
-    .menu-button-2 {
-        position: relative;
-        left: -104px;
-        top: -10px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-    .nav-menu-2 {
-        position: relative;
-        left: 0px;
-        top: 0px;
-        right: 39px;
-        bottom: 0px;
-        display: block;
-        padding-left: 30px;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 auto;
-        -ms-flex: 0 0 auto;
-        flex: 0 0 auto;
-    }
-    
     .ti-section-1 {
         display: block;
         height: 2680px;
@@ -4047,21 +3767,17 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
     .ti-container-1 {
         position: static;
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         width: 96%;
         height: 2346px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
         -webkit-box-pack: center;
-        -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
-        -webkit-align-content: flex-start;
         -ms-flex-line-pack: start;
         align-content: flex-start;
     }
@@ -4072,28 +3788,22 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-left: 1px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
         -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
         justify-content: flex-start;
-        -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
         -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
         -ms-flex-align: stretch;
         align-items: stretch;
-        -webkit-flex-basis: 99.6%;
         -ms-flex-preferred-size: 99.6%;
         flex-basis: 99.6%;
     }
     .ti-topic-2 {
         height: 340px;
         margin: 0px 1.5px 2px 1px;
-        -webkit-flex-basis: 99.5%;
         -ms-flex-preferred-size: 99.5%;
         flex-basis: 99.5%;
         background-color: #000;
@@ -4109,14 +3819,11 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         padding-bottom: 0px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
         -webkit-box-align: start;
-        -webkit-align-items: flex-start;
         -ms-flex-align: start;
         align-items: flex-start;
-        -webkit-flex-basis: 99.3%;
         -ms-flex-preferred-size: 99.3%;
         flex-basis: 99.3%;
         text-align: center;
@@ -4128,7 +3835,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-right: 0px;
         margin-bottom: 2px;
         margin-left: 1px;
-        -webkit-flex-basis: 53.6%;
         -ms-flex-preferred-size: 53.6%;
         flex-basis: 53.6%;
     }
@@ -4139,7 +3845,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-right: 2px;
         margin-bottom: 2px;
         margin-left: 0px;
-        -webkit-flex-basis: 45.7%;
         -ms-flex-preferred-size: 45.7%;
         flex-basis: 45.7%;
     }
@@ -4150,7 +3855,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         height: 300px;
         margin-right: 2.5px;
         margin-left: 0px;
-        -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
         text-align: center;
@@ -4161,7 +3865,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         height: 300px;
         margin-right: 1px;
         margin-left: 0px;
-        -webkit-flex-basis: 48.8%;
         -ms-flex-preferred-size: 48.8%;
         flex-basis: 48.8%;
         text-align: center;
@@ -4173,7 +3876,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-right: 1.5px;
         margin-bottom: 2px;
         margin-left: 0px;
-        -webkit-flex-basis: 99.3%;
         -ms-flex-preferred-size: 99.3%;
         flex-basis: 99.3%;
     }
@@ -4185,7 +3887,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
     .ti-wrapper-1-1 {
         margin-right: 0px;
         margin-left: 0px;
-        -webkit-flex-basis: 54.4%;
         -ms-flex-preferred-size: 54.4%;
         flex-basis: 54.4%;
     }
@@ -4197,10 +3898,8 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin: 0px;
         padding-top: 42px;
         padding-bottom: 10px;
-        -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
         flex-shrink: 0;
-        -webkit-flex-basis: 45.6%;
         -ms-flex-preferred-size: 45.6%;
         flex-basis: 45.6%;
     }
@@ -4211,7 +3910,8 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         padding-left: 0px;
         -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
-        align-self: stretch;
+        -ms-grid-row-align: stretch;
+            align-self: stretch;
         line-height: 36px;
         text-align: right;
     }
@@ -4219,11 +3919,9 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-top: 0px;
         margin-right: 0px;
         -webkit-box-pack: end;
-        -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
         justify-content: flex-end;
         -webkit-box-align: start;
-        -webkit-align-items: flex-start;
         -ms-flex-align: start;
         align-items: flex-start;
         text-align: center;
@@ -4285,7 +3983,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         height: 360px;
         padding-right: 3.5px;
         padding-left: 2px;
-        -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         background-image: none;
@@ -4342,7 +4039,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
     .ti-wrapper-2-1 {
         display: inline-block;
         height: 35%;
-        -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
@@ -4373,12 +4069,10 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-bottom: 0px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
     }
     .ti-hero-topic-container-1 {
-        -webkit-flex-basis: 30%;
         -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
     }
@@ -4386,7 +4080,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         left: 0px;
         top: -109px;
         min-height: 300px;
-        -webkit-flex-basis: 55%;
         -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
         background-position: 50% 100%;
@@ -4430,7 +4123,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         font-size: 16px;
     }
     .ti-others-image-1 {
-        -webkit-flex-basis: 40%;
         -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     }
@@ -4474,22 +4166,16 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         left: -56px;
     }
     .ti-other-image-2 {
-        -webkit-flex-basis: 40%;
         -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     }
     .ti-other-image-3 {
-        -webkit-flex-basis: 40%;
         -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     }
     .ti-other-image-4 {
-        -webkit-flex-basis: 40%;
         -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
-    }
-    .ti-footer {
-        margin-top: 30px;
     }
     .ti-online-bah-logo {
         margin-top: 30px;
@@ -4521,7 +4207,6 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         width: 90%;
         height: 80%;
     }
-    
     .arrow-up {
         display: none;
     }
@@ -4530,860 +4215,766 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         top: -66px;
         margin-left: 10px;
     }
-    
-
-
-@media (max-width: 479px) {
-    .main-wrapper {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        overflow: visible;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-    }
-    .nav-link {
-        position: static;
-        top: 0px;
-        display: block;
-        width: 100%;
-        margin-top: 10px;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 20px;
-        font-size: 25px;
-        line-height: 35px;
-    }
-    .nav-link.w--current {
-        top: 0px;
-        display: block;
-        width: 100%;
-        margin: 0px auto;
-        padding: 20px;
-        background-image: none;
-        font-size: 25px;
-    }
-    
-    .footer {
-        margin-top: 22px;
-    }
-    
-    .brand-logo-2 {
-        position: static;
-        left: 57px;
-        top: 2px;
-        right: 0px;
-        bottom: auto;
-        display: block;
-        width: 180px;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 20px;
-        padding-bottom: 0px;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-        font-size: 24px;
-        text-align: center;
-    }
-    .fixed-navbar {
-        display: block;
-        height: 70px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-bottom-style: solid;
-    }
-    .nav-container-2 {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        height: auto;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-align-content: stretch;
-        -ms-flex-line-pack: stretch;
-        align-content: stretch;
-        text-align: center;
-    }
-    .nav-icon-2 {
-        left: -50px;
-        top: -9px;
-    }
-   
-    .menu-button-2 {
-        position: absolute;
-        left: 250px;
-        top: 12px;
-        right: 0px;
-        padding-top: 0px;
-    }
-    .nav-menu-2 {
-        right: 0px;
-        display: block;
-        width: 100%;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 0px;
-        padding-left: 0px;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-    }
-    
-    .ti-section-1 {
-        position: static;
-        display: block;
-        height: 2750px;
-        padding-right: 10px;
-        padding-bottom: 50px;
-        padding-left: 10px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-    }
-    .ti-container-1 {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        height: 2006px;
-        margin-bottom: 0px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-    }
-    .ti-topic-1 {
-        position: static;
-        z-index: 1;
-        display: block;
-        height: 430px;
-        margin-right: 1px;
-        margin-bottom: 2px;
-        margin-left: 0.5px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-        -webkit-flex-basis: 430px;
-        -ms-flex-preferred-size: 430px;
-        flex-basis: 430px;
-    }
-    .ti-topic-2 {
-        position: static;
-        display: none;
-        height: 280px;
-        margin-top: 0px;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        -webkit-align-self: stretch;
-        -ms-flex-item-align: stretch;
-        align-self: stretch;
-        -webkit-flex-basis: 260px;
-        -ms-flex-preferred-size: 260px;
-        flex-basis: 260px;
-        background-color: #000;
-    }
-    .ti-topic-3 {
-        position: static;
-        left: 0px;
-        top: 0px;
-        z-index: 3;
-        display: block;
-        width: 99.6%;
-        height: 290px;
-        margin: 0px 1.5px 2px 0.5px;
-        padding-right: 0px;
-        padding-left: 0px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-        -webkit-flex-basis: 310px;
-        -ms-flex-preferred-size: 310px;
-        flex-basis: 310px;
-    }
-    .ti-topic-4 {
-        position: static;
-        top: 0px;
-        z-index: 3;
-        height: 240px;
-        margin-right: 1px;
-        margin-bottom: 0px;
-        margin-left: 0.5px;
-        -webkit-flex-basis: 180px;
-        -ms-flex-preferred-size: 180px;
-        flex-basis: 180px;
-    }
-    .ti-topic-5 {
-        position: static;
-        top: 0px;
-        width: 99.6%;
-        height: 240px;
-        margin-right: 0px;
-        margin-bottom: 2px;
-        margin-left: 0.5px;
-        -webkit-flex-basis: 260px;
-        -ms-flex-preferred-size: 260px;
-        flex-basis: 260px;
-    }
-    .ti-topic-6 {
-        position: static;
-        top: 0px;
-        z-index: 1;
-        width: 99.2%;
-        height: 290px;
-        margin: 0px 0px 2px 0.8px;
-        -webkit-flex-basis: 260px;
-        -ms-flex-preferred-size: 260px;
-        flex-basis: 260px;
-        text-align: left;
-    }
-    .ti-topic-7 {
-        position: static;
-        top: 0px;
-        z-index: 1;
-        width: 99.1%;
-        height: 290px;
-        margin: 0px 0px 2px 0.8px;
-        -webkit-flex-basis: 260px;
-        -ms-flex-preferred-size: 260px;
-        flex-basis: 260px;
-        text-align: left;
-    }
-    .ti-topic-8 {
-        position: static;
-        top: 0px;
-        z-index: 1;
-        width: 99.1%;
-        height: 300px;
-        margin-right: 1px;
-        margin-left: 0.8px;
-        -webkit-flex-basis: 290px;
-        -ms-flex-preferred-size: 290px;
-        flex-basis: 290px;
-        text-align: left;
-    }
-    .ti-topics {
-        height: 400px;
-        margin-top: 30px;
-        margin-bottom: 0px;
-        padding-top: 30px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .ti-wrapper-1-1 {
-        -webkit-flex-basis: 40%;
-        -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-    }
-    .ti-wrapper-1-2 {
-        position: static;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 160px;
-        min-height: auto;
-        padding-top: 10px;
-        padding-bottom: 0px;
-        text-align: left;
-    }
-    .ti-heading-4 {
-        height: 80%;
-        padding-top: 15px;
-        padding-left: 12px;
-        -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-        align-self: flex-start;
-        font-size: 24px;
-        line-height: 30px;
-        text-align: left;
-    }
-    .ti-wrapper-4 {
-        margin-top: 5px;
-        margin-right: 0px;
-        padding-left: 12px;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-    }
-    .ti-author {
-        position: static;
-        left: 0px;
-        top: 0px;
-        display: inline-block;
-        margin-right: 15px;
-        padding-right: 0px;
-        font-size: 14px;
-    }
-    .ti-heading-2 {
-        position: static;
-        top: 0px;
-        width: 100%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-top: 5px;
-        padding-left: 10px;
-        background-color: #000;
-        font-size: 22px;
-        text-align: left;
-    }
-    .ti-video {
-        position: static;
-        display: block;
-        width: 100%;
-        height: 260px;
-        padding-left: 0px;
-    }
-    .ti-image-1 {
-        height: 270px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        background-position: 50% 47%;
-        background-size: cover;
-    }
-    .ti-image-2 {
-        position: static;
-        top: 0px;
-        height: 220px;
-        margin-top: 0px;
-        margin-right: 0px;
-        -webkit-flex-basis: 65%;
-        -ms-flex-preferred-size: 65%;
-        flex-basis: 65%;
-        background-position: 50% 50%;
-    }
-    .ti-author-2 {
-        position: static;
-        left: 0px;
-        top: 0px;
-        display: inline;
-        width: 112%;
-        font-size: 14px;
-    }
-    .ti-by-1 {
-        position: static;
-        left: 0px;
-        top: 0px;
-        display: inline-block;
-        margin-right: 5px;
-        margin-left: 0px;
-        padding-left: 0px;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        font-size: 14px;
-        text-align: left;
-    }
-    .ti-by-2 {
-        position: static;
-        left: 0px;
-        top: 0px;
-        font-size: 14px;
-    }
-    .ti-heading-1 {
-        position: static;
-        display: block;
-        width: 100%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-top: 10px;
-        background-color: #000;
-        font-size: 24px;
-        line-height: 26px;
-        text-align: left;
-    }
-    .ti-image-3 {
-        height: 70%;
-    }
-    .ti-container-2 {
-        position: static;
-        top: 0px;
-        height: 460px;
-        margin-bottom: 14px;
-        padding-right: 0px;
-        padding-bottom: 5px;
-        padding-left: 0px;
-        border: 1px solid #fff;
-        background-color: #131321;
-    }
-    .ti-heading-3 {
-        margin-bottom: 0px;
-        padding-top: 15px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-        font-size: 21px;
-        text-align: left;
-    }
-    .ti-text-3 {
-        margin-left: 10px;
-        font-size: 14px;
-        text-align: left;
-    }
-    .ti-author-3 {
-        font-size: 14px;
-    }
-    .ti-text-4 {
-        font-size: 14px;
-    }
-    .ti-image-6 {
-        height: 70%;
-    }
-    .ti-heading-6 {
-        margin-bottom: 0px;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-        text-align: left;
-    }
-    .ti-text-6 {
-        margin-left: 10px;
-        font-size: 14px;
-    }
-    .ti-author-6 {
-        font-size: 14px;
-    }
-    .ti-image-5 {
-        background-position: 50% 50%;
-    }
-    .ti-image-8 {
-        height: 70%;
-    }
-    .ti-heading-8 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-top: 15px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-        font-size: 24px;
-        text-align: left;
-    }
-    .ti-text-8 {
-        margin-top: 0px;
-        margin-left: 10px;
-        font-size: 14px;
-    }
-    .ti-author-8 {
-        font-size: 14px;
-    }
-    .ti-wrapper-2-1 {
-        height: 25%;
-    }
-    .ti-newsletter {
-        background-color: #fff;
-    }
-    .ti-wrapper-2-2 {
-        padding-bottom: 0px;
-        background-color: #131321;
-    }
-    .ti-heading-2-2 {
-        font-size: 38px;
-    }
-    .ti-pgraph-2-2 {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    .ti-email {
-        width: 100%;
-        padding-right: 0px;
-        padding-left: 0px;
-        text-align: center;
-    }
-    .ti-subscribe-button {
-        margin-left: 0px;
-        padding-right: 0px;
-        padding-left: 0px;
-        text-align: center;
-    }
-    .ti-form-wrapper {
-        padding-right: 0px;
-        padding-left: 0px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .ti-section-2 {
-        position: static;
-        top: 0px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        overflow: visible;
-        width: 100%;
-        height: 2220px;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-bottom: 10px;
-        padding-top: 30px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-        -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-        flex-shrink: 0;
-    }
-    .ti-hero-topic {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        height: 360px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .ti-hero-topic-container-1 {
-        -webkit-flex-basis: 150px;
-        -ms-flex-preferred-size: 150px;
-        flex-basis: 150px;
-    }
-    .ti-hero-topic-image {
-        position: relative;
-        left: 0px;
-        top: -80px;
-        min-height: auto;
-        -webkit-flex-basis: 300px;
-        -ms-flex-preferred-size: 300px;
-        flex-basis: 300px;
-        background-position: 96% 50%;
-        background-size: cover;
-    }
-    .hero-topic-heading-1 {
-        position: static;
-        top: 0px;
-        width: 100%;
-        font-size: 56px;
-        line-height: 60px;
-    }
-    .hero-topic-pgraph-1 {
-        position: relative;
-        top: 67px;
-        display: block;
-        width: 90%;
-        height: 160px;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 10px;
-        color: #fff;
-        font-size: 18px;
-        line-height: 24px;
-        text-align: center;
-        text-shadow: 1px 1px 1px #131321, 0 1px 2px #131321, 0 -1px 50px #131321;
-    }
-    .ti-containers {
-        padding-right: 5px;
-        padding-left: 10px;
-    }
-    .ti-headings {
-        font-size: 20px;
-        line-height: 25px;
-    }
-    .ti-others-image-1 {
-        margin-right: 0px;
-        margin-left: 0px;
-        -webkit-flex-basis: 180px;
-        -ms-flex-preferred-size: 180px;
-        flex-basis: 180px;
-    }
-    .ti-description-container {
-        position: static;
-        top: 0px;
-        height: 130px;
-        margin-top: 0px;
-        margin-bottom: 30px;
-        padding-top: 15px;
-    }
-    .ti-description-heading {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        font-size: 24px;
-        line-height: 28px;
-    }
-    .ti-description-pgraph {
-        display: block;
-        margin-right: auto;
-        margin-bottom: 7px;
-        margin-left: auto;
-        font-size: 18px;
-    }
-    .ti-introduction {
-        display: block;
-        margin-top: 0px;
-        padding-top: 5px;
-        padding-bottom: 0px;
-        -webkit-flex-basis: auto;
-        -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    }
-    .ti-time-is-now {
-        left: 0px;
-    }
-    .ti-top-articles {
-        position: static;
-        display: block;
-        width: 180px;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 0px;
-        padding-left: 0px;
-        text-align: center;
-    }
-    .ti-latest-articles {
-        top: -64px;
-        display: block;
-        margin-right: 15px;
-        margin-left: 0px;
-    }
-    .ti-arrow-down {
-        top: -110px;
-        margin-left: 0px;
-    }
-    .ti-heart {
-        left: 0px;
-        top: -67px;
-    }
-    .ti-other-image-2 {
-        margin-right: 0px;
-        margin-left: 0px;
-        -webkit-flex-basis: 55%;
-        -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
-        background-position: -32px 0px;
-        background-repeat: no-repeat;
-    }
-    .ti-other-image-3 {
-        margin-right: 0px;
-        margin-left: 0px;
-        -webkit-flex-basis: 55%;
-        -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
-    }
-    .ti-other-image-4 {
-        margin-right: 0px;
-        margin-left: 0px;
-        -webkit-flex-basis: 55%;
-        -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
-    }
-    .ti-footer {
-        position: static;
-        top: 0px;
-        bottom: 0px;
-        margin-top: 0px;
-    }
-    .footer-copyright {
-        position: static;
-    }
-    .ti-online-bah-logo {
-        font-size: 40px;
-    }
-    .ti-ads {
-        top: -107%;
-        display: block;
-        overflow: visible;
-        height: 660px;
-    }
-    .ti-ad-heading {
-        width: 100%;
-        margin-bottom: 0px;
-        font-size: 28px;
-        line-height: 34px;
-    }
-    .ti-ad-pgraph-1 {
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 18px;
-        line-height: 24px;
-    }
-    .ti-ad-form-container {
-        margin-top: 15px;
-        margin-bottom: 5px;
-    }
-    .ti-ad-form-wrapper {
-        position: static;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .ti-ad-form-input {
-        margin-right: 0px;
-    }
-    .ti-ad-form-submit {
-        width: 100%;
-        margin-top: 5px;
-    }
-   
-    .ti-ads-container {
-        position: static;
-        display: block;
-        width: 96%;
-        height: 570px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    
-    .arrow-up {
-        position: relative;
-        left: 194px;
-        top: -184px;
-        display: block;
-    }
-    .ti-wrapper-3-2 {
-        position: static;
-        top: 0px;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 0px;
-        padding-left: 10px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-self: stretch;
-        -ms-flex-item-align: stretch;
-        align-self: stretch;
-        background-color: #000;
-        text-align: left;
-    }
-    .ti-wrapper-1-3 {
-        position: static;
-        top: 0px;
-        display: block;
-        padding-left: 10px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: end;
-        -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-        align-items: flex-end;
-        text-align: left;
-    }
-    .ti-wrapper-3-1 {
-        display: block;
-        height: 90px;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 35%;
-        -ms-flex: 0 0 35%;
-        flex: 0 0 35%;
-    }
-    .arrow-down {
-        position: relative;
-        left: 137px;
-        top: -41px;
-        display: block;
-    }
-    .ti-latest-articles-container {
-        top: -100px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        width: 290px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 20px;
-        padding-bottom: 18px;
-    }
-    
 }
+    @media (max-width: 479px) {
+        .main-wrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            overflow: visible;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -ms-flex-line-pack: center;
+            align-content: center;
+        }
+        .top-nav {
+            padding-top: 0px;
+            height: 60px;
+        }
+        .brand-logo {
+            font-size: 18px;
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+        .navbar {
+            padding: 0px 15px;
+            width: 120px;
+        }
+        .navburger {
+            -ms-flex-preferred-size: 100px;
+                flex-basis: 100px;
+        }
+        .navburger p {
+            font-size: 18px;
+        }
+        .hamburger {
+            background-size: 24px;
+            height: 24px;
+        }
+        .menu-links .closebtn {
+            margin-top: 5px;
+            margin-right: -20px;
+        }
+        .nav-link {
+            display: block;
+            width: 240px;
+            margin: 0 auto;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            font-size: 25px;
+        }
+        .nav-link.w--current {
+            top: 0px;
+            display: block;
+            width: 100%;
+            margin: 0px auto;
+            padding: 20px;
+            background-image: none;
+            font-size: 25px;
+        }
+        .ti-footer {
+            height: 60px;
+        }
+        .ti-section-1 {
+            position: static;
+            display: block;
+            height: 2750px;
+            padding-right: 10px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+        .ti-container-1 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 2006px;
+            margin-bottom: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+        }
+        .ti-topic-1 {
+            position: static;
+            z-index: 1;
+            display: block;
+            height: 430px;
+            margin-right: 1px;
+            margin-bottom: 2px;
+            margin-left: 0.5px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-preferred-size: 430px;
+            flex-basis: 430px;
+        }
+        .ti-topic-2 {
+            position: static;
+            display: none;
+            height: 280px;
+            margin-top: 0px;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -webkit-align-self: stretch;
+            -ms-flex-item-align: stretch;
+            -ms-grid-row-align: stretch;
+                align-self: stretch;
+            -ms-flex-preferred-size: 260px;
+            flex-basis: 260px;
+            background-color: #000;
+        }
+        .ti-topic-3 {
+            position: static;
+            left: 0px;
+            top: 0px;
+            z-index: 3;
+            display: block;
+            width: 99.6%;
+            height: 290px;
+            margin: 0px 1.5px 2px 0.5px;
+            padding-right: 0px;
+            padding-left: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-preferred-size: 310px;
+            flex-basis: 310px;
+        }
+        .ti-topic-4 {
+            position: static;
+            top: 0px;
+            z-index: 3;
+            height: 240px;
+            margin-right: 1px;
+            margin-bottom: 0px;
+            margin-left: 0.5px;
+            -ms-flex-preferred-size: 180px;
+            flex-basis: 180px;
+        }
+        .ti-topic-5 {
+            position: static;
+            top: 0px;
+            width: 99.6%;
+            height: 240px;
+            margin-right: 0px;
+            margin-bottom: 2px;
+            margin-left: 0.5px;
+            -ms-flex-preferred-size: 260px;
+            flex-basis: 260px;
+        }
+        .ti-topic-6 {
+            position: static;
+            top: 0px;
+            z-index: 1;
+            width: 99.2%;
+            height: 290px;
+            margin: 0px 0px 2px 0.8px;
+            -ms-flex-preferred-size: 260px;
+            flex-basis: 260px;
+            text-align: left;
+        }
+        .ti-topic-7 {
+            position: static;
+            top: 0px;
+            z-index: 1;
+            width: 99.1%;
+            height: 290px;
+            margin: 0px 0px 2px 0.8px;
+            -ms-flex-preferred-size: 260px;
+            flex-basis: 260px;
+            text-align: left;
+        }
+        .ti-topic-8 {
+            position: static;
+            top: 0px;
+            z-index: 1;
+            width: 99.1%;
+            height: 300px;
+            margin-right: 1px;
+            margin-left: 0.8px;
+            -ms-flex-preferred-size: 290px;
+            flex-basis: 290px;
+            text-align: left;
+        }
+        .ti-topics {
+            height: 400px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            padding-top: 30px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+        .ti-wrapper-1-1 {
+            -ms-flex-preferred-size: 40%;
+            flex-basis: 40%;
+        }
+        .ti-wrapper-1-2 {
+            position: static;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 160px;
+            min-height: auto;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            text-align: left;
+        }
+        .ti-heading-4 {
+            height: 80%;
+            padding-top: 15px;
+            padding-left: 12px;
+            -webkit-align-self: flex-start;
+            -ms-flex-item-align: start;
+            align-self: flex-start;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: left;
+        }
+        .ti-wrapper-4 {
+            margin-top: 5px;
+            margin-right: 0px;
+            padding-left: 12px;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+        .ti-author {
+            position: static;
+            left: 0px;
+            top: 0px;
+            display: inline-block;
+            margin-right: 15px;
+            padding-right: 0px;
+            font-size: 14px;
+        }
+        .ti-heading-2 {
+            position: static;
+            top: 0px;
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-top: 5px;
+            padding-left: 10px;
+            background-color: #000;
+            font-size: 22px;
+            text-align: left;
+        }
+        .ti-video {
+            position: static;
+            display: block;
+            width: 100%;
+            height: 260px;
+            padding-left: 0px;
+        }
+        .ti-image-1 {
+            height: 270px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            background-position: 50% 47%;
+            background-size: cover;
+        }
+        .ti-image-2 {
+            position: static;
+            top: 0px;
+            height: 220px;
+            margin-top: 0px;
+            margin-right: 0px;
+            -ms-flex-preferred-size: 65%;
+            flex-basis: 65%;
+            background-position: 50% 50%;
+        }
+        .ti-author-2 {
+            position: static;
+            left: 0px;
+            top: 0px;
+            display: inline;
+            width: 112%;
+            font-size: 14px;
+        }
+        .ti-by-1 {
+            position: static;
+            left: 0px;
+            top: 0px;
+            display: inline-block;
+            margin-right: 5px;
+            margin-left: 0px;
+            padding-left: 0px;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            font-size: 14px;
+            text-align: left;
+        }
+        .ti-by-2 {
+            position: static;
+            left: 0px;
+            top: 0px;
+            font-size: 14px;
+        }
+        .ti-heading-1 {
+            position: static;
+            display: block;
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-top: 10px;
+            background-color: #000;
+            font-size: 24px;
+            line-height: 26px;
+            text-align: left;
+        }
+        .ti-image-3 {
+            height: 70%;
+        }
+        .ti-container-2 {
+            position: static;
+            top: 0px;
+            height: 460px;
+            margin-bottom: 14px;
+            padding-right: 0px;
+            padding-bottom: 5px;
+            padding-left: 0px;
+            border: 1px solid #fff;
+            background-color: #131321;
+        }
+        .ti-heading-3 {
+            margin-bottom: 0px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            font-size: 21px;
+            text-align: left;
+        }
+        .ti-text-3 {
+            margin-left: 10px;
+            font-size: 14px;
+            text-align: left;
+        }
+        .ti-author-3 {
+            font-size: 14px;
+        }
+        .ti-text-4 {
+            font-size: 14px;
+        }
+        .ti-image-6 {
+            height: 70%;
+        }
+        .ti-heading-6 {
+            margin-bottom: 0px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            text-align: left;
+        }
+        .ti-text-6 {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .ti-author-6 {
+            font-size: 14px;
+        }
+        .ti-image-5 {
+            background-position: 50% 50%;
+        }
+        .ti-image-8 {
+            height: 70%;
+        }
+        .ti-heading-8 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            font-size: 24px;
+            text-align: left;
+        }
+        .ti-text-8 {
+            margin-top: 0px;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .ti-author-8 {
+            font-size: 14px;
+        }
+        .ti-wrapper-2-1 {
+            height: 25%;
+        }
+        .ti-newsletter {
+            background-color: #fff;
+        }
+        .ti-wrapper-2-2 {
+            padding-bottom: 0px;
+            background-color: #131321;
+        }
+        .ti-heading-2-2 {
+            font-size: 38px;
+        }
+        .ti-pgraph-2-2 {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .ti-email {
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+            text-align: center;
+        }
+        .ti-subscribe-button {
+            margin-left: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+            text-align: center;
+        }
+        .ti-form-wrapper {
+            padding-right: 0px;
+            padding-left: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+        .ti-section-2 {
+            position: static;
+            top: 0px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            overflow: visible;
+            width: 100%;
+            height: 2220px;
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-bottom: 10px;
+            padding-top: 60px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+        }
+        .ti-hero-topic {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 360px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .ti-hero-topic-container-1 {
+            -ms-flex-preferred-size: 150px;
+            flex-basis: 150px;
+        }
+        .ti-hero-topic-image {
+            position: relative;
+            left: 0px;
+            top: -80px;
+            min-height: auto;
+            -ms-flex-preferred-size: 300px;
+            flex-basis: 300px;
+            background-position: 96% 50%;
+            background-size: cover;
+        }
+        .hero-topic-heading-1 {
+            position: static;
+            top: 0px;
+            width: 100%;
+            font-size: 56px;
+            line-height: 60px;
+        }
+        .hero-topic-pgraph-1 {
+            position: relative;
+            top: 67px;
+            display: block;
+            width: 90%;
+            height: 160px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 10px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            text-shadow: 1px 1px 1px #131321, 0 1px 2px #131321, 0 -1px 50px #131321;
+        }
+        .ti-containers {
+            padding-right: 5px;
+            padding-left: 10px;
+        }
+        .ti-headings {
+            font-size: 20px;
+            line-height: 25px;
+        }
+        .ti-others-image-1 {
+            margin-right: 0px;
+            margin-left: 0px;
+            -ms-flex-preferred-size: 180px;
+            flex-basis: 180px;
+        }
+        .ti-description-container {
+            position: static;
+            top: 0px;
+            height: 130px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+            padding-top: 15px;
+        }
+        .ti-description-heading {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .ti-description-pgraph {
+            display: block;
+            margin-right: auto;
+            margin-bottom: 7px;
+            margin-left: auto;
+            font-size: 18px;
+        }
+        .ti-introduction {
+            display: block;
+            margin-top: 0px;
+            padding-top: 5px;
+            padding-bottom: 0px;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+        .ti-time-is-now {
+            left: 0px;
+        }
+        .ti-top-articles {
+            position: static;
+            display: block;
+            width: 180px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 0px;
+            padding-left: 0px;
+            text-align: center;
+        }
+        .ti-latest-articles {
+            top: -64px;
+            display: block;
+            margin-right: 15px;
+            margin-left: 0px;
+        }
+        .ti-arrow-down {
+            top: -110px;
+            margin-left: 0px;
+        }
+        .ti-heart {
+            left: 0px;
+            top: -67px;
+        }
+        .ti-other-image-2 {
+            margin-right: 0px;
+            margin-left: 0px;
+            -ms-flex-preferred-size: 55%;
+            flex-basis: 55%;
+            background-position: -32px 0px;
+            background-repeat: no-repeat;
+        }
+        .ti-other-image-3 {
+            margin-right: 0px;
+            margin-left: 0px;
+            -ms-flex-preferred-size: 55%;
+            flex-basis: 55%;
+        }
+        .ti-other-image-4 {
+            margin-right: 0px;
+            margin-left: 0px;
+            -ms-flex-preferred-size: 55%;
+            flex-basis: 55%;
+        }
+        .footer-copyright {
+            position: static;
+        }
+        .ti-online-bah-logo {
+            font-size: 40px;
+        }
+        .ti-ads {
+            top: -88%;
+        }
+        .ti-ad-heading {
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        .ti-ad-pgraph-1 {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 15px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .ti-ad-form-container {
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .ti-ad-form-wrapper {
+            position: static;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+        .ti-ad-form-input {
+            margin-right: 0px;
+        }
+        .ti-ad-form-submit {
+            width: 100%;
+            margin-top: 5px;
+        }
+        .ti-ads-container {
+            position: static;
+            display: block;
+            width: 96%;
+            height: 570px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-top: 45px;
+            padding-bottom: 10px;
+        }
+        .arrow-up {
+            position: relative;
+            left: 194px;
+            top: -184px;
+            display: block;
+        }
+        .ti-wrapper-3-2 {
+            position: static;
+            top: 0px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 0px;
+            padding-left: 10px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-align-self: stretch;
+            -ms-flex-item-align: stretch;
+            -ms-grid-row-align: stretch;
+                align-self: stretch;
+            background-color: #000;
+            text-align: left;
+        }
+        .ti-wrapper-1-3 {
+            position: static;
+            top: 0px;
+            display: block;
+            padding-left: 10px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            text-align: left;
+        }
+        .ti-wrapper-3-1 {
+            display: block;
+            height: 90px;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 35%;
+            flex: 0 0 35%;
+        }
+        .arrow-down {
+            position: relative;
+            left: 137px;
+            top: -41px;
+            display: block;
+        }
+        .ti-latest-articles-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 290px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 20px;
+            padding-bottom: 18px;
+        }
+    }
+    @media (max-width: 550px) {
+        .ti-ads {
+            top: -100%;
+        }
+        .ti-ads-container {
+            height: 630px;
+        }
+    }
+    @media (max-width: 320px) {
+        .ti-latest-articles-container {
+            width: 270px;
+            height: 60px;
+        }
+        .ti-ads {
+            top: -103%;
+        }
+        .ti-ads-container {
+            height: 540px;
+            padding: 15px 10px;
+        }
+        .ti-ad-heading {
+            margin-bottom: 10px;
+            font-size: 25px;
+            line-height: 31px;
+        }
+        .ti-ad-pgraph-1 {
+            padding: 10px;
+            margin: 10px auto;
+        }
+        .ti-ad-close-link {
+            top: -10px;
+        }
+    }

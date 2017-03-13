@@ -213,7 +213,7 @@
             document.getElementById("myDiv").style.minHeight = "110%";
             document.getElementById("myDiv").style.backgroundColor = "rgba(19,19,42,0.4)";
             document.getElementsByTagName("body")[0].style.overflow = "hidden";
-            
+
         }
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
         function closeNav() {
@@ -229,22 +229,20 @@
         }
     </script>
     <script>
-         $(window).scroll(function() {   
-            if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-            $(".ti-section-2").mouseenter(function(){
+        var triggered_times = 0;
+        $(window).scroll(function() {
+
+            if ($(window).scrollTop() + $(window).height() > $(document).height() - 100 && triggered_times == 0) {
                 $(".ti-ads").show(500).css("display", "block");
-            });
-            };
-         });
-        
-          
-        $(document).ready(function(){
-            $("#close-ti-ads").on("click", (function(){
-                $(".ti-ads").css("display", "none");
-            }));
-    
+                $("body").css("overflow", "hidden");
+                triggered_times = 1;
+            }
         });
-        
+
+        $("#close-ti-ads").click(function() {
+            $(".ti-ads").css("display", "none");
+            $("body").css("overflow", "visible");
+        });
     </script>
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>

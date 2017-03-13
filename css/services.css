@@ -3030,6 +3030,11 @@ textarea.w-select {
     font-size: 16px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.close-link:hover {
+    color: #ff5c5c;
 }
 
 .learn-more-container {

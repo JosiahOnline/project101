@@ -3372,8 +3372,12 @@
         font-size: 18px;
         text-align: center;
         text-decoration: none;
+        cursor: pointer;
     }
     
+    .ti-ad-close-link:hover {
+        color:#ff5c5c;
+    }
     .ti-ad-form-text {
         margin-bottom: 0px;
         font-family: 'Droid Serif', serif;

@@ -2001,6 +2001,18 @@ textarea.w-select {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    animation: 4s ease-out 0s 1 adsMoveup;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes adsMoveup {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-285px);
+    }
 }
 
 .bgcolor {
@@ -2228,6 +2240,18 @@ textarea.w-select {
     padding-right: 100px;
     padding-left: 100px;
     background-color: #131321;
+}
+
+.ti-section-1:hover {
+ animation: 6s ease-out 0s changeColor;
+}
+
+@keyframes changeColor {
+    0% {background-color: #131321;}
+    25% {background-color: #e9ff00;}
+    50% {background-color: #ef5c5c;}
+    75% {background-color: orange;}
+    100% {background-color: #131321;}
 }
 
 .ti-container-1 {
@@ -3032,13 +3056,15 @@ textarea.w-select {
     display: block;
     padding-top: 40px;
     padding-bottom: 40px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 30%;
-    flex: 0 0 30%;
+    height: 300px;
     border-bottom: 2px solid #fff;
     background-color: #131321;
     text-align: center;
+    animation: 6s ease-out 0s changeColor;
 }
+
+
+
 
 .ti-online-bah {
     display: block;
@@ -3054,6 +3080,7 @@ textarea.w-select {
     letter-spacing: -2px;
 }
 
+
 .ti-time-is-now {
     position: relative;
     left: -45px;
@@ -3065,6 +3092,12 @@ textarea.w-select {
     color: #fff;
     font-size: 24px;
     text-align: center;
+    transition: font-size 3s, linear 3s, transform 3s;
+}
+
+.ti-time-is-now:hover {
+   -webkit-transform: rotateY(360deg); /* Safari */
+    transform: rotateY(360deg); /* Standard syntax */
 }
 
 .ti-top-articles {
@@ -3089,12 +3122,13 @@ textarea.w-select {
     padding: 0px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: #131321;
+    
     font-family: 'Droid Serif', serif;
     color: #fff;
     font-size: 26px;
     font-weight: 700;
     text-align: left;
+  
 }
 
 .ti-arrow-down {
@@ -3201,7 +3235,7 @@ textarea.w-select {
     position: relative;
     top: -100%;
     z-index: 10;
-    display: block;
+    display: none;
     width: 100%;
     height: 660px;
     margin-right: auto;
@@ -3351,7 +3385,16 @@ textarea.w-select {
     border-bottom-right-radius: 5px;
     background-color: #131321;
     text-align: center;
+    animation: 6s ease-out 0s 1 changeColor2;
+    animation-fill-mode: forwards;
+    animation-delay: 15s;
 }
+
+@keyframes changeColor2 {
+    0% {background-color: #131321;}
+    100% {background-color: orange;}
+}
+
 
 html.w-mod-js *[data-ix="ti-introduction"] {
     -webkit-transform: translate(0px, -200px);
@@ -3379,6 +3422,9 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
 @media (max-width: 991px) {
     .top-nav {
         padding: 0px;
+    }
+    .menu-links .closebtn {
+        margin-right: 33px;
     }
     .brand-logo.w--current {
         left: -150px;
@@ -4187,7 +4233,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         font-size: 28px;
     }
     .ti-ads {
-        display: block;
+        /*display: block;*/
     }
     .ti-ad-heading {
         width: 95%;
@@ -4216,6 +4262,14 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         margin-left: 10px;
     }
 }
+    @media (max-width: 550px) {
+        .ti-ads {
+            top: -107%;
+        }
+        .ti-ads-container {
+            height: 630px;
+        }
+    }
     @media (max-width: 479px) {
         .main-wrapper {
             display: -webkit-box;
@@ -4253,7 +4307,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         }
         .menu-links .closebtn {
             margin-top: 5px;
-            margin-right: -20px;
+            margin-right: -10px;
         }
         .nav-link {
             display: block;
@@ -4830,7 +4884,7 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
             font-size: 40px;
         }
         .ti-ads {
-            top: -88%;
+            top: -100%;
         }
         .ti-ad-heading {
             width: 100%;
@@ -4868,9 +4922,9 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
         }
         .ti-ads-container {
             position: static;
-            display: block;
+            /*display: block;*/
             width: 96%;
-            height: 570px;
+            height: 620px;
             margin-top: 0px;
             margin-bottom: 0px;
             padding-top: 45px;
@@ -4945,14 +4999,14 @@ html.w-mod-js *[data-ix="ti-ad-hide"] {
             padding-bottom: 18px;
         }
     }
-    @media (max-width: 550px) {
+
+    @media (max-width: 360px) {
         .ti-ads {
-            top: -100%;
+            top: -105%;
         }
-        .ti-ads-container {
-            height: 630px;
-        }
+    
     }
+    
     @media (max-width: 320px) {
         .ti-latest-articles-container {
             width: 270px;

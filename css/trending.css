@@ -2886,6 +2886,10 @@
         font-size: 16px;
     }
     
+    .ti-subscribe-button:hover {
+        background-color: orange;
+    }
+    
     .ti-form-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -3358,6 +3362,10 @@
         flex-basis: 13%;
         font-size: 14px;
         line-height: 20px;
+    }
+
+    .ti-ad-form-submit:hover {
+        background-color: orange;
     }
     
     .ti-ad-close-link {

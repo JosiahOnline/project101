@@ -2801,7 +2801,7 @@ textarea.w-select {
     flex-basis: 92%;
 }
 
-.footer {
+footer {
     height: 80px;
     margin-top: 0px;
     padding-top: 5px;
@@ -2817,7 +2817,7 @@ textarea.w-select {
     z-index: 10;
 }
 
-.footer-copyright {
+.copyright {
     display: block;
     padding-top: 18px;
     font-family: Merriweather, serif;
@@ -3872,7 +3872,7 @@ screen and (min-height: 1024px) {
         left: -315px;
         width: 100px;
     }
-    .footer-copyright {
+    .copyright {
         font-size: 22px;
         padding-top: 25px;
     }
@@ -4391,7 +4391,7 @@ screen and (min-height: 1024px) {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
-    .footer-copyright {
+    .copyright {
         font-size: 20px;
     }
     .email-sign-up {
@@ -4917,13 +4917,12 @@ screen and (min-height: 1024px) {
         border-top: 1px solid #000;
         background-color: rgba(0, 0, 0, .25);
     }
-    .footer {
+    footer {
         height: 70px;
         padding-top: 10px;
     }
-    .footer-copyright {
-        padding-top: 15px;
-        padding-bottom: 15px;
+    .copyright {
+        padding: 15px 0;
         font-size: 16px;
         line-height: 20px;
     }

@@ -3237,7 +3237,7 @@
         background-size: cover;
     }
     
-    .ti-footer {
+    footer {
         height: 80px;
         display: block;
         width: 100%;
@@ -3245,11 +3245,11 @@
         background-color: #131321;
     }
     
-    .footer-copyright {
-        padding: 15px;
+    .copyright {
+        padding: 20px;
         font-family: Merriweather, serif;
         color: #fff;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 700;
         text-align: center;
     }
@@ -4390,8 +4390,8 @@
             background-image: none;
             font-size: 25px;
         }
-        .ti-footer {
-            height: 60px;
+        footer {
+            height: 70px;
         }
         .ti-section-1 {
             position: static;
@@ -4941,9 +4941,7 @@
             -ms-flex-preferred-size: 55%;
             flex-basis: 55%;
         }
-        .footer-copyright {
-            position: static;
-        }
+        
         .ti-online-bah-logo {
             font-size: 40px;
         }
@@ -5061,6 +5059,12 @@
             margin-left: auto;
             padding-top: 20px;
             padding-bottom: 18px;
+        }
+        
+        .copyright {
+            font-size: 16px;
+            padding: 15px 0;
+            line-height: 20px;
         }
     }
     

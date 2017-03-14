@@ -420,14 +420,14 @@ ul {
 
 
 footer {
-    height: 60px;
+    height: 70px;
     background-color: #131321;
 }
 
 .copyright {
     font-family: Merriweather, serif;
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 24px;
+    font-weight: 700;
     color: white;
     text-align: center;
     padding: 20px;

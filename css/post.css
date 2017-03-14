@@ -1,0 +1,434 @@
+/* ==========================================================================
+   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
+   ========================================================================== */
+
+html {
+    font-family: Droid Serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+
+p {
+    padding: 0;
+    margin: 5px auto;
+}
+
+pre {
+    overflow: auto
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 0
+}
+
+
+
+/* ==========================================================================
+   Custom CSS Begin
+   ========================================================================== */
+
+.main-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.post-section1 {
+    
+}
+
+nav {
+    position: relative;
+    height: 60px;
+    padding: 50px 60px 0px;
+    background-color: transparent;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+}
+
+
+.signup {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.signup:hover {
+    background-color: #f36;
+    border-color: #f36;
+}
+
+.logo {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.logo:hover {
+    background-color: #f36;
+    border-color: #f36;
+}
+
+.blog-link {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.blog-link:hover {
+    color: #f36;  
+}
+
+ul {
+    display: block;
+    float: right;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.post-hero{
+    position: relative;
+    margin-top: -110px;
+    width: 100%;
+    height: 600px;  
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Blog/blog1.jpg);
+    background-position: 50% 60%;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(37,43,51, 0.35);
+}
+
+.header-content {
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.header-wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.header-wrapper h1{
+    font-size: 4em;
+    color: white;
+}
+
+.article-content {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.author-content img {
+    border-radius: 50%;
+}
+
+.author-content p {
+    font-style: italic;
+    color: white;
+}
+
+.writer a {
+    margin-left: 2px;
+    color: white;
+    font-weight: 800;
+}
+
+.writer a:hover {
+    color: #f36;
+}
+.single-post p {
+    line-height: 2em;
+    font-size: 1.4em;
+}
+
+.single-post strong {
+    font-size: 1.5em;
+    color: #f36;
+}
+
+.dropcap {
+    font-size: 5em;
+    float: left;
+    padding-right: 15px;
+    margin-bottom: 2px;
+    line-height: 90px;
+    font-weight: 700;
+    color: #fc3768;
+}
+
+.post-section3 {
+    margin: 50px auto;
+}
+.related-articles {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.related-articles > :first-child {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.related-content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.related-title {
+    margin: 0 auto;
+    border: 1px solid #131321;
+    padding: 5px;
+    min-height: 300px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.related-thumb {
+    height: 40%;
+}
+
+.related-header h2 {
+    padding: 0 10px;
+}
+
+
+footer {
+    height: 60px;
+    background-color: #131321;
+}
+
+.copyright {
+    font-family: Merriweather, serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

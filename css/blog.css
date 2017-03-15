@@ -309,7 +309,7 @@ html.w-mod-touch * {
 
 .w-preserve-3d {
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d
+    transform-style: preserve-3d
 }
 
 .w-hidden {
@@ -1950,22 +1950,22 @@ textarea.w-select {
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
-                transform: rotate(0deg)
+        transform: rotate(0deg)
     }
     100% {
         -webkit-transform: rotate(360deg);
-                transform: rotate(360deg)
+        transform: rotate(360deg)
     }
 }
 
 @keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
-                transform: rotate(0deg)
+        transform: rotate(0deg)
     }
     100% {
         -webkit-transform: rotate(360deg);
-                transform: rotate(360deg)
+        transform: rotate(360deg)
     }
 }
 
@@ -2036,14 +2036,14 @@ textarea.w-select {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
 }
 
 .brand-logo {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     padding: 20px 30px 10px;
     font-family: Merriweather, serif;
     color: #fff;
@@ -2070,36 +2070,36 @@ textarea.w-select {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
     -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     padding: 10px 30px 10px;
 }
 
 .navburger {
     -ms-flex-preferred-size: 140px;
-        flex-basis: 140px;
+    flex-basis: 140px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
 }
 
 .navburger p {
     padding: 20px 0px 10px 0px;
     -ms-flex-preferred-size: 100px;
-        flex-basis: 100px;
+    flex-basis: 100px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -2114,7 +2114,7 @@ textarea.w-select {
 
 .hamburger {
     -ms-flex-preferred-size: 50px;
-        flex-basis: 50px;
+    flex-basis: 50px;
     padding: 50px 0px 10px 0px;
     background-image: url("../img/Services/Icons/menu1.png");
     background-position: 50% 50%;
@@ -2140,10 +2140,10 @@ textarea.w-select {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
 }
 
 .menu-links a {
@@ -2178,7 +2178,7 @@ textarea.w-select {
     margin-left: 10px;
     margin-right: 10px;
     -ms-flex-preferred-size: 50px;
-        flex-basis: 50px;
+    flex-basis: 50px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -2353,7 +2353,7 @@ textarea.w-select {
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, .1), 0 0 6px 3px rgba(0, 0, 0, .1);
 }
 
-.hero-card-container:hover .hero-published-date{
+.hero-card-container:hover .hero-published-date {
     background-color: #f36;
 }
 
@@ -2454,7 +2454,6 @@ textarea.w-select {
 .card-container:hover .card-published-date-3 {
     background-color: #f36;
 }
-
 
 .latest-published {
     position: absolute;
@@ -2834,7 +2833,7 @@ textarea.w-select {
     -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
     -webkit-box-flex: 0;
     -ms-flex: 0 auto;
     flex: 0 auto;
@@ -2879,7 +2878,6 @@ textarea.w-select {
     flex-direction: column;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-   
     border-radius: 5px;
     background-color: #f36;
     font-family: 'Droid Serif', serif;
@@ -3272,7 +3270,7 @@ textarea.w-select {
     }
     .navburger {
         -ms-flex-preferred-size: 100px;
-            flex-basis: 100px;
+        flex-basis: 100px;
     }
     .navburger p {
         font-size: 18px;

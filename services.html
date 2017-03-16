@@ -44,7 +44,7 @@
                     <div class="w-form-fail">
                         <div>Oops! Something went wrong while submitting the form</div>
                     </div>
-                </div><a class="close-link" data-ix="close-sign-up" href="#">Close X</a></div>
+                </div><a class="sign-up-close close-link" data-ix="close-sign-up" href="#">Close X</a></div>
         </div>
         <div class="learn-more-container" data-ix="learn-more-container">
             <div class="learn-more-wrapper" data-ix="close-learn-more">
@@ -93,7 +93,7 @@
                     </div>
                     <div class="slide-nav w-num w-round w-slider-nav w-slider-nav-invert"></div>
                 </div>
-                <p class="case-study-pgraph-2">If your business is stagnant and want to increase your customers base, don't wait and start acting now.&nbsp;It's time to change and reach out to more customers. Contact us for more info.</p><a class="close-link" data-ix="close-learn-more" href="#">Close X</a></div>
+                <p class="case-study-pgraph-2">If your business is stagnant and want to increase your customers base, don't wait and start acting now.&nbsp;It's time to change and reach out to more customers. Contact us for more info.</p><a class="learn-more-close close-link" data-ix="close-learn-more" href="#">Close X</a></div>
         </div>
         <div class="our-features-container" data-ix="features-container">
             <div class="our-features-wrapper">
@@ -208,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                </div><a class="feature-close-link" data-ix="close-features" href="#">Close X</a></div>
+                </div><a class="features-close close-link" data-ix="close-features" href="#">Close X</a></div>
         </div>
         <div class="ow-section-1">
             <div id="myBgColor" class="bgcolor"></div>
@@ -416,6 +416,26 @@
     <script>
         $(document).ready(function() {
             $("#welcome-message").fadeOut(3000);
+            $(".email-sign-up").click(function() {
+                $(".sign-up-container").css("display", "block");
+            });
+            $(".sign-up-close").click(function() {
+                $(".sign-up-container").css("display", "none");
+            });
+            
+            $(".learn-more").click(function() {
+                $(".learn-more-container").css("display", "block");
+            });
+            $(".learn-more-close").click(function() {
+                $(".learn-more-container").css("display", "none");
+            });
+            
+            $(".features-link").click(function() {
+                $(".our-features-container").css("display", "block");
+            });
+            $(".features-close").click(function() {
+                $(".our-features-container").css("display", "none");
+            });
         });
     </script>
     <script>

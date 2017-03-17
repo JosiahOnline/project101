@@ -2803,6 +2803,7 @@ textarea.w-select {
     font-family: 'Droid Serif', serif;
     font-size: 16px;
     background-color: #3898EC;
+    color: white;
 }
 
 .e-news-subscribe-button:hover {

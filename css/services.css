@@ -3053,6 +3053,23 @@ footer {
     cursor: pointer;
 }
 
+.close:hover {
+    color: #ff5c5c;
+}
+
+.close-link {
+    display: inline;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Berkshire Swash', sans-serif;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .close-link:hover {
     color: #ff5c5c;
 }

@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 article,
@@ -2878,12 +2878,12 @@ footer {
 
 .our-features-container {
 	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Droid Serif', serif;
 	top: 0;
 	right: 0;
     bottom: 0;
 	left: 0;
-	background: rgba(255,255,255,0.9);
+	background: rgba(19,19,42,0.5);
     overflow-y: auto;
     overflow-x: hidden;
 	z-index: 99999;
@@ -2899,6 +2899,8 @@ footer {
 	opacity:1;
 	pointer-events: auto;
 }
+
+
 
 .our-features-wrapper {
 	width: 95%;
@@ -2923,11 +2925,13 @@ footer {
     margin: 15px auto;
     text-align: left;
     padding-left: 10px;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .feature-tabs {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     background-color: rgba(19, 19, 33, .85);
     border-radius: 5px;
 }
@@ -2952,6 +2956,8 @@ footer {
     color: black;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .feature-tabs-menu li a:hover {
@@ -2962,6 +2968,10 @@ footer {
 .feature-tabs-menu li.currentTab a {
     background-color: #f36;
     color: white;
+}
+
+.mtab-content-container {
+    padding-bottom: 15px;
 }
 
 /*Set the min-height for the content(image + text)*/
@@ -2997,10 +3007,29 @@ footer {
     color: white;
     padding-right: 20px;
     margin-top: 15px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.tab-pgraph .link-page {
+    text-decoration: none;
+    color: #eff900;
+}
+
+.tab-pgraph .link-page:hover {
+    text-decoration: underline;
+}
+
+.tab-pgraph span {
+    color: #eff900;
+    font-weight: 700;
 }
 
 .tab-title {
     color: white;
+    font-size: 22px;
+    
+
 }
 
 .close {

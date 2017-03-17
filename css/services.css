@@ -309,7 +309,7 @@ html.w-mod-touch * {
 
 .w-preserve-3d {
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d
+    transform-style: preserve-3d
 }
 
 .w-hidden {
@@ -1950,22 +1950,22 @@ textarea.w-select {
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
-                transform: rotate(0deg)
+        transform: rotate(0deg)
     }
     100% {
         -webkit-transform: rotate(360deg);
-                transform: rotate(360deg)
+        transform: rotate(360deg)
     }
 }
 
 @keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
-                transform: rotate(0deg)
+        transform: rotate(0deg)
     }
     100% {
         -webkit-transform: rotate(360deg);
-                transform: rotate(360deg)
+        transform: rotate(360deg)
     }
 }
 
@@ -2041,14 +2041,14 @@ textarea.w-select {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
 }
 
 .brand-logo {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     padding: 20px 30px 10px;
     font-family: Merriweather, serif;
     color: #fff;
@@ -2075,36 +2075,36 @@ textarea.w-select {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
     -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     padding: 10px 30px 10px;
 }
 
 .navburger {
     -ms-flex-preferred-size: 140px;
-        flex-basis: 140px;
+    flex-basis: 140px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
 }
 
 .navburger p {
     padding: 20px 0px 10px 0px;
     -ms-flex-preferred-size: 100px;
-        flex-basis: 100px;
+    flex-basis: 100px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -2119,7 +2119,7 @@ textarea.w-select {
 
 .hamburger {
     -ms-flex-preferred-size: 50px;
-        flex-basis: 50px;
+    flex-basis: 50px;
     padding: 50px 0px 10px 0px;
     background-image: url("../img/Services/Icons/menu1.png");
     background-position: 50% 50%;
@@ -2145,10 +2145,10 @@ textarea.w-select {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
 }
 
 .menu-links a {
@@ -2182,7 +2182,7 @@ textarea.w-select {
     margin-left: 10px;
     margin-right: 10px;
     -ms-flex-preferred-size: 50px;
-        flex-basis: 50px;
+    flex-basis: 50px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -2295,7 +2295,7 @@ textarea.w-select {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -2677,7 +2677,7 @@ textarea.w-select {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     -ms-flex-preferred-size: 90%;
@@ -2699,7 +2699,7 @@ textarea.w-select {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     -webkit-box-flex: 0;
     -ms-flex: 0 auto;
     flex: 0 auto;
@@ -2875,43 +2875,34 @@ footer {
     color: #131321;
 }
 
-
 .our-features-container {
-	position: fixed;
-	font-family: 'Droid Serif', serif;
-	top: 0;
-	right: 0;
+    position: fixed;
+    font-family: 'Droid Serif', serif;
+    top: 0;
+    right: 0;
     bottom: 0;
-	left: 0;
-	background: rgba(19,19,42,0.5);
+    left: 0;
+    background: whitesmoke;
     overflow-y: auto;
     overflow-x: hidden;
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-    
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
 
 .our-features-container:target {
-	opacity:1;
-	pointer-events: auto;
+    opacity: 1;
+    pointer-events: auto;
 }
 
-
-
 .our-features-wrapper {
-	width: 95%;
-	position: relative;
-	margin: 5% auto;
-	padding: 20px;
+    width: 95%;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px;
     text-align: center;
-    background-color: white;
-    border: 1px solid #131321;
-    border-radius: 5px;
-    box-shadow: 0 8px 6px -6px #131321;
 }
 
 .features-heading-1 {
@@ -2922,10 +2913,10 @@ footer {
 
 .feature-pgraph-1 {
     width: 100%;
-    margin: 15px auto;
-    text-align: left;
-    padding-left: 10px;
-    font-size: 24px;
+    margin: 5px auto;
+    text-align: justify;
+    padding: 15px;
+    font-size: 21px;
     line-height: 30px;
 }
 
@@ -2936,13 +2927,17 @@ footer {
     border-radius: 5px;
 }
 
-
 .feature-tabs-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 10px auto;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .feature-tabs-menu ul li {
@@ -2961,7 +2956,7 @@ footer {
 }
 
 .feature-tabs-menu li a:hover {
-    background-color:#eff900;
+    background-color: #eff900;
     color: black;
 }
 
@@ -2974,23 +2969,36 @@ footer {
     padding-bottom: 15px;
 }
 
+
 /*Set the min-height for the content(image + text)*/
+
 .mtab-content {
     display: none;
     min-height: 210px;
     margin-bottom: 10px;
 }
 
+
 /*Every first child div of mtab-content to dislay flex*/
+
 .mtab-content div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    padding: 5px;
+    padding: 5px 0px;
 }
 
 .tab-pic {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
 }
 
@@ -3002,13 +3010,15 @@ footer {
 }
 
 .tab-pgraph {
-    flex: 4;
-    text-align: left;
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    text-align: justify;
     color: white;
-    padding-right: 20px;
+    padding-right: 25px;
     margin-top: 15px;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 21px;
+    line-height: 32px;
 }
 
 .tab-pgraph .link-page {
@@ -3027,13 +3037,11 @@ footer {
 
 .tab-title {
     color: white;
-    font-size: 22px;
-    
-
+    font-size: 21px;
 }
 
 .close {
-	display: inline;
+    display: inline;
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
@@ -3049,19 +3057,73 @@ footer {
     color: #ff5c5c;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .feature-tabs-menu ul {
-        height: 100px;
+        height: 140px;
+        margin-bottom: 0;
+    }
+    .mtab-content div:first-child {
+        padding: 0 10px;
+    }
+    .tab-image {
+        margin-top: 5px;
+    }
+    .tab-pgraph {
+        margin-top: 0;
+        padding: 0 10px;
+        text-align: left;
     }
 }
 
 @media (max-width: 479px) {
+    .features-heading-1 {
+        text-align: left;
+    }
+    .feature-pgraph-1 {
+        text-align: left;
+        padding: 10px 0;
+    }
     .feature-tabs-menu ul {
-        height: 200px;
+        height: 240px;
+        padding-left: 4px;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .mtab-content div:first-child {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .tab-pic {
+        margin-bottom: 20px;
+    }
+    .tab-image {
+        margin: 15px auto;
+        width: 250px;
+        height: 160px;
+    }
+    .tab-pgraph {
+        padding: 0 15px;
+        font-size: 18px;
+        line-height: 27px;
     }
 }
 
-
+@media (max-width: 360px) {
+    .our-features-wrapper {
+        width: 96%;
+        padding: 20px 15px;
+    }
+    .feature-tabs-menu ul {
+        padding-left: 5px;
+    }
+    .feature-tabs-menu li a {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
 
 .ebook-email {
     width: 60%;
@@ -3249,12 +3311,6 @@ footer {
     font-size: 48px;
 }
 
-
-
-
-
-
-
 .case-study-pgraph-1 {
     display: block;
     width: 1100px;
@@ -3278,12 +3334,6 @@ footer {
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 }
-
-
-
-
-
-
 
 .case-studies-slider {
     display: block;
@@ -3506,7 +3556,7 @@ footer {
     -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     -ms-flex-preferred-size: 30%;
@@ -3774,7 +3824,7 @@ screen and (min-height: 1024px) {
         -webkit-align-self: center;
         -ms-flex-item-align: center;
         -ms-grid-row-align: center;
-            align-self: center;
+        align-self: center;
         font-size: 60px;
         text-align: center;
     }
@@ -3851,7 +3901,7 @@ screen and (min-height: 1024px) {
         -webkit-align-self: center;
         -ms-flex-item-align: center;
         -ms-grid-row-align: center;
-            align-self: center;
+        align-self: center;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
@@ -3868,8 +3918,8 @@ screen and (min-height: 1024px) {
         margin-right: auto;
         margin-left: auto;
         -webkit-box-flex: 0;
-            -ms-flex: 0 0 70%;
-                flex: 0 0 70%;
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
     }
     .ow-heading-4-1 {
         left: 11px;
@@ -3977,9 +4027,6 @@ screen and (min-height: 1024px) {
         margin-top: 0px;
         font-size: 40px;
     }
-    
-    
-    
     .case-study-pgraph-1 {
         width: auto;
         padding-right: 10px;
@@ -3993,8 +4040,6 @@ screen and (min-height: 1024px) {
         padding-left: 10px;
         font-size: 18px;
     }
-    
-    
     .case-studies-slider {
         display: block;
         width: 700px;
@@ -4097,7 +4142,6 @@ screen and (min-height: 1024px) {
         font-family: Merriweather, serif;
         color: #fff952;
     }
-    
     .social-media-content {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -4129,7 +4173,7 @@ screen and (min-height: 1024px) {
         -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
-            align-self: stretch;
+        align-self: stretch;
         -webkit-box-flex: 0;
         -ms-flex: 0 auto;
         flex: 0 auto;
@@ -4277,7 +4321,7 @@ screen and (min-height: 1024px) {
         -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
-            align-self: stretch;
+        align-self: stretch;
         -webkit-box-flex: 0;
         -ms-flex: 0 auto;
         flex: 0 auto;
@@ -4422,10 +4466,6 @@ screen and (min-height: 1024px) {
     .sign-up-wrapper {
         top: 96px;
     }
-    
-    
-    
-    
     .case-studies-slider {
         width: 520px;
         height: 470px;
@@ -4475,7 +4515,7 @@ screen and (min-height: 1024px) {
         -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
-            align-self: stretch;
+        align-self: stretch;
         text-align: center;
     }
     .ow-pgraph-21-mobile {
@@ -4494,7 +4534,7 @@ screen and (min-height: 1024px) {
         -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
-            align-self: stretch;
+        align-self: stretch;
         font-family: 'Droid Serif', serif;
         font-size: 24px;
         line-height: 30px;
@@ -4573,7 +4613,7 @@ screen and (min-height: 1024px) {
     }
     .navburger {
         -ms-flex-preferred-size: 100px;
-            flex-basis: 100px;
+        flex-basis: 100px;
     }
     .navburger p {
         font-size: 18px;
@@ -4670,7 +4710,7 @@ screen and (min-height: 1024px) {
         -webkit-align-self: center;
         -ms-flex-item-align: center;
         -ms-grid-row-align: center;
-            align-self: center;
+        align-self: center;
         font-size: 14px;
     }
     .ow-container-2-2 {
@@ -4992,10 +5032,6 @@ screen and (min-height: 1024px) {
         padding-right: 0px;
         padding-left: 0px;
     }
-    
-    
-    
-    
     .case-studies-slider {
         width: 300px;
     }
@@ -5049,7 +5085,7 @@ screen and (min-height: 1024px) {
         -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
-            align-self: stretch;
+        align-self: stretch;
         font-size: 20px;
         line-height: 25px;
         text-align: center;

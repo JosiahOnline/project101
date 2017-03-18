@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Learn More</title>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="css/learn-more.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Merriweather:300,400,700,900", "Droid Serif:400,700", "Berkshire Swash:regular:latin,latin-ext", "Oleo Script:regular,700:latin,latin-ext"]
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js" type="text/javascript"></script>
+    <link href="img/favicon/favicon-96x96.png" rel="shortcut icon" type="image/x-icon">
+    <link href="img/favicon/apple-icon-180x180.png" rel="apple-touch-icon">
+</head>
+
+<body class="body">
+    
+    <a href="#openLearnMore">Learn More</a>
+    
+    <div id="openLearnMore" class="learn-more-container">
+        <div class="learn-more-wrapper">
+            <h1 class="cs-heading">Case Studies</h1>
+            <p class="cs-pgraph-1">Having your own online website can build several advantages over competitors. Below are the case studies which have improved their business significantly.</p>
+            <div class="cs-slider-container cs-active">
+                <ol class="cs-content">
+                    <li><a href="cs-tab1" class="cs-slider slider1 cs-current">
+                        <p class="cs-problem">Problem</p>
+                        <p class="cs-pgraph-2">The sports bar and restaurant chain Buffalo Wild Wings (eleven restaurants in The Philippines, Canada, Mexico and the US) had invested heavily in marketing and various advertising channels without seeing any results.</p>
+                        <p class="cs-solution">Solution</p>
+                        <p class="cs-pgraph-2">Edited their Name Address and Phone Number (NAP) details on their website as well as throughout local listings and directories and experienced incredible results.</p>
+                        <p class="cs-result">Result</p>
+                        <p class="cs-pgraph-2">They ranked first for all local search queries based on each of their locations, and generated 132,000 leads (interested clients) through organic Google search.</p>
+                        </a>
+                    </li>
+                    <li><a href="cs-tab2" class="cs-slider slider2">
+                        <p class="cs-problem">Problem</p>
+                        <p class="cs-pgraph-2">Illinois-based eye care and surgery institute Hauser-Ross invested in some SEO, but they had only targeted short-tail global keywords such as “Eye Institute” or “Cataracts”. Being a small, local provider, they didn’t perform well because of stiff competition from larger eye-care centers throughout the USA.</p>
+                        <p class="cs-solution">Solution</p>
+                        <p class="cs-pgraph-2">They opted for a local-based SEO strategy that began with keyword research to appeal to patients around different parts of Illinois.</p>
+                        <p class="cs-result">Result</p>
+                        <p class="cs-pgraph-2">Location-based keywords were then strategically embedded in various parts of the site, leading to a revenue boost of over 333%, ranking improvements for more than 400 keywords, and over 50% monthly organic traffic increase.</p>
+                        </a>
+                    </li>
+                    <li> <a href="cs-tab3" class="cs-slider slider3">
+                        <p class="cs-problem">Problem</p>
+                        <p class="cs-pgraph-2">Avella Specialty Pharmacy had sixteen stores in different parts of the country, but was performing dismally in organic search. Their customers had to use different channels to try and find them, which was a big peeve for clients.</p>
+                        <p class="cs-solution">Solution</p>
+                        <p class="cs-pgraph-2">They engaged a team that did a full website audit followed by improving user experience at every stage of the online discovery process.</p>
+                        <p class="cs-result">Result</p>
+                        <p class="cs-pgraph-2">In just three months, the company had a delightful improvement, including 36% boost in ranking for local search, 22% organic search boost, 150% more online reviews, 71% boost in online channel distribution and 107% more published listings.</p>
+                        </a>
+                    </li>
+                    <li><a href="cs-tab4" class="cs-slider slider4">
+                        <p class="cs-problem">Problem</p>
+                        <p class="cs-pgraph-2">Texas-based dental services provider Brian L. Britton approached a local SEO agency with a single request: that they promote his family-based business to bring him more clients locally.</p>
+                        <p class="cs-solution-1">Solution</p>
+                        <p class="cs-pgraph-2">The team implemented a comprehensive local SEO strategy.</p>
+                        <p class="cs-solution-1">Solution</p>
+                        <p class="cs-pgraph-2">An increase of 211% in new traffic and 158% increase in sessions in just six months.</p>
+                        </a>
+                    </li>
+                </ol>
+                <div id="slide" class="slide-nav">
+                    <a href="#cs-tab1" class="cs-circle" rel=cs-tab1>1</a>
+                    <a href="#cs-tab2" class="cs-circle" rel=cs-tab2>2</a>
+                    <a href="#cs-tab3" class="cs-circle" rel=cs-tab3>3</a>
+                    <a href="#cs-tab4" class="cs-circle" rel=cs-tab4>4</a>
+                </div>
+            </div>
+            <div class="cs-footer"><p>Want to improve your business? <a class="contactUs" href="contact.html"> Contact us now.</a></p> 
+            </div>
+            <a class="learn-more-close close-link close" href="#close" title="Close">Close X</a></div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script>
+    
+    $(document).ready(function(){
+    //  When user clicks on tab, this code will be executed
+    $("#slide a").click(function() {
+        //  First remove class "active" from currently active tab
+        $(".cs-slider-container li a").removeClass('cs-current');
+        
+        //  Here we get the href value of the selected tab
+         var selected_tab = $(this).find('.cs-slider-container li a').attr("href");
+ 
+        //  Show the selected tab content
+         $(selected_tab).addClass('cs-current');
+
+ 
+        
+ 
+        //  At the end, we add return false so that the click on the link is not executed
+        return false;
+    });
+    });
+    </script>
+
+</body>
+
+</html>

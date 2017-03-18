@@ -1,0 +1,197 @@
+
+
+.learn-more-container {
+    position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+    bottom: 0;
+	left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: white;
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+    
+}
+
+.learn-more-container:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.learn-more-wrapper {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.cs-heading {
+    width: 100%;
+    margin: 10px auto;
+    font-size: 48px;
+}
+
+.cs-pgraph-1 {
+    margin: 10px auto;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.cs-slider-container {
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.cs-content {
+    margin: 0;
+    padding: 0;
+}
+
+.cs-content li {
+    list-style-type: none;
+}
+
+.cs-active {
+    height: 500px;
+}
+
+.cs-active li {
+    position: absolute;
+}
+
+.cs-active li .cs-current {
+    display: block;
+    top: 150px;
+    z-index: 1;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.cs-slider {
+    display: none;
+    height: 310px;
+    padding: 185px 30px 0;
+    color: white;
+    text-align: left;
+}
+
+.slider1 {
+    background-image: url("../img/Services/CaseStudies/CS1.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider2 {
+    background-image: url("../img/Services/CaseStudies/CS2.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider3 {
+    background-image: url("../img/Services/CaseStudies/CS3.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider4 {
+    background-image: url("../img/Services/CaseStudies/CS4.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cs-problem, .cs-solution, .cs-result {
+    font-size: 25px;
+    margin: 0;
+}
+
+.cs-pgraph-2 {
+    margin: 10px 0 15px;
+}
+
+.slide-nav {
+    display: block;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    padding: 5px 0;
+    bottom: 70px;
+    height: 30px;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    z-index: 100;
+}
+
+.slide-nav .cs-circle {
+    display: inline-block;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+	width: 20px;
+	height: 20px;
+    font-size: 15px;
+    color: #131321;
+    font-weight: 700;
+}
+
+.slide-nav .cs-circle:hover {
+    background-color: #eff900;
+}
+
+.cs-footer {
+    margin: 120px auto 0;
+}
+
+.cs-footer p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contactUs {
+    text-decoration: none;
+    color: #369;
+    font-weight: 700;
+}
+
+.contactUs:hover {
+    text-decoration: underline;
+}
+
+.learn-more-close {
+    display: inline;
+    margin: 10px auto;
+    font-family: 'Berkshire Swash', sans-serif;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.learn-more-close:hover {
+    color: #ff5c5c;
+}
+
+@media (max-width: 991px) {
+    
+}
+
+@media (max-width: 479px) {
+    
+    
+}

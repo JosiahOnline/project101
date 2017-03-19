@@ -29,7 +29,7 @@
     position: relative;
     width: 90%;
     margin: 0 auto;
-    padding-top: 10px;
+    padding: 10px 0 20px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -47,16 +47,18 @@
 
 .cs-slider-container {
     margin: 0 auto;
-    border-radius: 5px;
-    background-color: #fff;
+    background-color: black;
+   
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-.cs-content {
+ol {
     margin: 0;
     padding: 0;
 }
 
-.cs-content li {
+ol li {
     list-style-type: none;
 }
 
@@ -68,53 +70,88 @@
     position: absolute;
 }
 
-.cs-active li .cs-current {
+.cs-active li.cs-current {
     display: block;
-    top: 150px;
     z-index: 1;
+    border: 1px solid black;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
 
 .cs-slider {
     display: none;
-    height: 310px;
-    padding: 185px 30px 0;
     color: white;
     text-align: left;
 }
 
 .slider1 {
     background-image: url("../img/Services/CaseStudies/CS1.png");
-    background-position: center top;
+    background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 170px;
+    margin-bottom: 10px;
+   
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .slider2 {
     background-image: url("../img/Services/CaseStudies/CS2.png");
-    background-position: center top;
+    background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 130px;
+    margin-bottom: 10px;
+   
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .slider3 {
     background-image: url("../img/Services/CaseStudies/CS3.png");
-    background-position: center top;
+    background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100px;
+    margin-bottom: 10px;
+    
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .slider4 {
     background-image: url("../img/Services/CaseStudies/CS4.png");
-    background-position: center top;
+    background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 220px;
+    margin-bottom: 10px;
+
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.cs-content {
+    padding: 0 30px;
 }
 
 .cs-problem, .cs-solution, .cs-result {
     font-size: 25px;
+    font-weight: 700;
     margin: 0;
+}
+
+.cs-problem {
+    color: #f36;
+}
+
+.cs-solution {
+    color: #eff900;
+}
+
+.cs-result {
+    color: #3898EC;
 }
 
 .cs-pgraph-2 {
@@ -124,10 +161,9 @@
 .slide-nav {
     display: block;
     width: 100%;
-    position: absolute;
     margin: 0 auto;
     padding: 5px 0;
-    bottom: 70px;
+    margin-top: -3px;
     height: 30px;
     background-color: black;
     border-top: 1px solid white;
@@ -149,13 +185,17 @@
     font-weight: 700;
 }
 
-.slide-nav .cs-circle:hover {
+.slide-nav a:hover {
     background-color: #eff900;
+    color: black;
 }
 
-.cs-footer {
-    margin: 120px auto 0;
+.slide-nav .selected-circle {
+    background-color: #f36;
+    color: white;
 }
+
+
 
 .cs-footer p {
     font-size: 22px;
@@ -187,8 +227,29 @@
     color: #ff5c5c;
 }
 
-@media (max-width: 991px) {
-    
+@media (max-width: 1024px) {
+    .learn-more-container {
+        padding-top: 100px;
+    }
+    .cs-pgraph-1{
+        margin: 15px auto;
+    }
+    .slider1 {
+        height: 140px;
+    }
+    .slider2 {
+        height: 100px;
+    }
+    .slider3 {
+        height: 90px;
+    }
+    .slider4 {
+        height: 180px;
+    }
+    .slide-nav a:focus {
+    background-color: #f36;
+        color: white;
+}
 }
 
 @media (max-width: 479px) {

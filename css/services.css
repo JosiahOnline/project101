@@ -2772,11 +2772,11 @@ textarea.w-select {
     width: 100px;
     border-style: none;
     border-radius: 5px;
-    background-image: -webkit-linear-gradient(270deg, #000, #000);
-    background-image: -webkit-linear-gradient(top, #000, #000);
-    background-image: linear-gradient(180deg, #000, #000);
     font-family: 'Droid Serif', serif;
     font-size: 20px;
+    font-weight: 700;
+    color: #073b46;
+    background-color: white;
 }
 
 .submit-button:hover {
@@ -5007,11 +5007,6 @@ screen and (min-height: 1024px) {
         margin-left: auto;
         padding-top: 12px;
         padding-bottom: 12px;
-        background-image: -webkit-linear-gradient(270deg, #fff, #fff);
-        background-image: -webkit-linear-gradient(top, #fff, #fff);
-        background-image: linear-gradient(180deg, #fff, #fff);
-        font-family: 'Droid Serif', serif;
-        color: #073b46;
         font-size: 24px;
         font-weight: 700;
     }

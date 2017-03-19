@@ -2919,11 +2919,14 @@ textarea.w-select {
 }
 
 .blog-contact-submit {
-    border-radius: 0px;
+    border-radius: 5px;
+    color: #073b46;
+    font-weight: 700;
+    background-color: white;
 }
 
 .blog-contact-submit:hover {
-    background-color: #369;
+    background-color: #eff900;
     color: white;
     font-size: 18px;
     font-weight: 100;

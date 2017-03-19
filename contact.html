@@ -7,7 +7,7 @@
     <title>Contact</title>
 
     <meta content="width=device-width, initial-scale=1" name="viewport">
-
+    
     <link href="css/contact.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <script type="text/javascript">
@@ -26,6 +26,7 @@
     <div class="main-wrapper">
         <div id="myBgColor" class="bgcolor"></div>
         <div id="scrollDown" class="top-nav">
+            <div class="bgnav">
             <div class="nav-container">
                 <a class="brand-logo" href="#">Online Bah</a>
                 <nav class="navbar">
@@ -42,7 +43,7 @@
                         <a class="nav-link addborder active" href="contact.html">Contact</a>
                     </div>
                 </nav>
-            </div>
+            </div></div>
         </div>
         <div class="contact-section">
             <div class="contact-container-1">
@@ -202,6 +203,19 @@
             iScrollPos = iCurScrollPos;
         });
     </script>
+    
+     <script>
+        var $window = $(window);
+ 
+        $(window).on('scroll', function() {
+            $topOffset = $(this).scrollTop();
+            if ($topOffset == 0) {
+                $("#scrollDown").css('background-color', 'transparent');
+                $("#scrollDown").css('border-bottom-style', 'none');
+            }
+        });
+    </script>
+    
     <script>
         $(document).ready(function() {
             $('.tabs a').click(function() {

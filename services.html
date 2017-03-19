@@ -459,8 +459,9 @@
                 $(".cs-slider-container li").removeClass('cs-current');
 
                 $selectedtab = $(this).attr('href');
-                $currenttab = $($selectedtab).removeAttr('href');
-
+                $currenttab = $($selectedtab).removeAttr('href'); 
+                //how did currenttab able to store and link to the selected 'li#cs-tab'? 
+                //just by removing the href? how?
                 $($currenttab).addClass('cs-current');
                 //  At the end, we add return false so that the click on the link is not executed
                 return false;

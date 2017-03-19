@@ -3182,7 +3182,7 @@ ol li {
         padding-top: 50px;
     }
     .cs-active {
-        height: 1000px;
+        height: 1050px;
     }
     .cs-heading {
         font-size: 40px;
@@ -3240,11 +3240,6 @@ ol li {
     }
 }
 
-@media (max-width: 360px) {
-    .cs-active {
-        height: 1050px;
-    }
-}
 
 @media (max-width: 320px) {
     .learn-more-container {

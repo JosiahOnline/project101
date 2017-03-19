@@ -16,6 +16,7 @@ html {
 
 body {
     margin: 0;
+   
 }
 
 article,
@@ -2853,31 +2854,30 @@ footer {
     color: #131321;
 }
 
+
 /* Learn More Pop Up-Modal until Line 3113 */
 
 .learn-more-container {
     position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
     bottom: 0;
-	left: 0;
+    left: 0;
     overflow-y: scroll;
     overflow-x: hidden;
     text-align: center;
     background-color: white;
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-    
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
 
 .learn-more-container:target {
-	opacity:1;
-	pointer-events: auto;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .learn-more-wrapper {
@@ -2896,14 +2896,13 @@ footer {
 
 .cs-pgraph-1 {
     margin: 10px auto;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 32px;
 }
 
 .cs-slider-container {
     margin: 0 auto;
     background-color: black;
-   
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -2944,8 +2943,7 @@ ol li {
     background-size: cover;
     background-repeat: no-repeat;
     height: 170px;
-    margin-bottom: 10px;
-   
+    margin-bottom: 15px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -2956,8 +2954,7 @@ ol li {
     background-size: cover;
     background-repeat: no-repeat;
     height: 130px;
-    margin-bottom: 10px;
-   
+    margin-bottom: 25px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -2968,8 +2965,7 @@ ol li {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 30px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -2980,7 +2976,7 @@ ol li {
     background-size: cover;
     background-repeat: no-repeat;
     height: 220px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -2989,8 +2985,10 @@ ol li {
     padding: 0 30px;
 }
 
-.cs-problem, .cs-solution, .cs-result {
-    font-size: 25px;
+.cs-problem,
+.cs-solution,
+.cs-result {
+    font-size: 26px;
     font-weight: 700;
     margin: 0;
 }
@@ -3009,6 +3007,8 @@ ol li {
 
 .cs-pgraph-2 {
     margin: 10px 0 15px;
+    font-size: 22px;
+    line-height: 30px;
 }
 
 .slide-nav {
@@ -3016,8 +3016,7 @@ ol li {
     width: 100%;
     margin: 0 auto;
     padding: 5px 0;
-    margin-top: -3px;
-    height: 30px;
+    height: 40px;
     background-color: black;
     border-top: 1px solid white;
     border-bottom-right-radius: 15px;
@@ -3027,15 +3026,17 @@ ol li {
 
 .slide-nav .cs-circle {
     display: inline-block;
-    margin: 3px;
+    margin: 5px;
     border-radius: 50%;
     background-color: white;
     text-decoration: none;
-	width: 20px;
-	height: 20px;
+    width: 20px;
+    height: 20px;
     font-size: 15px;
+    line-height: 16px;
     color: #131321;
     font-weight: 700;
+    font-family: 'Berkshire Swash', sans-serif;
 }
 
 .slide-nav a:hover {
@@ -3048,11 +3049,9 @@ ol li {
     color: white;
 }
 
-
-
 .cs-footer p {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin: 20px auto;
 }
 
 .contactUs {
@@ -3080,11 +3079,28 @@ ol li {
     color: #ff5c5c;
 }
 
+.close-link {
+    display: inline;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Berkshire Swash', sans-serif;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-link:hover {
+    color: #ff5c5c;
+}
+
 @media (max-width: 1024px) {
     .learn-more-container {
         padding-top: 100px;
     }
-    .cs-pgraph-1{
+    .cs-pgraph-1 {
         margin: 15px auto;
     }
     .slider1 {
@@ -3100,14 +3116,162 @@ ol li {
         height: 180px;
     }
     .slide-nav a:focus {
-    background-color: #f36;
+        background-color: #f36;
         color: white;
+    }
+    .cs-active {
+        height: 800px;
+    }
+    .cs-pgraph-1,
+    .cs-problem,
+    .cs-solution,
+    .cs-result,
+    .cs-footer p {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .cs-pgraph-2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .cs-content {
+        padding: 0 50px;
+    }
+    .slide-nav {
+        height: 60px;
+    }
+    .slide-nav .cs-circle {
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 10px;
+        padding-top: 2px;
+    }
+    .close-link {
+        font-size: 24px;
+    }
 }
+
+@media (max-width: 768px) {
+    .cs-active {
+        height: 900px;
+    }
+    .slider1 {
+        height: 100px;
+    }
+    .slider2 {
+        margin-bottom: 0;
+    }
+    .slider3 {
+        margin-bottom: 0;
+    }
+    .slider4 {
+        height: 140px;
+    }
+    .cs-footer p {
+        font-size: 25px;
+        line-height: 30px;
+    }
 }
 
 @media (max-width: 479px) {
-    
-    
+    .learn-more-container {
+        padding-top: 50px;
+    }
+    .cs-active {
+        height: 920px;
+    }
+    .cs-heading {
+        font-size: 40px;
+    }
+    .cs-pgraph-1,
+    .cs-problem,
+    .cs-solution,
+    .cs-result {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .slider1 {
+        background-image: url("../img/Services/Brand/brand1.jpg");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    .slider2 {
+        background-image: url("../img/Services/Brand/brand2.jpg");
+        background-color: white;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+        height: 190px;
+    }
+    .slider3 {
+        background-image: url("../img/Services/Brand/brand3.jpg");
+        background-color: white;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+        height: 240px;
+    }
+    .slider4 {
+        background-image: url("../img/Services/Brand/brand4.jpg");
+        background-color: white;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    .cs-content {
+        padding: 0 25px;
+    }
+    .cs-pgraph-2 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .cs-footer p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 360px) {
+    .cs-active {
+        height: 1050px;
+    }
+}
+
+@media (max-width: 320px) {
+    .learn-more-container {
+        padding-top: 30px;
+    }
+    .cs-heading {
+        font-size: 36px;
+    }
+    .cs-pgraph-1,
+    .cs-problem,
+    .cs-solution,
+    .cs-result {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .cs-pgraph-1 {
+        padding: 0 5px;
+    }
+    .cs-active {
+        height: 1000px;
+    }
+    .cs-pgraph-2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .cs-footer p {
+        font-size: 19px;
+        padding: 0 5px;
+    }
 }
 
 .learn-more {
@@ -3189,10 +3353,10 @@ ol li {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin: 10px auto;
     padding-top: 30px;
 }
@@ -3247,15 +3411,15 @@ ol li {
 
 .tab-pic {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -3268,8 +3432,8 @@ ol li {
 
 .tab-pgraph {
     -webkit-box-flex: 4;
-        -ms-flex: 4;
-            flex: 4;
+    -ms-flex: 4;
+    flex: 4;
     text-align: justify;
     color: white;
     padding-right: 25px;
@@ -3304,30 +3468,13 @@ ol li {
     margin-left: auto;
     font-family: 'Berkshire Swash', sans-serif;
     color: #000;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
 }
 
 .close:hover {
-    color: #ff5c5c;
-}
-
-.close-link {
-    display: inline;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: 'Berkshire Swash', sans-serif;
-    color: #000;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.close-link:hover {
     color: #ff5c5c;
 }
 
@@ -3361,14 +3508,14 @@ ol li {
         height: 240px;
         padding-left: 4px;
         -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
     }
     .mtab-content div:first-child {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     .tab-pic {
         margin-bottom: 20px;
@@ -3548,8 +3695,6 @@ ol li {
     line-height: 30px;
     text-align: center;
 }
-
-
 
 .ow-welcome-message-container {
     position: absolute;
@@ -4113,7 +4258,6 @@ screen and (min-height: 1024px) {
         padding-bottom: 10px;
         line-height: 20px;
     }
-    
     .ow-welcome-message-container {
         display: block;
     }
@@ -4129,7 +4273,6 @@ screen and (min-height: 1024px) {
         -ms-flex-preferred-size: 52%;
         flex-basis: 52%;
     }
-    
     .social-media-content {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -4540,7 +4683,6 @@ screen and (min-height: 1024px) {
         font-size: 24px;
         line-height: 30px;
     }
-    
     .follow-us-image {
         position: static;
         -ms-flex-preferred-size: 70%;
@@ -5005,7 +5147,6 @@ screen and (min-height: 1024px) {
         line-height: 24px;
         text-align: center;
     }
-    
     .ow-welcome-message-container {
         display: block;
     }

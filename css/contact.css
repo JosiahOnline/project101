@@ -2048,6 +2048,7 @@ textarea.w-select {
     text-align: left;
     text-decoration: none;
     text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
+    cursor: context-menu;
 }
 
 .brand-logo.w--current {
@@ -2106,6 +2107,7 @@ textarea.w-select {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     border-bottom: solid transparent 5px;
+    cursor: context-menu;
 }
 
 .hamburger {

@@ -2853,6 +2853,263 @@ footer {
     color: #131321;
 }
 
+/* Learn More Pop Up-Modal until Line 3113 */
+
+.learn-more-container {
+    position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+    bottom: 0;
+	left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: white;
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+    
+}
+
+.learn-more-container:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.learn-more-wrapper {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0 20px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.cs-heading {
+    width: 100%;
+    margin: 10px auto;
+    font-size: 48px;
+}
+
+.cs-pgraph-1 {
+    margin: 10px auto;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.cs-slider-container {
+    margin: 0 auto;
+    background-color: black;
+   
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+.cs-active {
+    height: 500px;
+}
+
+.cs-active li {
+    position: absolute;
+}
+
+.cs-active li.cs-current {
+    display: block;
+    border: 1px solid black;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.cs-slider {
+    display: none;
+    color: white;
+    text-align: left;
+}
+
+.slider1 {
+    background-image: url("../img/Services/CaseStudies/CS1.png");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 170px;
+    margin-bottom: 10px;
+   
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.slider2 {
+    background-image: url("../img/Services/CaseStudies/CS2.png");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 130px;
+    margin-bottom: 10px;
+   
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.slider3 {
+    background-image: url("../img/Services/CaseStudies/CS3.png");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-bottom: 10px;
+    
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.slider4 {
+    background-image: url("../img/Services/CaseStudies/CS4.png");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+    margin-bottom: 10px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.cs-content {
+    padding: 0 30px;
+}
+
+.cs-problem, .cs-solution, .cs-result {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.cs-problem {
+    color: #f36;
+}
+
+.cs-solution {
+    color: #eff900;
+}
+
+.cs-result {
+    color: #3898EC;
+}
+
+.cs-pgraph-2 {
+    margin: 10px 0 15px;
+}
+
+.slide-nav {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+    margin-top: -3px;
+    height: 30px;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    z-index: 100;
+}
+
+.slide-nav .cs-circle {
+    display: inline-block;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+	width: 20px;
+	height: 20px;
+    font-size: 15px;
+    color: #131321;
+    font-weight: 700;
+}
+
+.slide-nav a:hover {
+    background-color: #eff900;
+    color: black;
+}
+
+.slide-nav .selected-circle {
+    background-color: #f36;
+    color: white;
+}
+
+
+
+.cs-footer p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contactUs {
+    text-decoration: none;
+    color: #369;
+    font-weight: 700;
+}
+
+.contactUs:hover {
+    text-decoration: underline;
+}
+
+.learn-more-close {
+    display: inline;
+    margin: 10px auto;
+    font-family: 'Berkshire Swash', sans-serif;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.learn-more-close:hover {
+    color: #ff5c5c;
+}
+
+@media (max-width: 1024px) {
+    .learn-more-container {
+        padding-top: 100px;
+    }
+    .cs-pgraph-1{
+        margin: 15px auto;
+    }
+    .slider1 {
+        height: 140px;
+    }
+    .slider2 {
+        height: 100px;
+    }
+    .slider3 {
+        height: 90px;
+    }
+    .slider4 {
+        height: 180px;
+    }
+    .slide-nav a:focus {
+    background-color: #f36;
+        color: white;
+}
+}
+
+@media (max-width: 479px) {
+    
+    
+}
+
 .learn-more {
     position: static;
     width: 200px;
@@ -3381,31 +3638,6 @@ footer {
     display: none;
 }
 
-.cs-pgraph-1 {
-    margin-bottom: 5px;
-    margin-left: 15px;
-    padding-left: 0px;
-    font-family: Merriweather, serif;
-    color: #fff;
-}
-
-.cs-heading-1 {
-    margin-top: 30px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    padding-left: 0px;
-    font-family: Merriweather, serif;
-    color: #ff5c5c;
-}
-
-.cs-solution-1 {
-    margin-bottom: 5px;
-    margin-left: 15px;
-    padding-left: 0px;
-    font-family: Merriweather, serif;
-    color: #fff952;
-}
-
 .follow-us-image {
     -ms-flex-negative: 0;
     flex-shrink: 0;
@@ -3569,26 +3801,6 @@ footer {
     font-family: Merriweather, serif;
     font-size: 17px;
     font-weight: 700;
-}
-
-.cs-heading-2 {
-    margin-bottom: 5px;
-    margin-left: 15px;
-    font-family: Merriweather, serif;
-    color: #ff5c5c;
-}
-
-.cs-pgraph-2 {
-    margin-bottom: 5px;
-    margin-left: 15px;
-    color: #fff;
-}
-
-.cs-solution-2 {
-    margin-bottom: 5px;
-    margin-left: 15px;
-    font-family: Merriweather, serif;
-    color: #fff952;
 }
 
 html.w-mod-js *[data-ix="fixed-nav-hide"] {
@@ -4328,15 +4540,7 @@ screen and (min-height: 1024px) {
         font-size: 24px;
         line-height: 30px;
     }
-    .cs-pgraph-1 {
-        margin-left: 5px;
-    }
-    .cs-heading-1 {
-        margin-left: 5px;
-    }
-    .cs-solution-1 {
-        margin-left: 5px;
-    }
+    
     .follow-us-image {
         position: static;
         -ms-flex-preferred-size: 70%;

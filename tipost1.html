@@ -4,11 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Post1</title>
+    <title>tipost1</title>
 
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <link href="css/post.css" rel="stylesheet" type="text/css">
+    <link href="css/tipost.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <script type="text/javascript">
         WebFont.load({
@@ -24,13 +24,13 @@
 
 <body class="body">
     <div class="main-wrapper">
-        <div class="post-section1">
-            <nav class="static">
+        <div class="tipost-section1">
+            <nav id="scrollDown" class="static">
                 <a href="index.html">
                     <div class="logo">Online Bah</div>
                 </a>
-                <a href="blog.html">
-                    <div class="blog-link">Blog</div>
+                <a href="trending.html">
+                    <div class="tiblog-link">Trending Ideas</div>
                 </a>
                 <ul>
                     <li class="signup">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="header-content">
                     <div class="header-wrapper">
-                        <h1>Why Content is King?</h1>
+                        <h1>Innovative Scrolling & Parallax</h1>
                     </div>
                     <div class="author-content">
                         <img alt="Josiah" src="img/Contact/Contact2.jpg" class="avatar" height="50px" width="50px">
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-section2">
+        <div class="tipost-section2">
             <div class="article-content">
                 <article class="single-post">
                     <p>
@@ -91,7 +91,7 @@
                 </article>
             </div>
         </div>
-        <div class="post-section3">
+        <div class="tipost-section3">
             <div class="related-articles">
                 <h2>You might also like...</h2>
                 <div class="related-content">
@@ -139,6 +139,23 @@
             <div class="copyright">onlinebah @copyright 2017</div>
         </footer>
     </div>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script>
+        var iScrollPos = 0;
+        $(window).scroll(function() {
+            var iCurScrollPos = $(this).scrollTop();
+            if (iCurScrollPos > iScrollPos) {
+                document.getElementById("scrollDown").style.backgroundColor = "transparent";
+                document.getElementById("scrollDown").style.display = "none";
+            } else {
+                document.getElementById("scrollDown").style.backgroundColor = "rgba(19,19,42,1)";
+                document.getElementById("scrollDown").style.display = "block";
+                document.getElementById("scrollDown").style.borderBottomStyle = "solid";
+                document.getElementById("scrollDown").style.boxShadow = "grey";
+            }
+            iScrollPos = iCurScrollPos;
+        });
+    </script>
 
 </body>
 

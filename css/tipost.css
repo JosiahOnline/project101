@@ -6,6 +6,7 @@ html {
     font-family: Droid Serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -252,7 +253,7 @@ th {
     width:100%;
     position: absolute;
     left:0;
-    height: 3px;
+    height: 5px;
     background-image: linear-gradient(92deg, #d8e509, #fc0000);
 }
 
@@ -285,8 +286,8 @@ nav a {
 }
 
 .signup:hover {
-    background-color: #f36;
-    border-color: #f36;
+    background-color: darkorange;
+    border-color: darkorange;
 }
 
 .logo {
@@ -303,8 +304,8 @@ nav a {
 }
 
 .logo:hover {
-    background-color: #f36;
-    border-color: #f36;
+    background-color: darkorange;
+    border-color: darkorange;
     color: white;
 }
 
@@ -315,7 +316,7 @@ nav a {
 }
 
 .tiblog-link:hover {
-    color: #f36;
+    color: darkorange;
 }
 
 ul {
@@ -390,7 +391,7 @@ ul {
 }
 
 .writer a:hover {
-    color: #f36;
+    color: darkorange;
 }
 
 .single-post p {
@@ -630,7 +631,7 @@ footer {
         text-align: left;
         padding: 0 18px;
         margin: 20px auto 10px;
-        color: #f36;
+        color: darkorange;
         text-shadow: none;
     }
     .related-date {
@@ -639,15 +640,15 @@ footer {
         display: inline-block;
         border-top-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        background-color: #f36;
+        background-color: darkorange;
         left: 0;
     }
     .related-pgraph {}
 }
 
 @media (max-width: 768px) {
-    nav {
-        padding: 30px 30px 0;
+    ul {
+        padding-left: 40px;
     }
     .header-content {
         top: 170px;
@@ -692,19 +693,21 @@ footer {
 
 @media (max-width: 479px) {
     nav {
-        padding: 25px 0px;
+        padding: 15px 0px;
+        width: 100%;
     }
     .logo,
     .tiblog-link,
     .signup a {
-        font-size: 18px;
+        font-size: 16px;
     }
     .logo {
-        margin-left: 25px;
+        margin-left: 15px;
     }
-    .signup {
-        margin-right: 20px;
+    ul {
+        padding-left: 10px;
     }
+    
     .header-content {
         top: 90px;
     }
@@ -725,9 +728,9 @@ footer {
         margin: 20px auto;
     }
     .related-articles >:first-child {
+        width: 90%;
         font-size: 1.2em;
-        border-left: 6px solid #f36;
-        margin: 30px auto;
+        margin-left: 10px;
     }
     .related-title {
         min-height: 130px;

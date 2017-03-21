@@ -6,7 +6,6 @@ html {
     font-family: Droid Serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -259,10 +258,11 @@ th {
 
 nav {
     position: fixed;
+    display: inline-block;    
     top: 0;
     left:0;
     height: 44px;
-    padding: 10px 20px;
+    padding: 10px 15px 10px 20px;
     background-color: transparent;
     z-index: 100;
     background: rgba(19, 19, 33, 1);
@@ -323,13 +323,13 @@ ul {
     display: inline-block;
     list-style-type: none;
     margin: 0 auto;
-    padding-left: 100px;
+    padding-left: 20px;
 }
 
 .post-hero {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 700px;
 }
 
 .hero-bg {
@@ -353,19 +353,19 @@ ul {
 .header-content {
     width: 100%;
     position: absolute;
-    top: 120px;
+    top: 140px;
     left: 0;
     margin-top: 30px;
     text-align: center;
 }
 
 .header-wrapper {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 
 .header-wrapper h1 {
-    font-size: 4em;
+    font-size: 4.5em;
     color: white;
     text-shadow: 1px 1px 6px #131321;
 }
@@ -416,7 +416,7 @@ ul {
 }
 
 .tipost-section3 {
-    margin: 50px auto;
+    margin: 50px auto 0px;
 }
 
 .related-articles {
@@ -454,7 +454,7 @@ ul {
 }
 
 .related-title {
-    margin: 0 auto;
+    margin: 0 auto 50px;
     min-height: 300px;
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
@@ -492,21 +492,42 @@ ul {
 }
 
 .image1 {
-    background-image: url(../img/Blog/blog2.jpg);
+    background-image: url(../img/Trending/TI-2.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .image2 {
-    background-image: url(../img/Blog/blog3.jpg);
+    background-image: url(../img/Trending/TI-3.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .image3 {
-    background-image: url(../img/Blog/blog4.jpg);
+    background-image: url(../img/Trending/TI-4.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image4 {
+    background-image: url(../img/Trending/TI-5.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image5 {
+    background-image: url(../img/Trending/TI-6.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image6 {
+    background-image: url(../img/Trending/TI-7.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -514,11 +535,16 @@ ul {
 
 .related-header {
     position: absolute;
-    top: 75px;
+    top: 50px;
+    margin: 10px auto;
+    padding: 0 30px;
+}
+
+.related-header h1 {
     width: 100%;
     color: white;
     font-size: 1.4em;
-    margin: 10px auto;
+    
     text-shadow: 1px 1px 6px #000;
 }
 
@@ -553,6 +579,9 @@ footer {
     .hero-bg {
         background-attachment: scroll;
     }
+    .header-content {
+        top: 100px;
+    }
     .related-title {
         min-height: 130px;
         margin-bottom: 20px;
@@ -566,9 +595,8 @@ footer {
     }
     .related-image {
         height: 150px;
-        min-width: 140px;
     }
-    .related-header {
+    .related-header h1 {
         top: 55px;
         margin-top: 15px;
         margin-bottom: 5px;
@@ -628,9 +656,11 @@ footer {
     .related-header {
         position: static;
         width: auto;
-        text-align: left;
-        padding: 0 18px;
         margin: 20px auto 10px;
+        padding: 0 18px;
+    }
+    .related-header h1 {
+        text-align: left;
         color: darkorange;
         text-shadow: none;
     }
@@ -650,10 +680,12 @@ footer {
     ul {
         padding-left: 40px;
     }
+    .post-hero {
+        height: 600px;
+    }
     .header-content {
-        top: 170px;
+        top: 300px;
         text-align: left;
-        width: 80%;
     }
     .header-wrapper {
         margin: 0 40px;
@@ -673,10 +705,10 @@ footer {
         padding-top: 1.5px;
     }
     .related-image {
-        min-width: 240px;
+        width: 300px;
         height: 210px;
     }
-    .related-header {
+    .related-header h1 {
         font-size: 26px;
     }
     .related-date {
@@ -693,8 +725,9 @@ footer {
 
 @media (max-width: 479px) {
     nav {
-        padding: 15px 0px;
+        padding: 10px 0px;
         width: 100%;
+        border-bottom-right-radius: 0;
     }
     .logo,
     .tiblog-link,
@@ -709,10 +742,10 @@ footer {
     }
     
     .header-content {
-        top: 90px;
+        top: 120px;
     }
     .header-wrapper h1 {
-        font-size: 3em;
+        font-size: 2.8em;
         margin-left: 10px;
     }
     .dropcap {
@@ -741,12 +774,17 @@ footer {
         width: 88px;
     }
     .related-image {
-        height: 150px;
+        height: 160px;
         min-width: 140px;
+        width: 0px;
+        
     }
     .related-header {
-        margin-top: 15px;
-        margin-bottom: 5px;
+        margin: 10px auto 0px;
+    }
+    .related-header h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
         font-size: 18px;
     }
     .related-pgraph {
@@ -771,7 +809,13 @@ footer {
         font-size: 14px;
     }
     .header-content {
-        top: 120px;
+        top: 240px;
+    }
+    .header-wrapper h1 {
+        font-size: 2.4em;
+    }
+    .author-content {
+        margin-top: 30px;
     }
     .related-articles >:first-child {
         font-size: 1em;
@@ -779,7 +823,7 @@ footer {
     .related-image {
         height: 180px;
     }
-    .related-header {
+    .related-header h1 {
         font-size: 16px;
     }
 }
@@ -787,17 +831,24 @@ footer {
 @media (max-width: 320px) {
     .logo,
     .tiblog-link,
+    .signup a {
+        font-size: 12px;
+    }
     .signup {
-        font-size: 13px;
+        margin-left: 15px;
+    }
+    nav {
+        height: 38px;
+        padding: 10px 0;
     }
     ul {
         padding: 0;
     }
     .header-content {
-        top: 100px;
+        top: 140px;
     }
     .header-wrapper h1 {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
     .author-content p {
         font-size: 16px;
@@ -816,8 +867,11 @@ footer {
         min-width: 120px;
     }
     .related-header {
+        padding: 0 15px;
+        margin: 10px auto 5px;
+    }
+    .related-header h1 {
         font-size: 15px;
-        padding: 0 0 0 15px;
     }
     .related-pgraph {
         line-height: 19px;

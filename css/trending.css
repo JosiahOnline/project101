@@ -2320,10 +2320,22 @@
     .ti-hover:hover {
         border: 3px solid #f1ff03;
         -webkit-transform: scale(1.02, 1.02);
-            -ms-transform: scale(1.02, 1.02);
-                transform: scale(1.02, 1.02);
+        -ms-transform: scale(1.02, 1.02);
+        transform: scale(1.02, 1.02);
         box-shadow: 0 8px 6px -6px #131321;
         z-index: 100;
+    }
+    
+    .ti-hover .comingSoon {
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        font-size: 20px;
+        color: white;
+        padding: 10px;
+        background: darkorange;
+        border-bottom-right-radius: 5px;
+        z-index: 1;
     }
     
     .ti-topic-1 {
@@ -2361,6 +2373,7 @@
     }
     
     .ti-topic-3 {
+        position: relative;
         display: block;
         height: 300px;
         margin-right: 0px;
@@ -2401,6 +2414,7 @@
     }
     
     .ti-topic-5 {
+        position: relative;
         height: 300px;
         margin-right: 0px;
         margin-bottom: 2px;
@@ -2413,6 +2427,7 @@
     }
     
     .ti-topic-6 {
+        position: relative;
         height: 300px;
         margin-right: 0px;
         margin-bottom: 2px;
@@ -2426,6 +2441,7 @@
     }
     
     .ti-topic-7 {
+        position: relative;
         height: 300px;
         margin-right: 2.5px;
         margin-bottom: 2px;
@@ -2445,6 +2461,7 @@
     }
     
     .ti-topic-8 {
+        position: relative;
         height: 300px;
         margin-bottom: 2px;
         -ms-flex-negative: 0;
@@ -3597,7 +3614,6 @@
                     flex-basis: 50%;
         }
         .ti-topic-3 {
-            position: static;
             left: 0px;
             display: block;
             margin-right: 1px;
@@ -4012,7 +4028,6 @@
             text-align: center;
         }
         .ti-topic-4 {
-            position: static;
             top: 0px;
             height: 300px;
             margin-right: 0px;
@@ -4023,7 +4038,6 @@
                     flex-basis: 53.6%;
         }
         .ti-topic-5 {
-            position: static;
             top: 0px;
             height: 300px;
             margin-right: 2px;
@@ -4034,7 +4048,6 @@
                     flex-basis: 45.7%;
         }
         .ti-topic-6 {
-            position: static;
             top: 0px;
             display: block;
             height: 300px;
@@ -4046,7 +4059,6 @@
             text-align: center;
         }
         .ti-topic-7 {
-            position: static;
             top: 0px;
             height: 300px;
             margin-right: 1px;
@@ -4057,7 +4069,6 @@
             text-align: center;
         }
         .ti-topic-8 {
-            position: static;
             top: 0px;
             height: 400px;
             margin-right: 1.5px;
@@ -4516,6 +4527,11 @@
             -webkit-align-items: stretch;
             align-items: stretch;
         }
+        .ti-hover .comingSoon {
+            left: 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
         .ti-topic-1 {
             position: static;
             z-index: 1;
@@ -4556,7 +4572,6 @@
             background-color: #000;
         }
         .ti-topic-3 {
-            position: static;
             left: 0px;
             top: 0px;
             z-index: 3;
@@ -4580,7 +4595,6 @@
                     flex-basis: 310px;
         }
         .ti-topic-4 {
-            position: static;
             top: 0px;
             z-index: 3;
             height: 240px;
@@ -4592,7 +4606,6 @@
                     flex-basis: 180px;
         }
         .ti-topic-5 {
-            position: static;
             top: 0px;
             width: 99.6%;
             height: 240px;
@@ -4604,7 +4617,6 @@
                     flex-basis: 260px;
         }
         .ti-topic-6 {
-            position: static;
             top: 0px;
             z-index: 1;
             width: 99.2%;
@@ -4616,7 +4628,6 @@
             text-align: left;
         }
         .ti-topic-7 {
-            position: static;
             top: 0px;
             z-index: 1;
             width: 99.1%;
@@ -4628,7 +4639,6 @@
             text-align: left;
         }
         .ti-topic-8 {
-            position: static;
             top: 0px;
             z-index: 1;
             width: 99.1%;

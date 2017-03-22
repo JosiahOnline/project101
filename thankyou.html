@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Thank You for your enquiry</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/thanks.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <script type="text/javascript">
         WebFont.load({
@@ -40,45 +40,15 @@
                 </nav>
             </div>
         </div>
-        <div class="home-section">
-            <div id="myDiv" class="bgcolor"></div>
-            <div class="welcome-message-container" id="welcome-message">
-                <h1 class="welcome-message-heading">&nbsp;&nbsp; &nbsp;&nbsp;Hello! <br>Welcome<br>to our<br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Home<br>Page!</h1></div>
-            <div class="home-container w-container">
-                <div id="typed-strings" class="home-wrapper-1">
-                    <p class="home-pgraph">Are you looking
-                        <br>for unique &amp; affordable web design? If yes,
-                        <br>you have come to
-                        <br>the right place!</p>
-                </div><span id="typed"></span>
-                <div class="home-wrapper-2"><a class="home-link-1 w-preserve-3d" href="services.html">See Our Services</a><a class="home-link-2" href="contact.html">Set Up a Meeting</a></div>
-            </div>
-
-        </div>
-
+    <section id="thankyou" class="container">
+        <div class="thanks">
+            <div class="formsent"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent.</strong></div>
+            <h1>Thank You!</h1>
+            <p>We shall contact you shortly!</p>
+        <a class="homelink" href="blog.html">Read our Blog</a></div>
+    </section><!--/#workinprogress-->
     </div>
     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="js/typed.js" type="text/javascript"></script>
-    <script>
-        $(function() {
-            $("#typed").typed({
-                stringsElement: $('#typed-strings'),
-                typeSpeed: 10,
-                // time before typing starts
-                startDelay: 0,
-                // backspacing speed
-                backSpeed: 0,
-                // time before backspacing
-                backDelay: 6000,
-                // loop
-                loop: true,
-                // show cursor
-                showCursor: true,
-                // character for cursor
-                cursorChar: "|",
-            });
-        });
-    </script>
     <script>
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
         function openNav() {
@@ -87,8 +57,6 @@
             document.getElementById("mySidenav").style.borderLeftColor = "#e9ff00";
             document.getElementById("mySidenav").style.borderLeftStyle = "solid";
             document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("myDiv").style.display = "block";
-            document.getElementById("myDiv").style.backgroundColor = "rgba(19,19,42,0.4)";
         }
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
         function closeNav() {
@@ -97,18 +65,8 @@
             document.getElementById("mySidenav").style.borderLeftColor = "0";
             document.getElementById("mySidenav").style.borderLeftStyle = "0";
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("myDiv").style.backgroundColor = "transparent";
-            document.getElementById("myDiv").style.display = "none";
 
         }
     </script>
-    <script>
-        $(document).ready(function() {
-            $("#welcome-message").fadeOut(3000);
-        });
-    </script>
-
-    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-</body>
-
+    </body>
 </html>

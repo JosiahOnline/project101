@@ -543,7 +543,6 @@ textarea.w-select {
 }
 
 .w-select {
-    background-image: -webkit-linear-gradient(white 0, #f3f3f3 100%);
     background-image: linear-gradient(white 0, #f3f3f3 100%)
 }
 
@@ -1139,7 +1138,6 @@ textarea.w-select {
     background-color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
     margin: 0 3px .5em;
-    -webkit-transition: background-color 100ms, color 100ms;
     transition: background-color 100ms, color 100ms
 }
 
@@ -1443,7 +1441,6 @@ textarea.w-select {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    -webkit-transition: all .3s;
     transition: all .3s
 }
 
@@ -1506,14 +1503,16 @@ textarea.w-select {
     top: 50%;
     width: 100%;
     -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%)
+    -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%)
 }
 
 .w-lightbox-thumbnail .w-lightbox-wide {
     left: 50%;
     height: 100%;
     -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0)
+    -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0)
 }
 
 .w-lightbox-spinner {
@@ -1989,14 +1988,13 @@ textarea.w-select {
 
 .main-wrapper {
     position: relative;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     float: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: column;
+            flex-direction: column;
     background-color: #fafaf8;
 }
 
@@ -2005,7 +2003,6 @@ textarea.w-select {
     display: none;
     height: 100%;
     width: 100%;
-    -webkit-transition: background-color .5s;
     transition: background-color .5s;
     z-index: 99;
 }
@@ -2031,19 +2028,18 @@ textarea.w-select {
     position: relative;
     margin: 0 auto;
     padding: 10px;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
 }
 
 .brand-logo {
-    -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1;
+    -webkit-flex: 1;
+            flex: 1;
     padding: 20px 30px 10px;
     font-family: Merriweather, serif;
     color: #fff;
@@ -2066,41 +2062,41 @@ textarea.w-select {
     top: 0;
     right: 0;
     width: 200px;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -webkit-box-align: stretch;
+    -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -ms-flex-align: stretch;
-    align-items: stretch;
-    -webkit-box-pack: end;
+    -webkit-align-items: stretch;
+            align-items: stretch;
     -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
     padding: 10px 30px 10px;
 }
 
 .navburger {
     -ms-flex-preferred-size: 140px;
-    flex-basis: 140px;
-    -webkit-box-pack: center;
+    -webkit-flex-basis: 140px;
+            flex-basis: 140px;
     -ms-flex-pack: center;
-    justify-content: center;
-    display: -webkit-box;
+    -webkit-justify-content: center;
+            justify-content: center;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
 }
 
 .navburger p {
     padding: 20px 0px 10px 0px;
     -ms-flex-preferred-size: 100px;
-    flex-basis: 100px;
+    -webkit-flex-basis: 100px;
+            flex-basis: 100px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -2108,7 +2104,6 @@ textarea.w-select {
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
-    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     border-bottom: solid transparent 5px;
     cursor: context-menu;
@@ -2116,7 +2111,8 @@ textarea.w-select {
 
 .hamburger {
     -ms-flex-preferred-size: 50px;
-    flex-basis: 50px;
+    -webkit-flex-basis: 50px;
+            flex-basis: 50px;
     padding: 50px 0px 10px 0px;
     background-image: url("../img/Services/Icons/menu1.png");
     background-position: 50% 50%;
@@ -2134,18 +2130,17 @@ textarea.w-select {
     right: 0;
     background-color: #131321;
     overflow-x: hidden;
-    -webkit-transition: 0.05s;
     transition: 0.05s;
     padding-top: 60px;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: column;
+            flex-direction: column;
     -ms-flex-line-pack: center;
-    align-content: center;
+    -webkit-align-content: center;
+            align-content: center;
 }
 
 .menu-links a {
@@ -2157,7 +2152,6 @@ textarea.w-select {
     font-size: 25px;
     color: white;
     display: inline-block;
-    -webkit-transition: 0.05s;
     transition: 0.05s
 }
 
@@ -2180,7 +2174,8 @@ textarea.w-select {
     margin-left: 10px;
     margin-right: 10px;
     -ms-flex-preferred-size: 50px;
-    flex-basis: 50px;
+    -webkit-flex-basis: 50px;
+            flex-basis: 50px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -2188,7 +2183,6 @@ textarea.w-select {
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
-    -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
     border-bottom: solid transparent 5px;
 }
@@ -2206,7 +2200,6 @@ textarea.w-select {
     position: absolute;
     left: 20%;
     bottom: 0;
-    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
@@ -2228,12 +2221,12 @@ textarea.w-select {
     padding-top: 10px;
     padding-bottom: 5px;
     -ms-flex-negative: 0;
-    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+            flex-shrink: 0;
     -ms-flex-preferred-size: auto;
-    flex-basis: auto;
+    -webkit-flex-basis: auto;
+            flex-basis: auto;
     border-top: 2px solid #fff;
-    background-image: -webkit-linear-gradient(270deg, #131321, #131321);
-    background-image: -webkit-linear-gradient(top, #131321, #131321);
     background-image: linear-gradient(180deg, #131321, #131321);
 }
 
@@ -2254,19 +2247,18 @@ textarea.w-select {
 .blog-section-1 {
     position: relative;
     z-index: 5;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     width: 100%;
     margin-top: 60px;
     margin-bottom: 50px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-flex: 0;
+    -webkit-flex-direction: column;
+            flex-direction: column;
     -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+            flex: 0 0 auto;
     background-color: #131321;
 }
 
@@ -2319,20 +2311,21 @@ textarea.w-select {
     margin-left: auto;
     padding-top: 50px;
     padding-bottom: 0px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: start;
+    -webkit-flex-direction: row;
+            flex-direction: row;
     -ms-flex-pack: start;
-    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: stretch;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
     -ms-flex-align: stretch;
-    align-items: stretch;
+    -webkit-align-items: stretch;
+            align-items: stretch;
     -ms-flex-line-pack: stretch;
-    align-content: stretch;
+    -webkit-align-content: stretch;
+            align-content: stretch;
     background-color: #fafaf8;
 }
 
@@ -2588,8 +2581,6 @@ textarea.w-select {
     margin-left: auto;
     border: 1px solid #eee;
     border-radius: 5px;
-    background-image: url("../img/Blog/ad-1.jpg"), -webkit-linear-gradient(270deg, #fff, #fff);
-    background-image: url("../img/Blog/ad-1.jpg"), -webkit-linear-gradient(top, #fff, #fff);
     background-image: url("../img/Blog/ad-1.jpg"), linear-gradient(180deg, #fff, #fff);
     background-position: -86px -138px, 0px 0px;
     background-size: auto, auto;
@@ -2610,8 +2601,6 @@ textarea.w-select {
     margin-left: auto;
     border: 1px solid #eee;
     border-radius: 5px;
-    background-image: url("../img/Blog/ad-2.jpg"), -webkit-linear-gradient(270deg, #fff, #fff);
-    background-image: url("../img/Blog/ad-2.jpg"), -webkit-linear-gradient(top, #fff, #fff);
     background-image: url("../img/Blog/ad-2.jpg"), linear-gradient(180deg, #fff, #fff);
     background-position: 50% 50%, 0px 0px;
     background-size: cover, auto;
@@ -2649,7 +2638,8 @@ textarea.w-select {
     margin-left: auto;
     padding: 20px 10px 10px 8px;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
     text-align: left;
 }
 
@@ -2777,24 +2767,24 @@ textarea.w-select {
 }
 
 .e-newsletter-form {
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
+    -webkit-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-justify-content: center;
+            justify-content: center;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-align: center;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     -ms-flex-align: center;
-    align-items: center;
+    -webkit-align-items: center;
+            align-items: center;
 }
 
 .e-news-subscribe-button {
@@ -2837,9 +2827,9 @@ textarea.w-select {
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
     align-self: stretch;
-    -webkit-box-flex: 0;
     -ms-flex: 0 auto;
-    flex: 0 auto;
+    -webkit-flex: 0 auto;
+            flex: 0 auto;
     background-color: #fafaf8;
     text-align: left;
     margin-bottom: 40px;
@@ -2875,12 +2865,12 @@ textarea.w-select {
     margin-bottom: 20px;
     padding-top: 40px;
     padding-bottom: 0px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     border-radius: 5px;
     background-color: #f36;
     font-family: 'Droid Serif', serif;
@@ -2927,23 +2917,21 @@ textarea.w-select {
 
 .blog-contact-submit:hover {
     background-color: #eff900;
-    color: white;
-    font-size: 18px;
-    font-weight: 100;
 }
 
 .blog-wrapper-1-2 {
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     width: 1100px;
     margin-right: auto;
     margin-left: auto;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-flex: 0;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
     -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+            flex: 0 0 auto;
 }
 
 @media (max-width: 991px) {
@@ -2978,16 +2966,17 @@ textarea.w-select {
         display: block;
         margin-right: 10px;
         margin-left: 0px;
-        -webkit-box-flex: 0;
         -ms-flex: 0 0 300px;
-        flex: 0 0 300px;
+        -webkit-flex: 0 0 300px;
+                flex: 0 0 300px;
     }
     .card-container {
         margin-right: 10px;
         margin-bottom: 40px;
         margin-left: 10px;
         -ms-flex-preferred-size: 300px;
-        flex-basis: 300px;
+        -webkit-flex-basis: 300px;
+                flex-basis: 300px;
     }
     .card-heading-2 {
         top: 29px;
@@ -3040,20 +3029,21 @@ textarea.w-select {
     }
     .blog-wrapper-1-2 {
         width: 700px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
         -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: center;
+        -webkit-flex-direction: row;
+                flex-direction: row;
         -ms-flex-pack: center;
-        justify-content: center;
+        -webkit-justify-content: center;
+                justify-content: center;
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-align: start;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
         -ms-flex-align: start;
-        align-items: flex-start;
+        -webkit-align-items: flex-start;
+                align-items: flex-start;
         -ms-flex-line-pack: start;
-        align-content: flex-start;
+        -webkit-align-content: flex-start;
+                align-content: flex-start;
     }
     .footer {
         padding-top: 10px;
@@ -3086,7 +3076,8 @@ textarea.w-select {
         width: 450px;
         height: 500px;
         -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+        -webkit-flex-basis: auto;
+                flex-basis: auto;
     }
     .hero-card-heading {
         top: 84px;
@@ -3116,7 +3107,8 @@ textarea.w-select {
         width: 450px;
         height: 500px;
         -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+        -webkit-flex-basis: auto;
+                flex-basis: auto;
     }
     .latest-published {
         width: 150px;
@@ -3245,18 +3237,18 @@ textarea.w-select {
     }
     .blog-wrapper-1-2 {
         width: 480px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
+        -webkit-flex-direction: column;
+                flex-direction: column;
         -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
+        -webkit-justify-content: center;
+                justify-content: center;
         -ms-flex-align: center;
-        align-items: center;
+        -webkit-align-items: center;
+                align-items: center;
         -ms-flex-line-pack: start;
-        align-content: flex-start;
+        -webkit-align-content: flex-start;
+                align-content: flex-start;
     }
 }
 
@@ -3276,7 +3268,8 @@ textarea.w-select {
     }
     .navburger {
         -ms-flex-preferred-size: 100px;
-        flex-basis: 100px;
+        -webkit-flex-basis: 100px;
+                flex-basis: 100px;
     }
     .navburger p {
         font-size: 18px;
@@ -3466,19 +3459,20 @@ textarea.w-select {
         margin-left: auto;
         padding: 10px;
         -ms-flex-negative: 0;
-        flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+                flex-shrink: 0;
         -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+        -webkit-flex-basis: 100%;
+                flex-basis: 100%;
         font-size: 15px;
         text-align: center;
     }
     .e-newsletter-form {
         display: block;
         margin-top: 10px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
+        -webkit-flex-direction: column;
+                flex-direction: column;
         text-align: center;
     }
     .e-news-subscribe-button {
@@ -3489,27 +3483,30 @@ textarea.w-select {
         margin-left: auto;
         padding: 10px;
         -ms-flex-negative: 0;
-        flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+                flex-shrink: 0;
         -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+        -webkit-flex-basis: 100%;
+                flex-basis: 100%;
         font-size: 15px;
     }
     .e-news-wrapper {
         display: block;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: start;
+        -webkit-flex-direction: column;
+                flex-direction: column;
         -ms-flex-pack: start;
-        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+                justify-content: flex-start;
         -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-box-align: center;
+        -webkit-flex-wrap: nowrap;
+                flex-wrap: nowrap;
         -ms-flex-align: center;
-        align-items: center;
+        -webkit-align-items: center;
+                align-items: center;
         -ms-flex-line-pack: stretch;
-        align-content: stretch;
+        -webkit-align-content: stretch;
+                align-content: stretch;
     }
     .blog-heading-2-1 {
         display: block;

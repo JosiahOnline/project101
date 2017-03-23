@@ -4859,6 +4859,7 @@
             background-color: #fff;
         }
         .ti-wrapper-2-2 {
+            padding-top: 20px;
             padding-bottom: 0px;
             background-color: #131321;
         }
@@ -4868,18 +4869,23 @@
         .ti-pgraph-2-2 {
             padding-right: 10px;
             padding-left: 10px;
+            margin-bottom: 20px;
         }
         .ti-email {
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
             text-align: center;
+            font-size: 18px;
+            height: 50px;
         }
         .ti-subscribe-button {
             margin-left: 0px;
             padding-right: 0px;
             padding-left: 0px;
             text-align: center;
+            font-size: 18px;
+            height: 50px;
         }
         .ti-form-wrapper {
             padding-right: 0px;
@@ -5172,6 +5178,15 @@
         }
     }
     
+    @media (max-width: 376px) {
+        .ti-container-2 {
+            height: 500px;
+        }
+        .ti-section-1 {
+            height: 3090px;
+        }
+    }
+    
     @media (max-width: 360px) {
         .ti-ads {
             top: -105%;
@@ -5201,5 +5216,8 @@
         }
         .ti-ad-close-link {
             top: -10px;
+        }
+        .ti-subscribe-button {
+            height: 45px;
         }
     }

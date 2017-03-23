@@ -1,4 +1,6 @@
 /*Thank You Page */
+
+
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -268,7 +270,6 @@ html {
 body {
     margin: 0;
     min-height: 100%;
-    -webkit-transition: background-color .5s;
     transition: background-color .5s;
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -307,7 +308,7 @@ html.w-mod-touch * {
 
 .w-preserve-3d {
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d
+    transform-style: preserve-3d
 }
 
 .w-hidden {
@@ -416,16 +417,30 @@ ol {
 
 .main-wrapper {
     position: relative;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     overflow: visible;
     height: 100vh;
     float: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    background-image: url("../img/Thankyou/thankyou.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgcolor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
 }
 
 .top-nav {
@@ -439,6 +454,7 @@ ol {
     border-style: none;
     border-bottom-width: 1px;
     border-bottom-color: transparent;
+    box-shadow: 0 8px 6px -6px grey;
     background-color: #131321;
     z-index: 100;
 }
@@ -448,19 +464,18 @@ ol {
     position: relative;
     margin: 0 auto;
     padding: 10px;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
 }
 
 .brand-logo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
     padding: 20px 30px 10px;
     font-family: Merriweather, serif;
     color: #fff;
@@ -483,41 +498,41 @@ ol {
     top: 0;
     right: 0;
     width: 200px;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
     padding: 10px 30px 10px;
 }
 
 .navburger {
     -ms-flex-preferred-size: 140px;
-        flex-basis: 140px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display: -webkit-box;
+    -webkit-flex-basis: 140px;
+            flex-basis: 140px;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
 }
 
 .navburger p {
     padding: 20px 0px 10px 0px;
     -ms-flex-preferred-size: 100px;
-        flex-basis: 100px;
+    -webkit-flex-basis: 100px;
+            flex-basis: 100px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -525,7 +540,6 @@ ol {
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
-    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     border-bottom: solid transparent 5px;
     cursor: context-menu;
@@ -533,7 +547,8 @@ ol {
 
 .hamburger {
     -ms-flex-preferred-size: 50px;
-        flex-basis: 50px;
+    -webkit-flex-basis: 50px;
+            flex-basis: 50px;
     padding: 50px 0px 10px 0px;
     background-image: url("../img/Services/Icons/menu1.png");
     background-position: 50% 50%;
@@ -551,18 +566,17 @@ ol {
     right: 0;
     background-color: #131321;
     overflow-x: hidden;
-    -webkit-transition: 0.05s;
     transition: 0.05s;
     padding-top: 60px;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
     -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-align-content: center;
+            align-content: center;
 }
 
 .menu-links a {
@@ -574,7 +588,6 @@ ol {
     font-size: 25px;
     color: white;
     display: inline-block;
-    -webkit-transition: 0.05s;
     transition: 0.05s
 }
 
@@ -600,7 +613,8 @@ ol {
     margin-left: 10px;
     margin-right: 10px;
     -ms-flex-preferred-size: 50px;
-        flex-basis: 50px;
+    -webkit-flex-basis: 50px;
+            flex-basis: 50px;
     font-family: Merriweather, serif;
     color: #fff;
     font-size: 24px;
@@ -608,7 +622,6 @@ ol {
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px #000, 0 1px 2px #000;
-    -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
     border-bottom: solid transparent 5px;
 }
@@ -626,24 +639,38 @@ ol {
     position: absolute;
     left: 20%;
     bottom: 0;
-    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
 .addborder:hover:before {
     width: 60%;
 }
+
+.mailSent {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    height: 32px;
+    width: 32px;
+    background-image: url("../img/Thankyou/sent-mail.png");
+    background-position: 50% 50%;
+    background-size: 32px;
+    background-repeat: no-repeat;
+}
+
 #thankyou {
-    padding-top: 20%;
-  padding-bottom:  8%;
-  width: 100%;
-  height: 100%;
+    padding: 19% 30% 8%;
+    width: 100%;
+    height: 100%;
     text-align: center;
-   
 }
 
 .thanks {
     color: darkorange;
+    height: 260px;
+    padding-top: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
 }
 
 .thanks h1 {
@@ -652,12 +679,17 @@ ol {
 }
 
 .formsent {
+    position: relative;
     color: darkOrange;
     width: 240px;
     border: 1px solid darkorange;
-    margin: auto;
-    padding: 10px;
+    margin: 20px auto 0;
+    padding: 10px 0px 10px 25px;
     border-radius: 5px;
+}
+
+.thanks p {
+    font-size: 20px;
 }
 
 .thanks a:hover {
@@ -665,6 +697,7 @@ ol {
     background-color: #f36;
     border-color: #f36;
 }
+
 .homelink {
     color: white;
     text-decoration: none;
@@ -688,7 +721,7 @@ screen and (min-height: 1024px) {
         right: 0px;
     }
     #thankyou {
-        padding-top: 40%;
+        padding: 50% 20% 0%;
     }
 }
 
@@ -698,19 +731,20 @@ screen and (min-height: 1024px) {
         -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
-            align-self: stretch;
-        -webkit-box-flex: 0;
+        align-self: stretch;
         -ms-flex: 0 auto;
+        -webkit-flex: 0 auto;
         flex: 0 auto;
     }
     .nav-container {
         left: 0px;
         top: 0px;
         padding-top: 10px;
-        -webkit-box-pack: end;
         -ms-flex-pack: end;
+        -webkit-justify-content: flex-end;
         justify-content: flex-end;
         -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .nav-link {
@@ -724,21 +758,23 @@ screen and (min-height: 1024px) {
         margin-top: 50px;
         font-size: 35px;
     }
-     #thankyou {
-        padding-top: 60%;
+    #thankyou {
+        padding: 50% 10% 0%;
     }
 }
 
 @media (max-width: 479px) {
     .main-wrapper {
-        display: -webkit-box;
         display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         overflow: visible;
         -ms-flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
         flex-wrap: nowrap;
         -ms-flex-line-pack: center;
-        align-content: center;
+        -webkit-align-content: center;
+                align-content: center;
     }
     .top-nav {
         height: 60px;
@@ -754,7 +790,8 @@ screen and (min-height: 1024px) {
     }
     .navburger {
         -ms-flex-preferred-size: 100px;
-            flex-basis: 100px;
+        -webkit-flex-basis: 100px;
+                flex-basis: 100px;
     }
     .navburger p {
         font-size: 18px;
@@ -783,5 +820,32 @@ screen and (min-height: 1024px) {
         padding: 20px;
         background-image: none;
         font-size: 25px;
+    }
+    #thankyou {
+        padding: 60% 5% 0;
+    }
+    .thanks h1 {
+        font-size: 45px;
+    }
+    .thanks p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    #thankyou {
+        padding: 55% 5% 0;
+    }
+    .thanks {
+        height: 240px;
+    }
+    .thanks h1 {
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .thanks p {
+        font-size: 16px;
+        margin-bottom: 25px;
     }
 }

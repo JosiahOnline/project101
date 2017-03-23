@@ -21,6 +21,7 @@
 
 <body class="body">
     <div class="main-wrapper">
+        <div id="myBgColor" class="bgcolor"></div>
         <div class="top-nav">
             <div class="nav-container">
                 <a class="brand-logo" href="#">Online Bah</a>
@@ -42,7 +43,7 @@
         </div>
     <section id="thankyou" class="container">
         <div class="thanks">
-            <div class="formsent"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent.</strong></div>
+            <div class="formsent"><strong><span class="mailSent"></span> Success! Message sent.</strong></div>
             <h1>Thank You!</h1>
             <p>We shall contact you shortly!</p>
         <a class="homelink" href="blog.html">Read our Blog</a></div>
@@ -57,6 +58,9 @@
             document.getElementById("mySidenav").style.borderLeftColor = "#e9ff00";
             document.getElementById("mySidenav").style.borderLeftStyle = "solid";
             document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("myBgColor").style.display = "block";
+            document.getElementById("myBgColor").style.backgroundColor = "rgba(19,19,42,0.4)";
+            document.getElementsByTagName("body")[0].style.overflow = "hidden";
         }
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
         function closeNav() {
@@ -65,7 +69,9 @@
             document.getElementById("mySidenav").style.borderLeftColor = "0";
             document.getElementById("mySidenav").style.borderLeftStyle = "0";
             document.getElementById("mySidenav").style.width = "0";
-
+            document.getElementById("myBgColor").style.backgroundColor = "transparent";
+            document.getElementById("myBgColor").style.display = "none";
+            document.getElementsByTagName("body")[0].style.overflow = "visible";
         }
     </script>
     </body>

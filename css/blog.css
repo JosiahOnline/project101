@@ -2838,7 +2838,7 @@ textarea.w-select {
 .blog-wrapper-2-1 {
     display: block;
     height: 25%;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
 }
 
 .blog-heading-2-1 {
@@ -2995,6 +2995,7 @@ textarea.w-select {
         line-height: 40px;
     }
     .blog-section-2 {
+        padding-top: 0px;
         padding-right: 0px;
         padding-left: 0px;
         margin-bottom: 50px;

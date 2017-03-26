@@ -1,3 +1,9 @@
+WebFont.load({
+            google: {
+                families: ["Merriweather:300,400,700,900", "Droid Serif:400,700", "Vollkorn:400,400italic,700,700italic", "Berkshire Swash:regular:latin,latin-ext", "Oleo Script:regular,700:latin,latin-ext"]
+            }
+        });
+
 function openNav() {
     document.getElementById("mySidenav").style.borderLeft = "5px";
     document.getElementById("mySidenav").style.borderLeftColor = "#e9ff00";

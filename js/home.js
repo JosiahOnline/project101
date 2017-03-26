@@ -1,3 +1,9 @@
+WebFont.load({
+            google: {
+                families: ["Merriweather:300,400,700,900", "Droid Serif:400,700", "Vollkorn:400,400italic,700,700italic", "Berkshire Swash:regular:latin,latin-ext", "Oleo Script:regular,700:latin,latin-ext"]
+            }
+        });
+
 // The MIT License (MIT)
 
 // Typed.js | Copyright (c) 2016 Matt Boldt | www.mattboldt.com

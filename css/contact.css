@@ -56,10 +56,6 @@ textarea {
     margin: 0
 }
 
-button {
-    overflow: visible
-}
-
 button,
 select {
     text-transform: none
@@ -591,8 +587,8 @@ textarea.w-select {
 }
 
 .contact-link:hover {
-    border-color: rgba(16, 191, 244, .5);
-    background-color: rgba(16, 191, 244, .5);
+    border-color: #369;
+    background-color: #369; /* or try this rgba(16, 191, 244, .5)*/
     color: #fff;
 }
 

@@ -304,12 +304,6 @@ textarea.w-select {
     cursor: context-menu;
 }
 
-.brand-logo.w--current {
-    left: -200px;
-    margin-top: 0px;
-    padding: 20px 0px 0px;
-}
-
 .navbar {
     position: absolute;
     top: 0;
@@ -1542,15 +1536,6 @@ textarea.w-select {
         margin: 0 auto;
         padding-top: 10px;
         padding-bottom: 15px;
-        font-size: 25px;
-    }
-    .nav-link.w--current {
-        top: 0px;
-        display: block;
-        width: 100%;
-        margin: 0px auto;
-        padding: 20px;
-        background-image: none;
         font-size: 25px;
     }
     .blog-section-2 {

@@ -38,18 +38,8 @@ h1 {
     margin: .67em 0
 }
 
-img {
-    border: 0
-}
-
 svg:not(:root) {
     overflow: hidden
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0
 }
 
 * {

@@ -1,1 +1,574 @@
-function openNav(){document.getElementById("mySidenav").style.borderLeft="5px",document.getElementById("mySidenav").style.borderLeftColor="#e9ff00",document.getElementById("mySidenav").style.borderLeftStyle="solid",document.getElementById("mySidenav").style.width="250px",document.getElementById("myBgColor").style.display="block",document.getElementById("myBgColor").style.backgroundColor="rgba(19,19,42,0.4)",document.getElementsByTagName("body")[0].style.overflow="hidden"}function closeNav(){document.getElementById("mySidenav").style.borderLeft="0",document.getElementById("mySidenav").style.borderLeftColor="0",document.getElementById("mySidenav").style.borderLeftStyle="0",document.getElementById("mySidenav").style.width="0",document.getElementById("myBgColor").style.backgroundColor="transparent",document.getElementById("myBgColor").style.display="none",document.getElementsByTagName("body")[0].style.overflow="visible"}WebFont.load({google:{families:["Merriweather:300,400,700,900","Droid Serif:400,700","Vollkorn:400,400italic,700,700italic","Berkshire Swash:regular:latin,latin-ext","Oleo Script:regular,700:latin,latin-ext"]}}),a,!function(a){"use strict";var b=function(b,c){this.el=a(b),this.options=a.extend({},a.fn.typed.defaults,c),this.isInput=this.el.is("input"),this.attr=this.options.attr,this.showCursor=!this.isInput&&this.options.showCursor,this.elContent=this.attr?this.el.attr(this.attr):this.el.text(),this.contentType=this.options.contentType,this.typeSpeed=this.options.typeSpeed,this.startDelay=this.options.startDelay,this.backSpeed=this.options.backSpeed,this.backDelay=this.options.backDelay,this.stringsElement=this.options.stringsElement,this.strings=this.options.strings,this.strPos=0,this.arrayPos=0,this.stopNum=0,this.loop=this.options.loop,this.loopCount=this.options.loopCount,this.curLoop=0,this.stop=!1,this.cursorChar=this.options.cursorChar,this.shuffle=this.options.shuffle,this.sequence=[],this.build()};b.prototype={constructor:b,init:function(){var a=this;a.timeout=setTimeout(function(){for(var b=0;b<a.strings.length;++b)a.sequence[b]=b;a.shuffle&&(a.sequence=a.shuffleArray(a.sequence)),a.typewrite(a.strings[a.sequence[a.arrayPos]],a.strPos)},a.startDelay)},build:function(){var b=this;if(this.showCursor===!0&&(this.cursor=a('<span class="typed-cursor">'+this.cursorChar+"</span>"),this.el.after(this.cursor)),this.stringsElement){this.strings=[],this.stringsElement.hide(),console.log(this.stringsElement.children());var c=this.stringsElement.children();a.each(c,function(c,d){b.strings.push(a(d).html())})}this.init()},typewrite:function(a,b){if(this.stop!==!0){var c=Math.round(70*Math.random())+this.typeSpeed,d=this;d.timeout=setTimeout(function(){var c=0,e=a.substr(b);if("^"===e.charAt(0)){var f=1;/^\^\d+/.test(e)&&(e=/\d+/.exec(e)[0],f+=e.length,c=parseInt(e)),a=a.substring(0,b)+a.substring(b+f)}if("html"===d.contentType){var g=a.substr(b).charAt(0);if("<"===g||"&"===g){var h="",i="";for(i="<"===g?">":";";a.substr(b+1).charAt(0)!==i&&(h+=a.substr(b).charAt(0),b++,!(b+1>a.length)););b++,h+=i}}d.timeout=setTimeout(function(){if(b===a.length){if(d.options.onStringTyped(d.arrayPos),d.arrayPos===d.strings.length-1&&(d.options.callback(),d.curLoop++,d.loop===!1||d.curLoop===d.loopCount))return;d.timeout=setTimeout(function(){d.backspace(a,b)},d.backDelay)}else{0===b&&d.options.preStringTyped(d.arrayPos);var c=a.substr(0,b+1);d.attr?d.el.attr(d.attr,c):d.isInput?d.el.val(c):"html"===d.contentType?d.el.html(c):d.el.text(c),b++,d.typewrite(a,b)}},c)},c)}},backspace:function(a,b){if(this.stop!==!0){var c=Math.round(70*Math.random())+this.backSpeed,d=this;d.timeout=setTimeout(function(){if("html"===d.contentType&&">"===a.substr(b).charAt(0)){for(var c="";"<"!==a.substr(b-1).charAt(0)&&(c-=a.substr(b).charAt(0),b--,!(b<0)););b--,c+="<"}var e=a.substr(0,b);d.attr?d.el.attr(d.attr,e):d.isInput?d.el.val(e):"html"===d.contentType?d.el.html(e):d.el.text(e),b>d.stopNum?(b--,d.backspace(a,b)):b<=d.stopNum&&(d.arrayPos++,d.arrayPos===d.strings.length?(d.arrayPos=0,d.shuffle&&(d.sequence=d.shuffleArray(d.sequence)),d.init()):d.typewrite(d.strings[d.sequence[d.arrayPos]],b))},c)}},shuffleArray:function(a){var b,c,d=a.length;if(d)for(;--d;)c=Math.floor(Math.random()*(d+1)),b=a[c],a[c]=a[d],a[d]=b;return a},reset:function(){var a=this;clearInterval(a.timeout);this.el.attr("id");this.el.empty(),"undefined"!=typeof this.cursor&&this.cursor.remove(),this.strPos=0,this.arrayPos=0,this.curLoop=0,this.options.resetCallback()}},a.fn.typed=function(c){return this.each(function(){var d=a(this),e=d.data("typed"),f="object"==typeof c&&c;e&&e.reset(),d.data("typed",e=new b(this,f)),"string"==typeof c&&e[c]()})},a.fn.typed.defaults={strings:["These are the default values...","You know what you should do?","Use your own!","Have a great day!"],stringsElement:null,typeSpeed:0,startDelay:0,backSpeed:0,shuffle:!1,backDelay:500,loop:!1,loopCount:!1,showCursor:!0,cursorChar:"|",attr:null,contentType:"html",callback:function(){},preStringTyped:function(){},onStringTyped:function(){},resetCallback:function(){}}}(window.jQuery),$(function(){$("#typed").typed({stringsElement:$("#typed-strings"),typeSpeed:10,startDelay:0,backSpeed:0,backDelay:6e3,loop:!0,showCursor:!1})}),$(document).ready(function(){$("#welcome-message").fadeOut(3e3),$(".email-sign-up").click(function(){$(".sign-up-container").css("display","block"),$("body").first().css("overflow","hidden")}),$(".sign-up-close").click(function(){$(".sign-up-container").css("display","none"),$("body").first().css("overflow","visible")}),$(".learn-more").click(function(){$(".learn-more-container").css("display","block"),$("body").first().css("overflow","hidden")}),$(".learn-more-close").click(function(){$(".learn-more-container").css("display","none"),$("body").first().css("overflow","visible")}),$(".features-link").click(function(){$("body").first().css("overflow","hidden")}),$(".features-close").click(function(){$("body").first().css("overflow","visible")}),$("#slide a").click(function(){return $("#slide a").removeClass("selected-circle"),$(this).addClass("selected-circle"),$(".cs-slider-container li").removeClass("cs-current"),$selectedtab=$(this).attr("href"),$currenttab=$($selectedtab).removeAttr("href"),$($currenttab).addClass("cs-current"),!1})}),$(document).ready(function(){$("#mtabs li").click(function(){$("#mtabs li").removeClass("currentTab"),$(this).addClass("currentTab"),$(".mtab-content").hide();var a=$(this).find("a").attr("href");return $(a).fadeIn(),!1})});var iScrollPos=0;$(window).scroll(function(){var a=$(this).scrollTop();a>iScrollPos?(document.getElementById("scrollDown").style.backgroundColor="transparent",document.getElementById("scrollDown").style.display="none"):(document.getElementById("scrollDown").style.backgroundColor="rgba(19,19,42,1)",document.getElementById("scrollDown").style.display="block",document.getElementById("scrollDown").style.borderBottomStyle="solid",document.getElementById("scrollDown").style.boxShadow="grey"),iScrollPos=a});var $window=$(window);$(window).on("scroll",function(){$topOffset=$(this).scrollTop(),0==$topOffset&&($("#scrollDown").css("background-color","transparent"),$("#scrollDown").css("border-bottom-style","none"))});
+WebFont.load({
+            google: {
+                families: ["Merriweather:300,400,700,900", "Droid Serif:400,700", "Vollkorn:400,400italic,700,700italic", "Berkshire Swash:regular:latin,latin-ext", "Oleo Script:regular,700:latin,latin-ext"]
+            }
+        });
+
+// The MIT License (MIT)
+
+// Typed.js | Copyright (c) 2016 Matt Boldt | www.mattboldt.com
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+
+
+
+! function($) {
+
+	"use strict";
+
+	var Typed = function(el, options) {
+
+		// chosen element to manipulate text
+		this.el = $(el);
+
+		// options
+		this.options = $.extend({}, $.fn.typed.defaults, options);
+
+		// attribute to type into
+		this.isInput = this.el.is('input');
+		this.attr = this.options.attr;
+
+		// show cursor
+		this.showCursor = this.isInput ? false : this.options.showCursor;
+
+		// text content of element
+		this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text();
+
+		// html or plain text
+		this.contentType = this.options.contentType;
+
+		// typing speed
+		this.typeSpeed = this.options.typeSpeed;
+
+		// add a delay before typing starts
+		this.startDelay = this.options.startDelay;
+
+		// backspacing speed
+		this.backSpeed = this.options.backSpeed;
+
+		// amount of time to wait before backspacing
+		this.backDelay = this.options.backDelay;
+
+		// div containing strings
+		this.stringsElement = this.options.stringsElement;
+
+		// input strings of text
+		this.strings = this.options.strings;
+
+		// character number position of current string
+		this.strPos = 0;
+
+		// current array position
+		this.arrayPos = 0;
+
+		// number to stop backspacing on.
+		// default 0, can change depending on how many chars
+		// you want to remove at the time
+		this.stopNum = 0;
+
+		// Looping logic
+		this.loop = this.options.loop;
+		this.loopCount = this.options.loopCount;
+		this.curLoop = 0;
+
+		// for stopping
+		this.stop = false;
+
+		// custom cursor
+		this.cursorChar = this.options.cursorChar;
+
+		// shuffle the strings
+		this.shuffle = this.options.shuffle;
+		// the order of strings
+		this.sequence = [];
+
+		// All systems go!
+		this.build();
+	};
+
+	Typed.prototype = {
+
+		constructor: Typed,
+
+		init: function() {
+			// begin the loop w/ first current string (global self.strings)
+			// current string will be passed as an argument each time after this
+			var self = this;
+			self.timeout = setTimeout(function() {
+				for (var i=0;i<self.strings.length;++i) self.sequence[i]=i;
+
+				// shuffle the array if true
+				if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+
+				// Start typing
+				self.typewrite(self.strings[self.sequence[self.arrayPos]], self.strPos);
+			}, self.startDelay);
+		},
+
+		build: function() {
+			var self = this;
+			// Insert cursor
+			if (this.showCursor === true) {
+				this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
+				this.el.after(this.cursor);
+			}
+			if (this.stringsElement) {
+				this.strings = [];
+				this.stringsElement.hide();
+				console.log(this.stringsElement.children());
+				var strings = this.stringsElement.children();
+				$.each(strings, function(key, value){
+					self.strings.push($(value).html());
+				});
+			}
+			this.init();
+		},
+
+		// pass current string state to each function, types 1 char per call
+		typewrite: function(curString, curStrPos) {
+			// exit when stopped
+			if (this.stop === true) {
+				return;
+			}
+
+			// varying values for setTimeout during typing
+			// can't be global since number changes each time loop is executed
+			var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
+			var self = this;
+
+			// ------------- optional ------------- //
+			// backpaces a certain string faster
+			// ------------------------------------ //
+			// if (self.arrayPos == 1){
+			//  self.backDelay = 50;
+			// }
+			// else{ self.backDelay = 500; }
+
+			// contain typing function in a timeout humanize'd delay
+			self.timeout = setTimeout(function() {
+				// check for an escape character before a pause value
+				// format: \^\d+ .. eg: ^1000 .. should be able to print the ^ too using ^^
+				// single ^ are removed from string
+				var charPause = 0;
+				var substr = curString.substr(curStrPos);
+				if (substr.charAt(0) === '^') {
+					var skip = 1; // skip atleast 1
+					if (/^\^\d+/.test(substr)) {
+						substr = /\d+/.exec(substr)[0];
+						skip += substr.length;
+						charPause = parseInt(substr);
+					}
+
+					// strip out the escape character and pause value so they're not printed
+					curString = curString.substring(0, curStrPos) + curString.substring(curStrPos + skip);
+				}
+
+				if (self.contentType === 'html') {
+					// skip over html tags while typing
+					var curChar = curString.substr(curStrPos).charAt(0)
+					if (curChar === '<' || curChar === '&') {
+						var tag = '';
+						var endTag = '';
+						if (curChar === '<') {
+							endTag = '>'
+						}
+						else {
+							endTag = ';'
+						}
+						while (curString.substr(curStrPos + 1).charAt(0) !== endTag) {
+							tag += curString.substr(curStrPos).charAt(0);
+							curStrPos++;
+							if (curStrPos + 1 > curString.length) { break; }
+						}
+						curStrPos++;
+						tag += endTag;
+					}
+				}
+
+				// timeout for any pause after a character
+				self.timeout = setTimeout(function() {
+					if (curStrPos === curString.length) {
+						// fires callback function
+						self.options.onStringTyped(self.arrayPos);
+
+						// is this the final string
+						if (self.arrayPos === self.strings.length - 1) {
+							// animation that occurs on the last typed string
+							self.options.callback();
+
+							self.curLoop++;
+
+							// quit if we wont loop back
+							if (self.loop === false || self.curLoop === self.loopCount)
+								return;
+						}
+
+						self.timeout = setTimeout(function() {
+							self.backspace(curString, curStrPos);
+						}, self.backDelay);
+
+					} else {
+
+						/* call before functions if applicable */
+						if (curStrPos === 0) {
+							self.options.preStringTyped(self.arrayPos);
+						}
+
+						// start typing each new char into existing string
+						// curString: arg, self.el.html: original text inside element
+						var nextString = curString.substr(0, curStrPos + 1);
+						if (self.attr) {
+							self.el.attr(self.attr, nextString);
+						} else {
+							if (self.isInput) {
+								self.el.val(nextString);
+							} else if (self.contentType === 'html') {
+								self.el.html(nextString);
+							} else {
+								self.el.text(nextString);
+							}
+						}
+
+						// add characters one by one
+						curStrPos++;
+						// loop the function
+						self.typewrite(curString, curStrPos);
+					}
+					// end of character pause
+				}, charPause);
+
+				// humanized value for typing
+			}, humanize);
+
+		},
+
+		backspace: function(curString, curStrPos) {
+			// exit when stopped
+			if (this.stop === true) {
+				return;
+			}
+
+			// varying values for setTimeout during typing
+			// can't be global since number changes each time loop is executed
+			var humanize = Math.round(Math.random() * (100 - 30)) + this.backSpeed;
+			var self = this;
+
+			self.timeout = setTimeout(function() {
+
+				// ----- this part is optional ----- //
+				// check string array position
+				// on the first string, only delete one word
+				// the stopNum actually represents the amount of chars to
+				// keep in the current string. In my case it's 14.
+				// if (self.arrayPos == 1){
+				//  self.stopNum = 14;
+				// }
+				//every other time, delete the whole typed string
+				// else{
+				//  self.stopNum = 0;
+				// }
+
+				if (self.contentType === 'html') {
+					// skip over html tags while backspacing
+					if (curString.substr(curStrPos).charAt(0) === '>') {
+						var tag = '';
+						while (curString.substr(curStrPos - 1).charAt(0) !== '<') {
+							tag -= curString.substr(curStrPos).charAt(0);
+							curStrPos--;
+							if (curStrPos < 0) { break; }
+						}
+						curStrPos--;
+						tag += '<';
+					}
+				}
+
+				// ----- continue important stuff ----- //
+				// replace text with base text + typed characters
+				var nextString = curString.substr(0, curStrPos);
+				if (self.attr) {
+					self.el.attr(self.attr, nextString);
+				} else {
+					if (self.isInput) {
+						self.el.val(nextString);
+					} else if (self.contentType === 'html') {
+						self.el.html(nextString);
+					} else {
+						self.el.text(nextString);
+					}
+				}
+
+				// if the number (id of character in current string) is
+				// less than the stop number, keep going
+				if (curStrPos > self.stopNum) {
+					// subtract characters one by one
+					curStrPos--;
+					// loop the function
+					self.backspace(curString, curStrPos);
+				}
+				// if the stop number has been reached, increase
+				// array position to next string
+				else if (curStrPos <= self.stopNum) {
+					self.arrayPos++;
+
+					if (self.arrayPos === self.strings.length) {
+						self.arrayPos = 0;
+
+						// Shuffle sequence again
+						if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+
+						self.init();
+					} else
+						self.typewrite(self.strings[self.sequence[self.arrayPos]], curStrPos);
+				}
+
+				// humanized value for typing
+			}, humanize);
+
+		},
+		/**
+		 * Shuffles the numbers in the given array.
+		 * @param {Array} array
+		 * @returns {Array}
+		 */
+		shuffleArray: function(array) {
+			var tmp, current, top = array.length;
+			if(top) while(--top) {
+				current = Math.floor(Math.random() * (top + 1));
+				tmp = array[current];
+				array[current] = array[top];
+				array[top] = tmp;
+			}
+			return array;
+		},
+
+		// Start & Stop currently not working
+
+		// , stop: function() {
+		//     var self = this;
+
+		//     self.stop = true;
+		//     clearInterval(self.timeout);
+		// }
+
+		// , start: function() {
+		//     var self = this;
+		//     if(self.stop === false)
+		//        return;
+
+		//     this.stop = false;
+		//     this.init();
+		// }
+
+		// Reset and rebuild the element
+		reset: function() {
+			var self = this;
+			clearInterval(self.timeout);
+			var id = this.el.attr('id');
+			this.el.empty();
+			if (typeof this.cursor !== 'undefined') {
+        this.cursor.remove();
+      }
+			this.strPos = 0;
+			this.arrayPos = 0;
+			this.curLoop = 0;
+			// Send the callback
+			this.options.resetCallback();
+		}
+
+	};
+
+	$.fn.typed = function(option) {
+		return this.each(function() {
+			var $this = $(this),
+				data = $this.data('typed'),
+				options = typeof option == 'object' && option;
+			if (data) { data.reset(); }
+			$this.data('typed', (data = new Typed(this, options)));
+			if (typeof option == 'string') data[option]();
+		});
+	};
+
+	$.fn.typed.defaults = {
+		strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"],
+		stringsElement: null,
+		// typing speed
+		typeSpeed: 0,
+		// time before typing starts
+		startDelay: 0,
+		// backspacing speed
+		backSpeed: 0,
+		// shuffle the strings
+		shuffle: false,
+		// time before backspacing
+		backDelay: 500,
+		// loop
+		loop: false,
+		// false = infinite
+		loopCount: false,
+		// show cursor
+		showCursor: true,
+		// character for cursor
+		cursorChar: "|",
+		// attribute to type (null == text)
+		attr: null,
+		// either html or text
+		contentType: 'html',
+		// call when done callback function
+		callback: function() {},
+		// starting callback function before each string
+		preStringTyped: function() {},
+		//callback for every typed string
+		onStringTyped: function() {},
+		// callback for reset
+		resetCallback: function() {}
+	};
+
+
+}(window.jQuery);
+
+
+$(function() {
+    $("#typed").typed({
+        stringsElement: $('#typed-strings'),
+        typeSpeed: 10,
+        // time before typing starts
+        startDelay: 0,
+        // backspacing speed
+        backSpeed: 0,
+        // time before backspacing
+        backDelay: 6000,
+        // loop
+        loop: true,
+        showCursor: false
+    });
+});
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+
+    document.getElementById("mySidenav").style.borderLeft = "5px";
+    document.getElementById("mySidenav").style.borderLeftColor = "#e9ff00";
+    document.getElementById("mySidenav").style.borderLeftStyle = "solid";
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("myBgColor").style.display = "block";
+    document.getElementById("myBgColor").style.backgroundColor = "rgba(19,19,42,0.4)";
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+}
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+
+    document.getElementById("mySidenav").style.borderLeft = "0";
+    document.getElementById("mySidenav").style.borderLeftColor = "0";
+    document.getElementById("mySidenav").style.borderLeftStyle = "0";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("myBgColor").style.backgroundColor = "transparent";
+    document.getElementById("myBgColor").style.display = "none";
+    document.getElementsByTagName("body")[0].style.overflow = "visible";
+}
+
+$(document).ready(function() {
+    $("#welcome-message").fadeOut(3000);
+    $(".email-sign-up").click(function() {
+        $(".sign-up-container").css('display', 'block');
+        $("body").first().css('overflow', 'hidden');
+    });
+    $(".sign-up-close").click(function() {
+        $(".sign-up-container").css('display', 'none');
+        $("body").first().css('overflow', 'visible');
+    });
+
+    $(".learn-more").click(function() {
+        $(".learn-more-container").css('display', 'block');
+        $("body").first().css('overflow', 'hidden');
+    });
+    $(".learn-more-close").click(function() {
+        $(".learn-more-container").css('display', 'none');
+        $("body").first().css('overflow', 'visible');
+    });
+    $(".features-link").click(function() {
+        $("body").first().css('overflow', 'hidden');
+    });
+    $(".features-close").click(function() {
+        $("body").first().css('overflow', 'visible');
+    });
+
+    $("#slide a").click(function() {
+        $("#slide a").removeClass('selected-circle');
+        $(this).addClass('selected-circle');
+        $(".cs-slider-container li").removeClass('cs-current');
+
+        $selectedtab = $(this).attr('href');
+        $currenttab = $($selectedtab).removeAttr('href');
+        //how did currenttab able to store and link to the selected 'li#cs-tab'? 
+        //just by removing the href? how?
+        $($currenttab).addClass('cs-current');
+        //  At the end, we add return false so that the click on the link is not executed
+        return false;
+    });
+
+});
+
+$(document).ready(function() {
+    //  When user clicks on tab, this code will be executed
+    $("#mtabs li").click(function() {
+        //  First remove class "active" from currently active tab
+        $("#mtabs li").removeClass('currentTab');
+
+        //  Now add class "active" to the selected/clicked tab
+        $(this).addClass("currentTab");
+
+        //  Hide all tab content
+        $(".mtab-content").hide();
+
+        //  Here we get the href value of the selected tab
+        var selected_tab = $(this).find("a").attr("href");
+
+        //  Show the selected tab content
+        $(selected_tab).fadeIn();
+
+        //  At the end, we add return false so that the click on the link is not executed
+        return false;
+    });
+});
+
+var iScrollPos = 0;
+$(window).scroll(function() {
+    var iCurScrollPos = $(this).scrollTop();
+    if (iCurScrollPos > iScrollPos) {
+        document.getElementById("scrollDown").style.backgroundColor = "transparent";
+        document.getElementById("scrollDown").style.display = "none";
+    } else {
+        document.getElementById("scrollDown").style.backgroundColor = "rgba(19,19,42,1)";
+        document.getElementById("scrollDown").style.display = "block";
+        document.getElementById("scrollDown").style.borderBottomStyle = "solid";
+        document.getElementById("scrollDown").style.boxShadow = "grey";
+    }
+    iScrollPos = iCurScrollPos;
+});
+
+var $window = $(window);
+
+$(window).on('scroll', function() {
+$topOffset = $(this).scrollTop();
+
+if ($topOffset == 0) {
+    $("#scrollDown").css('background-color', 'transparent');
+    $("#scrollDown").css('border-bottom-style', 'none');
+}
+});

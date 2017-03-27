@@ -8,6 +8,11 @@ Header set Cache-Control "max-age=86400, public"
 Header set Cache-Control "max-age=3600, public"
 </filesMatch>
 
+# One Hour for html
+<filesMatch ".(html)$">
+Header set Cache-Control "max-age=3600, public"
+</filesMatch>
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]

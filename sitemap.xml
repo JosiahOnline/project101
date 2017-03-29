@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://onlinebah.com/</loc>
+  <lastmod>2017-03-28T03:11:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://onlinebah.com/Home</loc>
+  <lastmod>2017-03-28T03:11:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://onlinebah.com/Services</loc>
+  <lastmod>2017-03-28T03:11:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://onlinebah.com/Trending</loc>
+  <lastmod>2017-03-28T03:11:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://onlinebah.com/Blog</loc>
+  <lastmod>2017-03-28T03:11:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://onlinebah.com/Contact</loc>
+  <lastmod>2017-03-28T03:11:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://onlinebah.com/Innovative-Scrolling-&amp;-Parallax</loc>
+  <lastmod>2017-03-28T03:11:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://onlinebah.com/Why-Content-Is-King</loc>
+  <lastmod>2017-03-28T03:11:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>

@@ -34,7 +34,7 @@ var triggered_times = 0;
 $(window).scroll(function() {
 
     if ($(window).scrollTop() + $(window).height() > $(document).height() - 100 && triggered_times == 0) {
-        $(".ti-ads").show(500).css("display", "block");
+        $(".ti-ads").show(10).css("display", "block");
         $("body").css("overflow", "hidden");
         triggered_times = 1;
     }

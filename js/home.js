@@ -445,7 +445,7 @@ WebFont.load({
 
 
 $(document).ready(function() {
-            $("#welcome-message").fadeOut(3000);
+            $("#welcome-message").fadeOut(6000);
         });
         $(function() {
             $("#typed").typed({

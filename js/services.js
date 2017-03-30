@@ -483,7 +483,7 @@ function closeNav() {
 }
 
 $(document).ready(function() {
-    $("#welcome-message").fadeOut(3000);
+    $("#welcome-message").fadeOut(6000);
     $(".email-sign-up").click(function() {
         $(".sign-up-container").css('display', 'block');
         $("body").first().css('overflow', 'hidden');

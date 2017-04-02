@@ -30,13 +30,16 @@
 
 <body class="body">
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=152863758572196";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=152863758572196";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div itemscope itemtype="http://schema.org/Article" class="main-wrapper">
         <div class="post-section1">
             <nav class="static">
@@ -108,9 +111,9 @@
                 </article>
             </div>
         </div>
-        <div class="social-media-links" width="320px" height="100px" margin="10px auto" background="#131321">
-        <div class="fb-like" data-href="http://www.onlinebah.com/Why-Content-Is-King" data-width="320px" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-            </div>
+        <div class="social-media-share">
+            <div class="fb-share-button" display="inline-block" data-href="http://www.onlinebah.com/Why-Content-Is-King" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.onlinebah.com%2FWhy-Content-Is-King&amp;src=sdkpreparse"><span class="fb-logo"><img alt="fb" src="img/Logo/fb.png" height="20px" width="20px"></span>Share this article</a></div>
+        </div>
         <div class="post-section3">
             <div class="related-articles">
                 <h2>You might also like...</h2>
@@ -188,29 +191,6 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
     </script>
-
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId: '152863758572196',
-                xfbml: true,
-                version: 'v2.8'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    
 
 </body>
 

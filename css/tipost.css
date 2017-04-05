@@ -1,1 +1,751 @@
-a,nav{background-color:transparent}.main-wrapper,.tipost-section1,.tipost-section2,.tipost-section3,body{background-color:#f5f5f5}.signup,nav a{color:#fff}.logo,.tiblog-link,b,strong{font-weight:700}html{font-family:Droid Serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}.copyright,.logo{font-family:Merriweather,serif}body{margin:0;overflow-x:hidden}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}.logo,.tiblog-link,nav,ul{display:inline-block}a{text-decoration:none}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}img{border:0}svg:not(:root){overflow:hidden}p{padding:0;margin:5px auto}.main-wrapper{height:100vh;width:100vw}.tipost-section1{position:relative}.tipost-section1::after{content:'';width:100%;position:absolute;left:0;height:5px;background-image:linear-gradient(92deg,#d8e509,#fc0000)}nav{position:fixed;top:0;left:0;height:44px;padding:10px 15px 10px 20px;z-index:100;background:rgba(19,19,33,1);box-shadow:0 4px 3px -3px #fff;border-bottom-right-radius:5px}.hero-bg,.image1,.image2,.image3,.image4,.image5,.image6{background-position:center center;background-size:cover;background-repeat:no-repeat}.signup{padding:8px;border:2px solid #fff;border-radius:5px}.signup a{font-size:16px}.signup:hover{background-color:#ff8c00;border-color:#ff8c00}.logo{padding:10px;background-color:#fff;color:#131321;font-size:16px;border-radius:5px;margin-right:10px;border:2px solid #fff}.logo:hover{background-color:#ff8c00;border-color:#ff8c00;color:#fff}.tiblog-link{font-size:18px}.tiblog-link:hover{color:#ff8c00}ul{list-style-type:none;margin:0 auto;padding-left:20px}.post-hero{position:relative;width:100%;height:700px}.hero-bg,.hero-overlay{height:100%;width:100%}.hero-bg{background-image:url(../img/Trending/TI-1.gif);background-attachment:fixed,scroll}.hero-overlay{position:absolute;top:0;background-color:rgba(37,43,51,.35)}.related-date,footer{background-color:#131321}.header-content{width:100%;position:absolute;top:140px;left:0;margin-top:30px;text-align:center}.header-wrapper{width:70%;margin:0 auto}.header-wrapper h1{font-size:4.5em;color:#fff;text-shadow:1px 1px 6px #131321}.article-content{width:60%;margin:50px auto}.author-content img{border-radius:50%}.author-content p{font-style:italic;color:#fff}.writer a{margin-left:2px;color:#fff;font-weight:800}.dropcap,.highLight,.webLink,.writer a:hover{color:#ff8c00}.single-post p{line-height:2em;font-size:1.4em}.single-post strong{font-size:1.5em;color:#ff8c00}.dropcap{font-size:5em;float:left;padding-right:15px;margin-bottom:2px;line-height:90px;font-weight:700}.webLink:hover{text-decoration:underline}.linkImage{margin:10px auto;width:100%;height:500px}.tipost-section3{margin:50px auto 0}.related-articles{width:70%;margin:0 auto}.related-articles>:first-child{position:relative;margin:40px 0 40px 30px;text-align:left;padding:5px 20px;display:block;width:100%}.related-articles>:first-child::after{content:'';width:10px;position:absolute;top:0;left:-10px;height:46px;background-image:linear-gradient(182deg,#d8e509,orange)}.related-content{display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}.related-title{margin:0 auto 50px;min-height:300px;-ms-flex-preferred-size:30%;-webkit-flex-basis:30%;flex-basis:30%;text-align:center;border-radius:5px;box-shadow:1px 3px 6px 1px rgba(0,0,0,.1)}.related-title:hover{box-shadow:1px 3px 6px 1px rgba(0,0,0,.1),0 0 6px 3px rgba(0,0,0,.1)}.related-title a{position:relative;display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;text-align:center}.related-title a:hover .related-date{background-image:linear-gradient(92deg,#d8e509,#fc0000)}.related-image{width:100%;height:200px;border-radius:5px 5px 0 0}.image1{background-image:url(../img/Trending/TI-2.jpg)}.image2{background-image:url(../img/Trending/TI-3.jpg)}.image3{background-image:url(../img/Trending/TI-4.gif)}.image4{background-image:url(../img/Trending/TI-5.jpg)}.image5{background-image:url(../img/Trending/TI-6.jpg)}.image6{background-image:url(../img/Trending/TI-7.jpg)}.related-header{position:absolute;top:50px;margin:10px auto;padding:0 30px}.related-header h1{width:100%;color:#fff;font-size:1.4em;text-shadow:1px 1px 6px #000}.related-date{color:#fff;padding:10px;margin-top:5px}.related-pgraph{color:#000;padding:10px 18px;text-align:left}footer{height:70px}.copyright{font-size:24px;font-weight:700;color:#fff;text-align:center;padding:20px}@media (max-width:1024px){.hero-bg{background-attachment:scroll}.header-content{top:100px}.linkImage{height:400px}.related-title{min-height:130px;margin-bottom:20px}.related-title a{height:300px}.related-date{font-size:14px;width:91%}.related-image{height:150px}.related-header h1{top:55px;margin-top:15px;margin-bottom:5px;font-size:18px}.related-pgraph{margin:0 auto;padding:15px 18px 0;font-size:14px}}@media (max-width:991px){.header-content{top:100px}.article-content,.header-wrapper{width:80%}.tipost-section3{margin-bottom:25px}.related-articles{width:86%}.related-articles>:first-child{margin-left:0}.related-content{-ms-flex-flow:column nowrap;-webkit-flex-flow:column nowrap;flex-flow:column nowrap}.related-title{min-height:200px;margin-bottom:40px;border-top:3px solid #eee}.related-title a{-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;text-align:left}.related-image{min-width:285px;margin-bottom:0;border-top-right-radius:0;border-bottom-left-radius:5px;border-bottom-right-radius:0}.related-header{position:static;width:auto;margin:20px auto 10px;padding:0 18px}.related-header h1{text-align:left;color:#ff8c00;text-shadow:none}.related-date{position:absolute;margin-top:0;display:inline-block;border-top-left-radius:5px;border-bottom-right-radius:5px;background-color:#ff8c00;left:0}}@media (max-width:768px){ul{padding-left:40px}.post-hero{height:600px}.header-content{top:300px;text-align:left}.header-wrapper{margin:0 40px}.header-wrapper h1{font-size:3em;margin-bottom:15px}.author-content{padding-left:50px}.author-content img{position:absolute}.author-content p{margin:0 0 0 70px;padding-top:1.5px}.related-image{width:300px;height:210px}.related-header h1{font-size:26px}.related-date{width:88px}.related-title a{height:auto}.related-pgraph{font-size:22px;line-height:30px}}@media (max-width:479px){nav{padding:10px 0;width:100%;border-bottom-right-radius:0}.logo,.signup a,.tiblog-link{font-size:16px}.logo{margin-left:15px}ul{padding-left:10px}.linkImage{height:240px}.header-content{top:120px}.header-wrapper h1{font-size:2.8em;margin-left:10px}.dropcap{line-height:40px}.single-post p{font-size:1em}.single-post strong{font-size:1.3em}.tipost-section3{margin:20px auto}.related-articles>:first-child{width:90%;padding-top:8px;font-size:1.2em;margin-top:30px;margin-bottom:30px;margin-left:10px}.related-articles>:first-child::after{width:6px;height:40px}.related-title{min-height:130px;margin-bottom:20px}.related-date{font-size:14px;width:88px}.related-image{height:160px;min-width:140px;width:0}.related-header{margin:10px auto 0}.related-header h1{margin-top:0;margin-bottom:0;font-size:18px}.related-pgraph{margin:0 auto;padding:5px 18px 0;font-size:14px;line-height:20px}footer{height:60px}.copyright{padding-top:20px;font-size:16px}}@media (max-width:360px){.logo,.signup,.tiblog-link{font-size:14px}.header-content{top:240px}.header-wrapper h1{font-size:2.4em}.author-content{margin-top:30px}.linkImage{height:200px}.related-articles>:first-child{font-size:1em;padding-top:13px}.related-image{height:160px}.related-header h1{font-size:16px}}@media (max-width:320px){.logo,.signup a,.tiblog-link{font-size:12px}.signup{margin-left:15px}nav{height:38px;padding:10px 0}ul{padding:0}.header-content{top:140px}.linkImage{height:180px}.header-wrapper h1{font-size:2.2em}.author-content p{font-size:16px}.single-post p{font-size:18px}.dropcap{line-height:38px}.related-articles>:first-child{font-size:18px;padding-top:8px}.related-articles>:first-child::after{width:6px;height:32px}.related-image{min-width:120px}.related-header{padding:0 15px;margin:10px auto 5px}.related-header h1{font-size:15px}.related-pgraph{line-height:19px;padding:0 10px 0 15px}}
+a,
+nav {
+    background-color: transparent
+}
+
+.main-wrapper,
+.tipost-section1,
+.tipost-section2,
+.tipost-section3,
+body {
+    background-color: #f5f5f5
+}
+
+.signup,
+nav a {
+    color: #fff
+}
+
+.logo,
+.tiblog-link,
+b,
+strong {
+    font-weight: 700
+}
+
+html {
+    font-family: Droid Serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+.copyright,
+.logo {
+    font-family: Merriweather, serif
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+.logo,
+.tiblog-link,
+nav,
+ul {
+    display: inline-block
+}
+
+a {
+    text-decoration: none
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+p {
+    padding: 0;
+    margin: 5px auto
+}
+
+.main-wrapper {
+    height: 100vh;
+    width: 100vw
+}
+
+.tipost-section1 {
+    position: relative
+}
+
+.tipost-section1::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 5px;
+    background-image: linear-gradient(92deg, #d8e509, #fc0000)
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 44px;
+    padding: 10px 15px 10px 20px;
+    z-index: 100;
+    background: rgba(19, 19, 33, 1);
+    box-shadow: 0 4px 3px -3px #fff;
+    border-bottom-right-radius: 5px
+}
+
+.hero-bg,
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6 {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.signup {
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 5px
+}
+
+.signup a {
+    font-size: 16px
+}
+
+.signup:hover {
+    background-color: #ff8c00;
+    border-color: #ff8c00
+}
+
+.logo {
+    padding: 10px;
+    background-color: #fff;
+    color: #131321;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 2px solid #fff
+}
+
+.logo:hover {
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+    color: #fff
+}
+
+.tiblog-link {
+    font-size: 18px
+}
+
+.tiblog-link:hover {
+    color: #ff8c00
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 20px
+}
+
+.post-hero {
+    position: relative;
+    width: 100%;
+    height: 700px
+}
+
+.hero-bg,
+.hero-overlay {
+    height: 100%;
+    width: 100%
+}
+
+.hero-bg {
+    background-image: url(../img/Trending/TI-1.gif);
+    background-attachment: fixed, scroll
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    background-color: rgba(37, 43, 51, .35)
+}
+
+.related-date,
+footer {
+    background-color: #131321
+}
+
+.header-content {
+    width: 100%;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    margin-top: 30px;
+    text-align: center
+}
+
+.header-wrapper {
+    width: 70%;
+    margin: 0 auto
+}
+
+.header-wrapper h1 {
+    font-size: 4.5em;
+    color: #fff;
+    text-shadow: 1px 1px 6px #131321
+}
+
+.article-content {
+    width: 60%;
+    margin: 50px auto
+}
+
+.author-content img {
+    border-radius: 50%
+}
+
+.author-content p {
+    font-style: italic;
+    color: #fff
+}
+
+.writer a {
+    margin-left: 2px;
+    color: #fff;
+    font-weight: 800
+}
+
+.dropcap,
+.highLight,
+.webLink,
+.writer a:hover {
+    color: #ff8c00
+}
+
+.single-post p {
+    line-height: 2em;
+    font-size: 1.4em
+}
+
+.single-post strong {
+    font-size: 1.5em;
+    color: #ff8c00
+}
+
+.dropcap {
+    font-size: 5em;
+    float: left;
+    padding-right: 15px;
+    margin-bottom: 2px;
+    line-height: 90px;
+    font-weight: 700
+}
+
+.webLink:hover {
+    text-decoration: underline
+}
+
+.linkImage {
+    margin: 10px auto;
+    width: 100%;
+    height: 500px
+}
+
+.social-media-share {
+    width: 64%;
+    margin: 0 auto
+}
+
+.tipost-section3 {
+    margin: 50px auto 0
+}
+
+.related-articles {
+    width: 70%;
+    margin: 0 auto
+}
+
+.related-articles>:first-child {
+    position: relative;
+    margin: 40px 0 40px 30px;
+    text-align: left;
+    padding: 5px 20px;
+    display: block;
+    width: 100%
+}
+
+.related-articles>:first-child::after {
+    content: '';
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    height: 46px;
+    background-image: linear-gradient(182deg, #d8e509, orange)
+}
+
+.related-content {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap
+}
+
+.related-title {
+    margin: 0 auto 50px;
+    min-height: 300px;
+    -ms-flex-preferred-size: 30%;
+    -webkit-flex-basis: 30%;
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, .1)
+}
+
+.related-title:hover {
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, .1), 0 0 6px 3px rgba(0, 0, 0, .1)
+}
+
+.related-title a {
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: center
+}
+
+.related-title a:hover .related-date {
+    background-image: linear-gradient(92deg, #d8e509, #fc0000)
+}
+
+.related-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0
+}
+
+.image1 {
+    background-image: url(../img/Trending/TI-2.jpg)
+}
+
+.image2 {
+    background-image: url(../img/Trending/TI-3.jpg)
+}
+
+.image3 {
+    background-image: url(../img/Trending/TI-4.gif)
+}
+
+.image4 {
+    background-image: url(../img/Trending/TI-5.jpg)
+}
+
+.image5 {
+    background-image: url(../img/Trending/TI-6.jpg)
+}
+
+.image6 {
+    background-image: url(../img/Trending/TI-7.jpg)
+}
+
+.related-header {
+    position: absolute;
+    top: 50px;
+    margin: 10px auto;
+    padding: 0 30px
+}
+
+.related-header h1 {
+    width: 100%;
+    color: #fff;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 6px #000
+}
+
+.related-date {
+    color: #fff;
+    padding: 10px;
+    margin-top: 5px
+}
+
+.related-pgraph {
+    color: #000;
+    padding: 10px 18px;
+    text-align: left
+}
+
+footer {
+    height: 70px
+}
+
+.copyright {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 20px
+}
+
+@media (max-width:1024px) {
+    .hero-bg {
+        background-attachment: scroll
+    }
+    .header-content {
+        top: 100px
+    }
+    .linkImage {
+        height: 400px
+    }
+    .related-title {
+        min-height: 130px;
+        margin-bottom: 20px
+    }
+    .related-title a {
+        height: 300px
+    }
+    .related-date {
+        font-size: 14px;
+        width: 91%
+    }
+    .related-image {
+        height: 150px
+    }
+    .related-header h1 {
+        top: 55px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-size: 18px
+    }
+    .related-pgraph {
+        margin: 0 auto;
+        padding: 15px 18px 0;
+        font-size: 14px
+    }
+    .social-media-share {
+        width: 60%
+    }
+}
+
+@media (max-width:991px) {
+    .header-content {
+        top: 100px
+    }
+    .article-content,
+    .header-wrapper {
+        width: 80%
+    }
+    .tipost-section3 {
+        margin-bottom: 25px
+    }
+    .related-articles {
+        width: 86%
+    }
+    .related-articles>:first-child {
+        margin-left: 0
+    }
+    .related-content {
+        -ms-flex-flow: column nowrap;
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap
+    }
+    .related-title {
+        min-height: 200px;
+        margin-bottom: 40px;
+        border-top: 3px solid #eee
+    }
+    .related-title a {
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        text-align: left
+    }
+    .related-image {
+        min-width: 285px;
+        margin-bottom: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 0
+    }
+    .related-header {
+        position: static;
+        width: auto;
+        margin: 20px auto 10px;
+        padding: 0 18px
+    }
+    .related-header h1 {
+        text-align: left;
+        color: #ff8c00;
+        text-shadow: none
+    }
+    .related-date {
+        position: absolute;
+        margin-top: 0;
+        display: inline-block;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #ff8c00;
+        left: 0
+    }
+    .social-media-share {
+        width: 60%
+    }
+}
+
+@media (max-width:768px) {
+    ul {
+        padding-left: 40px
+    }
+    .post-hero {
+        height: 600px
+    }
+    .header-content {
+        top: 300px;
+        text-align: left
+    }
+    .header-wrapper {
+        margin: 0 40px
+    }
+    .header-wrapper h1 {
+        font-size: 3em;
+        margin-bottom: 15px
+    }
+    .author-content {
+        padding-left: 50px
+    }
+    .author-content img {
+        position: absolute
+    }
+    .author-content p {
+        margin: 0 0 0 70px;
+        padding-top: 1.5px
+    }
+    .related-image {
+        width: 300px;
+        height: 210px
+    }
+    .related-header h1 {
+        font-size: 26px
+    }
+    .related-date {
+        width: 88px
+    }
+    .related-title a {
+        height: auto
+    }
+    .related-pgraph {
+        font-size: 22px;
+        line-height: 30px
+    }
+    .social-media-share {
+        width: 80%
+    }
+}
+
+@media (max-width:479px) {
+    nav {
+        padding: 10px 0;
+        width: 100%;
+        border-bottom-right-radius: 0
+    }
+    .logo,
+    .signup a,
+    .tiblog-link {
+        font-size: 16px
+    }
+    .logo {
+        margin-left: 15px
+    }
+    ul {
+        padding-left: 10px
+    }
+    .linkImage {
+        height: 240px
+    }
+    .header-content {
+        top: 120px
+    }
+    .header-wrapper h1 {
+        font-size: 2.8em;
+        margin-left: 10px
+    }
+    .dropcap {
+        line-height: 40px
+    }
+    .single-post p {
+        font-size: 1em
+    }
+    .single-post strong {
+        font-size: 1.3em
+    }
+    .tipost-section3 {
+        margin: 20px auto
+    }
+    .related-articles>:first-child {
+        width: 90%;
+        padding-top: 8px;
+        font-size: 1.2em;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 10px
+    }
+    .related-articles>:first-child::after {
+        width: 6px;
+        height: 40px
+    }
+    .related-title {
+        min-height: 130px;
+        margin-bottom: 20px
+    }
+    .related-date {
+        font-size: 14px;
+        width: 88px
+    }
+    .related-image {
+        height: 160px;
+        min-width: 140px;
+        width: 0
+    }
+    .related-header {
+        margin: 10px auto 0
+    }
+    .related-header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 18px
+    }
+    .related-pgraph {
+        margin: 0 auto;
+        padding: 5px 18px 0;
+        font-size: 14px;
+        line-height: 20px
+    }
+    footer {
+        height: 60px
+    }
+    .copyright {
+        padding-top: 20px;
+        font-size: 16px
+    }
+}
+
+@media (max-width:360px) {
+    .logo,
+    .signup,
+    .tiblog-link {
+        font-size: 14px
+    }
+    .header-content {
+        top: 240px
+    }
+    .header-wrapper h1 {
+        font-size: 2.4em
+    }
+    .author-content {
+        margin-top: 30px
+    }
+    .linkImage {
+        height: 200px
+    }
+    .related-articles>:first-child {
+        font-size: 1em;
+        padding-top: 13px
+    }
+    .related-image {
+        height: 160px
+    }
+    .related-header h1 {
+        font-size: 16px
+    }
+}
+
+@media (max-width:320px) {
+    .logo,
+    .signup a,
+    .tiblog-link {
+        font-size: 12px
+    }
+    .signup {
+        margin-left: 15px
+    }
+    nav {
+        height: 38px;
+        padding: 10px 0
+    }
+    ul {
+        padding: 0
+    }
+    .header-content {
+        top: 140px
+    }
+    .linkImage {
+        height: 180px
+    }
+    .header-wrapper h1 {
+        font-size: 2.2em
+    }
+    .author-content p {
+        font-size: 16px
+    }
+    .single-post p {
+        font-size: 18px
+    }
+    .dropcap {
+        line-height: 38px
+    }
+    .related-articles>:first-child {
+        font-size: 18px;
+        padding-top: 8px
+    }
+    .related-articles>:first-child::after {
+        width: 6px;
+        height: 32px
+    }
+    .related-image {
+        min-width: 120px
+    }
+    .related-header {
+        padding: 0 15px;
+        margin: 10px auto 5px
+    }
+    .related-header h1 {
+        font-size: 15px
+    }
+    .related-pgraph {
+        line-height: 19px;
+        padding: 0 10px 0 15px
+    }
+}

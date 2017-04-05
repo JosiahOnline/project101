@@ -138,7 +138,7 @@
             </div>
         </div>
         <div class="social-media-share">
-            <div><a href="https://urlgeni.us/facebook/YJ0f" class="fb-like" data-href="http://www.onlinebah.com/Innovative-Scrolling-&amp;-Parallax" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true"></a></div>
+            <div class="fb-like" data-href="http://www.onlinebah.com/Innovative-Scrolling-&amp;-Parallax" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
         </div>
         <div class="tipost-section3">
             <div class="related-articles">
@@ -301,7 +301,20 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-
+    <script> 
+        var facebookURL  = $('[href*="facebook.com"]');
+        var facebookDeep = 'fb://profile/238192846632063';
+        $(facebookURL).attr('href', facebookDeep);
+        $($(facebookURL)).click(function(){
+            setTimeout(function(){
+                if ($(facebookURL).is(":focus")) {
+                    location.href = 'https://facebook.com';
+                } else {
+                console.log('Focus was lost');
+                }
+            }, 1000);
+        });
+    </script>
 </body>
 
 </html>

@@ -28,6 +28,17 @@
 </head>
 
 <body class="body">
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=152863758572196";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div itemscope itemtype="http://schema.org/Article" class="main-wrapper">
         <div class="tipost-section1">
             <nav id="scrollDown" class="static">
@@ -110,6 +121,7 @@
                 </article>
             </div>
         </div>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
         <div class="tipost-section3">
             <div class="related-articles">
                 <h2>You might also like...</h2>

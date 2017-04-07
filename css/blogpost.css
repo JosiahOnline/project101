@@ -365,11 +365,12 @@ footer {
 
 #whatsapp {
     position: absolute;
-    margin-left: 10px;
+    margin-left: 3px;
     background-color: #34AF23;
     color: white;
     font-size: 13px;
-    padding: 5px 10px;
+    font-weight: 700;
+    padding: 8px 10px 5px;
     border-radius: 5px;
 }
 
@@ -621,9 +622,6 @@ footer {
         padding-top: 20px;
         font-size: 16px
     }
-    #whatsapp {
-        font-size: 16px;
-    }
 }
 
 @media (max-width:360px) {
@@ -682,8 +680,5 @@ footer {
     .related-pgraph {
         line-height: 19px;
         padding: 0 10px 0 15px
-    }
-      #whatsapp {
-        font-size: 14px;
     }
 }

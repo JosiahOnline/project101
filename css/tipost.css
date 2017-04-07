@@ -281,14 +281,17 @@ footer {
 }
 
 .social-media-share {
+    position: relative;
     width: 64%;
     margin: 0 auto
 }
 
 #whatsapp {
+    position: absolute;
     margin-left: 10px;
     background-color: #34AF23;
     color: white;
+    font-size: 13px;
     padding: 5px 10px;
     border-radius: 5px;
 }

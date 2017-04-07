@@ -362,6 +362,18 @@ footer {
     margin: 0 auto
 }
 
+#whatsapp {
+    margin-left: 10px;
+    background-color: #34AF23;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#whatsapp:hover {
+    background-color: #f36;
+}
+
 .fb-share-button {
     margin: 0 auto 40px;
     padding-left: 30px
@@ -606,6 +618,9 @@ footer {
         padding-top: 20px;
         font-size: 16px
     }
+    #whatsapp {
+        font-size: 16px;
+    }
 }
 
 @media (max-width:360px) {
@@ -664,5 +679,8 @@ footer {
     .related-pgraph {
         line-height: 19px;
         padding: 0 10px 0 15px
+    }
+      #whatsapp {
+        font-size: 14px;
     }
 }

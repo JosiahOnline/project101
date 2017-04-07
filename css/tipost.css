@@ -285,6 +285,13 @@ footer {
     margin: 0 auto
 }
 
+.whatsapp {
+    margin-left: 10px;
+    background-color: #34AF23;
+    color: white;
+    padding: 5px 10px;
+}
+
 .tipost-section3 {
     margin: 50px auto 0
 }

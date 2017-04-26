@@ -19,6 +19,7 @@ dfn {
 }
 
 .hero-bg,
+.hero-bg1,
 .image1,
 .image2,
 .image3 {
@@ -179,10 +180,17 @@ ul {
     background-attachment: fixed, scroll
 }
 
+.hero-bg1 {
+    background-image: url(../img/Blog/blog5.jpg);
+    background-attachment: fixed, scroll
+}
+
 .hero-overlay {
     position: absolute;
     top: 0;
-    background-color: rgba(37, 43, 51, .35)
+    background-color: rgba(37, 43, 51, .35);
+    height: 100%;
+    width: 100%
 }
 
 .header-content {
@@ -195,7 +203,7 @@ ul {
 }
 
 .header-wrapper {
-    width: 60%;
+    width: 70%;
     margin: 0 auto
 }
 
@@ -406,7 +414,7 @@ footer {
 }
 
 @media (max-width:1024px) {
-    .hero-bg {
+    .hero-bg, .hero-bg1 {
         background-attachment: scroll
     }
     .related-title {

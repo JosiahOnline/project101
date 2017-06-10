@@ -56,6 +56,21 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
     <div itemscope itemtype="http://schema.org/Article" class="main-wrapper">
+        <section id="emailSubscribe">
+            <div id="myBgColor" class="bgcolor"></div>
+            <div class="subscribe-container">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+                <h3>Never miss an article from us!</h3>
+                <form class="subscription-form" action="https://formspree.io/onlinebah2u@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Email Subscription" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input class="subscribe-input" data-name="Full Name" id="Full-Name" maxlength="256" name="User-Name" placeholder="Your Name*" required="required" type="text"><br>
+                    <input class="subscribe-input" data-name="User-Email" id="Work-Email-2" maxlength="256" name="User-Email" placeholder="Email Address*" required="required" type="email"><br>
+                    <input class="subscribe-button" data-wait="Please wait..." type="submit" value="Subscribe">
+                </form>
+                <h5>Ideas Worth Sharing!</h5>
+            </div>
+        </section>
         <div class="tipost-section1">
             <nav id="scrollDown" class="static">
                 <a rel="canonical" href="Home">
@@ -66,7 +81,7 @@
                 </a>
                 <ul>
                     <li class="signup">
-                        <a href="#">Subscribe</a>
+                        <a href="javascript:void(0)" class="openbtn" onclick="openNav()">Subscribe</a>
                     </li>
                 </ul>
             </nav>
@@ -318,6 +333,23 @@
                 }
             }, 1000);
         });
+        }
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("emailSubscribe").style.display = "block";
+            document.getElementById("myBgColor").style.display = "block";
+            document.getElementById("myBgColor").style.backgroundColor = "rgba(255,255,255, 0.9)";
+            document.getElementsByTagName("body")[0].style.overflow = "hidden";
+        }
+        
+        function closeNav() {
+            document.getElementById("emailSubscribe").style.display = "none";
+            document.getElementById("myBgColor").style.display = "none";
+            document.getElementById("myBgColor").style.backgroundColor = "transparent";
+            document.getElementsByTagName("body")[0].style.overflowX = "hidden";
+            document.getElementsByTagName("body")[0].style.overflowY = "visible";
+        }
     </script>
 </body>
 

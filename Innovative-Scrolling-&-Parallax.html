@@ -379,6 +379,13 @@
                 console.log('success'); 
                 $('#emailSubscribe').hide();
                 $('#thankyouBlock').show();
+                $('#emailSubscribe').hide();
+                $('myBgColor').hide();
+                $("myBgColor").css("background-color", "transparent");
+                $('body').parent('html').css("overflow-x", "hidden");
+                $('body').parent('html').css("overflow-y", "visible");
+
+                
             }   
 
         });     

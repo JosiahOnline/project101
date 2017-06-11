@@ -362,6 +362,8 @@
         var name = $('#fullName').val();
         //get the name field value
         var email = $('#emailAddress').val();
+        
+        var subject = "Trending Ideas Email Subscription";
                    
         //validation done in html5
         
@@ -372,7 +374,7 @@
             data:{
                 name:name,
                 email:email,
-                _subject:'Trending Ideas Email Subscription',
+                _subject: subject,
             },
             dataType:"json",
             success:function() {

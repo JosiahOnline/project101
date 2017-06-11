@@ -61,16 +61,17 @@
             <div class="subscribe-container">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
                 <h3>Never miss an article from us!</h3>
-                <form class="subscription-form" action="https://formspree.io/onlinebah2u@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="Email Subscription" />
-                    <input type="text" name="_gotcha" style="display:none" />
-                    <input class="subscribe-input" data-name="Full Name" id="Full-Name" maxlength="256" name="User-Name" placeholder="Your Name*" required="required" type="text"><br>
-                    <input class="subscribe-input" data-name="User-Email" id="Work-Email-2" maxlength="256" name="User-Email" placeholder="Email Address*" required="required" type="email"><br>
-                    <input class="subscribe-button" data-wait="Please wait..." type="submit" value="Subscribe">
+                <form class="subscription-form" id="formSubscribe">
+                    <input class="subscribe-input" id="fullName" maxlength="256" name="User-Name" placeholder="Your Name*" required="required" type="text"><br>
+                    <input class="subscribe-input" id="emailAddress" maxlength="256" name="User-Email" placeholder="Email Address*" required="required" type="email"><br>
+                    <input id="subscribeButton" class="subscribe-button" data-wait="Please wait..." type="submit" value="Subscribe">
                 </form>
                 <h5>Ideas Worth Sharing!</h5>
             </div>
         </section>
+        <div class="alert alert-success" id="thankyouBlock" style="display:none">
+            <strong>Success!</strong> We shall updates you for all the latest articles. Ideas Worth Sharing!
+        </div>
         <div class="tipost-section1">
             <nav id="scrollDown" class="static">
                 <a rel="canonical" href="Home">
@@ -350,6 +351,41 @@
             document.getElementsByTagName("body")[0].style.overflowX = "hidden";
             document.getElementsByTagName("body")[0].style.overflowY = "visible";
         }
+    </script>
+    <script>
+        $(document).ready(function() {
+
+    $('#formSubscribe').on('submit', function(e) {
+        e.preventDefault();
+        
+        //get the name field value
+        var name = $('#fullName').val();
+        //get the name field value
+        var email = $('#emailAddress').val();
+                   
+        //validation done in html5
+        
+        //send to formspree
+        $.ajax({
+            url:'https://formspree.io/onlinebah2u@gmail.com',
+            method:'POST',
+            data:{
+                name:name,
+                email:email,
+                _subject:'Trending Ideas Email Subscription',
+            },
+            dataType:"json",
+            success:function() {
+                console.log('success'); 
+                $('#emailSubscribe').hide();
+                $('#thankyouBlock').show();
+            }   
+
+        });     
+        
+    });
+
+}); 
     </script>
 </body>
 

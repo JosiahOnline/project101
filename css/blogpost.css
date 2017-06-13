@@ -21,6 +21,7 @@ dfn {
 .hero-bg,
 .hero-bg1,
 .hero-bg2,
+.hero-bg3,
 .image1,
 .image2,
 .image3 {
@@ -294,18 +295,29 @@ ul {
     width: 100%
 }
 
+.hero-bg3,
+.hero-overlay {
+    height: 100%;
+    width: 100%
+}
+
 .hero-bg {
     background-image: url(../img/Blog/blog1.jpg);
     background-attachment: fixed, scroll
 }
 
 .hero-bg1 {
-    background-image: url(../img/Blog/blog4.jpg);
+    background-image: url(../img/Blog/blog2.jpg);
     background-attachment: fixed, scroll
 }
 
 .hero-bg2 {
-    background-image: url(../img/Blog/blog6.jpg);
+    background-image: url(../img/Blog/blog3.jpg);
+    background-attachment: fixed, scroll
+}
+
+.hero-bg3 {
+    background-image: url(../img/Blog/blog4.jpg);
     background-attachment: fixed, scroll
 }
 
@@ -542,7 +554,7 @@ footer {
 }
 
 @media (max-width:1024px) {
-    .hero-bg, .hero-bg1, .hero-bg2 {
+    .hero-bg, .hero-bg1, .hero-bg2, .hero-bg3 {
         background-attachment: scroll
     }
     .related-title {

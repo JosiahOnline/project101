@@ -59,6 +59,21 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
     <div itemscope itemtype="http://schema.org/Article" class="main-wrapper">
+        <section id="emailSubscribe">
+            <div id="myBgColor" class="bgcolor"></div>
+            <div class="subscribe-container">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+                <h3>Never miss an article from us!</h3>
+                <form class="subscription-form" id="formSubscribe">
+                    <input class="subscribe-input" id="fullName" maxlength="256" name="User-Name" placeholder="Your Name*" required="required" type="text">
+                    <br>
+                    <input class="subscribe-input" id="emailAddress" maxlength="256" name="User-Email" placeholder="Email Address*" required="required" type="email">
+                    <br>
+                    <input id="subscribeButton" class="subscribe-button" data-wait="Please wait..." type="submit" value="Subscribe">
+                </form>
+                <h5>Ideas Worth Sharing!</h5>
+            </div>
+        </section>
         <div class="post-section1">
             <nav class="static">
                 <a rel="canonical" href="Home">
@@ -69,12 +84,12 @@
                 </a>
                 <ul>
                     <li class="signup">
-                        <a href="#">Subscribe</a>
+                        <a href="javascript:void(0)" class="openbtn" onclick="openNav()">Subscribe</a>
                     </li>
                 </ul>
             </nav>
             <div class="post-hero">
-                <div class="hero-bg2">
+                <div class="hero-bg1">
 
                 </div>
                 <div class="hero-overlay">
@@ -255,7 +270,62 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
     </script>
+    <script>
+        function openNav() {
+            document.getElementById("emailSubscribe").style.display = "block";
+            document.getElementById("myBgColor").style.display = "block";
+            document.getElementById("myBgColor").style.backgroundColor = "rgba(255,255,255, 0.9)";
+            document.getElementsByTagName("body")[0].style.overflow = "hidden";
+        }
 
+        function closeNav() {
+            document.getElementById("emailSubscribe").style.display = "none";
+            document.getElementById("myBgColor").style.display = "none";
+            document.getElementById("myBgColor").style.backgroundColor = "transparent";
+            document.getElementsByTagName("body")[0].style.overflowX = "hidden";
+            document.getElementsByTagName("body")[0].style.overflowY = "visible";
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $('#formSubscribe').on('submit', function(e) {
+                e.preventDefault();
+
+                //get the name field value
+                var name = $('#fullName').val();
+                //get the name field value
+                var email = $('#emailAddress').val();
+
+                //validation done in html5
+
+                //send to formspree
+                $.ajax({
+                    url: 'https://formspree.io/onlinebah2u@gmail.com',
+                    method: 'POST',
+                    data: {
+                        name: name,
+                        email: email,
+                        _subject: "My Blog Post Email Subscription",
+                    },
+                    dataType: "json",
+                    success: function() {
+                        console.log('success');
+                        $('#emailSubscribe').hide();
+                        $('#thankyouBlock').show();
+                        $('#emailSubscribe').hide();
+                        $('myBgColor').hide();
+                        $("myBgColor").css("background-color", "transparent");
+                        $('body').parent('html').css("overflow-x", "hidden");
+                        $('body').parent('html').css("overflow-y", "visible");
+                        $('#thankyouBlock').fadeOut(8000);
+                    }
+                });
+
+            });
+
+        });
+    </script>
 </body>
 
 </html>

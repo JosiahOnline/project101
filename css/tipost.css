@@ -407,6 +407,33 @@ footer {
     background-color: orange;
 }
 
+.fb-share-button {
+    margin: 0 auto 40px;
+    padding-left: 30px
+}
+
+.fb-share-button a {
+    color: #fff;
+    padding: 10px 10px 10px 40px;
+    background-color: #3b5998;
+    border-radius: 5px;
+    font-size: 16px
+}
+
+.fb-share-button a:hover {
+    background-color: orange
+}
+
+.fb-share-button a span {
+    position: relative
+}
+
+.fb-share-button a img {
+    position: absolute;
+    top: 0;
+    left: -30px
+}
+
 .tipost-section3 {
     margin: 50px auto 0
 }
@@ -826,6 +853,12 @@ footer {
     .alert {
         left: 10%;
         width: 80%;
+    }
+    
+    #whatsapp {
+        font-size: 12px;
+        padding: 8px 10px 6px;
+        border-radius: 4px;
     }
 
 }

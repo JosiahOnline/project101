@@ -302,42 +302,7 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
     </script>
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId: '152863758572196',
-                xfbml: true,
-                version: 'v2.8'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <script>
-        var facebookURL = $('[href*="facebook.com"]');
-        var facebookDeep = 'fb://profile/238192846632063';
-        $(facebookURL).attr('href', facebookDeep);
-        $($(facebookURL)).click(function() {
-            setTimeout(function() {
-                if ($(facebookURL).is(":focus")) {
-                    location.href = 'https://facebook.com';
-                } else {
-                    console.log('Focus was lost');
-                }
-            }, 1000);
-        });
-        }
-    </script>
+    
     <script>
         function openNav() {
             document.getElementById("emailSubscribe").style.display = "block";

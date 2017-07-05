@@ -25,55 +25,63 @@
         <link href="img/favicon/apple-icon-180x180.png" rel="apple-touch-icon">
     </head>
     <body class="body">
-        <div class="left-navigation w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-no-scroll="1">
-            <a class="logo-link w-nav-brand" href="#">
-                <h1 class="brand-text">
-                    COGS<br>SANDAKAN
-                </h1>
-                <div class="beta">BETA</div>
-            </a>
-            <div class="languages">
-                <div class="english">English</div>
-                <div class="chinese">| &nbsp;Chinese &nbsp;|</div>
-                <div class="bm">BM</div>
-            </div>
-            <nav class="nav-menu w-nav-menu" role="navigation">
-                <a class="nav-link w-nav-link current" href="#home">Home</a>
-                <a class="nav-link w-nav-link" href="#about">Welcome</a>
-                <a class="nav-link w-nav-link" href="#gallery">Announcement</a>
-                <a class="nav-link w-nav-link" href="#contact">Contact</a>
-            </nav>
-            <div class="hamburger-button w-nav-button">
-                <div class="w-icon-nav-menu"></div>
-            </div>
-            <div class="wordofday-container">
-                <div class="bible-verse">"For God so love the world that he gave his one and only Son, that whoever believe in him shall not perish but have eternal life."</div>
-                <div class="bible-book">JOHN 3: 16</div>
-            </div>
-            <div class="social-footer w-hidden-medium w-hidden-small w-hidden-tiny">
-                <a class="social-icon-link w-inline-block" href="#">
-                    <img src="img/fb.png" width="30">
-                </a>
-                <a class="social-icon-link w-inline-block" href="#">
-                    <img src="img/twitter.png" width="30">
-                </a>
-                <a class="social-icon-link w-inline-block" href="#">
-                    <img src="img/instag.png" width="30">
-                </a>
-                <a class="social-icon-link w-inline-block" href="#">
-                    <img class="image" src="img/email.png" width="30">
-                </a>
+        <section id="PlanAVisit">
+        
+        
+        </section>
+        <div class="main-nav">
+            <div class="nav-container">
+                <span class="beta">BETA</span><a class="brand-logo" href="#">COGS <br><p>SANDAKAN</p></a>
+                <div class="multiple-lang">
+                    <div><a class="english" href="#">English</a></div>
+                    <div><a class="chinese" href="#">Chinese</a></div>
+                    <div><a  class="bm"href="#">BM</a></div>
+                </div>
+                <nav class="navbar">
+                    <div class="navburger">
+                        <span>Menu</span>
+                        <div class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()"></div>
+                    </div>
+                    <div id="mySidenav" class="menu-links">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+                        <a rel="canonical" class="nav-link addborder active" href="#Home">HOME</a>
+                        <a rel="canonical" class="nav-link addborder" href="#Welcome">WELCOME</a>
+                        <a rel="canonical" class="nav-link addborder" href="#Announcement">ANNOUNCEMENT</a>
+                        <a rel="canonical" class="nav-link addborder" href="#Contact">Contact</a>
+                    </div>
+                    <div class="wordofday-container">
+                        <div class="bible-verse">"For God so love the world that he gave his one and only Son, that whoever believe in him shall not perish but have eternal life."</div>
+                        <div class="bible-book">JOHN 3: 16</div>
+                    </div>
+                    <div class="social-container">
+                        <p>Social Media Links</p>
+                        <div class="social-icons">
+                            <a class="social-icon-link w-inline-block" target="_blank" href="https://facebook.com">
+                                <img src="img/fb.png" width="30">
+                            </a>
+                            <a class="social-icon-link w-inline-block" target="_blank" href="https://twitter.com">
+                                <img src="img/twitter.png" width="30">
+                            </a>
+                            <a class="social-icon-link w-inline-block" target="_blank" href="https://instagram.com">
+                                <img src="img/instag.png" width="30">
+                            </a>
+                            <a class="social-icon-link w-inline-block" target="_blank" href="https://gmail.com">
+                                <img class="image" src="img/email.png" width="30">
+                            </a>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
         <div class="content">
-            <div class="home-section" id="home">
+            <div class="home-section" id="Home">
                 <div class="transparent-layer">
                     <div class="hero-title-wrapper">
                         <h1 class="hero-heading">Welcome to COGS</h1>
                         <div class="hero-subheading">Official Website for our church activities</div>
                         <div>
-                            <a class="hollow-button white" href="#">Welcome Message</a>
-                            <a class="hollow-button red" href="#">Announcement</a>
+                            <a class="hollow-button white" href="#Welcome">Welcome Message</a>
+                            <a class="hollow-button red" href="#Announcement">Announcement</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <section class="section" id="about">
+            <section class="section" id="Welcome">
                 <div class="container-3 w-container">
                     <div class="section-title-group">
                         <h2 class="centered section-heading">Welcome</h2>
@@ -131,7 +139,7 @@
                     <p class="paragraph-7">This is our BETA version of the website. Our aim is to provide a communication platform that engage our members about our latest activities, news, events and announcements. We appreciate if you can inform us how to serve you better in this website. You can help us by rating the website below or send us a message about improvement. Thank you and may this website be a blessing to all!</p>
                 </div>
             </div>
-            <section class="section" id="gallery">
+            <section class="section" id="Announcement">
                 <div class="w-container">
                     <div class="section-title-group">
                         <h2 class="centered section-heading">Announcement</h2>
@@ -281,10 +289,10 @@
                         </div>
                     </div>
                 </div>
-                <div><p lang="zh-Hant">込図恋鎮手一般論覇罪借顔宣風収。帰盛光掲予裏遠味笑勢聴廃声。季方国新長育階下注石信試主無援止国趣意。接文行分用要法養培報意江透熱結式代子。書動測育芸武事紫性休業族作。識能読記提泥物止縄認視疑。聞内神作投択英富行毎江達復験。口毎士報都愛舎四現山増司設競。装記護猛子経不作止朝基丘春野。葉億棋龍多徳来会大金検辺逃和性無憶択。
-</p></div>
+                <!--<div><p lang="zh-Hant">込図恋鎮手一般論覇罪借顔宣風収。帰盛光掲予裏遠味笑勢聴廃声。季方国新長育階下注石信試主無援止国趣意。接文行分用要法養培報意江透熱結式代子。書動測育芸武事紫性休業族作。識能読記提泥物止縄認視疑。聞内神作投択英富行毎江達復験。口毎士報都愛舎四現山増司設競。装記護猛子経不作止朝基丘春野。葉億棋龍多徳来会大金検辺逃和性無憶択。
+</p></div>-->
             </section>
-            <section class="section section-gray" id="contact">
+            <section class="section section-gray" id="Contact">
                 <div class="w-container">
                     <div class="section-title-group">
                         <h2 class="centered section-heading">Contact us</h2>
@@ -314,7 +322,7 @@
                     <div class="div-block-4">
                         <h1 class="heading">Our Location</h1>
                         <img class="image-4" sizes="(max-width: 479px) 92vw, (max-width: 767px) 77vw, (max-width: 991px) 72vw, 58vw" src="img/map.png" srcset="img/map.png 500w, img/map.png 800w, img/map.png 1080w, img/map.png 1600w, img/map.png 1920w">
-                        <a class="googlemap w-button" href="#">Click for Direction</a>
+                        <a class="googlemap w-button" href="https://goo.gl/maps/NjHZFjR3Gcx" target="_blank">Click for Direction</a>
                         <p class="paragraph-4">
                             PPM 474 ELOPURA 90000, SANDAKAN, SABAH, MALAYSIA.<br>
                             Tel: 089-216051/216081; Fax: 089-271862<br>infocogs@gmail.com
@@ -338,6 +346,31 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
         <!--<script src="js/main.js" type="text/javascript"></script>-->
-      
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+</script>
     </body>
 </html>

@@ -767,6 +767,98 @@ p {
     text-align: center;
 }
 
+.main-nav {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 20%;
+    height: 100%;
+    background-color: #131321;
+}
+
+.hamburger {
+    display: none;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin-left: 5px;
+    background-image:url(../img/menu1.png);
+    background-size:32px;height:32px;
+    background-repeat:no-repeat
+}
+
+.nav-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.brand-logo, .brand-logo p {
+    font-family: Oswald, sans-serif;
+    color: #edeff2;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+.beta{
+    position: absolute;
+    top: 26px;
+    left: 20%;
+    background-color: #cf404d;
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: #edeff2;
+}
+
+.multiple-lang {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.multiple-lang div a {
+    text-decoration: none;
+}
+
+.multiple-lang div  a:hover {
+    color: #f9c635;
+}
+
+.social-container {
+    position: absolute;
+    left: 20%;
+    bottom: 20px;
+}
+
+.social-container p{
+    font-family: Oswald, sans-serif;
+    color: #edeff2;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.social-container p:hover {
+    color: #f9c635;
+}
+
+.menu-links .active {
+    color: #cf404d;
+}
 .left-navigation {
     position: fixed;
     left: 0px;
@@ -784,6 +876,7 @@ p {
     font-size: 25px;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .nav-link:hover {
@@ -909,11 +1002,11 @@ p {
 }
 
 .wordofday-container {
-    position: relative;
-    top: 13px;
-    display: block;
+    margin-top: 30px;
+    padding: 0 20px;
     width: 100%;
     height: 140px;
+    text-align: center;
 }
 
 .wordofday-container:hover {
@@ -924,12 +1017,11 @@ p {
     padding: 15px 15px 10px;
     color: #edeff2;
     font-size: 18px;
-    text-align: center;
+    margin: auto;
 }
 
 .bible-book {
     color: #edeff2;
-    text-align: center;
 }
 
 .row-2 {
@@ -1161,7 +1253,7 @@ p {
     color: #edeff2;
 }
 
-.beta {
+/*.beta {
     position: absolute;
     left: 46px;
     top: 6px;
@@ -1171,10 +1263,10 @@ p {
     background-color: #cf404d;
     color: #edeff2;
     font-size: 14px;
-}
+}*/
 
 .mission-statement-section {
-    height: 620px;
+    height: 680px;
     background-image: url("http://uploads.webflow.com/5958d66ebdf15346a6da5129/5959f81ff549f15ebdcc5bcb_hillsong.jpeg");
     background-position: 50% 50%;
     background-size: cover;
@@ -1381,12 +1473,8 @@ p {
         line-height: 22px;
     }
 
-    .wordofday-container {
-        width: 50%;
-    }
-
     .bible-verse {
-        width: 350px;
+        width: 90%;
     }
 
     .visit {
@@ -1423,9 +1511,9 @@ p {
         justify-content: center;
     }
 
-    .beta {
+    /*.beta {
         left: -3px;
-    }
+    }*/
 
     .text-block-4 {
         font-size: 23px;
@@ -1554,6 +1642,88 @@ p {
 }
 
 @media (max-width: 479px) {
+    .main-nav {
+        display: none;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: auto;
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+    
+    .navburger {
+        position: absolute;
+        width: 100px;
+        height: 40px;
+        top: 20px;
+        right: 10px;
+        z-index: 1000;
+    }
+    
+    .navburger span {
+        position: relative;
+        top: -7px;
+        font-size: 22px;
+        color: #edeff2; 
+        
+    }
+    
+    .hamburger {
+        display: inline-block;     
+    }
+    
+    .menu-links {
+        -webkit-transition: 50ms;
+        transition: 50ms;
+    }
+
+    .menu-links a {
+        -webkit-transition: 50ms;
+        transition: 50ms
+    }
+
+    .menu-links .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 19px;
+        padding: 0;
+        background-image: url(../img/error.png);
+        background-size: 32px;
+        width: 32px;
+        height: 32px;
+        background-repeat:no-repeat
+    }   
+    
+    .nav-container, .beta {
+        left: 28%;    
+    }
+    
+    .nav-link {
+        text-align : center;
+        padding-left: 0;
+    }
+    
+    .social-container {
+        left: 30%;
+    }
+    
+    .wordofday-container {
+        margin-top: 10px;
+        height: 185px;
+    }
+    
+    .bible-verse {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .bible-book {
+        font-size: 20px;
+    }
+    
     .section {
         padding-top: 40px;
         padding-bottom: 20px;

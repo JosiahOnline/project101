@@ -588,7 +588,8 @@ p {
     background-color: #fff;
 }
 
-.section.section-gray {
+.section.section-contact {
+    min-height: 1100px;
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
     background-color: #fafafa;
@@ -767,6 +768,61 @@ p {
     text-align: center;
 }
 
+#planVisit {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+container .title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.title h1, h3 {
+    color: black;
+}
+
+.title h3 {
+    margin: 10px auto;
+}
+
+.label-box {
+    border-radius: 4px;
+}
+legend {
+    font-size: 24px;
+}
+.submit-button {
+    border-radius: 4px;
+    background-color: #2e80b6;
+    color: white;
+    margin-top: 10px;
+}
+
+.close-button {
+    color: black;
+    font-weight: 400;
+    font-family: Oswald, sans-serif;
+    text-decoration: none;
+    font-size: 24px;
+    position: fixed;
+    right: 20px;
+    top: 90px;
+     padding: 10px;
+    cursor:pointer;
+}
+
+.close-button:hover {
+    border-radius: 5px;
+    background-color: #cf404d;
+    color: white;
+}
 .main-nav {
     position: fixed;
     left: 0px;
@@ -969,7 +1025,7 @@ p {
     height: 100%;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    background-image: url("http://uploads.webflow.com/5958d66ebdf15346a6da5129/5958e076d2d3db52ae053554_bulletin1.jpg");
+    background-image: url("../img/bulletin1.jpg");
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -1159,14 +1215,64 @@ p {
     text-align: center;
 }
 
-.link-block {
+/*.link-block {
     width: 50px;
     height: 50px;
     background-image: url("http://uploads.webflow.com/5958d66ebdf15346a6da5129/595905ff73bd8e5891264203_down-arrow(Black).png");
     background-position: 0px 0px;
     background-size: cover;
+}*/
+
+
+.main-news {
+    height: 500px;
+    margin-bottom: 30px;
 }
 
+.main-news:hover .newsdescription {
+    opacity: 1;
+}
+
+.news-image {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.newsdescription {
+    position: relative;
+    height: 100%;
+    top: -500px;
+    background-color: #131321;
+    opacity: 0.9;
+    text-align: center; 
+    padding-top: 100px;
+    color: white;
+    border-radius: 5px;
+}
+
+.news1 {
+    padding-top: 100px;
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+
+.pgraph1 {
+    font-size: 40px;
+    color: white;
+}
+
+.pgraph1 span a {
+    color: #f36;
+    font-weight: 700;
+}
+
+.news2 {
+    width: 100%;
+    height: 100%;
+    
+}
 .news1.roundradius {
     border-radius: 4px;
 }
@@ -1188,18 +1294,51 @@ p {
     text-align: center;
 }
 
+.address {
+    display: flex;
+    height: 300px;
+    text-align: left;
+}
+
+.location {
+    flex: 1;
+}
+
 .googlemap {
+    flex: 2;
+    padding: 0 10px;
+}
+
+.googlemap iframe {
+    width: 100%;
+    height: 360px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+address, .contact-info p, .office-hour p {
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    font-style:normal;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+
+
+.direction-button {
     width: 100%;
     margin-bottom: 10px;
     padding-top: 12px;
     padding-bottom: 12px;
-    border-radius: 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     background-color: #2e80b6;
     font-size: 20px;
     text-align: center;
 }
 
-.googlemap:hover {
+.direction-button:hover {
     background-color: #cf404d;
 }
 
@@ -1267,7 +1406,7 @@ p {
 
 .mission-statement-section {
     height: 680px;
-    background-image: url("http://uploads.webflow.com/5958d66ebdf15346a6da5129/5959f81ff549f15ebdcc5bcb_hillsong.jpeg");
+    background-image: url("../img/hillsong.jpeg");
     background-position: 50% 50%;
     background-size: cover;
     text-align: left;
@@ -1729,7 +1868,7 @@ p {
         padding-bottom: 20px;
     }
 
-    .section.section-gray {
+    .section.section-contact {
         padding-top: 50px;
     }
 
@@ -1765,7 +1904,7 @@ p {
 
     .home-section {
         height: 450px;
-        background-image: url("http://uploads.webflow.com/5958d66ebdf15346a6da5129/595912942afc715251b7c76d_cogs2.jpg");
+        background-image: url("../img/cogs.jpg");
         background-position: 50% 50%;
         background-size: cover;
     }

@@ -725,8 +725,6 @@ p {
 
 .form-wrapper.squeezed {
     margin-bottom: 60px;
-    padding-right: 10%;
-    padding-left: 10%;
 }
 
 .social-icon-link {
@@ -1296,22 +1294,25 @@ legend {
 
 .address {
     display: flex;
-    height: 300px;
-    text-align: left;
+    height: 457px;
+    text-align: center;
 }
 
 .location {
     flex: 1;
+    background-color: #2e80b6;
+    border-radius: 5px;
+    padding: 30px 10px;
 }
 
 .googlemap {
     flex: 2;
-    padding: 0 10px;
+    padding-left: 10px;
 }
 
 .googlemap iframe {
     width: 100%;
-    height: 360px;
+    height: 410px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -1320,10 +1321,14 @@ address, .contact-info p, .office-hour p {
     font-family: Oswald, sans-serif;
     font-size: 20px;
     font-style:normal;
-    line-height: 24px;
+    line-height: 26px;
     margin-bottom: 15px;
+    color: white;
 }
 
+.location h2, .contact-info h2, .office-hour h2 {
+    color: white;
+}
 
 
 .direction-button {
@@ -1342,9 +1347,7 @@ address, .contact-info p, .office-hour p {
     background-color: #cf404d;
 }
 
-.div-block-4 {
-    padding-right: 10%;
-    padding-left: 10%;
+.contact-section {
     text-align: center;
 }
 
@@ -1498,6 +1501,15 @@ address, .contact-info p, .office-hour p {
     line-height: 35px;
 }
 
+@media screen and (max-width: 1024px) {
+    .address {
+        height: 507px;
+    }
+    .googlemap iframe {
+        height: 460px;
+    }
+}
+
 @media (max-width: 991px) {
     body {
         margin-left: 0px;
@@ -1538,8 +1550,8 @@ address, .contact-info p, .office-hour p {
     }
 
     .form-wrapper.squeezed {
-        padding-right: 8%;
-        padding-left: 8%;
+        padding-right: 2%;
+        padding-left: 2%;
     }
 
     .hero-title-wrapper {
@@ -1666,6 +1678,9 @@ address, .contact-info p, .office-hour p {
 
     .column-6 {
         padding-top: 30px;
+    }
+    .address {
+        height: 507px;
     }
 }
 
@@ -2003,9 +2018,9 @@ address, .contact-info p, .office-hour p {
         padding-left: 10%;
     }
 
-    .div-block-4 {
-        padding-right: 0%;
-        padding-left: 0%;
+    .contact-section {
+        padding-right: 2%;
+        padding-left: 2%;
     }
 
     .heading {
@@ -2051,4 +2066,29 @@ address, .contact-info p, .office-hour p {
     .div-block-6 {
         text-align: left;
     }
+    
+    .address {
+        flex-direction: column;
+        height: 1030px;
+        text-align: center;
+    }
+    .form-wrapper.squeezed {
+        margin-bottom: 30px;
+    }
+
+    .location {
+        flex: 1;
+        background-color: #2e80b6;
+        border-radius: 5px;
+        padding: 30px 10px;
+    }
+
+    .googlemap {
+        flex: 2;
+        margin-top: 30px;
+        padding-left: 0px;
+    }
 }
+
+
+

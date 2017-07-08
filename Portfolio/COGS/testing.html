@@ -71,9 +71,22 @@
                         <a rel="canonical" class="nav-link addborder" href="#Announcement">ANNOUNCEMENT</a>
                         <a rel="canonical" class="nav-link addborder" href="#Contact">Contact</a>
                     </div>
-                    <div class="wordofday-container">
+                    <!--<div class="wordofday-container">
                         <div class="bible-verse">"For God so love the world that he gave his one and only Son, that whoever believe in him shall not perish but have eternal life."</div>
                         <div class="bible-book">JOHN 3: 16</div>
+                    </div>-->
+                    <div class="share-website">
+                        <div class="share-container">
+                        <p>Share this website</p><div class="web__share">
+                                        <div class="web__social">  
+                                            <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
+                                            <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                                            <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                                            <a class="share-icon whatsapp" href="#"><span class="fa fa-whatsapp"></span></a>
+                                        </div>
+                                        <a id="share" class="share-toggle share-icon" href="#"></a>
+                                    </div>
+                        </div>
                     </div>
                     <div class="social-container">
                         <p>Social Media Links</p>
@@ -498,6 +511,12 @@
         $("#planVisit").css('display', 'none');
     });
         $('.card__share > a').on('click', function(e){ 
+		e.preventDefault() // prevent default action - hash doesn't appear in url
+   		$(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
+		$(this).toggleClass('share-expanded');
+        });
+            
+            $('.web__share > a').on('click', function(e){ 
 		e.preventDefault() // prevent default action - hash doesn't appear in url
    		$(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
 		$(this).toggleClass('share-expanded');

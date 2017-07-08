@@ -1069,6 +1069,26 @@ legend {
     line-height: 24px;
 }
 
+.share-website {
+    height: 100px;
+    width: 240px;
+    padding: 10px;
+    margin: auto;
+}
+
+.share-container {
+    background-color: #fafaff;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.share-container p {
+    font-size: 17px;
+    text-align: left;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
 .wordofday-container {
     margin-top: 30px;
     padding: 0 20px;
@@ -1278,7 +1298,10 @@ legend {
 
 .news:hover .newsdescription {
     background-color: #2e80b6;
-    
+}
+
+.news:hover .card__share {
+    display: block;
 }
 
 .round-radius {
@@ -1357,10 +1380,19 @@ legend {
 }
 
 .card__share {
+    display: none;
 	float: right;
 	position: relative;
 	margin-top: -140px;
     margin-right: 5px;
+    z-index: 1;
+}
+
+.web__share {
+	float: right;
+	position: relative;
+	margin-top: -31px;
+    margin-right: 10px;
     z-index: 1;
 }
 
@@ -1374,7 +1406,18 @@ legend {
   	transform: translateX(0px);
   	transition: transform 0.35s ease;
 }
-	.card__social--active {
+
+.web__social {
+    position: absolute;
+	top: 0;
+	right: 0;
+	visibility: hidden;
+	width: 170px;
+	transform: translateZ(0);
+  	transform: translateX(0px);
+  	transition: transform 0.35s ease;
+}
+	.card__social--active, .web__social--active {
         margin-right: -10px;
 		visibility: visible;
 		/*z-index: 3;*/

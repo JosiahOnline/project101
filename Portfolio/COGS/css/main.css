@@ -1270,7 +1270,10 @@ legend {
     box-shadow: 
 	  		0 2px 4px rgba(0,0,0, 0.12),
 	    	0 2px 4px rgba(0,0,0, 0.24);
-    
+}
+
+.news a {
+    text-decoration: none;
 }
 
 .news:hover .newsdescription {
@@ -1356,7 +1359,7 @@ legend {
 .card__share {
 	float: right;
 	position: relative;
-	margin-top: -17px;
+	margin-top: -140px;
     margin-right: 5px;
     z-index: 1;
 }

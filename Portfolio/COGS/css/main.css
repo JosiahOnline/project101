@@ -118,7 +118,10 @@ html.w-mod-touch * {
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 0
+    border-radius: 0;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 input.w-button {
@@ -565,6 +568,9 @@ p {
     width: 100%;
     background-color: #2e80b6;
     font-size: 20px;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 .button.full-width:hover {
@@ -585,7 +591,7 @@ p {
     position: relative;
     padding: 60px 40px;
     border-top: 10px solid #141e28;
-    background-color: #fff;
+    background-color: #F0F2F2;
 }
 
 .section.section-contact {
@@ -657,6 +663,9 @@ p {
     background-color: #2e80b6;
     color: #fff;
     font-size: 20px;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 .hollow-button.white:hover {
@@ -671,6 +680,9 @@ p {
     background-color: #cf404d;
     color: #fff;
     font-size: 20px;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 .hollow-button.red:hover {
@@ -711,7 +723,9 @@ p {
     margin-bottom: 17px;
     border: 0px solid #000;
     border-radius: 3px;
-    box-shadow: 0 0 0 1px rgba(64, 64, 71, .3);
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
     font-size: 20px;
 }
 
@@ -1120,9 +1134,8 @@ legend {
 
 .history {
     padding: 11px 20px;
-    border: 1px solid #000;
     border-radius: 4px;
-    background-color: transparent;
+    background-color: #fff;
     color: #000;
     font-size: 20px;
 }
@@ -1143,8 +1156,11 @@ legend {
     text-align: left;
 }
 
-.image-2 {
+.photo-pcc {
     border-radius: 4px;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 .text-block-2 {
@@ -1225,6 +1241,9 @@ legend {
 .main-news {
     height: 500px;
     margin-bottom: 30px;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 .main-news:hover .main-news-description {
@@ -1248,17 +1267,15 @@ legend {
     width: 220px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
     
 }
 
 .news:hover .newsdescription {
     background-color: #2e80b6;
     
-}
-
-.news a {
-    text-decoration: none;
-    color: white;
 }
 
 .round-radius {
@@ -1271,8 +1288,6 @@ legend {
     height: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-   
-    
 }
 
 .main-news-description {
@@ -1284,7 +1299,10 @@ legend {
     text-align: center; 
     padding-top: 100px;
     color: white;
-    border-radius: 5px;
+    border-radius: 2px;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 .newsdescription {
@@ -1297,6 +1315,14 @@ legend {
     border-bottom-right-radius: 5px;
     padding-top: 15px;
     padding-left: 20px;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
+}
+
+.newsdescription .title2, .pgraph2 {
+    text-decoration: none;
+    color: white;
 }
 
 .title2 {
@@ -1326,6 +1352,101 @@ legend {
     font-weight: 700;
     text-decoration: underline;
 }
+
+.card__share {
+	float: right;
+	position: relative;
+	margin-top: -17px;
+    margin-right: 5px;
+    z-index: 1;
+}
+
+.card__social {
+	position: absolute;
+	top: 0;
+	right: 0;
+	visibility: hidden;
+	width: 170px;
+	transform: translateZ(0);
+  	transform: translateX(0px);
+  	transition: transform 0.35s ease;
+}
+	.card__social--active {
+        margin-right: -10px;
+		visibility: visible;
+		/*z-index: 3;*/
+		transform: translateZ(0);
+ 		transform: translateX(-48px);
+  		transition: transform 0.35s ease;
+	}
+
+.share-toggle {
+	z-index: 200;
+}
+.share-toggle:before {
+	content: "\f1e0";
+	font-family: 'FontAwesome';
+	color: #3498db;
+}
+	.share-toggle.share-expanded:before {
+		content: "\f00d";
+	}
+
+.share-icon {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border-radius: 50%;
+    text-decoration: none;
+	background-color: #fff;
+	transition: all 0.3s ease;
+	outline: 0;
+	box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
+}
+	.share-icon:hover,
+	.share-icon:focus {
+		box-shadow: 
+	  		0 3px 6px rgba(0,0,0, 0.12),
+	    	0 3px 6px rgba(0,0,0, 0.24);
+
+	    -webkit-transform: scale(1.2);
+	    -moz-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	    -o-transform: scale(1.2);
+	    transform: scale(1.2);
+	}
+
+.facebook {
+	background-color: #3b5998; 
+}
+.twitter {
+	background-color: #00abe3; 
+}
+.googleplus {
+	background-color: #d3492c;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.facebook,
+.twitter,
+.googleplus,
+.whatsapp {
+	color: #fff;
+}
+
+	.facebook:hover,
+	.twitter:hover,
+	.googleplus:hover,
+    .whatsapp:hover {
+		color: #eee;
+	}
 
 .news1.roundradius {
     border-radius: 4px;
@@ -1359,6 +1480,9 @@ legend {
     background-color: #2e80b6;
     border-radius: 5px;
     padding: 30px 10px;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 .googlemap {
@@ -1371,6 +1495,9 @@ legend {
     height: 410px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 address, .contact-info p, .office-hour p {
@@ -1397,6 +1524,9 @@ address, .contact-info p, .office-hour p {
     background-color: #2e80b6;
     font-size: 20px;
     text-align: center;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 .direction-button:hover {

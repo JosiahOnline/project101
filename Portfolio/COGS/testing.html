@@ -27,7 +27,7 @@
 
     </head>
     <body class="body">
-        <section id="planVisit">
+        <section class="plan-visit">
             <container>
                 <div class="title">
                     <h1>Plan a Visit</h1>
@@ -66,10 +66,10 @@
                     </div>
                     <div id="mySidenav" class="menu-links">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
-                        <a rel="canonical" class="nav-link addborder active" href="#Home">HOME</a>
-                        <a rel="canonical" class="nav-link addborder" href="#Welcome">WELCOME</a>
-                        <a rel="canonical" class="nav-link addborder" href="#Announcement">ANNOUNCEMENT</a>
-                        <a rel="canonical" class="nav-link addborder" href="#Contact">Contact</a>
+                        <a rel="canonical" class="nav-link addborder active" href="#home">HOME</a>
+                        <a rel="canonical" class="nav-link addborder" href="#welcome">WELCOME</a>
+                        <a rel="canonical" class="nav-link addborder" href="#announcement">ANNOUNCEMENT</a>
+                        <a rel="canonical" class="nav-link addborder" href="#contact">Contact</a>
                     </div>
                     <!--<div class="wordofday-container">
                         <div class="bible-verse">"For God so love the world that he gave his one and only Son, that whoever believe in him shall not perish but have eternal life."</div>
@@ -77,15 +77,17 @@
                     </div>-->
                     <div class="share-website">
                         <div class="share-container">
-                        <p>Share this website</p><div class="web__share">
-                                        <div class="web__social">  
+                            <p>A lot of friends and families may not know about this new website, click to share it with them!</p>
+                            <a href="http://www.onlinebah.com" class="special-button" target="_blank"><span>Share this website</span></a>
+                            <!--<div class="web__share">
+                                   <div class="web__social">  
                                             <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
                                             <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
                                             <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
                                             <a class="share-icon whatsapp" href="#"><span class="fa fa-whatsapp"></span></a>
                                         </div>
                                         <a id="share" class="share-toggle share-icon" href="#"></a>
-                                    </div>
+                                    </div>-->
                         </div>
                     </div>
                     <div class="social-container">
@@ -109,7 +111,7 @@
             </div>
         </div>
         <div class="content">
-            <div class="home-section" id="Home">
+            <section class="home-section" id="home">
                 <div class="transparent-layer">
                     <div class="hero-title-wrapper">
                         <h1 class="hero-heading">Welcome Home</h1>
@@ -120,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <div class="bulletin-section">
                 <div class="row-4 w-row">
                     <div class="w-col w-col-6">
@@ -139,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <section class="section" id="Welcome">
+            <section class="section" id="welcome">
                 <div class="container-3 w-container">
                     <div class="section-title-group">
                         <h2 class="centered section-heading">Welcome Home</h2>
@@ -174,7 +176,7 @@
                     <p class="paragraph-7">This is our BETA version of the website. Our aim is to provide a communication platform that engage our members about our latest activities, news, events and announcements. We appreciate if you can inform us how to serve you better in this website. You can help us by rating the website below or send us a message about improvement. Thank you and may this website be a blessing to all!</p>
                 </div>
             </div>
-            <section class="section" id="Announcement">
+            <section class="section" id="announcement">
                 <div class="w-container">
                     <div class="section-title-group">
                         <h2 class="centered section-heading">Announcement</h2>
@@ -395,7 +397,7 @@
                 <!--<div><p lang="zh-Hant">込図恋鎮手一般論覇罪借顔宣風収。帰盛光掲予裏遠味笑勢聴廃声。季方国新長育階下注石信試主無援止国趣意。接文行分用要法養培報意江透熱結式代子。書動測育芸武事紫性休業族作。識能読記提泥物止縄認視疑。聞内神作投択英富行毎江達復験。口毎士報都愛舎四現山増司設競。装記護猛子経不作止朝基丘春野。葉億棋龍多徳来会大金検辺逃和性無憶択。
 </p></div>-->
             </section>
-            <section class="section section-contact" id="Contact">
+            <section class="section section-contact" id="contact">
                 <div class="w-container">
                     <div class="section-title-group">
                         <h2 class="centered section-heading">Contact us</h2>
@@ -504,11 +506,11 @@
         <script>
         $(document).ready(function() {
     $(".visit").click(function() {
-        $("#planVisit").css('display', 'block');
+        $(".plan-visit").css('display', 'block');
        
     });
     $(".close-button").click(function() {
-        $("#planVisit").css('display', 'none');
+        $(".plan-visit").css('display', 'none');
     });
         $('.card__share > a').on('click', function(e){ 
 		e.preventDefault() // prevent default action - hash doesn't appear in url
@@ -521,9 +523,20 @@
    		$(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
 		$(this).toggleClass('share-expanded');
         });
+          
             
+            
+
+   $("section").mouseenter(function(){
+   	 var id = $(this).attr('id');
+   	 $('#mySidenav a').removeClass('active');
+   	 $('#mySidenav a').find('#+id').addClass('active');
+       
+   });
         });
         </script>
+        
+        
         
     </body>
 </html>

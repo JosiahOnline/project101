@@ -28,28 +28,73 @@
     </head>
     <body class="body">
         <section class="plan-visit">
-            <container>
+            <div class="container">
                 <div class="title">
                     <h1>Plan a Visit</h1>
-                    <h3>Please fill in your details below</h3>
+                    <h3>Please fill in your details below</h3><span class="close-button" title="Close">Close</span>
                 </div>
-                <div>
-                <p class="close-button" title="Close">Close</p></div>
+                
                 <form action="#">
-                  <fieldset>
-                    <legend>Personal information:</legend>
-                        <input class="label-box" type="text" name="firstname" placeholder="Name" required="required" type="text"><br><br>
-                        <input class="label-box" type="text" name="email" placeholder="Email" required="required"><br><br>
-                        <input class="label-box" type="text" name="contact" placeholder="Contact" required="required"><br><br>
-                        <input type="radio" name="services" value="Saturday EN Night" checked> Saturday Night English 7:30pm:<br>
-                        <input type="radio" name="services" value="Sunday CH"> Sunday Chinese 7am<br>
-                        <input type="radio" name="services" value="Sunday English"> Sunday English 9:15am<br>
-                        <input type="radio" name="services" value="Sunday BM"> Sunday BM 9:15am<br>
-                        <input type="radio" name="services" value="Sunday CH Afternoon"> Sunday Chinese 2:30pm<br>
-                        <input class="submit-button" type="submit" value="Submit">
-                  </fieldset>
+                  
+                        <h2>Personal information:</h2>
+                        <div class="w-row">
+                                <div class="column-remove-padding w-col w-col-6">
+                                    <!--DON't add autofocus="autofocus" show the input element should automatically get focus once the page reload-->
+                                    <input class="form-field w-input" data-name="first-name" id="first-name" maxlength="256" name="first-name" placeholder="Name:" required="required" type="text">
+                                </div>
+                                <div class="column-remove-padding w-col w-col-6">
+                                    <input class="form-field w-input" data-name="email" id="email" maxlength="256" name="email" placeholder="Email:" required="required" type="email">
+                                </div>
+                                <div class="column-remove-padding w-col w-col-6">
+                                    <input class="form-field w-input" data-name="contact" id="smartphone-number" maxlength="256" name="contact" placeholder="Contact Number:" required="required" type="text">
+                                </div>
+                            </div>
+                        <textarea class="form-field text-area w-input" data-name="Additonal Info" id="additional-info" maxlength="5000" name="Additional Info" placeholder="Additional info that you would like us to know (Optional)"></textarea>
+                        <div class="selection">
+                            <select class="adult">
+                              <option value="1 Adult">1 Adult</option>
+                              <option value="2 Adults">2 Adults</option>
+                              <option value="3 Adults">3 Adults</option>
+                              <option value="4 Adults">4 Adults</option>
+                              <option value="5 Adults">5 Adults</option>
+                              <option value="6 Adults">6 Adults</option>
+                              <option value="7 Adults">7 Adults</option>
+                              <option value="8 Adults">8 Adults</option>
+                              <option value="9 Adults">9 Adults</option>
+                              <option value="10 Adults">10 Adults</option>
+                            </select><br>
+                            <select class="child">
+                              <option value="0 Child">0 Child</option>
+                              <option value="1 Child">1 Child</option>
+                              <option value="2 Children">2 Children</option>
+                              <option value="3 Children">3 Children</option>
+                              <option value="4 Children">4 Children</option>
+                              <option value="5 Children">5 Children</option>
+                              <option value="6 Children">6 Children</option>
+                              <option value="7 Children">7 Children</option>
+                              <option value="8 Children">8 Children</option>
+                            </select><br>
+                            <select class="infant">
+                              <option value="0 Infant">0 Infant</option>
+                              <option value="1 Infants">1 Infants</option>
+                              <option value="2 Infants">2 Infants</option>
+                              <option value="3 Infants">3 Infants</option>
+                            </select><br>
+                            <p class="select-date">Date: </p>
+                            <input id="attendance-date" type="date" Name="Month/Day/Year" placeholder="Month/Day/Year"/><br><br>
+                            <p class="attend-service">Attend Service: </p>
+                            <select>
+                              <option value="Saturday ENGLISH 7:30pm">Saturday ENGLISH 7:30pm</option>
+                              <option value="Sunday CHINESE 7am">Sunday CHINESE 7:00am</option>
+                              <option value="Sunday ENGLISH 9:15am">Sunday ENGLISH 9:15am</option>
+                              <option value="Sunday BM 9:15am">Sunday BM 9:15am</option>
+                              <option value="Sunday CHINESE 2:30pm">Sunday CHINESE 2:30pm</option>
+                            </select><br>
+                        </div>
+                        <input class="button full-width w-button" data-wait="Please wait..." type="submit" value="Submit">
+                  
                 </form>  
-            </container>
+            </div>
         </section>
         <div class="main-nav">
             <div class="nav-container">
@@ -77,7 +122,7 @@
                     </div>-->
                     <div class="share-website">
                         <div class="share-container">
-                            <p>A lot of friends and families may not know about this new website, click to share it with them!</p>
+                            <p>Click below button to inform your friends and families of our new website!</p>
                             <a href="http://www.onlinebah.com" class="special-button" target="_blank"><span>Share this website</span></a>
                             <!--<div class="web__share">
                                    <div class="web__social">  
@@ -117,8 +162,8 @@
                         <h1 class="hero-heading">Welcome Home</h1>
                         <div class="hero-subheading">Official Website of Good Shepherd Church</div>
                         <div>
-                            <a class="hollow-button white" href="#Welcome">Welcome Message</a>
-                            <a class="hollow-button red" href="#Announcement">Announcement</a>
+                            <a class="hollow-button white" href="#welcome">Welcome Message</a>
+                            <a class="hollow-button red" href="#announcement">Announcement</a>
                         </div>
                     </div>
                 </div>
@@ -414,7 +459,7 @@
                                     <input class="form-field w-input" data-name="Email 9" id="email-9" maxlength="256" name="email-9" placeholder="Email" required="required" type="email">
                                 </div>
                                 <div class="column-remove-padding w-col w-col-6">
-                                    <input class="form-field w-input" data-name="Contact" id="contact" maxlength="256" name="contact" placeholder="Contact Number" required="required" type="text">
+                                    <input class="form-field w-input" data-name="Contact" id="contact-number" maxlength="256" name="contact" placeholder="Contact Number" required="required" type="text">
                                 </div>
                             </div>
                             <textarea class="form-field text-area w-input" data-name="Field 4" id="field-4" maxlength="5000" name="field-4" placeholder="Message" required="required"></textarea>
@@ -527,12 +572,12 @@
             
             
 
-   $("section").mouseenter(function(){
+   /*$("section").mouseenter(function(){
    	 var id = $(this).attr('id');
    	 $('#mySidenav a').removeClass('active');
-   	 $('#mySidenav a').find('#+id').addClass('active');
+   	  $("[href=#"+id+"]").addClass('active');
        
-   });
+   });*/
         });
         </script>
         

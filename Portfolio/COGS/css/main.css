@@ -523,6 +523,7 @@ body {
 }
 
 h1 {
+    font-family: Oswald, sans-serif;
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 38px;
@@ -531,6 +532,7 @@ h1 {
 }
 
 h2 {
+    font-family: Oswald, sans-serif;
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 32px;
@@ -541,7 +543,7 @@ h2 {
 p {
     margin-top: 0px;
     margin-bottom: 10px;
-    font-family: 'Droid Sans', sans-serif;
+    font-family: Oswald, sans-serif;
     font-size: 15px;
 }
 
@@ -722,7 +724,7 @@ p {
     margin-right: 1px;
     margin-bottom: 17px;
     border: 0px solid #000;
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: 
 	  		0 2px 4px rgba(0,0,0, 0.12),
 	    	0 2px 4px rgba(0,0,0, 0.24);
@@ -791,17 +793,28 @@ p {
     background-color: white;
 }
 
-container .title {
+.plan-visit .container {
+    width: 90%;
+    margin: auto;
+}
+
+.container .title {
     text-align: center;
     padding-top: 30px;
 }
 
 .title h1, h3 {
     color: black;
+    font-weight: 700;
+    font-family: Oswald, sans-serif;
+    font-size: 50px;
 }
 
 .title h3 {
     margin: 10px auto;
+    font-weight: 400;
+    font-family: Oswald, sans-serif;
+    font-size: 30px;
 }
 
 .label-box {
@@ -818,23 +831,65 @@ legend {
 }
 
 .close-button {
-    color: black;
+    color: white;
     font-weight: 400;
     font-family: Oswald, sans-serif;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     position: fixed;
-    right: 20px;
-    top: 90px;
-     padding: 10px;
+    right: 5%;
+    top: 80px;
+    border-radius: 4px;
+    padding: 5px 10px;
     cursor:pointer;
+    background-color: #cf404d;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
 }
 
 .close-button:hover {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: #cf404d;
     color: white;
 }
+
+.selection {
+    display: flex;
+    padding: 10px 0;
+    margin: auto;
+    align-items: center;
+}
+
+select {
+    margin-right: 10px;
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 2px;
+    border-width: 0;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
+}
+
+.attend-service, .select-date {
+    height: 30px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Oswald, sans-serif;
+}
+
+#attendance-date {
+    text-align: center;
+    height: 30px;
+    border-radius: 2px;
+    border-width: 0;
+    box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
+}
+
 .main-nav {
     position: fixed;
     left: 0px;
@@ -879,7 +934,7 @@ legend {
     background-color: #cf404d;
     font-size: 14px;
     padding: 5px 8px;
-    border-radius: 5px;
+    border-radius: 4px;
     color: #edeff2;
 }
 
@@ -1030,7 +1085,7 @@ legend {
     width: 400px;
     height: 140px;
     border: 1px solid #edeff2;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(237, 239, 242, .03);
 }
 
@@ -1120,7 +1175,7 @@ legend {
     line-height: 20px;
     margin-bottom: 0;
     color: white;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color:  #2e80b6;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -1347,7 +1402,7 @@ legend {
 
 .round-radius {
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .news-image {
@@ -1567,7 +1622,7 @@ legend {
 .location {
     flex: 1;
     background-color: #2e80b6;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 30px 10px;
     box-shadow: 
 	  		0 2px 4px rgba(0,0,0, 0.12),
@@ -2354,7 +2409,7 @@ address, .contact-info p, .office-hour p {
     .location {
         flex: 1;
         background-color: #2e80b6;
-        border-radius: 5px;
+        border-radius: 4px;
         padding: 30px 10px;
     }
 

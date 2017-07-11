@@ -33,25 +33,22 @@
                     <h1>Plan a Visit</h1>
                     <h3>Please fill in your details below</h3><span class="close-button" title="Close">Close</span>
                 </div>
-                
                 <form action="#">
-                  
-                        <h2>Personal information:</h2>
-                        <div class="w-row">
-                                <div class="column-remove-padding w-col w-col-6">
+                        <div class="form-container">
+                                <div class="form-row">
                                     <!--DON't add autofocus="autofocus" show the input element should automatically get focus once the page reload-->
-                                    <input class="form-field w-input" data-name="first-name" id="first-name" maxlength="256" name="first-name" placeholder="Name:" required="required" type="text">
+                                    <input class="form-field w-input add-margin" data-name="first-name" id="first-name" maxlength="256" name="first-name" placeholder="Name:" required="required" type="text">
                                 </div>
-                                <div class="column-remove-padding w-col w-col-6">
-                                    <input class="form-field w-input" data-name="email" id="email" maxlength="256" name="email" placeholder="Email:" required="required" type="email">
+                                <div class="form-row">
+                                    <input class="form-field w-input add-margin" data-name="email" id="email" maxlength="256" name="email" placeholder="Email:" required="required" type="email">
                                 </div>
-                                <div class="column-remove-padding w-col w-col-6">
-                                    <input class="form-field w-input" data-name="contact" id="smartphone-number" maxlength="256" name="contact" placeholder="Contact Number:" required="required" type="text">
+                                <div class="form-row">
+                                    <input class="form-field w-input add-margin" data-name="contact" id="smartphone-number" maxlength="256" name="contact" placeholder="Contact Number:" required="required" type="text">
                                 </div>
                             </div>
-                        <textarea class="form-field text-area w-input" data-name="Additonal Info" id="additional-info" maxlength="5000" name="Additional Info" placeholder="Additional info that you would like us to know (Optional)"></textarea>
+                        <textarea class="form-field text-area w-input add-margin" data-name="Additonal Info" id="additional-info" maxlength="5000" name="Additional Info" placeholder="Additional info that you would like us to know (optional)"></textarea>
                         <div class="selection">
-                            <select class="adult">
+                            <select class="adult add-margin">
                               <option value="1 Adult">1 Adult</option>
                               <option value="2 Adults">2 Adults</option>
                               <option value="3 Adults">3 Adults</option>
@@ -63,7 +60,7 @@
                               <option value="9 Adults">9 Adults</option>
                               <option value="10 Adults">10 Adults</option>
                             </select><br>
-                            <select class="child">
+                            <select class="child add-margin">
                               <option value="0 Child">0 Child</option>
                               <option value="1 Child">1 Child</option>
                               <option value="2 Children">2 Children</option>
@@ -74,16 +71,16 @@
                               <option value="7 Children">7 Children</option>
                               <option value="8 Children">8 Children</option>
                             </select><br>
-                            <select class="infant">
+                            <select class="infant add-margin">
                               <option value="0 Infant">0 Infant</option>
                               <option value="1 Infants">1 Infants</option>
                               <option value="2 Infants">2 Infants</option>
                               <option value="3 Infants">3 Infants</option>
                             </select><br>
                             <p class="select-date">Date: </p>
-                            <input id="attendance-date" type="date" Name="Month/Day/Year" placeholder="Month/Day/Year"/><br><br>
+                            <input id="attendance-date" class="service-date add-margin" type="date" Name="Month/Day/Year"/><br><br>
                             <p class="attend-service">Attend Service: </p>
-                            <select>
+                            <select class="service-time add-margin">
                               <option value="Saturday ENGLISH 7:30pm">Saturday ENGLISH 7:30pm</option>
                               <option value="Sunday CHINESE 7am">Sunday CHINESE 7:00am</option>
                               <option value="Sunday ENGLISH 9:15am">Sunday ENGLISH 9:15am</option>
@@ -91,7 +88,7 @@
                               <option value="Sunday CHINESE 2:30pm">Sunday CHINESE 2:30pm</option>
                             </select><br>
                         </div>
-                        <input class="button full-width w-button" data-wait="Please wait..." type="submit" value="Submit">
+                        <input class="button full-width w-button plan-submit" data-wait="Please wait..." type="submit" value="Submit">
                   
                 </form>  
             </div>

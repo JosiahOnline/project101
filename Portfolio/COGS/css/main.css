@@ -499,7 +499,7 @@ p {
     margin-bottom: 35px;
     color: #fff;
     font-size: 80px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-shadow: 2px 2px 1px #000;
@@ -569,7 +569,7 @@ p {
     margin-bottom: 30px;
     color: #313131;
     font-size: 80px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     text-transform: uppercase;
 }
@@ -577,8 +577,8 @@ p {
 .section-subheading.center {
     font-family: 'Droid Sans', sans-serif;
     color: #0b0000;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 35px;
+    line-height: 35px;
     text-align: center;
 }
 
@@ -1637,6 +1637,7 @@ address,
     }
     .COGS-title h1 {
         width: 270px;
+        font-weight: 500;
     }
     .navburger {
         flex: 1;
@@ -1699,38 +1700,105 @@ address,
         padding-top: 100px;
     }
     .brand-logo, .brand-logo p {
-        font-size: 38px;
-        line-height: 44px;
+        font-size: 80px;
+        line-height: 80px;
         font-weight: 700;
     }
     .beta {
-        left: 40%;
-        top: 110px;
-        font-size: 18px;
+        left: 29%;
+        top: 108px;
+        font-size: 38px;
+        line-height: 50px;
+        font-weight: 500;
+        padding: 10px 15px;
+    }
+    .multiple-lang {
+        margin-top: 15px;
     }
     .multiple-lang div a {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 38px;
+        line-height: 38px;
         font-weight: 400;
+        margin-left: 0;
+        margin-right: 15px;
     }
     .navbar {
-        padding-top: 30px;
+        padding-top: 80px;
     }
     .nav-link {
         text-align: center;
         padding-left: 0;
-        font-size: 30px;
-        line-height: 40px;
-        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    .share-website {
+        width: 100%;
+        padding: 0;
+        margin-top: 60px;
     }
     .social-container {
         position: static;
-        margin-top: 50px;
+        margin-top: 140px;
         left: 0;
         bottom: 0;
     }
+    .social-container p {
+        font-size: 45px;
+        line-height: 45px;
+        font-weight: 400;
+    }
+    .social-icon-link img {
+        width: 50px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .share-container {
+        padding-bottom: 30px;
+    }
+    .share-container p {
+        font-size: 45px;
+        line-height: 45px;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .share-container a span {
+        font-size: 35px;
+        line-height: 35px;
+        padding: 10px 20px;
+    }
     .card__share {
         display: block;
+    }
+    .paragraph-6, .paragraph-7, .paragraph-3 {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .title {
+        font-weight: 500;
+    }
+    .text-block-2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .container {
+        height: 125px;
+    }
+    .form {
+        margin-top: 24px;
+    }
+    .div-block-5 {
+        padding-top: 160px;
+    }
+    .paragraph-5 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .text-block-3 {
+        font-size: 40px;
+        line-height: 40px;
     }
 }
 

@@ -1644,7 +1644,7 @@ address,
         position: absolute;
         height: 40px;
         top: 20px;
-        right: 10px;
+        right: 40px;
         z-index: 1000;
     }
     .navburger h1 {
@@ -1656,7 +1656,7 @@ address,
     }
     .main-nav {
         display: none;
-        position: relative;
+        position: fixed;
         left: 0px;
         top: 0px;
         right: 0px;
@@ -1664,6 +1664,7 @@ address,
         width: 100%;
         height: 100%;
         float: none;
+        z-index: 2;
     }
     
     /*.navburger span {
@@ -1686,24 +1687,50 @@ address,
     .menu-links .closebtn {
         position: absolute;
         top: 20px;
-        right: 19px;
+        right: 60px;
         padding: 0;
         background-image: url(../img/error.png);
-        background-size: 32px;
-        width: 32px;
-        height: 32px;
+        background-size: 50px;
+        height: 50px;
+        width: 50px;
         background-repeat: no-repeat
     }
-    .nav-container,
+    .nav-container {
+        padding-top: 100px;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 38px;
+        line-height: 44px;
+        font-weight: 700;
+    }
     .beta {
-        left: 28%;
+        left: 40%;
+        top: 110px;
+        font-size: 18px;
+    }
+    .multiple-lang div a {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+    .navbar {
+        padding-top: 30px;
     }
     .nav-link {
         text-align: center;
         padding-left: 0;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
     }
     .social-container {
-        left: 30%;
+        position: static;
+        margin-top: 50px;
+        left: 0;
+        bottom: 0;
+    }
+    .card__share {
+        display: block;
     }
 }
 

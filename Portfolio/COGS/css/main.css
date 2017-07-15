@@ -778,7 +778,7 @@ select {
 
 .mobile-nav {
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hamburger {
@@ -1474,7 +1474,7 @@ address,
 }*/
 
 .mission-statement-section {
-    height: 680px;
+    height: 100%;
     background-image: url("../img/hillsong.jpeg");
     background-position: 50% 50%;
     background-size: cover;
@@ -1503,7 +1503,7 @@ address,
     bottom: 69px;
     display: block;
     overflow: visible;
-    width: 500px;
+    width: 60%;
     margin-right: auto;
     margin-left: auto;
     padding-top: 36%;
@@ -1517,17 +1517,17 @@ address,
 }
 
 .container-3 {
-    margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .bulletin-section {
-    padding: 25px 40px 5px;
+    padding: 10px 40px 5px;
     border-top: 3px solid #edeff2;
     background-color: #141e28;
 }
 
 .text-block-4 {
+    margin-top: 20px;
     margin-bottom: 5px;
     color: #f9c635;
     font-size: 30px;
@@ -1536,8 +1536,8 @@ address,
 
 .paragraph-6 {
     color: #edeff2;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .row-4 {
@@ -1570,6 +1570,9 @@ address,
 @media screen and (max-width: 1024px) {
     .body {
         padding-left: 0%;
+    }
+    .section {
+        padding-top: 98px;
     }
     .address {
         height: 507px;
@@ -1645,7 +1648,7 @@ address,
         position: absolute;
         height: 40px;
         top: 20px;
-        right: 40px;
+        right: 0px;
         z-index: 1000;
     }
     .navburger h1 {
@@ -1665,15 +1668,8 @@ address,
         width: 100%;
         height: 100%;
         float: none;
-        z-index: 2;
+        z-index: 3;
     }
-    
-    /*.navburger span {
-        position: relative;
-        top: -7px;
-        font-size: 22px;
-        color: #edeff2;
-    }*/
     .hamburger {
         display: inline-block;
     }
@@ -1688,7 +1684,7 @@ address,
     .menu-links .closebtn {
         position: absolute;
         top: 20px;
-        right: 60px;
+        right: 20px;
         padding: 0;
         background-image: url(../img/error.png);
         background-size: 50px;
@@ -1756,6 +1752,7 @@ address,
     }
     .share-container {
         padding-bottom: 30px;
+        border-radius: 0;
     }
     .share-container p {
         font-size: 45px;
@@ -1790,15 +1787,16 @@ address,
         margin-top: 24px;
     }
     .div-block-5 {
-        padding-top: 160px;
+        padding-top: 60%;
+        width: 75%;
     }
     .paragraph-5 {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 70px;
+        line-height: 70px;
     }
     .text-block-3 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 45px;
+        line-height: 60px;
     }
 }
 
@@ -1834,14 +1832,13 @@ address,
         padding-left: 2%;
     }
     .hero-title-wrapper {
-        top: 40%;
+        top: 65%;
     }
     .nav-link {
         padding-left: 13px;
-        text-align: left;
-    }
-    .home-section {
-        height: 500px;
+        font-size: 45px;
+        line-height: 45px;
+        margin-bottom: 15px;
     }
     .title {
         display: inline-block;
@@ -1875,16 +1872,13 @@ address,
         font-size: 18px;
     }
     .text-field {
-        width: 170px;
+        width: 210px;
         font-size: 15px;
-    }
-    .paragraph-3 {
-        font-size: 17px;
     }
     /*.beta {
         left: -3px;
     }*/
-    .text-block-4 {
+    .text-block-4, .text-block-5, .call-to-action-heading {
         font-size: 23px;
         line-height: 30px;
     }
@@ -1909,6 +1903,71 @@ address,
     }
     .plan-submit {
         margin-top: 17%;
+    }
+    .bulletin-section {
+        padding: 5px 20px 5px;
+    }
+    
+    .paragraph-2, .text-block-2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .div-block-2 {
+        margin-top: 5px;
+    }
+    .title1 {
+        padding-top: 80px;
+        font-size: 80px;
+    }
+    .address {
+        height: 535px;
+    }
+    .googlemap iframe {
+        height: 486px;
+    }
+    .paragraph-5 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .text-block-3 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 65px;
+        line-height: 65px;
+    }
+    .nav-container {
+        padding-top: 60px;
+    }
+    .beta {
+        left: 24%;
+        top: 56px;
+        line-height: 47px;
+    }
+    .navbar {
+        padding-top: 30px;
+    }
+    .share-website {
+        margin-top: 30px;
+    }
+    .share-container p {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .share-container a span {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .social-container {
+        margin-top: 30px;
+    }
+    .social-container p {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .social-icon-link img {
+        width: 45px;
     }
 }
 
@@ -1946,10 +2005,6 @@ address,
     }
     .title {
         display: block;
-    }
-    .row {
-        width: auto;
-        height: 140px;
     }
     .bulletin-image {
         height: 100%;
@@ -1989,19 +2044,87 @@ address,
     .column-6 {
         padding-top: 0px;
     }
+    .row {
+        width: 300px;
+        height: 120px;
+    }
+    .title, .date-published {
+        font-size: 20px;
+        line-height: 20px;
+        padding-left: 7px;
+    }
+    .bulletin-download {
+        margin-left: 8px;
+    }
 }
 
 @media (max-width: 479px) {
-    .main-nav {
-        display: none;
-        position: relative;
-        left: 0px;
-        top: 0px;
-        right: 0px;
-        bottom: auto;
-        width: 100%;
-        height: 100%;
-        float: none;
+    .nav-container {
+        padding-top: 30px;
+    }
+    .COGS-title h1, .navburger h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .mobile-nav {
+        height: 70px;
+    }
+    .hamburger {
+        height: 35px;
+        width: 35px;
+        background-size: 35px;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .multiple-lang div a {
+        font-size: 30px;
+        line-height: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .beta {
+        top: 30px;
+        left: 15%;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .navbar {
+        padding-top: 15px;
+    }
+    .nav-link {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+    .share-website {
+        margin-top: 15px;
+    }
+    .share-container p {
+        font-size: 25px;
+        line-height: 25px;
+        margin: 10px auto 15px;
+    }
+    .share-container a span {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 10px;
+    }
+    .share-container {
+        padding: 10px;
+    }
+    .social-container {
+        margin-top: 25px;
+    }
+    .social-container p {
+        font-size: 25px;
+        line-height: 25px;  
+    }
+    .social-icon-link img {
+        width: 30px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .navburger {
         position: absolute;
@@ -2030,18 +2153,14 @@ address,
     }
     .menu-links .closebtn {
         position: absolute;
-        top: 20px;
-        right: 19px;
+        top: 22px;
+        right: 16px;
         padding: 0;
         background-image: url(../img/error.png);
         background-size: 32px;
         width: 32px;
         height: 32px;
         background-repeat: no-repeat
-    }
-    .nav-container,
-    .beta {
-        left: 28%;
     }
     .nav-link {
         text-align: center;
@@ -2079,32 +2198,62 @@ address,
         padding-left: 2%;
     }
     .hero-title-wrapper {
-        top: 28%;
+        top: 60%;
     }
-    .home-section {
-        height: 450px;
-        background-image: url("../img/cogs.jpg");
-        background-position: 50% 50%;
-        background-size: cover;
+    .hero-heading, .section-heading.centered {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    .hero-subheading {
+        font-size: 35px;
+        line-height: 35px;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .hollow-button.white, .hollow-button.red {
+        font-size: 24px;
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .title1 {
+        font-size: 80px;
+        line-height: 70px;
+        padding-top: 50px;
+        margin-bottom: 20px;
+    }
+    .pgraph1 {
+        font-size: 35px;
+        line-height: 35px;
+        padding: 0 20px;
+    }
+    .text-block-4, .text-block-5, .call-to-action-heading {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .paragraph-6 {
+        margin-bottom: 15px;
     }
     .title {
-        margin-top: 0px;
-        margin-bottom: 3px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         padding-left: 10px;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 25px;
     }
     .row {
-        height: 110px;
+        width: 100%;
+        height: 125px;
     }
     .bulletin-image {
         background-size: cover;
     }
     .date-published {
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 10px;
+        margin-bottom: 5px;
         padding-left: 10px;
-        font-size: 18px;
+        font-size: 24px;
     }
     .column-2 {
         padding-top: 5px;
@@ -2115,9 +2264,13 @@ address,
         padding: 5px 10px;
         font-size: 18px;
     }
+    .w-col-5 {
+        text-align: left;
+    }
     .column-3 {
         padding-right: 10px;
         padding-left: 20px;
+        margin-bottom: 50px;
     }
     .column-4 {
         height: 65%;
@@ -2126,9 +2279,12 @@ address,
         margin-right: 10px;
         font-size: 16px;
     }
+    .section-title-group {
+        margin-bottom: 30px;
+    }
     .paragraph-2 {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 22px;
+        line-height: 30px;
     }
     .history {
         font-size: 16px;
@@ -2137,7 +2293,10 @@ address,
         font-size: 18px;
     }
     .text-block-2 {
-        font-size: 18px;
+        font-size: 22px;
+    }
+    .container-3 {
+        height: 900px;
     }
     .column-5 {
         margin-bottom: 15px;
@@ -2179,9 +2338,10 @@ address,
     .bulletin-section {
         padding-right: 10px;
         padding-left: 10px;
+        text-align: center;
     }
     .row-4 {
-        height: 370px;
+        height: 274px;
     }
     .feedback-section {
         padding-right: 10px;

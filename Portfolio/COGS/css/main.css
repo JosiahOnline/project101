@@ -2270,14 +2270,19 @@ address,
     .column-3 {
         padding-right: 10px;
         padding-left: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 65px;
     }
     .column-4 {
         height: 65%;
     }
     .visit {
         margin-right: 10px;
-        font-size: 16px;
+        font-size: 18px;
+        text-align: center;
+        width: 46%;
+    }
+    .div-block {
+        margin-left: 0;
     }
     .section-title-group {
         margin-bottom: 30px;
@@ -2287,16 +2292,15 @@ address,
         line-height: 30px;
     }
     .history {
-        font-size: 16px;
-    }
-    .text-block {
         font-size: 18px;
+        text-align: center;
+        width: 47%;
     }
-    .text-block-2 {
+    .text-block, .text-block-2 {
         font-size: 22px;
     }
     .container-3 {
-        height: 900px;
+        height: 820px;
     }
     .column-5 {
         margin-bottom: 15px;

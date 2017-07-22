@@ -502,14 +502,15 @@ p {
     font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 1px #000;
+    text-shadow: 1px 3px 8px #000;
+    
 }
 
 .hero-subheading {
     margin-bottom: 25px;
     color: #fff;
     font-size: 35px;
-    text-shadow: 2px 2px 1px #000;
+      text-shadow: 1px 3px 8px #000;
 }
 
 .hollow-button {
@@ -1379,7 +1380,7 @@ select {
 
 .address {
     display: flex;
-    height: 487px;
+    height: 497px;
     text-align: center;
 }
 
@@ -1399,8 +1400,7 @@ select {
 .googlemap iframe {
     width: 100%;
     height: 440px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
@@ -1423,11 +1423,11 @@ address,
 
 .direction-button {
     width: 100%;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 12px;
     padding-bottom: 12px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 4px;
     background-color: #2e80b6;
     font-size: 20px;
     text-align: center;
@@ -1575,7 +1575,7 @@ address,
         padding-top: 98px;
     }
     .address {
-        height: 507px;
+        height: 517px;
     }
     .googlemap iframe {
         height: 460px;
@@ -1920,7 +1920,7 @@ address,
         font-size: 80px;
     }
     .address {
-        height: 535px;
+        height: 545px;
     }
     .googlemap iframe {
         height: 486px;
@@ -2197,11 +2197,8 @@ address,
         left: 30%;
     }
     .section {
-        padding-top: 40px;
+        padding-top: 60px;
         padding-bottom: 20px;
-    }
-    .section.section-contact {
-        padding-top: 50px;
     }
     .call-to-action-section {
         height: 350px;
@@ -2412,7 +2409,7 @@ address,
         font-size: 16px;
     }
     .text-area {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
     #attendance-date {
         width: 49%;
@@ -2478,4 +2475,143 @@ address,
         font-size: 25px;
         line-height: 30px;
     }
+}
+
+@media (max-width: 376px) {
+    .beta {
+        left: 20%;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 10px;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .multiple-lang {
+        margin-top: 5px;
+    }
+    .multiple-lang div a {
+        font-size: 24px;
+    }
+    .nav-link {
+        font-size: 26px;
+        padding-bottom: 15px;
+    }
+    .share-container {
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+    .share-container p {
+        font-size: 22px;
+    }
+    .share-container a span {
+        font-size: 16px;
+    }
+    .social-container {
+        margin-top: 20px;
+    }
+    .social-container p {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    /*end of mobile nav styling*/
+    
+    .hero-title-wrapper {
+        top: 40%;
+    }
+    .hero-heading {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .hero-subheading {
+        font-size: 30px;
+        line-height: 30px;
+        width: 68%;
+    }
+    .hollow-button.white, .hollow-button.red {
+        font-size: 20px;
+        width: 65%;
+    }
+    /*End of Home Section*/
+    .text-block-4, .text-block-5, .call-to-action-heading {
+        font-size: 22px;
+    }
+    .paragraph-6, .paragraph-7, .paragraph-3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .row {
+        height: 110px;
+    }
+    .row-4 {
+        height: 250px;
+    }
+    .title, .date-published {
+        font-size: 22px;
+        margin-top: 0;
+        padding-left: 15px;
+    }
+    .bulletin-download {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    /*End of Bulletin Section*/
+    .paragraph-2, .text-block-2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .visit, .history {
+        width: 96%;
+        margin-bottom: 15px;
+    }
+    .div-block-2 {
+        margin-top: 15px;
+    }
+    .text-block {
+        font-size: 18px;
+    }
+    /*End of Welcome-Message Section */
+    .pgraph1 {
+        font-size: 30px;
+        line-height: 34px;
+        width: 90%;
+        margin: auto;
+    }
+    /*End of Announcement Section */
+    .call-to-action-section {
+        height: 300px;
+    }
+    .column-5 {
+        height: 100px;
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
+    .paragraph-3 {
+        margin-bottom: 0;
+    }
+    .align-right {
+        margin-top: 0;
+    }
+    /*End of COGS Newsletter Section */
+    .form-wrapper.squeezed {
+        margin-bottom: 50px;
+    }
+    .googlemap {
+        margin-top: 50px;
+    }
+    .paragraph-5 {
+        line-height: 35px;
+    }
+    /*End of Contact Us Section */
+    .mission-statement-section {
+        height: 580px;
+    }
+    .div-block-5 {
+        padding-top: 75%;
+    }
+}
+
+@media (max-width: 320px) {
+    
 }

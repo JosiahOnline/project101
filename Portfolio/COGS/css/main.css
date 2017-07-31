@@ -761,6 +761,7 @@ select {
     width: 18%;
     padding: 5px 10px;
     height: 40px;
+    background-color: white;
     border-radius: 2px;
     border-width: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
@@ -782,6 +783,8 @@ select {
     text-align: left;
     height: 40px;
     border-radius: 2px;
+    color: black;
+    background-color: white;
     padding: 10px;
     border-width: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
@@ -2796,7 +2799,6 @@ address,
         height: 33px;
         font-size: 15px;
         margin-bottom: 8px;
-        background-color: white;
     }
     #attendance-date {
         height: 33px;

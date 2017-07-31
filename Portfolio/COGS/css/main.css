@@ -1282,7 +1282,7 @@ select {
     position: relative;
     margin-top: -140px;
     margin-right: 5px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .card__social {
@@ -2578,6 +2578,14 @@ address,
         width: 90%;
         margin: auto;
     }
+    .newsdescription {
+        padding-left: 48%;
+    }
+    .share-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
     /*End of Announcement Section */
     .call-to-action-section {
         height: 300px;
@@ -2613,5 +2621,199 @@ address,
 }
 
 @media (max-width: 320px) {
-    
+    .hero-heading {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .section-heading.centered {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .hero-subheading {
+        font-size: 27px;
+        line-height: 30px;
+        width: 70%;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .beta {
+        left: 19%;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .multiple-lang div a {
+        font-size: 21px;
+    }
+    .navbar {
+        padding-top: 10px;
+    }
+    .menu-links a {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .share-container p {
+        font-size: 18px;
+        line-height: 18px;
+        width: 80%;
+    }
+    .social-container {
+        margin-top: 15px;
+    }
+    .social-container p {
+        font-size: 21px;
+        line-height: 21px;
+    }
+    .share-container a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .share-container a span {
+        font-size: 14px;
+    }
+    .social-icon-link img {
+        width: 25px;
+    }
+    /*End of Home Page Section*/
+    .row-4 {
+        height: 260px;
+    }
+    .text-block-4, .text-block-5, .call-to-action-heading {
+        font-size: 18px;
+    }
+    .row {
+        height: 96px;
+    }
+    .title, .date-published {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .bulletin-download {
+        margin-top: 5px;
+    }
+    /*End of Bulletin Section */
+    .div-block {
+        margin-top: 20px;
+    }
+    .column-3 {
+        height: 100%;
+    }
+    .section-subheading.center {
+        padding: 0 5px;
+    }
+    .paragraph-6, .paragraph-7, .paragraph-3  {
+        line-height: 20px;
+    }
+    /*End of Welcome Message Section*/
+    .title1 {
+        font-size: 65px;
+        line-height: 65px;
+    }
+    .newsdescription {
+        padding-left: 55%;
+    }
+    .title2 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .pgraph2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .card__share {
+        margin-top: -160px;
+    }
+    .share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 31px;
+    }
+    .card__social {
+        width: 140px;
+    }
+}
+@media screen and (max-height: 480px) {
+    .mobile-nav {
+        height: 55px;
+    }
+    .COGS-title {
+        padding-top: 13px;
+    }
+    .navburger {
+        top: 13px;
+    }
+    .menu-links .closebtn {
+        top: 15px;
+    }
+    .nav-container {
+        padding-top: 20px;
+    }   
+    .beta {
+        top: 15px;
+        left: 21%;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .multiple-lang div a {
+        font-size: 18px;
+    }
+    .nav-link {
+        font-size: 23px;
+        line-height: 23px;
+        padding-top: 10px;
+    }
+    .share-container {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+    .share-container p {
+        font-size: 15px;
+        line-height: 15px;
+        width: 100%;
+        margin: 5px auto 10px;
+    }
+    .share-container a span {
+        padding: 7px;
+    }
+    .social-container {
+        margin-top: 10px;
+    }
+    .hero-title-wrapper {
+        top: 34%;
+    }
+    .hero-heading {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .hero-subheading {
+        font-size: 24px;
+        width: 65%;
+    }
+    .hollow-button.white, .hollow-button.red {
+        font-size: 18px;
+        width: 62%;
+    }
+    /*End of Home Page Section */
+    .address {
+        height: 950px;
+    }
+    .googlemap iframe {
+        height: 320px;
+    }
+    /*End of Contact Us Section */
+    .mission-statement-section {
+        height: 480px;
+    }
+    .paragraph-5 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .text-block-3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }

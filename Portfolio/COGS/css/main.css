@@ -651,7 +651,7 @@ p {
 .plan-visit {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 10000;
     top: 0;
     left: 0;
     width: 100%;
@@ -759,7 +759,7 @@ select {
 }
 
 #attendance-date {
-    text-align: center;
+    text-align: left;
     height: 40px;
     border-radius: 2px;
     padding: 10px;
@@ -2356,7 +2356,7 @@ address,
     .bulletin-section {
         padding-right: 10px;
         padding-left: 10px;
-        text-align: center;
+        text-align: left;
     }
     .row-4 {
         height: 274px;
@@ -2392,12 +2392,13 @@ address,
         padding-left: 0px;
     }
     .plan-visit {
-        padding-top: 5%;
+        padding-top: 10%;
     }
     .container .title {
         margin-bottom: 20px;
     }
     .title h1 {
+        font-size: 43px;
         margin-bottom: 5px;
     }
     .title h3 {
@@ -2405,23 +2406,38 @@ address,
         margin-top: 5px;
     }
     .close-button {
-        top: 12%;
+        top: 2%;
+        font-size: 15px;
+    }
+    .form-field {
+        min-height: 35px;
         font-size: 16px;
+        margin-bottom: 15px;
     }
     .text-area {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
+    }
+    select {
+        height: 35px;
+        font-size: 16px;
     }
     #attendance-date {
         width: 49%;
+        height: 35px;
+    }
+    .attend-service {
+        display: none;
     }
     .select-date {
         display: none;
     }
     .service-time {
-        width: 66%;
+        width: 99.3%;
     }
-    .plan-submit {
+    .button.plan-submit {
         margin-top: 30%;
+        font-size: 18px;
+        padding: 10px 20px;
     }
     .news {
         height: 120px;
@@ -2620,6 +2636,122 @@ address,
     }
 }
 
+@media (max-width: 360px) {
+    .hero-title-wrapper {
+        top: 42%;
+    }
+    .hero-heading {
+        font-size: 65px;
+        line-height: 60px;
+    }
+    .hero-subheading {
+        width: 56%;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .nav-container {
+        padding-top: 18px;
+    }
+    .beta {
+        top: 16px;
+        left: 22%;
+        padding: 7px;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .multiple-lang div a {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .nav-link {
+        font-size: 24px;
+        line-height: 24px;
+        padding-top: 15px;
+    }
+    .share-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .share-container p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .share-container a span {
+        font-size: 14px;
+    }
+    .social-container p {
+        font-size: 20px;
+    }
+    .social-icon-link img {
+        width: 25px;
+    }
+    .hollow-button.white, .hollow-button.red {
+        font-size: 18px;
+        width: 70%;
+    }
+    /*End of Home Page Section*/
+    .plan-visit {
+        padding-top: 0%;
+    }
+    .title h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .close-button {
+        top: 2%;
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+    .form-field {
+        min-height: 35px;
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    .form-field.text-area {
+        margin-bottom: 5px;
+    }
+    .selection {
+        padding: 5px 0;
+    }
+    select {
+        height: 33px;
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    /*End of Welcome Message Section*/
+    .section-heading.centered {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .section-subheading.center {
+        font-size: 19px;
+        line-height: 19px;
+    }
+    .button.plan-submit {
+        margin-top: 26%;
+    }
+    .container-3 {
+        margin-bottom: 0;
+    }
+    /*End of Announcement Section*/
+    .location h2, .contact-info h2, .office-hour h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .address {
+        height: 990px;
+    }
+    address, .contact-info p, .office-hour p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .googlemap iframe {
+        height: 380px;
+    }
+}
+
 @media (max-width: 320px) {
     .hero-heading {
         font-size: 60px;
@@ -2704,6 +2836,34 @@ address,
     }
     .paragraph-6, .paragraph-7, .paragraph-3  {
         line-height: 20px;
+    }
+    .plan-visit {
+        padding-top: 0;
+    }
+    .close-button {
+        top: 2%;
+        font-size: 12px;
+    }
+    .title h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .title h3 {
+        font-size: 18px;
+    }
+    .container .title {
+        margin-bottom: 15px;
+    }
+    .form-field {
+        margin-bottom: 10px;
+    }
+    .form-field.text-area {
+        min-height: 120px;
+        margin-bottom: 10px;
+    }
+    .button.plan-submit {
+        margin-top: 30%;
+        font-size: 17px;
     }
     /*End of Welcome Message Section*/
     .title1 {
@@ -2798,6 +2958,40 @@ address,
         width: 62%;
     }
     /*End of Home Page Section */
+    .container .title {
+        padding-top: 15px;
+    }
+    .title h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .title h3 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .form-field {
+        min-height: 25px;
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+    .form-field.text-area {
+        min-height: 90px;
+        margin-bottom: 0;
+    }
+    select {
+        font-size: 14px;
+        height: 32px;
+    }
+    #attendance-date {
+        font-size: 14px;
+        height: 32px;
+    }
+    .button.plan-submit {
+        font-size: 16px;
+        margin-top: 27%;
+        padding: 7px 10px;
+    }
+    /*End of Welcome Message Section*/
     .address {
         height: 950px;
     }

@@ -124,9 +124,12 @@
                 <div class="share-website">
                     <div class="share-container">
                         <p>Inform your friends and family about our new website!</p>
-                        <a href="http://www.onlinebah.com" id="share_web" class="share-button" target="_blank"><span>Share this website</span></a>
+                        <div class="share-button" target="_blank"><span>Share this website</span></div>
                         <div class="web__share">
-                            <a class="share-icon whatsapp" href="#"><span class="fa fa-whatsapp"></span></a>
+                            <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.onlinebah.com/Blog/Why_Content_Is_King" target="_blank"><span class="fa fa-facebook"></span></a>
+                                        <a class="share-icon twitter" href="https://twitter.com/home?status=http%3A//www.onlinebah.com/Blog/Why_Content_Is_King" target="_blank"><span class="fa fa-twitter"></span></a>
+                                        <a class="share-icon googleplus" href="https://plus.google.com/share?url=http%3A//www.onlinebah.com/Blog/Why_Content_Is_King" target="_blank"><span class="fa fa-google-plus"></span></a>
+                                        <a class="share-icon whatsapp" href="whatsapp://send?text=http://www.onlinebah.com/Blog/Why-Content-Is-King" target="_blank"><span class="fa fa-whatsapp"></span></a>
                         </div>
                     </div>
                 </div>
@@ -391,7 +394,7 @@
                                         img/bulletin2.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">Children Camp(Past)</h1>
+                                        <h1 class="title2">Children Camp (Past)</h1>
                                         <p class="pgraph2">What is the title again?</p>
                                     </div>
                                 </a>
@@ -653,11 +656,10 @@
                 $(this).toggleClass('share-expanded');
             });
 
-            $('.web__share > a').on('click', function(e) {
-                e.preventDefault() // prevent default action - hash doesn't appear in url
-                $(this).parent().find('div').toggleClass('card__social--active');
-                $(this).toggleClass('share-expanded');
-            });
+            $(".share-button").click(function() {
+                $(".share-button").css('display', 'none');
+                $(".web__share").css('display', 'inline-block');
+            })
         });
 
         function openNav() {

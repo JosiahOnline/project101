@@ -1666,6 +1666,7 @@ address,
     }
     .plan-visit {
         padding-top: 20%;
+        min-height: 1400px;
     }
     .close-button {
         top: 20%;
@@ -1763,7 +1764,7 @@ address,
         right: 0px;
         bottom: auto;
         width: 100%;
-        height: 100%;
+        min-height: 1400px;
         float: none;
         z-index: 1001;
     }
@@ -1903,6 +1904,9 @@ address,
         margin-left: 0px;
         padding-left: 0px;
     }
+    .main-nav {
+        min-height: 1024px;
+    }
     .call-to-action-section {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -1992,6 +1996,7 @@ address,
     }
     .plan-visit {
         padding-top: 15%;
+        min-height: 1024px;
     }
     .close-button {
         top: 19%;
@@ -2036,11 +2041,11 @@ address,
         line-height: 65px;
     }
     .nav-container {
-        padding-top: 60px;
+        padding-top: 40px;
     }
     .beta {
         left: 24%;
-        top: 56px;
+        top: 37px;
         line-height: 47px;
     }
     .navbar {
@@ -2049,6 +2054,9 @@ address,
     .share-website {
         margin-top: 30px;
     }
+    .share-container {
+        padding-bottom: 20px;
+    }
     .share-container p {
         font-size: 35px;
         line-height: 35px;
@@ -2056,6 +2064,7 @@ address,
     .share-button {
         font-size: 30px;
         line-height: 30px;
+        padding: 15px 20px;
     }
     .social-container {
         margin-top: 30px;
@@ -2180,6 +2189,9 @@ address,
     }
     .bulletin-download {
         margin-left: 8px;
+    }
+    .plan-visit, .main-nav {
+        min-height: 800px;
     }
 }
 
@@ -2401,6 +2413,9 @@ address,
     }
     .column-4 {
         height: 65%;
+    }
+    .plan-visit, .main-nav {
+        min-height: 750px;
     }
     .visit {
         margin-right: 10px;

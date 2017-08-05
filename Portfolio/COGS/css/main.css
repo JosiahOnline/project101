@@ -663,7 +663,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 800px;
     background-color: #F0F2F2;
     padding-top: 80px;
 }
@@ -2502,9 +2502,7 @@ address,
         padding-left: 0px;
     }
     .plan-visit {
-        padding-top: 5%;
-        min-height: 100%;
-        overflow-x: scroll;
+        padding-top: 0;
     }
     .container .title {
         margin-bottom: 20px;
@@ -3079,10 +3077,24 @@ address,
     .plan-visit {
         padding-top: 0;
     }
+    .container .title {
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
     .title h1 {
         font-size: 35px;
         line-height: 35px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
+    }
+    .title h3 {
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .button.plan-submit {
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 24%;
     }
 }
 
@@ -3147,6 +3159,34 @@ address,
     }
     .social-icon-link img {
         width: 22px;
+    }
+    .plan-visit {
+        padding-top: 0;
+    }
+    .container .title {
+        padding-top: 25px;
+        margin-bottom: 5px;
+    }
+    .title h1 {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 0;
+    }
+    .title h3 {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 5px auto 10px;
+    }
+    .form-field {
+        margin-bottom: 5px;
+    }
+    select, #attendance-date {
+        margin-bottom: 5px;
+    }
+    .button.plan-submit {
+        margin-top: 23%;
+        font-size: 16px;
+        line-height: 16px;
     }
 }
 
@@ -3264,7 +3304,7 @@ address,
         line-height: 20px;
     }
     .plan-visit {
-        padding-top: 5%;
+        padding-top: 0;
     }
     .close-button {
         top: 2%;

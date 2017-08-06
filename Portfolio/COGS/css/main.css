@@ -1650,7 +1650,17 @@ address,
     font-size: 30px;
     line-height: 35px;
 }
-
+@media screen and (max-width: 1280px) {
+    .beta {
+        left: 14%;
+    }
+    .nav-link {
+        padding-bottom: 20px;
+    }
+    .share-website {
+        margin-top: 10px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .body {
         padding-left: 0%;

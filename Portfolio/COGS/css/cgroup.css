@@ -1,0 +1,47 @@
+body {
+    background-image: url(../News/img/CGroup.jpg);
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+section {
+    background-color: rgba(20,30,40,0.2);
+    height: 100vh;
+}
+
+.bible-words {
+    width: 60%;
+    font-family: 'Merriweather', serif;
+    margin: 20% auto 18%;
+}
+#customers {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 50px auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#customers td, #customers th {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#customers td.age-group {
+    background-color: skyblue;
+}
+
+/*#customers tr:nth-child(even){background-color: #f2f2f2;}*/
+#customers tr{background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}

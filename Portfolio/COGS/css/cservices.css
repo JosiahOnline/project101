@@ -1,40 +1,4 @@
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box
-}
 
-html {
-    height: 100%;
-    font-family: 'Oswald', sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-}
-
-body {
-    margin: 0;
-    min-height: 100%;
-}
-
-footer,
-nav,
-section {
-    display: block
-}
-
-a {
-    text-decoration: none;
-    background-color: transparent;
-        color: white;
-}
-
-a:active,
-a:hover {
-    outline: 0
-}
-
-img {
-    border: 0
-}
 
 input,
 textarea {
@@ -56,19 +20,6 @@ textarea {
     overflow: auto
 }
 
-h1, h2, h3, h4 , h5 {
-    color: white;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-
-p {
-    color: white;
-}
-section, div {
-    margin: 0;
-}
 body {
     background-image: url(../News/img/hillsong.jpeg);
     background-size: cover;
@@ -77,31 +28,14 @@ body {
     text-align: center;
 }
 
-
 section {
     background-color: rgba(20,30,40,0.7);
     height: 100vh;
 }
-.main > h1 {
+
+.church-services > h1 {
     font-family: 'Merriweather', serif;
     margin-top: 8%;
-}
-.top-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 70px;
-}
-
-.top-container h1, a {
-    font-family: 'Merriweather', serif;
-    margin: 0;
-    padding: 20px;
-}
-
-.top-container a {
-    font-size: 25px;
-    font-weight: bold;
 }
 
 .services-container {
@@ -140,30 +74,6 @@ section {
     padding: 15px;
     border: 2px solid white;
     border-radius: 10px;
-}
-
-.social-container {
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.social-container p {
-    margin: 0;
-    font-size: 22px;
-    margin-top: 17px;
-    
-}
-.social-icons {
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.social-icon-link {
-    padding: 0;
-    padding-right: 10px;
 }
 
 /*Begining of Plan A Visit Section*/
@@ -292,17 +202,6 @@ textarea.w-input {
 
 .form-field.text-area {
     min-height: 110px;
-}
-
-.form-wrapper.squeezed {
-    margin-bottom: 60px;
-}
-
-.submit-button {
-    border-radius: 4px;
-    background-color: #2e80b6;
-    color: white;
-    margin-top: 10px;
 }
 
 .close-button {

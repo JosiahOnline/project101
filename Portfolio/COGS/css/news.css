@@ -1,6 +1,11 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
 html {
     height: 100%;
-    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -65,21 +70,21 @@ section, div {
     margin: 0;
 }
 body {
-    background-image: url(../img/hillsong.jpeg);
+    background-image: url(../News/img/hillsong.jpeg);
     background-size: cover;
     background-position: 40%;
     background-repeat: no-repeat;
     text-align: center;
 }
 
-.background-layer {
-    position: fixed;
-    background-color: rgba(20,30,40,0.7);
-    height: 700px;
-    width: 100%;
-}
+
 section {
-    z-index: 2;
+    background-color: rgba(20,30,40,0.7);
+    height: 100vh;
+}
+.main > h1 {
+    font-family: 'Merriweather', serif;
+    margin-top: 8%;
 }
 .top-container {
     display: flex;
@@ -89,6 +94,7 @@ section {
 }
 
 .top-container h1, a {
+    font-family: 'Merriweather', serif;
     margin: 0;
     padding: 20px;
 }
@@ -99,10 +105,9 @@ section {
 }
 
 .services-container {
-    background-color: rgba(20,30,40,0.9);
-    padding: 20px 0;
+    padding: 10px 0;
     width: 38%;
-    margin: 8% auto 0;
+    margin: 0 auto;
     border-radius: 4px;
     text-align: center;
 }
@@ -114,7 +119,7 @@ section {
 }
 
 .services-container div h1 {
-    width: 140px;
+    width: 155px;
     text-align: right;
 }
 
@@ -122,12 +127,12 @@ section {
     width: 260px;
     text-align: left;
 }
-.visit-container {
+.visit {
     margin-top: 20px;
 }
-.visit-container a {
+.visit a {
     display: block;
-    width: 35%;
+    width: 20%;
     margin: 0 auto;
     font-size: 20px;
     font-weight: bold;
@@ -137,7 +142,7 @@ section {
     border-radius: 10px;
 }
 
-footer {
+.social-container {
     position: fixed;
     width: 100%;
     height: 60px;
@@ -146,10 +151,11 @@ footer {
     justify-content: center;
 }
 
-footer p {
+.social-container p {
     margin: 0;
     font-size: 22px;
     margin-top: 17px;
+    
 }
 .social-icons {
     margin-top: 15px;
@@ -158,4 +164,268 @@ footer p {
 .social-icon-link {
     padding: 0;
     padding-right: 10px;
+}
+
+/*Begining of Plan A Visit Section*/
+.plan-visit {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 800px;
+    background-color: #F0F2F2;
+    padding-top: 80px;
+}
+
+.plan-visit .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    height: 100px;
+}
+
+.container .title {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding-left: 15px;
+    color: rgba(255, 0, 0, .74);
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.title h1, .title h3 {
+    display: block;
+    color: black;
+    font-weight: 700;
+    font-family: Oswald, sans-serif;
+    font-size: 50px;
+}
+
+.title h3 {
+    margin: 10px auto;
+    font-weight: 400;
+    font-family: Oswald, sans-serif;
+    font-size: 30px;
+}
+
+.w-input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc
+}
+
+.w-input:-moz-placeholder {
+    color: #999
+}
+
+.w-input::-moz-placeholder {
+    color: #999;
+    opacity: 1
+}
+
+.w-input:-ms-input-placeholder {
+    color: #999
+}
+
+.w-input::-webkit-input-placeholder {
+    color: #999
+}
+
+.w-input:focus {
+    border-color: #3898EC;
+    outline: 0
+}
+
+textarea.w-input {
+    height: auto
+}
+
+.form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.form-row {
+    width: 32.5%;
+}
+
+.form-field {
+    min-height: 45px;
+    margin-right: 1px;
+    margin-bottom: 17px;
+    border: 0px solid #000;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    font-size: 20px;
+}
+
+.form-field:focus {
+    -webkit-box-shadow: 0 0 0 1px #2e80b6;
+            box-shadow: 0 0 0 1px #2e80b6;
+}
+
+.form-field.text-area {
+    min-height: 110px;
+}
+
+.form-wrapper.squeezed {
+    margin-bottom: 60px;
+}
+
+.submit-button {
+    border-radius: 4px;
+    background-color: #2e80b6;
+    color: white;
+    margin-top: 10px;
+}
+
+.close-button {
+    color: white;
+    font-weight: 400;
+    font-family: Oswald, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    position: fixed;
+    right: 5%;
+    top: 155px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #cf404d;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.close-button:hover {
+    border-radius: 4px;
+    background-color: #cf404d;
+    color: white;
+}
+
+.selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+    height: 50px;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+select {
+    font-weight: 400;
+    font-family: Oswald, sans-serif;
+    font-size: 18px;
+    width: 18%;
+    padding: 5px 10px;
+    height: 40px;
+    background-color: white;
+    border-radius: 2px;
+    border-width: 0;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.attend-service,
+.select-date,
+.service-date {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .74);
+    margin-bottom: 0;
+}
+
+#attendance-date {
+    text-align: left;
+    height: 40px;
+    border-radius: 2px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-width: 0;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: #cf404d;
+    -webkit-transition: background-color 300ms ease;
+    -o-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.button.full-width {
+    display: block;
+    width: 100%;
+    background-color: #2e80b6;
+    font-size: 20px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.button.full-width:hover {
+    background-color: #cf404d;
+}
+.w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #3898EC;
+    color: white;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+input.w-button {
+    -webkit-appearance: button
 }

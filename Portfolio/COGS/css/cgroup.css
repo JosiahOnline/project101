@@ -30,7 +30,8 @@ section {
 }
 
 .group-container >h1 {
-    font-size: 60px;
+    font-size: 80px;
+    font-weight: 500;
     color: black;
 }
 .group-details {
@@ -52,13 +53,18 @@ section {
     color: white;
 }
 
-.group-details tr{background-color: #F6F7F8;}
+.group-details tr{
+    background-color: #F6F7F8;
+}
 
-.group-details tr:hover {background-color: #070600;
+.group-details tr:hover {
+    background-color: #070600;
     color: white;
 }
 
 .group-details th {
+    font-size: 25px;
+    font-weight: 500;
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #EA526F;
@@ -78,7 +84,7 @@ section {
 }
 
 .section-heading.centered {
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 0;
     color: #313131;
     font-size: 80px;
@@ -322,4 +328,136 @@ input.w-button {
 .social-container {
     position: initial;
     background-color: #070600;
+}
+
+/*Share Info*/
+.share-info {
+    background-color:#070600;
+    padding: 20px 0;
+}
+
+.share-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.share-container p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.share-button {
+    display: inline-block;
+    width: 15%;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+    color: white;
+    border-radius: 4px;
+    background-color: #2e80b6;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    -o-transition: transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.share-button span:hover {
+    color: white;
+    text-shadow: 0px -1px white;
+}
+.web__share {
+    display: none;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-transition: -webkit-transform 0.35s ease;
+    transition: -webkit-transform 0.35s ease;
+    -o-transition: transform 0.35s ease;
+    transition: transform 0.35s ease;
+    transition: transform 0.35s ease, -webkit-transform 0.35s ease;
+}
+
+.share-toggle {
+    z-index: 200;
+}
+
+.share-toggle:before {
+    content: "\f1e0";
+    font-family: 'FontAwesome';
+    color: #3498db;
+}
+
+.share-toggle.share-expanded:before {
+    content: "\f00d";
+}
+
+.share-icon {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: 0;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.share-icon:hover,
+.share-icon:focus {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00abe3;
+}
+
+.googleplus {
+    background-color: #d3492c;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.facebook,
+.twitter,
+.googleplus,
+.whatsapp {
+    color: #fff;
+}
+
+.facebook:hover,
+.twitter:hover,
+.googleplus:hover,
+.whatsapp:hover {
+    color: #eee;
 }

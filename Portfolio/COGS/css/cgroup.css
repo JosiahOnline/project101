@@ -356,7 +356,7 @@ input.w-button {
     line-height: 24px;
     color: white;
     border-radius: 4px;
-    background-color: #2e80b6;
+    background-color: #23B5D3;
     padding: 10px;
     text-transform: uppercase;
     font-weight: 500;
@@ -374,9 +374,8 @@ input.w-button {
     transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
-.share-button span:hover {
-    color: white;
-    text-shadow: 0px -1px white;
+.share-button:hover {
+    background-color: #EA526F;
 }
 .web__share {
     display: none;

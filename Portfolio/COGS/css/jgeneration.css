@@ -4,25 +4,56 @@ body, html {
 }
 
 .photo {
+    display: none;
+    height: auto;
+    width: 650px;
+    margin: 50px auto 0;
+}
+
+.carousel.carousel-slider {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    background-image: url(../News/img/example2.jpg);
+    z-index: 1;
+    max-width: 670px;
+    margin: 30px auto 0;
+}
+
+.carousel-item {
+    background-position: center;
+    
+}
+
+.carousel-item img {
+    max-height: 540px;
+    background-size: contain;
+    border-radius: 4px;
+}
+
+.carousel.carousel-slider .carousel-item p {
+    margin: 5px auto;
+}
+
+.carousel .indicators {
+    bottom: -20px;
+}
+.photo img {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0 8px 6px -6px grey;
+            box-shadow: 0 8px 6px -6px grey
+    
 }
 
 .photo div {
-    position: absolute;
-    bottom: 19%;
-    text-align: center;
+    text-align: left;
     width: 100%;
+    padding-left: 10px;
 }
 
 .photo div h1 {
@@ -36,3 +67,32 @@ section {
     background-color: rgba(20,30,40,1);
     height: 100vh;
 }
+
+.social-container {
+    display: none;
+}
+
+/* iphone 7
+
+.photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-image: url(../News/img/JGenerationPhoto.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo div {
+    position: absolute;
+    bottom: 50px;
+    text-align: left;
+    width: 100%;
+    padding-left: 10px;
+}*/

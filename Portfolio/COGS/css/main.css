@@ -1003,17 +1003,6 @@ select {
     padding: 15px 20px;
 }
 
-.share-button {
-    display: inline-block;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-.share-button span:hover {
-    color: white;
-    text-shadow: 0px -1px white;
-}
-
 .share-container a {
     text-decoration: none;
 }
@@ -1023,10 +1012,12 @@ select {
 }
 
 .share-button {
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
     font-size: 16px;
     text-align: center;
     line-height: 20px;
-    margin-bottom: 0;
     color: white;
     border-radius: 4px;
     background-color: #2e80b6;
@@ -1045,6 +1036,11 @@ select {
     -o-transition: transform 1s ease;
     transition: transform 1s ease;
     transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.share-button span:hover {
+    color: white;
+    text-shadow: 0px -1px white;
 }
 
 .row-2 {
@@ -1252,6 +1248,9 @@ select {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.resize-img1 {
+    width: 220px;
+}
 
 .main-news-description {
     position: relative;
@@ -1277,6 +1276,7 @@ select {
     border-bottom-right-radius: 5px;
     padding-top: 15px;
     padding-left: 20px;
+    padding-right: 5px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
@@ -1650,7 +1650,17 @@ address,
     font-size: 30px;
     line-height: 35px;
 }
-
+@media screen and (max-width: 1280px) {
+    .beta {
+        left: 14%;
+    }
+    .nav-link {
+        padding-bottom: 20px;
+    }
+    .share-website {
+        margin-top: 10px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .body {
         padding-left: 0%;
@@ -2580,8 +2590,8 @@ address,
         border-top-right-radius: 0;
     }
     .newsdescription {
-        height: 130px;
-        top: -130px;
+        height: 131px;
+        top: -131px;
         padding-left: 42%;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
@@ -2603,7 +2613,7 @@ address,
         height: 400px;
     }
     #announcements {
-        height: 2220px;
+        height: 2360px;
     }
     .googlemap iframe {
         height: 400px;
@@ -3381,6 +3391,9 @@ address,
     }
     .card__social {
         width: 140px;
+    }
+    #announcements {
+        height: 2240px;
     }
 }
 

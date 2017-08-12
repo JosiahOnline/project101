@@ -13,6 +13,9 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
+        -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .navbar .navbar-brand {
@@ -234,8 +237,84 @@ section.main {
     color: #eee;
 }
 
-/*Devices such as iphone4*/
-@media (max-width: 322px) { 
+/* ----------- iPad Pro ------------------*/
+
+@media (max-width: 1024px) {
+    .navbar {
+        height: 130px;
+        padding: 30px;
+    }
+    h1.navbar-brand {
+        font-size: 3rem;
+    }
+    .navbar a > p {
+        font-size: 2.5rem;
+        background-color: unset;
+    }
+    .navbar a > p:hover {
+        background-color: unset;
+    }
+    .carousel {
+        position: fixed;
+        top: 30%;
+        left: 0;
+    }
+    .carousel .title {
+        top: -120px;
+    }
+    .carousel .title > h1 {
+        width: 70%;
+        font-size: 2rem; 
+        padding: 30px;
+        background-color: white;
+        color: black;
+    }
+    .img-fluid {
+        max-height: 550px;
+    }
+    .carousel-indicators {
+        position: fixed;
+        bottom: 23%;
+    }
+    .carousel-indicators li {
+        height: 10px;
+    }
+    .new-caption-area {
+        position: absolute;
+        height: 50px;
+        bottom: 18%;
+        left: 10%;
+        width: 80%;
+        margin: 0;
+    }
+    .new-caption-area p {
+        font-size: 1.5rem;
+    }
+    .share-info {
+        top: unset;
+        bottom: 10px;
+        right: 0;
+        width: 100%;
+        
+    }
+    .share-container {
+        width: 50%;
+        background-color: #23B5D3;
+        border-radius: 10px;
+    }
+    .share-button {
+        font-size: 2rem;
+        width: 100%;
+        height: 80px;
+        padding-top: 6%;
+    }
+}
+    
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media (max-width: 320px) { 
     .navbar {
         height: 50px;
         -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
@@ -287,10 +366,30 @@ section.main {
         width: 100%;
         
     }
+      .share-container {
+          width: 100%;
+          background-color: #23B5D3;
+      }
     .share-button {
         font-size: 0.8rem;
+        width: 100%;
+        border-radius: 0;
     }
 }
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media (max-height: 568px) {
+        .carousel {
+            margin-top: 80px;
+        }
+        .img-fluid {
+            max-height: 31vh;
+        }
+}
+
+@media (max-height: 511px)
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) { ... }
 

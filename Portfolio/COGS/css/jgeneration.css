@@ -187,7 +187,7 @@ section.main {
     display: inline-block;
     width: 38px;
     height: 38px;
-    line-height: 38px;
+    line-height: 40px;
     text-align: center;
     border-radius: 50%;
     text-decoration: none;
@@ -350,11 +350,11 @@ section.main {
     .share-icon {
         width: 38px;
         height: 38px;
-        line-height: 38px;
+        line-height: 40px;
     }
 }
 
-/* ----------- Laptop ----------- */
+/* ----------- Laptop with Touch ----------- */
 
 @media screen and ( max-width: 1281px ) and ( max-height: 951px ) {
     .navbar .navbar-brand {
@@ -377,7 +377,7 @@ section.main {
     }
 }
 
-/* ----------- Laptop ----------- */
+/* ----------- Laptop with MDPI screen----------- */
 
 @media screen and ( max-width: 1281px ) and ( max-height: 801px ) {
     .carousel {
@@ -860,7 +860,7 @@ section.main {
     .share-icon {
         width: 25px;
         height: 25px;
-        line-height: 25px;
+        line-height: 26px;
         font-size: 12px;
     }
     

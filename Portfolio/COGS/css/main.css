@@ -433,7 +433,7 @@ p {
 .button {
     display: inline-block;
     padding: 12px 20px;
-    border-radius: 4px;
+    border-radius: 0.2em;
     background-color: #cf404d;
     -webkit-transition: background-color 300ms ease;
     -o-transition: background-color 300ms ease;
@@ -476,7 +476,7 @@ p {
 }
 
 .call-to-action-section {
-    padding: 30px 40px 10px;
+    padding: 50px 80px;
     background-color: #141e28;
     color: #fff;
 }
@@ -484,9 +484,9 @@ p {
 .call-to-action-heading {
     margin-bottom: 0px;
     color: #f9c635;
-    font-size: 30px;
-    line-height: 35px;
-    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    font-weight: 500;
     text-align: right;
 }
 
@@ -495,7 +495,9 @@ p {
     margin-top: 15px;
     text-align: right;
 }
-
+.call-to-action-form {
+    
+}
 .hero-heading {
     margin-bottom: 1.8rem;
     color: #fff;
@@ -590,14 +592,14 @@ p {
 }
 
 .form-field {
-    min-height: 45px;
+    padding: 1.2em 0.6em;
     margin-right: 1px;
     margin-bottom: 17px;
     border: 0px solid #000;
-    border-radius: 4px;
+    border-radius: 0.2em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .form-field:focus {
@@ -639,10 +641,9 @@ p {
 }
 
 .footer-text {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 10px auto;
     color: #edeff2;
-    font-size: 16px;
+    font-size: 0.8rem;
 }
 
 .hero-title-wrapper {
@@ -661,7 +662,7 @@ p {
     width: 100%;
     min-height: 800px;
     background-color: #F0F2F2;
-    padding-top: 80px;
+    padding-top: 5%;
 }
 
 .plan-visit .container {
@@ -681,14 +682,14 @@ h3 {
     color: black;
     font-weight: 700;
     font-family: Oswald, sans-serif;
-    font-size: 50px;
+    font-size: 2.5rem;
 }
 
 .title h3 {
-    margin: 10px auto;
-    font-weight: 400;
+    margin: 15px auto;
+    font-weight: 500;
     font-family: Oswald, sans-serif;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 .form-container {
@@ -705,7 +706,7 @@ h3 {
 }
 
 .submit-button {
-    border-radius: 4px;
+    border-radius: 0.2em;
     background-color: #2e80b6;
     color: white;
     margin-top: 10px;
@@ -713,26 +714,20 @@ h3 {
 
 .close-button {
     color: white;
-    font-weight: 400;
     font-family: Oswald, sans-serif;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1rem;
     position: fixed;
     right: 5%;
-    top: 155px;
-    border-radius: 4px;
-    padding: 5px 10px;
+    top: 5%;
+    border-radius: 0.2em;
+    padding: 0.6em 0.8em;
     cursor: pointer;
     background-color: #cf404d;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
-.close-button:hover {
-    border-radius: 4px;
-    background-color: #cf404d;
-    color: white;
-}
 
 .selection {
     display: -webkit-box;
@@ -945,7 +940,7 @@ select {
     width: 400px;
     height: 140px;
     border: 1px solid #edeff2;
-    border-radius: 4px;
+    border-radius: 0.2em;
     background-color: rgba(237, 239, 242, .03);
     display: flex;
     align-items: center;
@@ -981,7 +976,7 @@ select {
     margin-top: 9px;
     margin-left: 15px;
     padding: 0.5em 0.8em;
-    border-radius: 4px;
+    border-radius: 0.2em;
     background-color: #edeff2;
     color: rgba(255, 14, 14, .74);
     font-size: 1rem;
@@ -996,7 +991,7 @@ select {
 
 .share-container {
     background: #F0F2F2;
-    border-radius: 4px;
+    border-radius: 0.2em;
     padding: 6% 7%;
 }
 
@@ -1016,7 +1011,7 @@ select {
     text-align: center;
     line-height: 1.25em;
     color: white;
-    border-radius: 0.3em;
+    border-radius: 0.2em;
     background-color: #2e80b6;
     padding: 0.6em 1.2em;
     text-transform: uppercase;
@@ -1056,10 +1051,11 @@ select {
 
 .visit {
     margin-right: 10px;
-    padding: 11px 20px;
-    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.6em 1.2em;
+    border-radius: 0.2em;
     background-color: #cf404d;
-    font-size: 20px;
+    
 }
 
 .visit:hover {
@@ -1068,24 +1064,24 @@ select {
 }
 
 .div-block {
-    margin-top: 15px;
+    margin-top: 20px;
     text-align: right;
 }
 
 .paragraph-2 {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     font-family: Oswald, sans-serif;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 1.2rem;
+    line-height: 1.3em;
     text-align: right;
 }
 
 .history {
-    padding: 11px 20px;
-    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.6em 1.2em;
+    border-radius: 0.2em;
     background-color: #fff;
     color: #000;
-    font-size: 20px;
 }
 
 .history:hover {
@@ -1095,7 +1091,8 @@ select {
 }
 
 .text-block {
-    font-size: 20px;
+    font-size: 1rem;
+    line-height: 1.3em;
     text-align: center;
 }
 
@@ -1105,13 +1102,14 @@ select {
 }
 
 .photo-pcc {
-    border-radius: 4px;
+    border-radius: 0.2em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .text-block-2 {
-    font-size: 20px;
+    font-size: 1.1rem;
+    line-height: 1.3em;
     text-align: right;
 }
 
@@ -1119,10 +1117,23 @@ select {
     height: 100px;
 }
 
-.row-3 {
+.call-to-action-row {
     height: 100%;
     margin-right: 0px;
     margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-description {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.call-to-action-form {
+    flex: 1;
+    padding: 10px 20px;
 }
 
 .column-5 {
@@ -1130,13 +1141,11 @@ select {
 }
 
 .submit-button {
-    position: static;
-    top: -46px;
-    display: inline;
-    padding: 8px 12px;
-    border-radius: 4px;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.6em 1em ;
+    border-radius: 0.2em;
     background-color: #f36;
-    font-size: 18px;
     text-align: right;
 }
 
@@ -1146,10 +1155,12 @@ select {
 
 .text-field {
     display: inline-block;
-    width: 260px;
+    width: 300px;
+    font-size: 1rem;
+    padding: 1em 0.6em;
     margin-right: 10px;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 0.2em;
+    
 }
 
 .form {
@@ -1160,13 +1171,14 @@ select {
 
 .nospam {
     margin-top: -17px;
+    font-size: 1rem;
     text-align: left;
 }
 
-.paragraph-3 {
+.call-to-action-pgraph {
     font-family: Oswald, sans-serif;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.2rem;
+    line-height: 1.3em;
     text-align: right;
 }
 
@@ -1236,7 +1248,7 @@ select {
 
 .round-radius {
     border: 1px solid white;
-    border-radius: 4px;
+    border-radius: 0.2em;
 }
 
 .news-image {
@@ -1271,9 +1283,7 @@ select {
     text-align: left;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-right: 5px;
+    padding: 0.5em 1em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
@@ -1286,33 +1296,34 @@ select {
 
 .title2 {
     padding-top: 0px;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4em;
     margin-bottom: 5px;
 }
 
 .pgraph2 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 0.8rem;
+    line-height: 1.2em;
 }
 
 .title1 {
     padding-top: 100px;
-    font-size: 100px;
+    font-size: 5rem;
     margin-bottom: 50px;
 }
 
 .pgraph1 {
-    font-size: 40px;
+    font-size: 2.1rem;
 }
 
-.pgraph1 span, .paragraph-7 span a {
+.pgraph1 span, .feedback-pgraph span a {
     color: #f36;
     font-weight: 700;
     text-decoration: underline;
 }
 
-.paragraph-7 span {
+.feedback-pgraph span {
     color: #f36;
     font-weight: 700;
 }
@@ -1464,7 +1475,7 @@ select {
         -ms-flex: 1;
             flex: 1;
     background-color: #2e80b6;
-    border-radius: 4px;
+    border-radius: 0.2em;
     padding: 30px 10px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
@@ -1480,7 +1491,7 @@ select {
 .googlemap iframe {
     width: 100%;
     height: 440px;
-    border-radius: 4px;
+    border-radius: 0.2em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
@@ -1489,10 +1500,10 @@ address,
 .contact-info p,
 .office-hour p {
     font-family: Oswald, sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     font-style: normal;
-    line-height: 26px;
-    margin-bottom: 15px;
+    line-height: 1.3em;
+    margin-bottom: 20px;
     color: white;
 }
 
@@ -1500,17 +1511,16 @@ address,
 .contact-info h2,
 .office-hour h2 {
     color: white;
+    font-size: 1.9rem;
 }
 
 .direction-button {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-radius: 4px;
+    margin: 10px auto;
+    padding: 0.6em 0;
+    border-radius: 0.2em;
     background-color: #2e80b6;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
@@ -1565,8 +1575,8 @@ address,
 .paragraph-5 {
     margin-bottom: 5px;
     color: #edeff2;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 1.2em;
     text-align: center;
 }
 
@@ -1644,21 +1654,21 @@ address,
 }
 
 .feedback-section {
-    padding: 25px 40px 5px;
+    padding: 30px 80px;
     background-color: #141e28;
 }
 
-.paragraph-7 {
+.feedback-pgraph {
     color: #edeff2;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.2rem;
+    line-height: 1.3em;
 }
 
-.text-block-5 {
+.feedback-text {
     margin-bottom: 5px;
     color: #f9c635;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 1.2em;
 }
 
 /* ----------- Laptop with HiDPI ----------- */
@@ -1930,7 +1940,7 @@ address,
     .card__share {
         display: block;
     }
-    .bulletin-pgraph, .paragraph-7, .paragraph-3 {
+    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
         font-size: 22px;
         line-height: 27px;
     }
@@ -2077,7 +2087,7 @@ address,
     /*.beta {
         left: -3px;
     }*/
-    .bulletin-text, .text-block-5, .call-to-action-heading {
+    .bulletin-text, .feedback-text, .call-to-action-heading {
         font-size: 23px;
         line-height: 30px;
     }
@@ -2271,7 +2281,7 @@ address,
     .text-field {
         width: 350px;
     }
-    .paragraph-3 {
+    .call-to-action-pgraph {
         text-align: left;
     }
     .div-block-5 {
@@ -2527,7 +2537,7 @@ address,
         line-height: 1em;
         padding: 0 20px;
     }
-    .bulletin-text, .text-block-5, .call-to-action-heading {
+    .bulletin-text, .feedback-text, .call-to-action-heading {
         font-size: 25px;
         margin-bottom: 0;
     }
@@ -2619,7 +2629,7 @@ address,
         margin-top: -8px;
         text-align: center;
     }
-    .paragraph-3 {
+    .call-to-action-pgraph {
         line-height: 22px;
         text-align: left;
     }
@@ -2643,11 +2653,11 @@ address,
         padding-right: 10px;
         padding-left: 20px;
     }
-    .text-block-5 {
+    .feedback-text {
         font-size: 23px;
         line-height: 30px;
     }
-    .div-block-6 {
+    .feedback-container {
         text-align: left;
     }
     .address {
@@ -2666,7 +2676,7 @@ address,
             -ms-flex: 1;
                 flex: 1;
         background-color: #2e80b6;
-        border-radius: 4px;
+        border-radius: 0.2em;
         padding: 30px 10px;
     }
     .googlemap {
@@ -2975,10 +2985,10 @@ address,
         width: 62%;
     }
     /*End of Home Section*/
-    .bulletin-text, .text-block-5, .call-to-action-heading {
+    .bulletin-text, .feedback-text, .call-to-action-heading {
         font-size: 22px;
     }
-    .bulletin-pgraph, .paragraph-7, .paragraph-3 {
+    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
         font-size: 18px;
         line-height: 22px;
     }
@@ -3039,7 +3049,7 @@ address,
         margin-bottom: 0;
         padding-top: 10px;
     }
-    .paragraph-3 {
+    .call-to-action-pgraph {
         margin-bottom: 0;
     }
     .align-right {
@@ -3509,7 +3519,7 @@ address,
     .bulletin-row {
         height: 260px;
     }
-    .bulletin-text, .text-block-5, .call-to-action-heading {
+    .bulletin-text, .feedback-text, .call-to-action-heading {
         font-size: 18px;
     }
     .row {
@@ -3532,7 +3542,7 @@ address,
     .section-subheading.center {
         padding: 0 5px;
     }
-    .bulletin-pgraph, .paragraph-7, .paragraph-3  {
+    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph  {
         line-height: 20px;
     }
     .plan-visit {

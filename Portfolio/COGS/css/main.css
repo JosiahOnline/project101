@@ -465,7 +465,6 @@ p {
 .section {
     position: relative;
     padding: 60px 40px;
-    border-top: 10px solid #141e28;
     background-color: #F0F2F2;
 }
 
@@ -572,7 +571,7 @@ p {
     margin-top: 20px;
     margin-bottom: 30px;
     color: #313131;
-    font-size: 80px;
+    font-size: 4rem;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
@@ -581,8 +580,8 @@ p {
 .section-subheading.center {
     font-family: 'Droid Sans', sans-serif;
     color: #0b0000;
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 1.8rem;
+    line-height: 1em;
     text-align: center;
 }
 
@@ -935,40 +934,41 @@ select {
 
 .title {
     display: block;
-    margin-top: 5px;
-    margin-bottom: 2px;
+    margin: 7px 0;
     padding-left: 15px;
     color: rgba(255, 0, 0, .74);
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.2rem;
     text-align: left;
 }
 
-.row {
+.bulletin-row-2 {
     width: 400px;
     height: 140px;
     border: 1px solid #edeff2;
     border-radius: 4px;
     background-color: rgba(237, 239, 242, .03);
+    display: flex;
+    align-items: center;
 }
 
 .bulletin-image {
     height: 100%;
+    flex: 1.2;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     background-image: url("../img/bulletin1.jpg");
     background-position: 50% 50%;
     background-size: cover;
 }
-
+.bulletin-description {
+    flex: 1;
+}
 .date-published {
     display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
     padding-left: 15px;
     color: #edeff2;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.3em;
     text-align: left;
 }
 
@@ -980,12 +980,12 @@ select {
 .bulletin-download {
     margin-top: 9px;
     margin-left: 15px;
-    padding: 7px;
+    padding: 0.5em 0.8em;
     border-radius: 4px;
     background-color: #edeff2;
     color: rgba(255, 14, 14, .74);
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.2em;
 }
 
 .share-website {
@@ -1602,26 +1602,39 @@ address,
 }
 
 .bulletin-section {
-    padding: 10px 40px 5px;
+    padding: 20px 40px;
     border-top: 3px solid #edeff2;
     background-color: #141e28;
 }
 
-.text-block-4 {
+.bulletin-row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bulletin-container-1 {
+    padding: 0 40px 10px;
+    flex: 1;
+}
+.bulletin-container-2 {
+    flex: 1;
+}
+.bulletin-text {
     margin-top: 20px;
     margin-bottom: 5px;
     color: #f9c635;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 1em;
 }
 
-.paragraph-6 {
+.bulletin-pgraph {
     color: #edeff2;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.2rem;
+    line-height: 1.3em;
 }
 
-.row-4 {
+.bulletin-row {
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -1845,7 +1858,7 @@ address,
         padding-top: 100px;
     }
     .brand-logo, .brand-logo p {
-        font-size: 80px;
+        font-size: 4rem;
         line-height: 80px;
         font-weight: 700;
     }
@@ -1910,14 +1923,14 @@ address,
         margin-bottom: 30px;
     }
     .share-button {
-        font-size: 35px;
-        line-height: 35px;
-        padding: 10px 20px;
+        font-size: 1.8rem;
+        line-height: 1em;
+        padding: 0.6em 1.2em;
     }
     .card__share {
         display: block;
     }
-    .paragraph-6, .paragraph-7, .paragraph-3 {
+    .bulletin-pgraph, .paragraph-7, .paragraph-3 {
         font-size: 22px;
         line-height: 27px;
     }
@@ -2064,11 +2077,11 @@ address,
     /*.beta {
         left: -3px;
     }*/
-    .text-block-4, .text-block-5, .call-to-action-heading {
+    .bulletin-text, .text-block-5, .call-to-action-heading {
         font-size: 23px;
         line-height: 30px;
     }
-    .row-4 {
+    .bulletin-row {
         padding-right: 0px;
         padding-left: 0px;
     }
@@ -2104,7 +2117,7 @@ address,
     }
     .title1 {
         padding-top: 80px;
-        font-size: 80px;
+        font-size: 4rem;
     }
     .address {
         height: 545px;
@@ -2117,8 +2130,8 @@ address,
         line-height: 60px;
     }
     .text-block-3 {
-        font-size: 35px;
-        line-height: 50px;
+        font-size: 1.8rem;
+        line-height: 2.25em;
     }
     .brand-logo, .brand-logo p {
         font-size: 65px;
@@ -2142,8 +2155,8 @@ address,
         padding-bottom: 20px;
     }
     .share-container p {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 1.8rem;
+        line-height: 1em;
     }
     .share-button {
         font-size: 30px;
@@ -2264,7 +2277,7 @@ address,
     .div-block-5 {
         padding-top: 60%;
     }
-    .row-4 {
+    .bulletin-row {
         height: 300px;
     }
     .column-6 {
@@ -2492,8 +2505,8 @@ address,
         margin-bottom: 20px;
     }
     .hero-subheading {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 1.8rem;
+        line-height: 1em;
         width: 70%;
         margin: auto;
         margin-bottom: 20px;
@@ -2510,15 +2523,15 @@ address,
         margin-bottom: 20px;
     }
     .pgraph1 {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 1.8rem;
+        line-height: 1em;
         padding: 0 20px;
     }
-    .text-block-4, .text-block-5, .call-to-action-heading {
+    .bulletin-text, .text-block-5, .call-to-action-heading {
         font-size: 25px;
         margin-bottom: 0;
     }
-    .paragraph-6 {
+    .bulletin-pgraph {
         margin-bottom: 15px;
     }
     .title {
@@ -2623,7 +2636,7 @@ address,
         padding-left: 10px;
         text-align: left;
     }
-    .row-4 {
+    .bulletin-row {
         height: 274px;
     }
     .feedback-section {
@@ -2962,17 +2975,17 @@ address,
         width: 62%;
     }
     /*End of Home Section*/
-    .text-block-4, .text-block-5, .call-to-action-heading {
+    .bulletin-text, .text-block-5, .call-to-action-heading {
         font-size: 22px;
     }
-    .paragraph-6, .paragraph-7, .paragraph-3 {
+    .bulletin-pgraph, .paragraph-7, .paragraph-3 {
         font-size: 18px;
         line-height: 22px;
     }
     .row {
         height: 110px;
     }
-    .row-4 {
+    .bulletin-row {
         height: 250px;
     }
     .title, .date-published {
@@ -3071,8 +3084,8 @@ address,
         line-height: 11px;
     }
     .brand-logo, .brand-logo p {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 1.8rem;
+        line-height: 1em;
     }
     .multiple-lang {
         margin-bottom: 0;
@@ -3300,8 +3313,8 @@ address,
         margin-bottom: 10px;
     }
     .title h1 {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 1.8rem;
+        line-height: 1em;
         margin-bottom: 5px;
     }
     .title h3 {
@@ -3387,8 +3400,8 @@ address,
         margin-bottom: 5px;
     }
     .title h1 {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 1.8rem;
+        line-height: 1em;
         margin-bottom: 0;
     }
     .title h3 {
@@ -3451,8 +3464,8 @@ address,
         padding: 10px 18px;
     }
     .brand-logo, .brand-logo p {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 1.8rem;
+        line-height: 1em;
     }
     .beta {
         top: 21px;
@@ -3493,10 +3506,10 @@ address,
         width: 23px;
     }
     /*End of Home Page Section*/
-    .row-4 {
+    .bulletin-row {
         height: 260px;
     }
-    .text-block-4, .text-block-5, .call-to-action-heading {
+    .bulletin-text, .text-block-5, .call-to-action-heading {
         font-size: 18px;
     }
     .row {
@@ -3519,7 +3532,7 @@ address,
     .section-subheading.center {
         padding: 0 5px;
     }
-    .paragraph-6, .paragraph-7, .paragraph-3  {
+    .bulletin-pgraph, .paragraph-7, .paragraph-3  {
         line-height: 20px;
     }
     .plan-visit {
@@ -3530,8 +3543,8 @@ address,
         font-size: 12px;
     }
     .title h1 {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 1.8rem;
+        line-height: 1em;
     }
     .title h3 {
         font-size: 18px;

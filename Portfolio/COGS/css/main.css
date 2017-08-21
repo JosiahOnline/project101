@@ -546,9 +546,9 @@ p {
 }
 
 .hollow-button.white:hover {
-    border-color: #141e28;
-    background-color: #141e28;
-    color: #fff;
+    border-color: #fff;
+    background-color: #fff;
+    color: #cf404d;
 }
 
 .hollow-button.red {
@@ -560,8 +560,9 @@ p {
 }
 
 .hollow-button.red:hover {
-    border-color: #141e28;
-    background-color: #141e28;
+    border-color: #fff;
+    background-color: #fff;
+    color: #2e80b6;
 }
 
 .section-heading {
@@ -941,7 +942,7 @@ select {
     height: 140px;
     border: 1px solid #edeff2;
     border-radius: 0.2em;
-    background-color: rgba(237, 239, 242, .03);
+    background-color: white;
     display: flex;
     align-items: center;
 }
@@ -961,7 +962,7 @@ select {
 .date-published {
     display: block;
     padding-left: 15px;
-    color: #edeff2;
+    color: #141e28;
     font-size: 1rem;
     line-height: 1.3em;
     text-align: left;
@@ -977,12 +978,15 @@ select {
     margin-left: 15px;
     padding: 0.5em 0.8em;
     border-radius: 0.2em;
-    background-color: #edeff2;
-    color: rgba(255, 14, 14, .74);
+    background-color: rgba(255, 14, 14, .74);
+    color: #edeff2;
     font-size: 1rem;
     line-height: 1.2em;
 }
 
+.bulletin-download:hover {
+    background-color: #2e80b6;
+}
 .share-website {
     padding: 10px;
     margin: auto;
@@ -1014,8 +1018,9 @@ select {
     border-radius: 0.2em;
     background-color: #2e80b6;
     padding: 0.6em 1.2em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     -webkit-transform: translateZ(0);
@@ -1030,9 +1035,8 @@ select {
     transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
-.share-button span:hover {
-    color: white;
-    text-shadow: 0px -1px white;
+.share-button:hover {
+    background-color: #cf404d;   
 }
 
 .row-2 {

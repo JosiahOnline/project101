@@ -930,16 +930,16 @@ select {
 
 .title {
     display: block;
-    margin: 7px 0;
     padding-left: 15px;
     color: rgba(255, 0, 0, .74);
     font-size: 1.2rem;
+    line-height: 0.8em;
     text-align: left;
 }
 
 .bulletin-row-2 {
-    width: 400px;
-    height: 140px;
+    width: 20rem;
+    height: 7rem;
     border: 1px solid #edeff2;
     border-radius: 0.2em;
     background-color: white;
@@ -961,6 +961,7 @@ select {
 }
 .date-published {
     display: block;
+    margin: 0.4em 0;
     padding-left: 15px;
     color: #141e28;
     font-size: 1rem;
@@ -974,7 +975,6 @@ select {
 }
 
 .bulletin-download {
-    margin-top: 9px;
     margin-left: 15px;
     padding: 0.5em 0.8em;
     border-radius: 0.2em;
@@ -1005,6 +1005,7 @@ select {
 
 .share-container p {
     font-size: 0.9rem;
+    margin-bottom: 12px;
 }
 
 .share-button {
@@ -1072,7 +1073,7 @@ select {
     text-align: right;
 }
 
-.paragraph-2 {
+.welcome-pgraph {
     margin-bottom: 1.5em;
     font-family: Oswald, sans-serif;
     font-size: 1.2rem;
@@ -1094,13 +1095,13 @@ select {
     color: #edeff2;
 }
 
-.text-block {
+.group-photo-caption {
     font-size: 1rem;
     line-height: 1.3em;
     text-align: center;
 }
 
-.div-block-2 {
+.group-photo-container {
     padding-bottom: 1em;
     text-align: left;
 }
@@ -1111,7 +1112,7 @@ select {
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
-.text-block-2 {
+.welcome-author {
     font-size: 1.1rem;
     line-height: 1.3em;
     text-align: right;
@@ -1292,13 +1293,13 @@ select {
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
-.newsdescription .title2,
-.pgraph2 {
+.newsdescription .top-news-title,
+.news-pgraph2 {
     text-decoration: none;
     color: white;
 }
 
-.title2 {
+.top-news-title {
     padding-top: 0px;
     font-size: 1rem;
     font-weight: 500;
@@ -1306,22 +1307,23 @@ select {
     margin-bottom: 5px;
 }
 
-.pgraph2 {
+.news-pgraph2 {
     font-size: 0.8rem;
     line-height: 1.2em;
 }
 
-.title1 {
+.main-news-title {
     padding-top: 100px;
     font-size: 5rem;
+    line-height: 0.6em;
     margin-bottom: 50px;
 }
 
-.pgraph1 {
+.news-pgraph1 {
     font-size: 2.1rem;
 }
 
-.pgraph1 span, .feedback-pgraph span a {
+.news-pgraph1 span, .feedback-pgraph span a {
     color: #f36;
     font-weight: 700;
     text-decoration: underline;
@@ -1555,19 +1557,6 @@ address,
     color: #edeff2;
 }
 
-
-/*.beta {
-    position: absolute;
-    left: 46px;
-    top: 6px;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #cf404d;
-    color: #edeff2;
-    font-size: 14px;
-}*/
-
 .mission-statement-section {
     height: 100%;
     background-image: url("../img/hillsong.jpeg");
@@ -1576,7 +1565,7 @@ address,
     text-align: left;
 }
 
-.paragraph-5 {
+.bible-verse {
     margin-bottom: 5px;
     color: #edeff2;
     font-size: 1.5rem;
@@ -1584,14 +1573,14 @@ address,
     text-align: center;
 }
 
-.text-block-3 {
+.bible-book {
     color: #edeff2;
     font-size: 26px;
     line-height: 30px;
     text-align: center;
 }
 
-.div-block-5 {
+.verse-container {
     position: static;
     left: 0px;
     right: 0px;
@@ -1716,18 +1705,71 @@ address,
     .googlemap iframe {
         height: 30.2em;
     }
-    .location {
-       
+    .mission-statement-section {
+        height: 94%;
     }
-    .div-block-5 {
-        padding-top: 45%;
+    .verse-container {
+        padding-top: 37%;
     }
 }
 
 /* ----------- iPad Pro Landscape ----------- */
 
 @media screen and ( max-width: 1370px ) and ( max-height: 1024px ) {
+    html {font-size: 25px;}
+    .main-nav {
+        padding-top: 8%;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 1.8rem;
+    }
+    .multiple-lang div a {
+        font-size: 1rem;
+    }
+    .nav-link {
+        padding: 1.3em 0;
+    }
+    .share-container p {
+        font-size: 0.8rem;
+    }
+    .share-button {
+        font-size: 0.7rem;
+    }
+    .bulletin-row-2 {
+        height: 8rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .date-published {
+        font-size: 1.1rem;
+    }
+    .bulletin-download {
+        font-size: 1.1rem;
+    }
+    .section {
+        padding: 13em 1em;
+    }
+    .plan-visit {
+        padding-top: 20%;
+    }
+    .top-news-title {
+        font-size: 0.8rem;
+    }
+    .call-to-action-section {
+        padding: 80px 50px;
+    }
     
+    .address {
+        height: 37em;
+    }
+    .googlemap iframe {
+        height: 32.9em;
+    }
+    
+    .verse-container {
+        padding-top: 50%;
+    }
 }
 
 /* ----------- Aspire E1 Laptop Landscape ----------- */
@@ -1993,7 +2035,7 @@ address,
     .title {
         font-weight: 500;
     }
-    .text-block-2 {
+    .welcome-author {
         font-size: 20px;
         line-height: 26px;
     }
@@ -2003,15 +2045,15 @@ address,
     .form {
         margin-top: 24px;
     }
-    .div-block-5 {
+    .verse-container {
         padding-top: 60%;
         width: 75%;
     }
-    .paragraph-5 {
+    .bible-verse {
         font-size: 70px;
         line-height: 70px;
     }
-    .text-block-3 {
+    .bible-book {
         font-size: 45px;
         line-height: 60px;
     }
@@ -2119,7 +2161,7 @@ address,
     .visit {
         font-size: 18px;
     }
-    .paragraph-2 {
+    .welcome-pgraph {
         font-size: 24px;
         line-height: 28px;
     }
@@ -2163,14 +2205,14 @@ address,
         padding: 5px 20px 5px;
     }
     
-    .paragraph-2, .text-block-2 {
+    .welcome-pgraph, .welcome-author {
         font-size: 20px;
         line-height: 24px;
     }
-    .div-block-2 {
+    .group-photo-container {
         margin-top: 5px;
     }
-    .title1 {
+    .main-news-title {
         padding-top: 80px;
         font-size: 4rem;
     }
@@ -2180,11 +2222,11 @@ address,
     .googlemap iframe {
         height: 486px;
     }
-    .paragraph-5 {
+    .bible-verse {
         font-size: 55px;
         line-height: 60px;
     }
-    .text-block-3 {
+    .bible-book {
         font-size: 1.8rem;
         line-height: 2.25em;
     }
@@ -2317,10 +2359,10 @@ address,
     .div-block {
         text-align: left;
     }
-    .paragraph-2 {
+    .welcome-pgraph {
         text-align: left;
     }
-    .text-block-2 {
+    .welcome-author {
         text-align: left;
     }
     .text-field {
@@ -2329,7 +2371,7 @@ address,
     .call-to-action-pgraph {
         text-align: left;
     }
-    .div-block-5 {
+    .verse-container {
         padding-top: 60%;
     }
     .bulletin-row {
@@ -2568,13 +2610,13 @@ address,
         width: 70%;
         margin-bottom: 10px;
     }
-    .title1 {
+    .main-news-title {
         font-size: 80px;
         line-height: 70px;
         padding-top: 0;
         margin-bottom: 20px;
     }
-    .pgraph1 {
+    .news-pgraph1 {
         font-size: 1.8rem;
         line-height: 1em;
         padding: 0 20px;
@@ -2638,7 +2680,7 @@ address,
     .section-title-group {
         margin-bottom: 30px;
     }
-    .paragraph-2 {
+    .welcome-pgraph {
         font-size: 22px;
         line-height: 30px;
     }
@@ -2647,7 +2689,7 @@ address,
         text-align: center;
         width: 47%;
     }
-    .text-block, .text-block-2 {
+    .group-photo-caption, .welcome-author {
         font-size: 22px;
     }
     .container-3 {
@@ -2817,15 +2859,15 @@ address,
     .googlemap iframe {
         height: 400px;
     }
-    .div-block-5 {
+    .verse-container {
         width: 70%;
         padding-top: 69%;
     }
-    .paragraph-5 {
+    .bible-verse {
         font-size: 30px;
         line-height: 40px;
     }
-    .text-block-3 {
+    .bible-book {
         font-size: 25px;
         line-height: 30px;
     }
@@ -3047,7 +3089,7 @@ address,
         margin-left: 15px;
     }
     /*End of Bulletin Section*/
-    .paragraph-2, .text-block-2 {
+    .welcome-pgraph, .welcome-author {
         font-size: 20px;
         line-height: 25px;
     }
@@ -3055,14 +3097,14 @@ address,
         width: 96%;
         margin-bottom: 15px;
     }
-    .div-block-2 {
+    .group-photo-container {
         margin-top: 15px;
     }
-    .text-block {
+    .group-photo-caption {
         font-size: 18px;
     }
     /*End of Welcome-Message Section */
-    .pgraph1 {
+    .news-pgraph1 {
         font-size: 30px;
         line-height: 34px;
         width: 90%;
@@ -3101,14 +3143,14 @@ address,
     .googlemap {
         margin-top: 50px;
     }
-    .paragraph-5 {
+    .bible-verse {
         line-height: 35px;
     }
     /*End of Contact Us Section */
     .mission-statement-section {
         height: 580px;
     }
-    .div-block-5 {
+    .verse-container {
         padding-top: 75%;
     }
 }
@@ -3613,7 +3655,7 @@ address,
         font-size: 17px;
     }
     /*End of Welcome Message Section*/
-    .title1 {
+    .main-news-title {
         font-size: 65px;
         line-height: 65px;
     }
@@ -3629,11 +3671,11 @@ address,
     .news-image {
         width: 110px;
     }
-    .title2 {
+    .top-news-title {
         font-size: 17px;
         line-height: 20px;
     }
-    .pgraph2 {
+    .news-pgraph2 {
         font-size: 14px;
         line-height: 16px;
     }
@@ -3790,11 +3832,11 @@ address,
     .mission-statement-section {
         height: 480px;
     }
-    .paragraph-5 {
+    .bible-verse {
         font-size: 24px;
         line-height: 30px;
     }
-    .text-block-3 {
+    .bible-book {
         font-size: 20px;
         line-height: 24px;
     }

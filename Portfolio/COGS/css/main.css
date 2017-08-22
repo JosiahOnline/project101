@@ -1981,17 +1981,14 @@ address,
 /* ----------- iPad Pro Potrait------------------*/
 
 @media screen and ( max-width: 1024px ) and ( max-height: 1367px ) {
+    html {
+        font-size: 16px;
+    }
     .body {
         padding-left: 0%;
     }
     .section {
         padding-top: 98px;
-    }
-    .address {
-        height: 517px;
-    }
-    .googlemap iframe {
-        height: 460px;
     }
     .plan-visit {
         padding-top: 20%;
@@ -2197,21 +2194,14 @@ address,
         display: block;
     }
     .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 1.4rem;
+        line-height: 1.3em;
     }
     .title {
         font-weight: 500;
     }
-    .welcome-author {
-        font-size: 20px;
-        line-height: 26px;
-    }
     .container {
         height: 125px;
-    }
-    .form {
-        margin-top: 24px;
     }
     .verse-container {
         padding-top: 60%;
@@ -2228,17 +2218,64 @@ address,
     
     .hero-title-wrapper {
         position: relative;
-        top: 65%;
-        transform: perspective(1px) translateY(-65%);
+        top: 80%;
+        transform: perspective(1px) translateY(-80%);
     }
     .hero-heading {
-        font-size: 5rem;
+        font-size: 7rem;
         letter-spacing: 0.04em;
         margin-bottom: 0.5em;
     }
     .hero-subheading {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 1em;
+    }
+    .hollow-button {
+        font-size: 1.5rem;
+    }
+    .bulletin-section {
+        padding: 20px;
+    }
+    .bulletin-text {
+        font-size: 1.9rem;
+    }
+    .bulletin-row-2 {
+        width: 24em;
+        height: 9em;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .date-published {
+        font-size: 1.2rem;
+    }
+    .bulletin-download {
+        font-size: 1.3rem;
+    }
+    
+    /*Welcome Home*/
+    .section-heading.centered {
+        font-size: 6rem;
+        margin-bottom: 40px;
+    }
+    .section-subheading.center {
+        font-size: 2.4rem;
+    }
+    .welcome-pgraph, .welcome-author, .group-photo-caption {
+        font-size: 1.5rem;
+    }
+    .visit, .history {
+        font-size: 1.5rem;
+    }
+    
+    .top-news-title {
+        font-size: 1.2rem;
+    }
+    .news-pgraph2 {
+        font-size: 1rem;
+    }
+    .call-to-action-section {
+        padding: 40px;
     }
 }
 

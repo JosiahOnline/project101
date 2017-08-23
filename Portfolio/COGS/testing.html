@@ -35,14 +35,14 @@
             </div>
             <form action="#">
                 <div class="form-container">
-                    <div class="form-row">
+                    <div class="form-row reduce-width">
                         <!--DON't add autofocus="autofocus" show the input element should automatically get focus once the page reload-->
                         <input class="form-field w-input" data-name="first-name" id="first-name" maxlength="256" name="first-name" placeholder="Name:" required="required" type="text">
                     </div>
-                    <div class="form-row">
+                    <div class="form-row reduce-width">
                         <input class="form-field w-input" data-name="email" id="email" maxlength="256" name="email" placeholder="Email:" required="required" type="email">
                     </div>
-                    <div class="form-row">
+                    <div class="form-row reduce-width">
                         <input class="form-field w-input" data-name="contact" id="smartphone-number" maxlength="256" name="contact" placeholder="Contact Number:" required="required" type="text">
                     </div>
                 </div>
@@ -101,11 +101,13 @@
     </section>
     <div id="mNav" class="main-nav">
         <div class="nav-container">
-            <span class="beta">BETA</span><a class="brand-logo" href="#">COGS <br><p>SANDAKAN</p></a>
-            <div class="multiple-lang">
-                <div><a class="english" href="#">English</a></div>
-                <div><a class="chinese" href="#">Chinese</a></div>
-                <div><a class="bm" href="#">BM</a></div>
+            <div class="cogs-logo">
+                <span class="beta">BETA</span><a class="brand-logo" href="#">COGS <br><p>SANDAKAN</p></a>
+                <div class="multiple-lang">
+                    <div><a class="english" href="#">English</a></div>
+                    <div><a class="chinese" href="#">Chinese</a></div>
+                    <div><a class="bm" href="#">BM</a></div>
+                </div>
             </div>
             <nav class="navbar">
                 <div id="mySidenav" class="menu-links">
@@ -174,15 +176,15 @@
             </div>
         </section>
         <div class="bulletin-section">
-            <div class="row-4 w-row">
-                <div class="w-col w-col-6">
-                    <div class="text-block-4">Download weekly bulletin in PDF format</div>
-                    <p class="paragraph-6">Every week we will upload the bulletin so that you can read it in your smartphone (bulletin paper still available in every service).</p>
+            <div class="bulletin-row-1">
+                <div class="bulletin-container-1">
+                    <div class="bulletin-text">Download weekly bulletin in PDF format</div>
+                    <p class="bulletin-pgraph">Every week we will upload the bulletin so that you can read it in your smartphone (bulletin paper still available in every service).</p>
                 </div>
-                <div class="column-6 w-col w-col-6">
-                    <div class="row w-row">
-                        <div class="bulletin-image w-col w-col-7 w-col-small-6 w-col-tiny-6"></div>
-                        <div class="column-2 w-col w-col-5 w-col-small-6 w-col-tiny-6">
+                <div class="bulletin-container-2">
+                    <div class="bulletin-row-2">
+                        <div class="bulletin-image"></div>
+                        <div class="bulletin-description">
                             <div class="title">Latest Bulletin</div>
                             <div class="date-published">9th July 2017</div>
                             <a class="bulletin-download w-button" href="#">Download Now</a>
@@ -199,8 +201,8 @@
                 </div>
                 <div class="row-2 w-row">
                     <div class="column-3 w-col w-col-6">
-                        <p class="paragraph-2">"We are a vibrant, exciting and friendly church and passionate about people knowing Jesus and living their best life. Our church location are easy to find and we have big plans in coming years. So come along to one of our Saturday or Sunday services and receive a warm welcome. We'd love to meet you!"</p>
-                        <div class="text-block-2">
+                        <p class="welcome-pgraph">"We are a vibrant, exciting and friendly church and passionate about people knowing Jesus and living their best life. Our church location are easy to find and we have big plans in coming years. So come along to one of our Saturday or Sunday services and receive a warm welcome. We'd love to meet you!"</p>
+                        <div class="welcome-author">
                             See you there!
                             <br>By Archdeacon Moses Chin
                         </div>
@@ -210,21 +212,18 @@
                         </div>
                     </div>
                     <div class="column-4 w-col w-col-6">
-                        <div class="div-block-2">
+                        <div class="group-photo-container">
                             <img class="photo-pcc" sizes="(max-width: 767px) 92vw, (max-width: 991px) 44vw, 35vw" src="img/pastor.jpg" srcset="img/pastor.jpg 500w, img/pastor.jpg 800w, img/pastor.jpg 1024w" width="538">
                         </div>
-                        <div class="text-block">Archdeacon Moses Chin and PCC Members</div>
+                        <div class="group-photo-caption">Archdeacon Moses Chin and PCC Members</div>
                     </div>
-                </div>
-                <div class="div-block-3">
-                    <a class="link-block w-inline-block" href="#"></a>
                 </div>
             </div>
         </section>
         <div class="feedback-section">
-            <div class="div-block-6">
-                <div class="text-block-5">Your feedback matters!</div>
-                <p class="paragraph-7">This website is currently in <span>BETA</span> version and our aim is to inform visitors about our latest activities, news, events and announcements. We appreciate if you can rate this website for better improvement. Do click <span><a href="#">here</a></span> and let us know your feedback. Thank you!</p>
+            <div class="feedback-container">
+                <div class="feedback-text">Your feedback matters!</div>
+                <p class="feedback-pgraph">This website is currently in <span>BETA</span> version and our aim is to inform visitors about our latest activities, news, events and announcements. We appreciate if you can rate this website for better improvement. Do click <span><a href="#">here</a></span> and let us know your feedback. Thank you!</p>
             </div>
         </div>
         <section class="section" id="announcements">
@@ -242,8 +241,8 @@
                                         img/bulletin2.jpg 2000w, 
                                         img/bulletin2.jpg 2048w">
                                 <div class="main-news-description">
-                                    <h1 class="title1">Weekly Bulleting</h1>
-                                    <p class="pgraph1">Now you can download latest bulletin <span>here</span>!</p>
+                                    <h1 class="main-news-title">Weekly Bulleting</h1>
+                                    <p class="news-pgraph1">Now you can download latest bulletin <span>here</span>!</p>
                                 </div>
                             </a>
                         </article>
@@ -255,8 +254,8 @@
                                         ./News/img/hillsong.jpeg 2000w, 
                                         ./News/img/hillsong.jpeg 2048w">
                                     <div class="newsdescription">
-                                        <h1 class="title2">Church Services</h1>
-                                        <p class="pgraph2">Our weekly services</p>
+                                        <h1 class="top-news-title">Church Services</h1>
+                                        <p class="news-pgraph2">Our weekly services</p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -277,8 +276,8 @@
                                         ./News/img/CGroup.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">Care Group</h1>
-                                        <p class="pgraph2">Together we are strong</p>
+                                        <h1 class="top-news-title">Care Group</h1>
+                                        <p class="news-pgraph2">Together we are strong</p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -300,8 +299,8 @@
                                         ./News/img/men.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">Fellowship</h1>
-                                        <p class="pgraph2">Men/Women Fellowship</p>
+                                        <h1 class="top-news-title">Fellowship</h1>
+                                        <p class="news-pgraph2">Men/Women Fellowship</p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -323,8 +322,8 @@
                                         ./News/img/walk.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">Walk for Jesus (WFJ)</h1>
-                                        <p class="pgraph2">This coming 27th August 2017 </p>
+                                        <h1 class="top-news-title">Walk for Jesus (WFJ)</h1>
+                                        <p class="news-pgraph2">This coming 27th August 2017 </p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -346,8 +345,8 @@
                                         ./News/img/example.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">Aug Children Camp</h1>
-                                        <p class="pgraph2">Any title for this camp?</p>
+                                        <h1 class="top-news-title">Aug Children Camp</h1>
+                                        <p class="news-pgraph2">Any title for this camp?</p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -369,8 +368,8 @@
                                         ./News/img/JGenerationPhoto.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">J Generation Camp (J世代青少年营会)</h1>
-                                        <p class="pgraph2">5th - 6th July 2017 </p>
+                                        <h1 class="top-news-title">J Generation Camp (J世代青少年营会)</h1>
+                                        <p class="news-pgraph2">5th - 6th July 2017 </p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -392,8 +391,8 @@
                                         ./News/img/example2.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">Children Camp (Past)</h1>
-                                        <p class="pgraph2">What is the title again?</p>
+                                        <h1 class="top-news-title">Children Camp (Past)</h1>
+                                        <p class="news-pgraph2">What is the title again?</p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -415,8 +414,8 @@
                                         ./News/img/leaders2.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">Diocesan CHI & ENG Leader's Conference</h1>
-                                        <p class="pgraph2">Be Leaders of Restoration</p>
+                                        <h1 class="top-news-title">Diocesan CHI & ENG Leader's Conference</h1>
+                                        <p class="news-pgraph2">Be Leaders of Restoration</p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -438,8 +437,8 @@
                                         ./News/img/youth.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">Survival Youth Camp</h1>
-                                        <p class="pgraph2">Do you have the skills to face your challenges?</p>
+                                        <h1 class="top-news-title">Survival Youth Camp</h1>
+                                        <p class="news-pgraph2">Do you have the skills to face your challenges?</p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -461,8 +460,8 @@
                                         ./News/img/reading.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">Resource Center</h1>
-                                        <p class="pgraph2">Your Wisdom His Way</p>
+                                        <h1 class="top-news-title">Resource Center</h1>
+                                        <p class="news-pgraph2">Your Wisdom His Way</p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -484,8 +483,8 @@
                                         ./News/img/boys.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">The Boys' Brigade(BB)</h1>
-                                        <p class="pgraph2">The adventure begins here</p>
+                                        <h1 class="top-news-title">The Boys' Brigade(BB)</h1>
+                                        <p class="news-pgraph2">The adventure begins here</p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -507,8 +506,8 @@
                                         ./News/img/dance.jpg 2048w">
 
                                     <div class="newsdescription">
-                                        <h1 class="title2">Excelsis Line Dance</h1>
-                                        <p class="pgraph2">Healthy Lifestyle Better Moments</p>
+                                        <h1 class="top-news-title">Excelsis Line Dance</h1>
+                                        <p class="news-pgraph2">Healthy Lifestyle Better Moments</p>
                                     </div>
                                 </a>
                                 <div class="card__share">
@@ -531,15 +530,15 @@
         </section>
 
         <section class="call-to-action-section">
-            <div class="container w-container">
-                <div class="row-3 w-row">
-                    <div class="column-5 w-col w-col-6">
+            <div class="container">
+                <div class="call-to-action-row">
+                    <div class="call-to-action-description">
                         <h2 class="call-to-action-heading">COGS Newsletter</h2>
-                        <p class="paragraph-3">Join our members and get notify about our latest news and activities. Never miss the details of our events that you care.</p>
+                        <p class="call-to-action-pgraph">Join our members and get notify about our latest news and activities. Never miss the details of our events that you care.</p>
                     </div>
-                    <div class="align-right w-col w-col-6">
+                    <div class="call-to-action-form align-right">
                         <div class="w-form">
-                            <form class="form" data-name="Email Form 2" id="email-form-2" name="email-form-2">
+                            <form class="form cogs-news-form" data-name="Email Form 2" id="email-form-2" name="email-form-2">
                                 <input class="text-field w-input" data-name="Email" id="Email-10" maxlength="256" name="Email" placeholder="ENTER YOUR EMAIL HERE" required="required" type="email">
                                 <input class="submit-button w-button" data-wait="Please wait..." type="submit" value="Subscribe">
                             </form>
@@ -578,7 +577,7 @@
                             </div>
                         </div>
                         <textarea class="form-field text-area w-input" data-name="Field 4" id="field-4" maxlength="5000" name="field-4" placeholder="Message" required="required"></textarea>
-                        <input class="button full-width w-button" data-wait="Please wait..." type="submit" value="Send Message">
+                        <input class="send-message-button button full-width w-button" data-wait="Please wait..." type="submit" value="Send Message">
                     </form>
                     <div class="success-message w-form-done">
                         <p class="paragraph-form">Thank you! Your submission has been received!</p>
@@ -625,9 +624,9 @@
         </section>
         <div class="mission-statement-section">
             <div class="transparent-layer-2">
-                <div class="div-block-5">
-                    <p class="paragraph-5">"For God so love the world that he gave his one and only Son, that whoever believe in him shall not perish but have eternal life."</p>
-                    <div class="text-block-3">John 3:16</div>
+                <div class="verse-container">
+                    <p class="bible-verse">"For God so love the world that he gave his one and only Son, that whoever believe in him shall not perish but have eternal life."</p>
+                    <div class="bible-book">John 3:16</div>
                 </div>
             </div>
         </div>

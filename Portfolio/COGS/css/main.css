@@ -432,7 +432,7 @@ p {
 
 .button {
     display: inline-block;
-    padding: 12px 20px;
+    padding: 0.6em 1.2em;
     border-radius: 0.2em;
     background-color: #cf404d;
     -webkit-transition: background-color 300ms ease;
@@ -2493,6 +2493,9 @@ address,
 /* ----------- Lenova IdeaPad Laptop Landscape ----------- */
 
 @media screen and ( max-width: 1024px ) and ( max-height: 510px ) {
+    html {
+        font-size: 16px;
+    }
     .navbar {
         padding-top: 5px;
     }
@@ -2580,6 +2583,23 @@ address,
         font-size: 1.1rem;
     }
     
+    /*Plan a Visit*/
+    .title h1 {
+        font-size: 2rem;
+        line-height: 1em;
+    }
+    .title h3 {
+        font-size: 1.2rem;
+    }
+    .form-container {
+        flex-direction: row;
+    }
+    .form-field {
+        margin-bottom: 10px;
+    }
+    .reduce-width {
+        width: 32%;
+    }
     .bulletin-row-2 {
         width: 22em;
         height: 8em;
@@ -2609,7 +2629,81 @@ address,
 /* ----------- S Note 8.0 Landscape ----------- */
 
 @media screen and ( max-width: 970px ) and ( max-height: 490px ) {
-    body {
+    html {
+        font-size: 14px;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 2rem;
+    }
+    .menu-links a {
+        font-size: 1.5rem;
+    }
+    .social-container {
+        margin-top: 10px;
+    }
+    
+    /*Welcome Message Session*/
+    #welcome {
+        padding: 5em 1em 3em;
+    }
+    .section-heading.centered {
+        margin-bottom: 25px;
+    }
+    .section-title-group, .welcome-pgraph {
+        margin-bottom: 1.5em;
+    }
+    .welcome-pgraph, .welcome-author, .group-photo-caption {
+        font-size: 1.4rem;
+    }
+    .div-block {
+        margin-top: 2em;
+    }
+    
+    /*Plan a visit*/
+    .container .title {
+        padding-top: 25px;
+        margin-bottom: 15px;
+    }
+    select, .select-date, #attendance-date, .attend-service, .service-time {
+        font-size: 1rem;
+    }
+    .button.full-width {
+        font-size: 1.2rem;
+    }
+    .section {
+        padding: 6em 1em 3em;
+    }
+    
+    .call-to-action-section {
+        padding: 10px;
+    }
+    .align-right {
+        margin-top: 0;
+    }
+    .submit-button {
+        padding: 0.7em 1em;
+    }
+    .w-form {
+        margin: 0 0 10px;
+    }
+    /*Contact US*/
+    .section.section-contact {
+        min-height: 1020px;
+    }
+    .address {
+        height: 24em;
+    }
+    .googlemap iframe {
+        height: 21em;
+    }
+    .location h2, .contact-info h2, .office-hour h2 {
+        font-size: 1.5rem;
+        line-height: 1em;
+    }
+    address, .contact-info p, .office-hour p {
+        font-size: 1rem;
+    }
+    /*body {
         margin-left: 0px;
         padding-left: 0px;
     }
@@ -2686,9 +2780,7 @@ address,
         width: 210px;
         font-size: 15px;
     }
-    /*.beta {
-        left: -3px;
-    }*/
+    
     .bulletin-text, .feedback-text, .call-to-action-heading {
         font-size: 23px;
         line-height: 30px;
@@ -2810,6 +2902,13 @@ address,
     }
     #announcements {
         height: 2800px;
+    }*/
+    
+    .news-container {
+        padding: 0;
+    }
+    .top-news {
+        padding: 0;
     }
 }
 

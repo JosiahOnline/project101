@@ -991,11 +991,12 @@ select {
     padding: 10px;
     margin: auto;
     margin-top: 8%;
+    
+    border-radius: 0.2em;
+    background: #F0F2F2;
 }
 
 .share-container {
-    background: #F0F2F2;
-    border-radius: 0.2em;
     padding: 6% 7%;
 }
 
@@ -1582,8 +1583,8 @@ address,
 
 .bible-book {
     color: #edeff2;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 1.3rem;
+    line-height: 1.2em;
     text-align: center;
 }
 
@@ -2085,9 +2086,9 @@ address,
     }
     .COGS-title {
         display: inline-block;
-        -webkit-box-flex: 5;
-            -ms-flex: 5;
-                flex: 5;
+        -webkit-box-flex: 6;
+            -ms-flex: 6;
+                flex: 6;
         color: white;
     }
     .COGS-title h1 {
@@ -2108,6 +2109,7 @@ address,
         color: white;
         margin-bottom: 0;
         font-size: 2.5rem;
+        flex: 1;
     }
     .main-nav {
         display: none;
@@ -2138,7 +2140,7 @@ address,
     .menu-links .closebtn {
         position: absolute;
         top: 47px;
-        right: 44px;
+        right: 27px;
         padding: 0;
         background-image: url(../img/error.png);
         background-size: 50px;
@@ -2169,10 +2171,11 @@ address,
         margin: 0 15px;
     }
     .navbar {
-        padding-top: 80px;
+        padding-top: 30px;
     }
     .nav-link {
         font-size: 3rem;
+        padding: 1.3em 0;
     }
     .share-website {
         width: 100%;
@@ -2228,8 +2231,7 @@ address,
         line-height: 1.1em;
     }
     .bible-book {
-        font-size: 45px;
-        line-height: 60px;
+        font-size: 3rem;
     }
     
     .hero-title-wrapper {
@@ -2299,11 +2301,20 @@ address,
     .newsdescription {
         padding: 1.2em 1em;
     }
+    .footer.center {
+        padding: 1.5em 0;
+    }
+    .footer-text {
+        font-size: 2rem;
+    }
 }
 
 /* ----------- iPad Landscape ----------- */
 
 @media screen and ( max-width: 1024px ) and ( max-height: 768px ) {
+    .COGS-title {
+        flex: 7;
+    }
     .nav-container {
         padding-top: 0;
     }
@@ -2315,8 +2326,7 @@ address,
     }
     .menu-links .closebtn {
         background-size: 2.6rem;
-        top: 15px;
-        right: 60px;
+        top: 18px;
     }
     .brand-logo, .brand-logo p {
         font-size: 2.5rem;
@@ -2341,19 +2351,28 @@ address,
     .menu-links a {
         font-size: 1.8rem;
     }
-    .share-container {
-        padding: 1.5%;
+    .nav-link {
+        padding: 1.2em 0;
     }
     .share-website {
-        margin-top: 30px;
+        margin-top: 25px;
+    }
+    .share-container {
+        width: 78%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
     }
     .share-container p {
         font-size: 1.5rem;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        flex: 2.5;
     }
     .share-button {
         font-size: 1.2rem;
+        flex: 1;
     }
     .web__share > .share-icon {
         width: 48px;
@@ -2363,10 +2382,21 @@ address,
     }
     .social-container {
         bottom: unset;
-        margin-top: 35px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .social-container p {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        flex: 1;
+        text-align: right;
+        padding-right: 20px;
+        margin-bottom: 7px;
+    }
+    .social-icons {
+        flex: 1;
+        text-align: left;
     }
     .social-icon-link img {
         width: 2rem;
@@ -2377,6 +2407,14 @@ address,
     }
     .hero-subheading {
         font-size: 2.5rem;
+    }
+    
+    /*Plan Visit Session*/
+    .plan-visit {
+        padding-top: 5%;
+    }
+    .close-button {
+        top: 5%;
     }
     .align-right {
         margin-top: 28px;
@@ -2390,21 +2428,182 @@ address,
     address, .contact-info p, .office-hour p {
         font-size: 1.2rem;
     }
-    .bible-verse {
+    .bible-verse, .bible-book {
         font-size: 2rem;
+    }
+    .footer.center {
+        padding: 1em 0;
+    }
+    .footer-text {
+        font-size: 1.5rem;
     }
 }
 
 /* ----------- iPad Mini 4 Landscape ----------- */
 
 @media screen and ( max-width: 1024px ) and ( max-height: 672px ) {
+    .main-nav {
+        padding-top: 2%;
+    }
+    .menu-links .closebtn {
+        top: 14px;
+    }
+    .nav-link {
+        padding: 1em 0;
+    }
+    .share-website {
+        margin-top: 20px;
+    }
+    .share-container {
+        padding: 1.5%;
+    }
+    .social-container {
+        margin-top: 40px;
+    }
+    .section-title-group {
+        margin-bottom: 2em;
+    }
     
+    /*Plan Visit Session*/
+    .plan-visit {
+        padding-top: 0;
+    }
+    .container .title {
+        padding-top: 35px;
+        margin-bottom: 20px;
+    }
+    .title h1 {
+        margin-bottom: 0;
+    }
+    .title h3 {
+        margin: 5px auto;
+    }
+    .plan-submit {
+        margin-top: 13%;
+    }
+    
+    .footer.center {
+        padding: 0.8em 0;
+    }
+    .footer-text {
+        font-size: 1.3rem;
+    }
 }
 
 /* ----------- Lenova IdeaPad Laptop Landscape ----------- */
 
 @media screen and ( max-width: 1024px ) and ( max-height: 510px ) {
+    .navbar {
+        padding-top: 5px;
+    }
+    .COGS-title {
+        flex: 8;
+    }
+    .COGS-title h1, .navburger h1 {
+        font-size: 1.5rem;
+    }
+    .hamburger {
+        background-size: 2.2rem;
+        height: 2.2rem;
+    }
+    .menu-links .closebtn {
+        top:10px;
+        height: 2.2rem;
+        background-size: 2.2rem;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 1.4rem;
+    }
+    .beta {
+        top: -9px;
+        left: -4px;
+        font-size: 0.8rem;
+    }
+    .multiple-lang {
+        margin-top: 0;
+    }
+    .multiple-lang div a {
+        font-size: 1.1rem;
+    }
+    .menu-links a {
+        font-size: 1.3rem;
+    }
+    .share-container {
+        width: 58%;
+        padding: 1%;
+    }
+    .share-container p {
+        font-size: 1rem;
+        flex: 2;
+    }
+    .share-button {
+        font-size: 1rem;
+    }
+    .web__share > .share-icon {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 20px;
+    }
+    .social-container {
+        margin-top: 20px;
+    }
+    .social-container p {
+        font-size: 1.2rem;
+    }
+    .social-icon-link img {
+        width: 1.4rem;
+        margin: 0;
+    }
+    /*Home Session*/
+    .hero-heading {
+        font-size: 5rem;
+    }
+    .hero-subheading {
+        font-size: 2.1rem;
+    }
+    .hollow-button {
+        font-size: 1.1rem;
+    }
     
+    .bulletin-text {
+        font-size: 1.5rem;
+    }
+    /*Welcome Message*/
+    .section-heading.centered {
+        font-size: 5rem;
+    }
+    .section-subheading.center {
+        font-size: 2rem;
+    }
+    .visit, .history {
+        font-size: 1.1rem;
+    }
+    
+    .bulletin-row-2 {
+        width: 22em;
+        height: 8em;
+    }
+    .date-published, .bulletin-download {
+        font-size: 1.1rem;
+    }
+    
+    .top-news {
+        padding: 0 50px;
+    }
+    
+
+    .w-form {
+        margin: 0 0 15px;
+    }
+    
+    .bible-verse, .bible-book {
+        font-size: 1.5rem;
+    }
+    .footer-text {
+        font-size: 1rem;
+        margin: 0;
+    }
 }
 
 /* ----------- S Note 8.0 Landscape ----------- */

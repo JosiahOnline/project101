@@ -1673,7 +1673,7 @@ address,
 
 /* ----------- Laptop with HiDPI ----------- */
 
-@media screen and ( max-width: 1441px ) and ( max-height: 901px ) {
+@media screen and ( max-width: 1441px ) {
     
     html {font-size: 22px;}
     /*main navigation*/
@@ -1725,7 +1725,7 @@ address,
 
 /* ----------- iPad Pro Landscape ----------- */
 
-@media screen and ( max-width: 1370px ) and ( max-height: 1024px ) {
+@media screen and ( max-width: 1370px ) {
     html {font-size: 25px;}
     .main-nav {
         padding-top: 8%;
@@ -1792,7 +1792,7 @@ address,
 
 /* ----------- Aspire E1 Laptop Landscape ----------- */
 
-@media screen and ( max-width: 1370px ) and ( max-height: 670px ) {
+@media screen and ( max-width: 1370px ) {
     html {font-size: 18px;}
     .main-nav {
         padding-top: 2%;
@@ -1861,7 +1861,7 @@ address,
 
 /* ----------- Laptop with Touch ----------- */
 
-@media screen and ( max-width: 1281px ) and ( max-height: 951px ) {
+@media screen and ( max-width: 1281px ) {
     html {font-size: 22px;}
     .share-website {
         margin-top: 14%;
@@ -1885,7 +1885,7 @@ address,
 
 /* ----------- Laptop with MDPI screen----------- */
 
-@media screen and ( max-width: 1281px ) and ( max-height: 801px ) {
+@media screen and ( max-width: 1281px ) {
     .main-nav {
         padding-top: 4%;
     }
@@ -1911,7 +1911,7 @@ address,
 
 /* ----------- S Tab 10.1 Landscape ----------- */
 
-@media screen and ( max-width: 1280px ) and ( max-height: 656px ) {
+@media screen and ( max-width: 1280px ) {
     html {font-size: 18px;}
     .main-nav {
         padding-top: 2%;
@@ -1947,7 +1947,7 @@ address,
 
 /* ----------- Aspire V3 Laptop Landscape ----------- */
 
-@media screen and ( max-width: 1100px ) and ( max-height: 520px ) {
+@media screen and ( max-width: 1100px ) {
     html {
         font-size: 16px;
     }
@@ -2021,7 +2021,7 @@ address,
 
 /* ----------- iPad Pro Potrait------------------*/
 
-@media screen and ( max-width: 1024px ) and ( max-height: 1367px ) {
+@media screen and ( max-width: 1024px ) {
     html {
         font-size: 16px;
     }
@@ -2326,7 +2326,7 @@ address,
 
 /* ----------- iPad Landscape ----------- */
 
-@media screen and ( max-width: 1024px ) and ( max-height: 768px ) {
+@media screen and ( max-width: 1024px ) {
     .COGS-title {
         flex: 7;
     }
@@ -2456,7 +2456,7 @@ address,
 
 /* ----------- iPad Mini 4 Landscape ----------- */
 
-@media screen and ( max-width: 1024px ) and ( max-height: 672px ) {
+@media screen and ( max-width: 1024px ) {
     .main-nav {
         padding-top: 2%;
     }
@@ -2507,7 +2507,7 @@ address,
 
 /* ----------- Lenova IdeaPad Laptop Landscape ----------- */
 
-@media screen and ( max-width: 1024px ) and ( max-height: 510px ) {
+@media screen and ( max-width: 1024px ) {
     html {
         font-size: 16px;
     }
@@ -2640,7 +2640,7 @@ address,
 
 /* ----------- S Note 8.0 Landscape ----------- */
 
-@media screen and ( max-width: 970px ) and ( max-height: 490px ) {
+@media screen and ( max-width: 970px ) {
     html {
         font-size: 14px;
     }
@@ -2938,7 +2938,7 @@ address,
 
 /* ----------- S Tab 10.1 Potrait ----------- */
 
-@media screen and ( max-width: 800px ) and ( max-height: 1136px ) {
+@media screen and ( max-width: 800px ){
     html {
         font-size: 14px;
     }
@@ -3065,7 +3065,7 @@ address,
 
 /* ----------- iPad Potrait----------- */
 
-@media screen and ( max-width: 768px ) and ( max-height: 1024px ) {
+@media screen and ( max-width: 768px ){
     /*
     .section {
         padding-right: 10px;
@@ -3195,7 +3195,7 @@ address,
 
 /* ----------- iPad Mini4 Potrait----------- */
 
-@media screen and ( max-width: 768px ) and ( max-height: 930px ) {
+@media screen and ( max-width: 768px ) {
     html {font-size: 12px;}
     .nav-container {
         padding-top: 30px;
@@ -3260,7 +3260,7 @@ address,
 
 /* ----------- iPone 6 Plus Landscape ----------- */
 
-@media screen and ( max-width: 740px ) and ( max-height: 420px ) {
+@media screen and ( max-width: 740px ) {
     .mobile-container {
         padding: 0 20px;
     }
@@ -3419,7 +3419,7 @@ address,
 
 /* ----------- iPone 6 Landscape ----------- */
 
-@media screen and ( max-width: 670px ) and ( max-height: 380px ) {
+@media screen and ( max-width: 670px ) {
     .menu-links a {
         font-size: 1.6rem;
         padding: 1em 0;
@@ -3491,6 +3491,27 @@ address,
         height: 140px;
     }
     
+    .card__social--active {
+        -webkit-transform: translateX(-33px);
+ 		    -ms-transform: translateX(-33px);
+ 		        transform: translateX(-33px);
+    }
+    .card__share {
+        margin-right: 3px;
+    }
+    .card__share .card__social .share-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 17px;
+    }
+    .share-icon:hover,
+    .share-icon:focus {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
     .cogs-news-form > .text-field, .submit-button {
         height: 30px;
     }
@@ -3503,9 +3524,56 @@ address,
     }
 }
 
+/* ----------- S Galaxy S5 ----------- */
+
+@media screen and ( max-width: 640px ) {
+    .menu-links a {
+        padding: 0.9em 0;
+    }
+    .container .title {
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+    .title h1 {
+        display: none;
+    }
+    .title h3 {
+        font-size: 1.5rem;
+    }
+    .plan-visit form .button.full-width {
+        margin-top: 11%;
+    }
+    
+    .card__social--active {
+        transform: translateX(-18px);
+    }
+    .card__share .card__social .share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 15px;
+    }
+    .share-toggle {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 15px;
+    }
+    .share-icon:hover,
+    .share-icon:focus {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    
+    .cogs-news-form {
+        margin-top: 15px;
+    }
+}
+
 /* ----------- S Galaxy Note 3 Neo ----------- */
 
-@media screen and ( max-width: 640px ) and ( max-height: 280px ) {
+@media screen and ( max-width: 640px ) {
     .mobile-nav {
         height: 15%;
     }
@@ -3537,8 +3605,8 @@ address,
     .plan-visit .form-field.text-area {
         min-height: 50px;
     }
-    .plan-visit .button.full-width {
-        margin-top: 13%;
+    .plan-visit form .button.full-width {
+        margin-top: 12.5%;
         padding: 2px 10px;
         height: 30px;
     }
@@ -3546,560 +3614,1226 @@ address,
 
 /* ----------- iPhone 7 Landscape ----------- */
 
-@media screen and ( max-width: 630px ) and ( max-height: 420px ) {
+@media screen and ( max-width: 635px ) {
+    .share-container {
+        width: 75%;
+    }
+    .share-container p {
+        flex: 2.3;
+        margin: auto;
+    }
     
+    .social-container p {
+        font-size: 1.3rem;
+        margin-bottom: 3px;
+    }
+    .social-icon-link img {
+        width: 1.3em;
+    }
+    
+    .bulletin-container-1 {
+        padding: 0 5px 0;
+    }
+    .bulletin-row-2 {
+        height: 7em;
+        width: 17em;
+    }
+    .title {
+        font-size: 1.4rem;
+    }
+    .date-published {
+        font-size: 1.3rem;
+    }
+    .bulletin-text, .feedback-text, .call-to-action-heading {
+        font-size: 1.5rem;
+    }
+    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+        font-size: 1.4rem;
+    }
+    
+    .container .title {
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    .plan-visit .form-container .form-row .form-field {
+        margin-bottom: 5px;
+        height: 30px;
+    }
+    .reduce-width {
+        width: 32.5%;
+    }
+    
+    .plan-visit form textarea {
+        margin-bottom: 0;
+    }
+    
+    .plan-visit form .button.full-width {
+        margin-top: 13%;
+        padding: 0.4em;
+    }
+    
+    .feedback-section {
+        padding: 30px 45px;
+    }
+    
+    .news-container {
+        height: 1500px;
+    }
+    
+    .main-news {
+        height: 350px;
+    }
+    .main-news-description {
+        top: -350px;
+        padding-top: 50px;
+    }
+    .main-news-title {
+        margin-bottom: 25px;
+    }
+    
+    .news {
+        width: 185px;
+        height: 130px;
+    }
+    .card__social--active {
+        transform: translateX(-18px);
+    }
+    .card__share .card__social .share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 15px;
+    }
+    .share-toggle {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 15px;
+    }
+    
+    
+    .address {
+        height: 25em;
+    }
+    .googlemap iframe {
+        height: 22.25em;
+    }
 }
+
 
 /* ----------- S Note 8.0 Potrait ----------- */
 
-@media screen and ( max-width: 610px ) and ( max-height: 850px ) {
+@media screen and ( max-width: 610px ) {
+    html {font-size: 12px;}
+    .brand-logo, .brand-logo p {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .beta {
+        font-size: 1.5rem;
+        top: -12px;
+        left: -8px;
+    }
+    .multiple-lang {
+        margin-top: 10px;
+    }
+    .multiple-lang div a, .share-container p, .social-container p {
+        font-size: 2rem;
+    }
+    .nav-link {
+        font-size: 2.5rem;
+        padding: 1.3em 0;
+    }
+    .share-button {
+        font-size: 1.5rem;
+    }
+    .web__share > .share-icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 21px;
+    }
+    .social-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .social-container p {
+        margin-right: 5px;
+        margin-bottom: 0;
+        padding-top: 4px;
+    }
+    .social-icons {
+        margin-left: 5px;
+    }
+    .social-icon-link img {
+        width: 2.5rem;
+        margin: 0;
+    }
     
+    .hero-heading {
+        font-size: 5.5rem;
+        letter-spacing: 0.01em;
+        margin-bottom: 0.35em;
+    }
+    .hero-subheading {
+        font-size: 2.7rem;
+        margin-bottom: 0.8em;
+    }
+    
+    .bulletin-row-1 {
+        flex-direction: column;
+        align-items: left;
+        padding: 0.5em;
+    }
+    .bulletin-container-1 {
+        padding: 0;
+    }
+    .bulletin-text, .feedback-text, .call-to-action-heading {
+        font-size: 2.5rem;
+    }
+    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+        font-size: 1.8rem;
+    }
+    .bulletin-pgraph {
+        margin-bottom: 20px;
+    }
+    .bulletin-row-2 {
+        width: 33em;
+        height: 12em;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .date-published {
+        font-size: 2rem;
+    }
+    .bulletin-download {
+        font-size: 1.8rem;
+    }
+    
+    .column-3, .column-4 {
+        margin-bottom: 40px;
+    }
+    .welcome-pgraph, .welcome-author {
+        font-size: 2rem;
+        text-align: left;
+    }
+    .div-block {
+        left: 30px;
+    }
+    .group-photo-caption {
+        font-size: 2rem;
+    }
+    
+    #announcements {
+        padding: 6em 1em 8em;
+    }
+    .main-news {
+        height: 320px;
+    }
+    .main-news-description {
+        top: -320px;
+        padding-top: 5%;
+    }
+    .main-news-title {
+        margin-bottom: 25px;
+    }
+    
+    .top-news {
+        height: 2250px;
+    }
+    
+    .news {
+        width: 100%;
+        height: 160px;
+        margin-bottom: 0;
+        border-radius: 5px;
+    }
+    .news-image {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 39.6%;
+    }
+    .newsdescription {
+        top: -160.6px;
+        left: 40%;
+        width: 60%;
+        height: 161px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0);
+    }
+    .top-news-title {
+        font-size: 2.5rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.7rem;
+    }
+    .card__share {
+        display: flex;
+        margin-top: 0;
+        margin-right: 0;
+        top: -225px;
+        right: 12px;
+    }
+    .card__social {
+        position: relative;
+        width: 240px;
+    }
+    .card__social--active {
+ 		-webkit-transform: translateX(-15px);
+ 		    -ms-transform: translateX(-15px);
+ 		        transform: translateX(-15px);
+    }
+    .news:hover .card__share {
+        display: flex;
+    }
+    .card__social >.share-icon {
+        margin-left: 5px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 23px;
+    }
+    .share-toggle {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 23px;
+    }
+    
+    .call-to-action-section .container {
+        height: 250px;
+    }
+    .call-to-action-heading, .call-to-action-pgraph {
+        text-align: left;
+    }
+    .call-to-action-description {
+        padding: 0;
+    }
+    .call-to-action-form {
+        width: 100%;
+    }
+    
+    .call-to-action-row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cogs-news-form > .text-field {
+        width: 100%;
+        
+    }
+    .submit-button, .cogs-news-form > .text-field {
+       font-size: 1.5rem; 
+        line-height: 1em;
+    }
+    .nospam, .form-field {
+        font-size: 1.5rem;
+    }
+    
+    .column-remove-padding {
+        padding: 0;
+    }
+    .send-message-button.full-width {
+        margin-top: 2%;
+        font-size: 1.5rem;
+    }
+    
+    .address {
+        display: flex;
+        flex-direction: column;
+        height: 68em;
+    }
+    .location h2, .contact-info h2, .office-hour h2 {
+        font-size: 3rem;
+    }
+    address, .contact-info p, .office-hour p {
+        font-size: 1.8rem;
+    }
+    .location {
+        margin-bottom: 40px;
+    }
+    .googlemap {
+        padding-left: 0;
+    }
+    .direction-button {
+        font-size: 1.5rem;
+    }
+    
+    .bible-verse, .bible-book {
+        font-size: 2.8rem;
+    }
+    .footer.center {
+        padding: 0.6em 0;
+    }
+    .footer-text {
+        font-size: 1.6rem;
+    }
 }
 
 /* ----------- iPhone 5 Landscape ----------- */
 
-@media screen and ( max-width: 568px ) and ( max-height: 320px ) {
+@media screen and ( max-width: 568px ) {
+    .mobile-nav {
+        height: 15%;
+    }
+    .COGS-title h1, .navburger h1 {
+        font-weight: 400;
+    }
+    .hero-heading, .hero-heading, .section-heading.centered {
+        font-size: 4.5rem;
+        margin-bottom: 0.3em;
+    }
+    .hero-subheading, .section-subheading.center {
+        font-size: 2.5rem;
+        margin-bottom: 0.5em;
+    }
+    .menu-links .closebtn {
+        top: 10px;
+    }
+    .menu-links a {
+        padding: 0.8em 0;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 2rem;
+    }
+    .beta {
+        font-size: 0.8em;
+        top: -8px;
+        left: -4px;
+    }
+    .multiple-lang {
+        margin-top: 5px;
+    }
+    .multiple-lang div a, .share-container p, .social-container p {
+        font-size: 1.3rem;
+    }
+    .share-container {
+        width: 90%;
+    }
+    .share-button {
+        font-size: 1.1rem;
+    }
+    .web__share > .share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
+    }
+    
+    .bulletin-text, .feedback-text, .call-to-action-heading {
+        font-size: 1.8rem;
+    }
+    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+    .bulletin-row-2 {
+        width: 31.5em;
+        height: 12em;
+    }
+    .title, .date-published {
+        padding-left: 10px;
+    }
+    .bulletin-download {
+        margin-left: 10px;
+        font-size: 2rem;
+    }
+    
+    .column-3 {
+        height: 100%;
+    }
+    .photo-pcc {
+        max-width: 92%;
+    }
+    .group-photo-caption {
+        font-size: 1.6rem;
+    }
+    .container-3 {
+        margin-bottom: 0;
+    }
+    .news-container {
+        height: 2450px;
+    }
+    .main-news {
+        height: 260px;
+    }
+    .main-news-description {
+        top: -260px;
+        padding-top: 0;
+    }
+    .main-news a .news-image {
+        width: 100%;
+    }
+    .top-news-title {
+        line-height: 1em;
+    }
+    .card__share {
+        top: -215px;
+    }
+    .card__social {
+        width: 200px;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 17px;
+    }
+    
+    .call-to-action-section {
+        padding: 40px 20px;
+    }
+    .call-to-action-form {
+        padding: 0;
+        margin-top: 0;
+    }
+    .call-to-action-section .container {
+        height: 210px;
+    }
+    .cogs-news-form {
+        margin-top: 0;
+    }
+    .submit-button, .cogs-news-form > .text-field {
+        line-height: 0;
+        height: 35px;
+    }
+    .nospam {
+        margin-top: 0;
+    }
+    .nospam, .form-field {
+        font-size: 1.3rem;
+    }
+    .address {
+        height: 62em;
+    }
+    
+    .bible-verse, .bible-book {
+        font-size: 1.7rem;
+    }
+    .footer-text {
+        font-size: 1.2rem;
+    }
     
 }
 
 /* ----------- VIVO 5 Samsung J Landscape ----------- */
 
-@media screen and ( max-width: 560px ) and ( max-height: 360px ){
+@media screen and ( max-width: 560px ) {
     
+    .mobile-nav {
+        height: 15%;
+    }
+    .menu-links .closebtn {
+        top: 1%;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 1.5rem;
+    }
+    .beta {
+        font-size: 1rem;
+        top: -7px;
+        left: -5px;
+    }
+    .multiple-lang {
+        margin-top: 5px;
+    }
+    .share-container {
+        width: 90%;
+    }
+    .share-button {
+        font-size: 1.1rem;
+    }
+    .multiple-lang div a, .share-container p, .social-container p {
+        font-size: 1.2rem;
+    }
+    .web__share > .share-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 17px;
+    }
+    
+    .social-container {
+        margin-top: 20px;
+    }
+    .social-container p {
+        margin-right: 0;
+        padding-top: 0;
+    }
+    .social-icon-link img {
+        width: 2rem;
+    }
+    .hero-heading, .section-heading.centered {
+        font-size: 4.5rem;
+    }
+    .hero-subheading, .section-subheading.center {
+        font-size: 2.2rem;
+    }
+    .bulletin-text, .feedback-text, .call-to-action-heading {
+        font-size: 1.8rem;
+    }
+    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+    .bulletin-row-2 {
+        width: 31em;
+    }
+    .title, .date-published {
+        padding-left: 10px;
+    }
+    .bulletin-download {
+        margin-left: 10px;
+    }
+    .date-published {
+        margin: 0.6em 0;
+    }
+    .column-3 {
+        height: 90%;
+    }
+    .form-field {
+        padding: 1em 0.5em;
+    }
+    .plan-visit .form-container .form-row .form-field {
+        font-size: 1rem;
+    }
+    .plan-visit .form-field.text-area {
+        font-size: 1rem;
+        min-height: 80px;
+    }
+    .close-button {
+        padding: 0.2em 0.8em;
+    }
+    #welcome {
+        padding: 5em 1em 0;
+    }
+    .welcome-pgraph, .welcome-author, .group-photo-caption {
+        font-size: 1.6rem;
+    }
+    .column-3 {
+        margin-bottom: 0;
+    }
+    .photo-pcc {
+        max-width: 92%;
+    }
+    
+    .news-container {
+        height: 2500px;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 17px;
+    }
+    .card__share {
+        top: -215px;
+    }
+    .card__social {
+        width: 200px;
+    }
+    .top-news-title {
+        font-size: 2rem;
+        line-height: 1em;
+    }
+    .news-pgraph2 {
+        font-size: 1.6rem;
+    }
+    .call-to-action-section {
+        padding: 40px 20px;
+    }
+    .call-to-action-form {
+        padding: 0;
+        margin-top: 0;
+    }
+    .call-to-action-section .container {
+        height: 210px;
+    }
+    .cogs-news-form {
+        margin-top: 0;
+    }
+    .submit-button, .cogs-news-form > .text-field {
+        line-height: 0;
+        height: 35px;
+    }
+    .nospam {
+        margin-top: 0;
+    }
+    .nospam, .form-field {
+        font-size: 1.3rem;
+    }
+    .address {
+        height: 50em;
+    }
+    .location h2, .contact-info h2, .office-hour h2 {
+        font-size: 1.8rem;
+    }
+    address, .contact-info p, .office-hour p {
+        font-size: 1.4rem;
+    }
+    .googlemap iframe {
+        height: 18em;
+    }
+    .bible-verse, .bible-book {
+        font-size: 1.7rem;
+    }
+    .footer-text {
+        font-size: 1.2rem;
+    }
 }
 
 /* ----------- iPhone 6S Landscape ----------- */
 
-@media screen and ( max-width: 540px ) and ( max-height: 380px ) {
-    
+@media screen and ( max-width: 540px ) {
+    .menu-links a {
+        padding: 0.9em 0;
+    }
+    .plan-visit form .button.full-width {
+        margin-top: 15%;
+    }
 }
 
 /* ----------- HuaWei Mate 9 Landscape ----------- */
 
-@media screen and ( max-width: 525px ) and ( max-height: 360px ) {
-    
+@media screen and ( max-width: 530px ) {
+    .menu-links a {
+        padding: 0.8em 0;
+    }
+    .bulletin-row-2 {
+        width: 29em;
+        height: 11em;
+    }
+    .title, .date-published {
+        padding-left: 5px;
+    }
+    .bulletin-download {
+        margin-left: 5px;
+    }
+    .bible-verse, .bible-book {
+        font-size: 1.5rem;
+    }
 }
 /* ----------- iPhone 4 Landscape ----------- */
 
-@media screen and ( max-width: 480px ) and ( max-height: 320px ) {
-    .nav-container {
-        padding-top: 20px;
-    }
-    .COGS-title {
-        padding-top: 14px;
-    }
-    .COGS-title h1, .navburger h1 {
-        font-size: 22px;
-        line-height: 22px;
-    }
-    .navburger h1 {
-        top: -6px;
-    }
+@media screen and ( max-width: 480px ) {
     .mobile-nav {
-        height: 50px;
-    }
-    .hamburger {
-        height: 30px;
-        width: 30px;
-        background-size: 30px;
-    }
-    .brand-logo, .brand-logo p {
-        font-size: 50px;
-        line-height: 50px;
-    }
-    .multiple-lang div a {
-        font-size: 30px;
-        line-height: 30px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .beta {
-        top: 30px;
-        left: 15%;
-        font-size: 24px;
-        line-height: 30px;
-    }
-    .navbar {
-        padding-top: 15px;
-    }
-    .nav-link {
-        font-size: 30px;
-        line-height: 30px;
-        margin-bottom: 0;
-    }
-    .share-website {
-        margin-top: 15px;
-    }
-    .share-container p {
-        font-size: 25px;
-        line-height: 25px;
-        margin: 10px auto 15px;
-    }
-    .share-button {
-        font-size: 20px;
-        line-height: 20px;
-        padding: 10px;
-    }
-    .share-container {
-        padding: 10px;
-    }
-    .social-container {
-        margin-top: 25px;
-    }
-    .social-container p {
-        font-size: 25px;
-        line-height: 25px;  
-    }
-    .social-icon-link img {
-        width: 30px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .navburger {
-        position: absolute;
-        width: 100px;
-        height: 40px;
-        top: 11px;
-        right: 10px;
-        z-index: 1000;
-    }
-    /*.navburger span {
-        position: relative;
-        top: -7px;
-        font-size: 22px;
-        color: #edeff2;
-    }*/
-    .hamburger {
-        display: inline-block;
-    }
-    .menu-links {
-        -webkit-transition: 50ms;
-        -o-transition: 50ms;
-        transition: 50ms;
-    }
-    .menu-links a {
-        -webkit-transition: 50ms;
-        -o-transition: 50ms;
-        transition: 50ms
+        height: 20%;
     }
     .menu-links .closebtn {
-        position: absolute;
-        top: 11px;
-        right: 24px;
-        padding: 0;
-        background-image: url(../img/error.png);
-        background-size: 30px;
-        width: 30px;
-        height: 30px;
-        background-repeat: no-repeat
-    }
-    .nav-link {
-        text-align: center;
-        padding-left: 0;
-    }
-    .section {
-        padding-top: 60px;
-        padding-bottom: 20px;
-    }
-    .call-to-action-section {
-        height: 350px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .call-to-action-heading {
-        margin-bottom: 5px;
-        text-align: center;
-    }
-    .section-heading.centered {
-        margin-bottom: 10px;
-        font-size: 40px;
-    }
-    .section-subheading.center {
-        font-size: 20px;
-        line-height: 25px;
-    }
-    .form-wrapper.squeezed {
-        padding-right: 2%;
-        padding-left: 2%;
-    }
-    .hero-title-wrapper {
-        top: 60%;
+        top: 0.6%;
     }
     .hero-heading, .section-heading.centered {
-        font-size: 50px;
-        line-height: 50px;
-        margin-bottom: 20px;
+        font-size: 3.5rem;
+        margin-bottom : 0.1em;
     }
-    .hero-subheading {
+    .hero-subheading, .section-subheading.center {
         font-size: 1.8rem;
-        line-height: 1em;
-        width: 70%;
-        margin: auto;
-        margin-bottom: 20px;
     }
-    .hollow-button.white, .hollow-button.red {
-        font-size: 24px;
-        width: 70%;
-        margin-bottom: 10px;
+    .menu-links a {
+        padding: 0.6em 0;
     }
-    .main-news-title {
-        font-size: 80px;
-        line-height: 70px;
-        padding-top: 0;
-        margin-bottom: 20px;
+    
+    .bulletin-row-2 {
+        width: 26em;
+        height: 10em;
     }
-    .news-pgraph1 {
+    .title, .date-published{
         font-size: 1.8rem;
-        line-height: 1em;
-        padding: 0 20px;
-    }
-    .bulletin-text, .feedback-text, .call-to-action-heading {
-        font-size: 25px;
-        margin-bottom: 0;
-    }
-    .bulletin-pgraph {
-        margin-bottom: 15px;
-    }
-    .title {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding-left: 10px;
-        font-size: 25px;
-        line-height: 25px;
-    }
-    .row {
-        width: 100%;
-        height: 125px;
-    }
-    .bulletin-image {
-        background-size: cover;
-    }
-    .date-published {
-        margin-top: 10px;
-        margin-bottom: 5px;
-        padding-left: 10px;
-        font-size: 24px;
-    }
-    .column-2 {
-        padding-top: 5px;
-        padding-bottom: 5px;
     }
     .bulletin-download {
-        margin-left: 10px;
-        padding: 5px 10px;
-        font-size: 18px;
+        font-size: 1.2em;
     }
-    .w-col-5 {
-        text-align: left;
-    }
-    .column-3 {
-        padding-right: 10px;
-        padding-left: 20px;
-        margin-bottom: 65px;
-    }
-    .column-4 {
-        height: 65%;
-    }
-    .visit {
-        margin-right: 10px;
-        font-size: 18px;
-        text-align: center;
-        width: 46%;
-    }
-    .div-block {
-        margin-left: 0;
-    }
-    .section-title-group {
-        margin-bottom: 30px;
-    }
-    .welcome-pgraph {
-        font-size: 22px;
-        line-height: 30px;
-    }
-    .history {
-        font-size: 18px;
-        text-align: center;
-        width: 47%;
-    }
-    .group-photo-caption, .welcome-author {
-        font-size: 22px;
-    }
-    .container-3 {
-        height: 820px;
-    }
-    .column-5 {
-        margin-bottom: 15px;
-    }
-    .submit-button {
-        width: 100%;
-        text-align: center;
-    }
-    .text-field {
-        width: 100%;
-        text-align: center;
-    }
-    .nospam {
-        margin-top: -8px;
-        text-align: center;
-    }
-    .call-to-action-pgraph {
-        line-height: 22px;
-        text-align: left;
-    }
-    .contact-section {
-        padding-right: 2%;
-        padding-left: 2%;
-    }
-    .mission-statement-section {
-        height: 620px;
-        background-position: 41% 50%;
-    }
-    .bulletin-section {
-        padding-right: 10px;
-        padding-left: 10px;
-        text-align: left;
-    }
-    .bulletin-row {
-        height: 274px;
-    }
-    .feedback-section {
-        padding-right: 10px;
-        padding-left: 20px;
-    }
-    .feedback-text {
-        font-size: 23px;
-        line-height: 30px;
-    }
-    .feedback-container {
-        text-align: left;
-    }
-    .address {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        height: 1030px;
-        text-align: center;
-    }
-    .form-wrapper.squeezed {
-        margin-bottom: 30px;
-    }
-    .location {
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
-        background-color: #2e80b6;
-        border-radius: 0.2em;
-        padding: 30px 10px;
-    }
-    .googlemap {
-        -webkit-box-flex: 2;
-            -ms-flex: 2;
-                flex: 2;
-        margin-top: 30px;
-        padding-left: 0px;
-    }
-    .plan-visit {
-        padding-top: 0;
-    }
-    .container .title {
-        margin-bottom: 20px;
-    }
-    .title h1 {
-        font-size: 43px;
-        margin-bottom: 5px;
-    }
-    .title h3 {
-        font-size: 20px;
-        margin-top: 5px;
-    }
-    .close-button {
-        top: 2%;
-        font-size: 15px;
-    }
-    .form-field {
-        min-height: 35px;
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-    .text-area {
-        margin-bottom: 5px;
-    }
-    select {
-        height: 35px;
-        font-size: 16px;
-    }
-    #attendance-date {
-        width: 49%;
-        height: 35px;
-        font-size: 16px;
-        padding-top: 12px;
-    }
-    .attend-service {
-        display: none;
-    }
-    .select-date {
-        display: none;
-    }
-    .service-time {
-        width: 99.3%;
-    }
-    .button.plan-submit {
-        margin-top: 30%;
-        margin-bottom: 10%;
-        font-size: 18px;
-        padding: 10px 20px;
-    }
-    .news {
-        height: 130px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-    }
-    .news-image {
-        width: 150px;
-        height: 130px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border-top-right-radius: 0;
-    }
-    .newsdescription {
-        height: 131px;
-        top: -131px;
-        padding-left: 42%;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 0;
-    }
-    .card__share {
-        margin-top: -177px;
-        margin-right: 5px;
-    }
-    .main-news-description {
-        top: -400px;
-        height: 400px;
-    }
-    .main-news a .news-image {
-        height: 400px;
-        width: 100%;
-    }
-    .main-news {
-        height: 400px;
+    .column-3, .column-4 {
+        margin-bottom: 0;
     }
     #announcements {
-        height: 2360px;
+        padding: 4em 1em 8em;
     }
-    .googlemap iframe {
-        height: 400px;
+    .bible-verse, .bible-book {
+        font-size: 1.3rem;
     }
-    .verse-container {
-        width: 70%;
-        padding-top: 69%;
+    .footer-text {
+        font-size: 1rem;
     }
-    .bible-verse {
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .bible-book {
-        font-size: 25px;
-        line-height: 30px;
+    .footer.center {
+        padding: 0.3em 0;
     }
 }
 
 /* ----------- iPhone 6 PLUS Potrait----------- */
 
-@media screen and ( max-width: 420px ) and ( max-height: 740px ) {
-    .beta {
-        top: 25px;
-        left: 23%;
-        font-size: 18px;
-        line-height: 15px;
-        padding: 10px;
+@media screen and ( max-width: 420px ) {
+    html {font-size: 14px;}
+    .COGS-title h1, .navburger h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .hamburger {
+        background-size: 2.4rem;
+    }
+    .mobile-nav {
+        height: 12%;
+    }
+    .menu-links .closebtn {
+        top: 2.1%;
+        right: 11px;
+    }
+    .cogs-logo {
+        position: unset;
     }
     .brand-logo, .brand-logo p {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 2rem;
     }
     .multiple-lang {
-        margin-top: 5px;
+        margin-bottom: 30px;
     }
-    .multiple-lang div a {
-        font-size: 23px;
-        line-height: 22px;
+    .multiple-lang div a, .share-container p, .social-container p {
+        font-size: 1.6rem;
     }
-    .nav-link {
-        font-size: 25px;
-        padding: 15px 0;
-    }
-    .share-website {
-        margin-top: 20px;
+    .menu-links a {
+        font-size: 2rem;
+        padding: 1.2em 0;
     }
     .share-container {
-        padding: 20px 0;
+        padding: 4%;
+        flex-direction: column;
     }
     .share-container p {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    .web__share > .share-icon {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
         font-size: 18px;
-        line-height: 18px;
-        margin: 0 auto 15px;
     }
-    .share-button {
-        font-size: 15px;
+    .social-container {
+        margin-top: 40px;
     }
-    .social-container p {
-        font-size: 21px;
-        line-height: 21px;
-        margin-bottom: 5px;
+    
+    .hero-heading {
+        font-size: 6rem;
+        line-height: 0.9em;
+        margin-bottom: 20px;
     }
-    .social-icon-link img {
-        width: 26px;
-    }
-    .hero-title-wrapper {
-        top: 50%;
+    .section-heading.centered {
+        font-size: 4rem;
+        margin-bottom: 20px;
     }
     .hero-subheading {
-        font-size: 28px;
-        line-height: 35px;
-        width: 56%;
-        margin: 10px auto 25px;
+        font-size: 2.6rem;
+        line-height: 1em;
+        margin-bottom: 20px;
     }
-    .hollow-button.white, .hollow-button.red {
-        font-size: 20px;
-        width: 60%;
+    .section-subheading.center {
+        font-size: 1.6rem;
+    }
+    .column-3 {
+        height: 100%;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .welcome-pgraph, .welcome-author, .group-photo-caption {
+        font-size: 1.4rem;
+    }
+    .div-block {
+        margin-top: 2em;
+        left: 20px;
+    }
+    .column-4 {
+        height: 90%;
+    }
+    .photo-pcc {
+        max-width: 95%;
+    }
+    .bulletin-text, .feedback-text, .call-to-action-heading{
+        font-size: 1.7rem;
+    }
+    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+        font-size: 1.4rem;
+    }
+    
+    .bulletin-row-2 {
+        width: 22em;
+        height: 8em;
+    }
+    .title, .date-published {
+        font-size: 1.5rem;
+    }
+    .date-published {
+        margin: 0.4em 0;
+    }
+    .bulletin-download {
+        font-size: 1rem;
+    }
+    
+    .plan-visit {
+        padding-top: 25%;
+    }
+    .close-button {
+        padding: 7px 10px;
+    }
+    .title h1 {
+        display: block;
+    }
+    .plan-visit .form-container .form-row .form-field {
+        height: 40px
+    }
+    .plan-visit .form-field.text-area {
+        min-height: 130px;
+    }
+    .plan-visit form .button.full-width {
+        margin-top: 1px;
+        padding: 5px;
+    }
+    select, #attendance-date, .attend-service, .service-time {
+        padding: 0 10px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    .form-container {
+        flex-direction: column;
+    }
+    .reduce-width {
+        width: 100%;
+    }
+    .selection {
+        height: 135px;
+    }
+    
+    .main-news {
+        margin-bottom: 15px;
+        height: 300px;
+    }
+    .main-news-description {
+        top: -300px;
+    }
+    .main-news-title {
+        font-size: 5rem;
+        line-height: 1em;
+        padding-top: 15%;
+        margin-bottom: 15px;
+    }
+    .news-pgraph1 {
+        font-size: 1.6rem;
+        padding: 0 20px;
+        line-height: 1.3em;
+    }
+    .newsdescription {
+        padding: 15px;
+    }
+    .newsdescription .top-news-title, .news-pgraph2 {
+        font-size: 1.3rem;
+        line-height: 1.2em;
+        margin-bottom: 2px;
+    }
+    .news-pgraph2 {
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding-right: 30px;
+    }
+    .news-container {
+        height: 1700px;
+    }
+    .top-news {
+        height: 1500px;
+    }
+    .news {
+        height: 110px;
+    }
+    .news-image {
+        width: 33.6%;
+    }
+    .newsdescription {
+        top: -110px;
+        height: 110px;
+        left: 34%;
+        width: 66%;
+    }
+    .card__share {
+        top: -160px;
+    }
+    .card__social--active {
+        transform: translateX(-10px);
+    }
+    .form-wrapper.squeezed {
+        margin-bottom: 40px;
+    }
+    .address {
+        height: 66em;
+    }
+    .location h2, .contact-info h2, .office-hour h2 {
+        font-size: 2.5rem;
+        margin: 20px auto 10px;
+    }
+    address, .contact-info p, .office-hour p {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    .form-field {
+        padding: 5px 10px;
+    }
+    .form-field, .send-message-button.full-width, .direction-button {
+        font-size: 1.2rem;
+    }
+    .googlemap iframe {
+        height: 24em;
+    }
+    .bible-verse, .bible-book {
+        font-size: 2rem;
+    }
+    .verse-container {
+        top: 50%;
+    }
+    .footer-text {
+        font-size: 1.2rem;
+    }
+    .footer.center {
+        padding: 0.8em 0;
+    }
+    
+    .submit-button, .cogs-news-form > .text-field {
+        font-size: 1.1rem;
+    }
+    .nospam {
+        font-weight: 1.2rem;
+        font-weight: 300;
     }
 }
 
-/* ----------- iPhone 7 Potrait ----------- */
+/* ----------- iPhone 7, iPhone 6 PLUS Potrait ----------- */
 
 @media screen and ( max-width: 420px ) and ( max-height: 630px ) {
-
+    .plan-visit {
+        padding-top: 10%;
+    }
+    .menu-links a {
+        font-size: 1.5rem;
+    }
+    .menu-links .closebtn {
+        top: 1.7%;
+        right: 10px;
+    }
+    .share-container {
+        padding: 2%;
+    }
+    .social-container {
+        margin-top: 20px;
+    }
+    .social-container p {
+        font-size: 1.3rem;
+        padding-right: 5px;
+        margin-bottom: 5px;
+    }
+    .social-icon-link img {
+        width: 1.7rem;
+    }
 }
 
 /* ----------- iPhone 6  Potrait----------- */
 
-@media screen and ( max-width: 380px ) and ( max-height: 670px ) {
-    
+@media screen and ( max-width: 380px ) {
+    html {font-size: 12px;}
+    .brand-logo, .brand-logo p {
+        font-size: 2.3rem;
+    }
+    .menu-links .closebtn {
+        top: 2%;
+        right: 5px;
+    }
+    .share-website {
+        margin-top: 25px;
+    }
+    .share-button {
+        font-size: 1.4rem;
+    }
+    .share-container {
+        padding: 3%;
+    }
+    .social-container {
+        margin-top: 30px;
+    }
+    .bulletin-row-2 {
+        width: 19.5em;
+    }
+    .title, .date-published {
+        padding-left: 10px;
+    }
+    .bulletin-download {
+        font-size: 1.3rem;
+        margin-left: 10px;
+        padding: 10px;
+        line-height: 1em;
+    }
+    .column-3 {
+        height: 95%;
+    }
+    .main-news-title {
+        padding-top: 20%;
+    }
+    .card__social {
+        width: 170px;
+    }
+    .card__share {
+        top: -155px;
+        right: 10px;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 15px;
+        margin-left: 0;
+    }
+    .address {
+        height: 60em;
+    }
+    .location h2, .contact-info h2, .office-hour h2 {
+        font-size: 2.3rem;
+    }
+    address, .contact-info p, .office-hour p {
+        font-size: 1.5rem;
+    }
+}
+
+/* ----------- iPhone 6  Potrait----------- */
+
+@media screen and ( max-width: 380px ) and ( max-height: 560px ) {
+    .menu-links a {
+        font-size: 1.8rem;
+    }
+    .menu-links .closebtn {
+        top: 1.5%;
+        right: 5px;
+    }
+}
+
+/* ----------- iPhone 6 Potrait ----------- */
+
+@media screen and ( max-width: 380px ) and ( max-height: 540px ) {
+    html {font-size: 11px}
+    .menu-links .closebtn {
+        top: 1.7%;
+        right: 0;
+    }
+    .social-container {
+        margin-top: 20px;
+    }
+    .social-container p {
+        font-size: 1.5rem;
+        margin-bottom: -2px;
+    }
+    .social-icon-link img {
+        font-size: 2rem;
+    }
+    .multiple-lang {
+        margin-bottom: 20px;
+    }
+    .menu-links a {
+        padding: 1em 0;
+    }
+    .hero-subheading {
+        font-size: 2rem;
+    }
+    .column-3 {
+        height: 75%;
+    }
+    .plan-visit {
+        padding-top: 0;
+    }
+    .plan-visit .form-container .form-row .form-field, .plan-visit .form-field.text-area, select, #attendance-date, .attend-service, .service-time, .plan-visit form .button.full-width {
+        font-size: 1.3rem;
+    }
+    .address {
+        height: 57em;
+    }
 }
 
 /* ----------- iPhone 6S Potrait ----------- */
 
 @media screen and ( max-width: 380px ) and ( max-height: 540px ) {
-    
+    .plan-visit .form-container .form-row .form-field, select, #attendance-date, .attend-service, .service-time {
+        height: 35px;
+    }
+    .selection {
+        height: 120px;
+    }
 }
 
 /* ----------- Galaxy Note 3 Potrait  ----------- */
 
 @media screen and ( max-width: 360px ) and ( max-height: 640px ) {
-    
+    .menu-links a {
+        font-size: 1.8rem;
+    }
+    .social-container {
+        margin-top: 30px;
+    }
+    .plan-visit {
+        padding-top: 15%;
+    }
+    .card__social {
+        width: 165px;
+    }
+    .column-4 {
+        height: 80%;
+    }
+    .news-container {
+        height: 1580px;
+    }
+    .top-news {
+        height: 1330px;
+    }
+    .news {
+        height: 100px;
+    }
+    .newsdescription {
+        top: -100px;
+        height: 100px;
+    }
 }
 
 /* ----------- VIVO 5, S Note 3 Neo Potrait  ----------- */
 
 @media screen and ( max-width: 360px ) and ( max-height: 560px ) {
-    
+    .plan-visit {
+        padding-top: 5%;
+    }
+    .share-container {
+        padding: 4% 2%;
+    }
+    .card__share {
+        top: -150px;
+    }
 }
 
 /* ----------- HuaWei Mate9 Potrait  ----------- */
 
 @media screen and ( max-width: 360px ) and ( max-height: 530px ) {
+    .social-container {
+        margin-top: 12px;
+    }
+    .plan-visit .form-container .form-row .form-field, select, #attendance-date, .attend-service, .service-time {
+        height: 30px;
+    }
+    .menu-links a {
+        font-size: 1.7rem;
+    }
+    .menu-links .closebtn {
+        top: 1.4%;
+    }
+    .multiple-lang {
+        margin-bottom: 15px;
+    }
     
 }
 
@@ -4122,7 +4856,7 @@ address,
     
 }
 
-@media screen and (min-height: 736px) and (max-height: 737px) {
+/*@media screen and (min-height: 736px) and (max-height: 737px) {
     .nav-link {
         font-size: 28px;
         padding: 20px 0;
@@ -4181,7 +4915,7 @@ address,
     .social-container p {
         font-size: 22px;
     }
-    /*end of mobile nav styling*/
+   
     
     .hero-title-wrapper {
         top: 44%;
@@ -4197,7 +4931,7 @@ address,
         font-size: 18px;
         width: 62%;
     }
-    /*End of Home Section*/
+  
     .bulletin-text, .feedback-text, .call-to-action-heading {
         font-size: 22px;
     }
@@ -4220,7 +4954,7 @@ address,
         font-size: 16px;
         margin-left: 15px;
     }
-    /*End of Bulletin Section*/
+   
     .welcome-pgraph, .welcome-author {
         font-size: 20px;
         line-height: 25px;
@@ -4235,7 +4969,7 @@ address,
     .group-photo-caption {
         font-size: 18px;
     }
-    /*End of Welcome-Message Section */
+   
     .news-pgraph1 {
         font-size: 30px;
         line-height: 34px;
@@ -4253,7 +4987,7 @@ address,
         height: 35px;
         line-height: 35px;
     }
-    /*End of Announcement Section */
+    
     .call-to-action-section {
         height: 300px;
     }
@@ -4268,7 +5002,7 @@ address,
     .align-right {
         margin-top: 0;
     }
-    /*End of COGS Newsletter Section */
+   
     .form-wrapper.squeezed {
         margin-bottom: 50px;
     }
@@ -4278,7 +5012,7 @@ address,
     .bible-verse {
         line-height: 35px;
     }
-    /*End of Contact Us Section */
+    
     .mission-statement-section {
         height: 580px;
     }
@@ -4343,7 +5077,7 @@ address,
         font-size: 18px;
         width: 70%;
     }
-    /*End of Home Page Section*/
+  
     .plan-visit {
         padding-top: 5%;
     }
@@ -4382,7 +5116,7 @@ address,
     .button.plan-submit {
         margin-top: 26%;
     }
-    /*End of Welcome Message Section*/
+    
     .section-heading.centered {
         font-size: 48px;
         line-height: 48px;
@@ -4400,7 +5134,7 @@ address,
     .newsdescription {
         padding-left: 42%;
     }
-    /*End of Announcement Section*/
+    
     .location h2, .contact-info h2, .office-hour h2 {
         font-size: 30px;
         line-height: 30px;
@@ -4644,7 +5378,7 @@ address,
         line-height: 16px;
     }
 }
-*/
+
 @media screen and (max-width: 320px) {
     .mobile-container {
         padding: 0 20px;
@@ -4728,7 +5462,7 @@ address,
     .social-icon-link img {
         width: 23px;
     }
-    /*End of Home Page Section*/
+    
     .bulletin-row {
         height: 260px;
     }
@@ -4745,7 +5479,7 @@ address,
     .bulletin-download {
         margin-top: 5px;
     }
-    /*End of Bulletin Section */
+    
     .div-block {
         margin-top: 20px;
     }
@@ -4786,7 +5520,7 @@ address,
         margin-top: 30%;
         font-size: 17px;
     }
-    /*End of Welcome Message Section*/
+    
     .main-news-title {
         font-size: 65px;
         line-height: 65px;
@@ -4827,7 +5561,7 @@ address,
     }
 }
 
-/*
+
 @media screen and (max-height: 480px) {
     .mobile-container {
         padding: 0 20px;

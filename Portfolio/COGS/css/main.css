@@ -4411,10 +4411,10 @@ address,
         margin-bottom: 10px;
     }
     .web__share > .share-icon {
-        width: 42px;
-        height: 42px;
-        line-height: 42px;
-        font-size: 20px;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 18px;
     }
     .social-container {
         margin-top: 40px;
@@ -4624,7 +4624,7 @@ address,
         right: 10px;
     }
     .share-container {
-        padding: 2%:
+        padding: 2%;
     }
     .social-container {
         margin-top: 20px;
@@ -4652,6 +4652,15 @@ address,
     }
     .share-website {
         margin-top: 25px;
+    }
+    .share-button {
+        font-size: 1.4rem;
+    }
+    .share-container {
+        padding: 3%;
+    }
+    .social-container {
+        margin-top: 30px;
     }
     .bulletin-row-2 {
         width: 19.5em;
@@ -4710,20 +4719,39 @@ address,
 
 /* ----------- iPhone 6 Potrait ----------- */
 
-@media screen and ( max-width: 380px ) and ( max-height: 560px ) {
-    html {font-size: 10px}
+@media screen and ( max-width: 380px ) and ( max-height: 540px ) {
+    html {font-size: 11px}
     .menu-links .closebtn {
         top: 1.7%;
         right: 0;
     }
+    .social-container {
+        margin-top: 20px;
+    }
     .social-container p {
+        font-size: 1.5rem;
         margin-bottom: -2px;
+    }
+    .social-icon-link img {
+        font-size: 2rem;
+    }
+    .multiple-lang {
+        margin-bottom: 20px;
+    }
+    .menu-links a {
+        padding: 1em 0;
     }
     .hero-subheading {
         font-size: 2rem;
     }
     .column-3 {
         height: 75%;
+    }
+    .plan-visit {
+        padding-top: 0;
+    }
+    .plan-visit .form-container .form-row .form-field, .plan-visit .form-field.text-area, select, #attendance-date, .attend-service, .service-time, .plan-visit form .button.full-width {
+        font-size: 1.3rem;
     }
     .address {
         height: 57em;
@@ -4733,24 +4761,79 @@ address,
 /* ----------- iPhone 6S Potrait ----------- */
 
 @media screen and ( max-width: 380px ) and ( max-height: 540px ) {
-    
+    .plan-visit .form-container .form-row .form-field, select, #attendance-date, .attend-service, .service-time {
+        height: 35px;
+    }
+    .selection {
+        height: 120px;
+    }
 }
 
 /* ----------- Galaxy Note 3 Potrait  ----------- */
 
 @media screen and ( max-width: 360px ) and ( max-height: 640px ) {
-    
+    .menu-links a {
+        font-size: 1.8rem;
+    }
+    .social-container {
+        margin-top: 30px;
+    }
+    .plan-visit {
+        padding-top: 15%;
+    }
+    .card__social {
+        width: 165px;
+    }
+    .column-4 {
+        height: 80%;
+    }
+    .news-container {
+        height: 1580px;
+    }
+    .top-news {
+        height: 1330px;
+    }
+    .news {
+        height: 100px;
+    }
+    .newsdescription {
+        top: -100px;
+        height: 100px;
+    }
 }
 
 /* ----------- VIVO 5, S Note 3 Neo Potrait  ----------- */
 
 @media screen and ( max-width: 360px ) and ( max-height: 560px ) {
-    
+    .plan-visit {
+        padding-top: 5%;
+    }
+    .share-container {
+        padding: 4% 2%;
+    }
+    .card__share {
+        top: -150px;
+    }
 }
 
 /* ----------- HuaWei Mate9 Potrait  ----------- */
 
 @media screen and ( max-width: 360px ) and ( max-height: 530px ) {
+    .social-container {
+        margin-top: 12px;
+    }
+    .plan-visit .form-container .form-row .form-field, select, #attendance-date, .attend-service, .service-time {
+        height: 30px;
+    }
+    .menu-links a {
+        font-size: 1.7rem;
+    }
+    .menu-links .closebtn {
+        top: 1.4%;
+    }
+    .multiple-lang {
+        margin-bottom: 15px;
+    }
     
 }
 

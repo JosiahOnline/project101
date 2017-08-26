@@ -645,12 +645,12 @@
         $(document).ready(function() {
             $(".visit").click(function() {
                 $(".plan-visit").css('display', 'block');
-                $(".plan-visit").css('overflow-x', 'scroll');
+                $(".plan-visit").css('overflow-y', 'scroll');
 
             });
             $(".close-button").click(function() {
                 $(".plan-visit").css('display', 'none');
-                $(".plan-visit").css('overflow-x', 'hidden');
+                $(".plan-visit").css('overflow-y', 'hidden');
             });
             $('.card__share > a').on('click', function(e) {
                 e.preventDefault() // prevent default action - hash doesn't appear in url
@@ -666,12 +666,12 @@
 
         function openNav() {
             document.getElementById("mNav").style.display = "block";
-            document.getElementById("mNav").style.overflowX = "scroll";
+            document.getElementById("mNav").style.overflowY = "scroll";
         }
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
         function closeNav() {
             document.getElementById("mNav").style.display = "none";
-            document.getElementById("mNav").style.overflowX = "hidden";
+            document.getElementById("mNav").style.overflowY = "hidden";
         }
 
     </script>

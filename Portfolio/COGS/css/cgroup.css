@@ -7,7 +7,7 @@ body {
 }
 
 section {
-    background-color: rgba(20,30,40,0.3);
+    background-color: rgba(20, 30, 40, 0.3);
     height: 104vh;
 }
 
@@ -16,9 +16,11 @@ section {
     font-family: 'Merriweather', serif;
     margin: 22% auto 0;
 }
+
 .bible-words h3 {
     margin: 20px auto;
 }
+
 .scroll-down {
     font-family: 'Merriweather', serif;
     color: white;
@@ -29,11 +31,12 @@ section {
     margin-top: 150px;
 }
 
-.group-container >h1 {
+.group-container>h1 {
     font-size: 80px;
     font-weight: 500;
     color: black;
 }
+
 .group-details {
     border-collapse: collapse;
     width: 80%;
@@ -42,7 +45,8 @@ section {
     overflow: hidden;
 }
 
-.group-details td, .group-details th {
+.group-details td,
+.group-details th {
     border: 2px solid #ddd;
     padding: 8px;
     text-align: left;
@@ -53,7 +57,7 @@ section {
     color: white;
 }
 
-.group-details tr{
+.group-details tr {
     background-color: #F6F7F8;
 }
 
@@ -78,6 +82,7 @@ section {
 .section-title-group {
     margin-bottom: 62px;
 }
+
 .section-heading {
     margin-top: 0px;
     margin-bottom: 16px;
@@ -112,13 +117,13 @@ section {
     border: 0px solid #000;
     border-radius: 4px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     font-size: 20px;
 }
 
 .form-field:focus {
     -webkit-box-shadow: 0 0 0 1px #2e80b6;
-            box-shadow: 0 0 0 1px #2e80b6;
+    box-shadow: 0 0 0 1px #2e80b6;
 }
 
 .form-field.text-area {
@@ -150,6 +155,7 @@ section {
 .contact-us {
     padding-bottom: 50px;
 }
+
 .w-container {
     margin-left: auto;
     margin-right: auto;
@@ -211,6 +217,7 @@ section {
 .w-col-7 {
     width: 58.33333333%
 }
+
 .w-input {
     display: block;
     width: 100%;
@@ -282,12 +289,13 @@ textarea.w-input {
     cursor: pointer;
     border-radius: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 input.w-button {
     -webkit-appearance: button
 }
+
 .button {
     display: inline-block;
     padding: 12px 20px;
@@ -313,26 +321,31 @@ input.w-button {
     background-color: #23B5D3;
     font-size: 20px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .button.full-width:hover {
     background-color: #EA526F;
 }
+
 .success-message {
     text-align: center;
 }
+
 .paragraph-form {
     margin-bottom: 0px;
 }
+
 .social-container {
     position: initial;
     background-color: #070600;
 }
 
+
 /*Share Info*/
+
 .share-info {
-    background-color:#070600;
+    background-color: #070600;
     padding: 20px 0;
 }
 
@@ -361,12 +374,12 @@ input.w-button {
     text-transform: uppercase;
     font-weight: 500;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     -webkit-transition: -webkit-transform 1s ease;
     transition: -webkit-transform 1s ease;
     -o-transition: transform 1s ease;
@@ -377,13 +390,14 @@ input.w-button {
 .share-button:hover {
     background-color: #EA526F;
 }
+
 .web__share {
     display: none;
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     -webkit-transition: -webkit-transform 0.35s ease;
     transition: -webkit-transform 0.35s ease;
     -o-transition: transform 0.35s ease;
@@ -419,13 +433,13 @@ input.w-button {
     transition: all 0.3s ease;
     outline: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .share-icon:hover,
 .share-icon:focus {
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);

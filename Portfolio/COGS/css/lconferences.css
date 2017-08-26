@@ -1,10 +1,13 @@
-body, html {
+body,
+html {
     padding: 0;
     margin: 0;
     font-family: 'Merriweather', serif;
 }
 
+
 /*Navbar Styling*/
+
 a:hover {
     text-decoration: none;
 }
@@ -23,7 +26,7 @@ a:hover {
     color: white;
 }
 
-.navbar a > p {
+.navbar a>p {
     padding: 7px 12px 5px;
     font-size: 18px;
     background-color: #23B5D3;
@@ -32,10 +35,12 @@ a:hover {
     margin-bottom: 0;
 }
 
+
 /*End of Navbar Styling*/
 
 
 /*Carousel*/
+
 .carousel {
     margin-top: 20px;
 }
@@ -47,20 +52,22 @@ a:hover {
     width: 100%;
     text-align: center;
 }
-.carousel .title > h1 {
+
+.carousel .title>h1 {
     width: 25%;
     margin: 0 auto;
-    background-color: rgba(20,30,40,0.5);
+    background-color: rgba(20, 30, 40, 0.5);
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 25px;
     line-height: 25px;
-   
 }
+
 .carousel-indicators {
     bottom: -50px;
 }
+
 .carousel-indicators li {
     height: 6px;
 }
@@ -88,9 +95,10 @@ a:hover {
 }
 
 section.main {
-    background-color: rgba(20,30,40,1);
+    background-color: rgba(20, 30, 40, 1);
     height: 100vh;
 }
+
 
 /*Share This Page Section*/
 
@@ -130,12 +138,12 @@ section.main {
     text-transform: uppercase;
     font-weight: 500;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     -webkit-transition: -webkit-transform 1s ease;
     transition: -webkit-transform 1s ease;
     -o-transition: transform 1s ease;
@@ -143,16 +151,18 @@ section.main {
     transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
-.navbar > a p:hover, .share-button:hover {
+.navbar>a p:hover,
+.share-button:hover {
     background-color: #EA526F;
 }
+
 .web__share {
     display: none;
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     -webkit-transition: -webkit-transform 0.35s ease;
     transition: -webkit-transform 0.35s ease;
     -o-transition: transform 0.35s ease;
@@ -188,13 +198,13 @@ section.main {
     transition: all 0.3s ease;
     outline: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .share-icon:hover,
 .share-icon:focus {
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);

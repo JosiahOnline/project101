@@ -105,7 +105,7 @@ img {
     cursor: pointer;
     border-radius: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 input.w-button {
@@ -294,23 +294,9 @@ textarea.w-input {
     height: auto
 }
 
-.w-container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 940px
-}
 
-.w-container:before,
-.w-container:after {
-    content: " ";
-    display: table
-}
 
-.w-container:after {
-    clear: both
-}
-
-.w-container .w-row {
+.w-row {
     margin-left: -10px;
     margin-right: -10px
 }
@@ -356,15 +342,11 @@ textarea.w-input {
     width: 58.33333333%
 }
 
-@media screen and (max-width: 991px) {
-    .w-container {
-        max-width: 728px
-    }
-}
+
 
 @media screen and (max-width: 767px) {
     .w-row,
-    .w-container .w-row {
+    .w-row {
         margin-left: 0;
         margin-right: 0
     }
@@ -379,9 +361,6 @@ textarea.w-input {
 }
 
 @media screen and (max-width: 479px) {
-    .w-container {
-        max-width: none
-    }
     .w-col {
         width: 100%
     }
@@ -455,7 +434,7 @@ p {
     background-color: #2e80b6;
     font-size: 20px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .button.full-width:hover {
@@ -495,18 +474,16 @@ p {
     margin-top: 32px;
     text-align: right;
 }
-.call-to-action-form {
-    
-}
+
+.call-to-action-form {}
+
 .hero-heading {
     margin-bottom: 0.45em;
     color: #fff;
     font-size: 4rem;
     font-weight: 500;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     text-shadow: 1px 3px 8px #000;
-    
 }
 
 .hero-subheading {
@@ -542,7 +519,7 @@ p {
     background-color: #2e80b6;
     color: #fff;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .hollow-button.white:hover {
@@ -556,7 +533,7 @@ p {
     background-color: #cf404d;
     color: #fff;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .hollow-button.red:hover {
@@ -599,13 +576,13 @@ p {
     border: 0px solid #000;
     border-radius: 0.2em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     font-size: 1rem;
 }
 
 .form-field:focus {
     -webkit-box-shadow: 0 0 0 1px #2e80b6;
-            box-shadow: 0 0 0 1px #2e80b6;
+    box-shadow: 0 0 0 1px #2e80b6;
 }
 
 .form-field.text-area {
@@ -649,8 +626,8 @@ p {
 
 .hero-title-wrapper {
     position: relative;
-        top: 82%;
-        transform: perspective(1px) translateY(-82%);
+    top: 82%;
+    transform: perspective(1px) translateY(-82%);
     text-align: center;
 }
 
@@ -698,8 +675,8 @@ h3 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .form-row {
@@ -726,9 +703,8 @@ h3 {
     cursor: pointer;
     background-color: #cf404d;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
-
 
 .selection {
     display: -webkit-box;
@@ -738,11 +714,11 @@ h3 {
     height: 50px;
     margin: auto;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 15px;
 }
 
@@ -757,7 +733,7 @@ select {
     border-radius: 2px;
     border-width: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .attend-service,
@@ -780,7 +756,7 @@ select {
     padding: 10px;
     border-width: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .main-nav {
@@ -875,12 +851,15 @@ select {
 .social-container p:hover {
     color: #f9c635;
 }
+
 .social-icon-link img {
     width: 1.4rem;
 }
+
 .navbar {
     padding-top: 10%;
 }
+
 .nav-link {
     display: block;
     padding: 1.1em 0px;
@@ -937,7 +916,7 @@ select {
     text-align: left;
 }
 
-.bulletin-row-2 {
+.bulletin-row {
     width: 20rem;
     height: 7rem;
     border: 1px solid #edeff2;
@@ -956,9 +935,11 @@ select {
     background-position: 50% 50%;
     background-size: cover;
 }
+
 .bulletin-description {
     flex: 1;
 }
+
 .date-published {
     display: block;
     margin: 0.4em 0;
@@ -987,6 +968,7 @@ select {
 .bulletin-download:hover {
     background-color: #2e80b6;
 }
+
 .share-website {
     padding: 10px;
     margin: auto;
@@ -1023,12 +1005,12 @@ select {
     text-transform: uppercase;
     font-weight: 400;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     -webkit-transition: -webkit-transform 1s ease;
     transition: -webkit-transform 1s ease;
     -o-transition: transform 1s ease;
@@ -1037,7 +1019,7 @@ select {
 }
 
 .share-button:hover {
-    background-color: #cf404d;   
+    background-color: #cf404d;
 }
 
 .row-2 {
@@ -1060,7 +1042,6 @@ select {
     padding: 0.6em 1.2em;
     border-radius: 0.2em;
     background-color: #cf404d;
-    
 }
 
 .visit:hover {
@@ -1109,7 +1090,7 @@ select {
 .photo-pcc {
     border-radius: 0.2em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .welcome-author {
@@ -1148,7 +1129,7 @@ select {
 .submit-button {
     display: inline-block;
     font-size: 1rem;
-    padding: 0.6em 1em ;
+    padding: 0.6em 1em;
     margin-top: 0;
     border-radius: 0.2em;
     background-color: #f36;
@@ -1167,7 +1148,6 @@ select {
     margin-bottom: 0;
     margin-right: 10px;
     border-radius: 0.2em;
-    
 }
 
 .form {
@@ -1213,7 +1193,7 @@ select {
     height: 500px;
     margin-bottom: 30px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .main-news:hover .main-news-description {
@@ -1230,11 +1210,11 @@ select {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     height: 900px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .news {
@@ -1243,7 +1223,7 @@ select {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .news a {
@@ -1269,6 +1249,7 @@ select {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
 .resize-img1 {
     width: 220px;
 }
@@ -1284,7 +1265,7 @@ select {
     color: white;
     border-radius: 2px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .newsdescription {
@@ -1297,7 +1278,7 @@ select {
     border-bottom-right-radius: 5px;
     padding: 0.5em 1em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .newsdescription .top-news-title,
@@ -1330,7 +1311,8 @@ select {
     font-size: 2.1rem;
 }
 
-.news-pgraph1 span, .feedback-pgraph span a {
+.news-pgraph1 span,
+.feedback-pgraph span a {
     color: #f36;
     font-weight: 700;
     text-decoration: underline;
@@ -1340,6 +1322,7 @@ select {
     color: #f36;
     font-weight: 700;
 }
+
 .fa-whatsapp {
     background-color: #25D366;
 }
@@ -1347,16 +1330,17 @@ select {
 .web__share {
     display: none;
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     -webkit-transition: -webkit-transform 0.35s ease;
     transition: -webkit-transform 0.35s ease;
     -o-transition: transform 0.35s ease;
     transition: transform 0.35s ease;
     transition: transform 0.35s ease, -webkit-transform 0.35s ease;
 }
+
 .card__share {
     display: none;
     float: right;
@@ -1373,10 +1357,10 @@ select {
     visibility: hidden;
     width: 170px;
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     -webkit-transition: -webkit-transform 0.35s ease;
     transition: -webkit-transform 0.35s ease;
     -o-transition: transform 0.35s ease;
@@ -1385,19 +1369,19 @@ select {
 }
 
 .card__social--active {
-		visibility: visible;
-		/*z-index: 3;*/
-		-webkit-transform: translateZ(0);
-		        transform: translateZ(0);
- 		-webkit-transform: translateX(-48px);
- 		    -ms-transform: translateX(-48px);
- 		        transform: translateX(-48px);
-  		-webkit-transition: -webkit-transform 0.35s ease;
-  		transition: -webkit-transform 0.35s ease;
-  		-o-transition: transform 0.35s ease;
-  		transition: transform 0.35s ease;
-  		transition: transform 0.35s ease, -webkit-transform 0.35s ease;
-	}
+    visibility: visible;
+    /*z-index: 3;*/
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translateX(-48px);
+    -ms-transform: translateX(-48px);
+    transform: translateX(-48px);
+    -webkit-transition: -webkit-transform 0.35s ease;
+    transition: -webkit-transform 0.35s ease;
+    -o-transition: transform 0.35s ease;
+    transition: transform 0.35s ease;
+    transition: transform 0.35s ease, -webkit-transform 0.35s ease;
+}
 
 .share-toggle {
     z-index: 200;
@@ -1427,13 +1411,13 @@ select {
     transition: all 0.3s ease;
     outline: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .share-icon:hover,
 .share-icon:focus {
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -1469,8 +1453,6 @@ select {
     color: #eee;
 }
 
-
-
 .container-2 {
     background-color: #141e28;
 }
@@ -1485,19 +1467,19 @@ select {
 
 .location {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     background-color: #2e80b6;
     border-radius: 0.2em;
     padding: 2em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .googlemap {
     -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    -ms-flex: 2;
+    flex: 2;
     padding-left: 10px;
 }
 
@@ -1506,7 +1488,7 @@ select {
     height: 27.4em;
     border-radius: 0.2em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 address,
@@ -1536,7 +1518,7 @@ address,
     font-size: 1rem;
     text-align: center;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .direction-button:hover {
@@ -1607,7 +1589,7 @@ address,
     background-color: rgba(1, 1, 1, .38);
 }
 
-.container-3 {
+.welcome-container {
     margin-bottom: 30px;
 }
 
@@ -1617,7 +1599,7 @@ address,
     background-color: #141e28;
 }
 
-.bulletin-row-1 {
+.bulletin-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1627,9 +1609,11 @@ address,
     padding: 0 40px 10px;
     flex: 1;
 }
+
 .bulletin-container-2 {
     flex: 1;
 }
+
 .bulletin-text {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -1671,11 +1655,13 @@ address,
     line-height: 1.2em;
 }
 
+
 /* ----------- Laptop with HiDPI ----------- */
 
-@media screen and ( max-width: 1441px ) {
-    
-    html {font-size: 22px;}
+@media screen and ( max-width: 1441px) and (orientation: landscape) {
+    html {
+        font-size: 22px;
+    }
     /*main navigation*/
     .main-nav {
         padding-top: 6%;
@@ -1685,7 +1671,8 @@ address,
         left: -6px;
         font-size: 0.8rem;
     }
-    .brand-logo, .brand-logo p {
+    .brand-logo,
+    .brand-logo p {
         font-size: 1.9rem;
     }
     .multiple-lang div a {
@@ -1713,7 +1700,7 @@ address,
         padding-top: 15%;
     }
     .address {
-       height: 34em; 
+        height: 34em;
     }
     .googlemap iframe {
         height: 30.2em;
@@ -1723,14 +1710,18 @@ address,
     }
 }
 
+
 /* ----------- iPad Pro Landscape ----------- */
 
-@media screen and ( max-width: 1370px ) {
-    html {font-size: 25px;}
+@media screen and ( max-width: 1370px) and (orientation: landscape) {
+    html {
+        font-size: 25px;
+    }
     .main-nav {
         padding-top: 8%;
     }
-    .brand-logo, .brand-logo p {
+    .brand-logo,
+    .brand-logo p {
         font-size: 1.8rem;
     }
     .multiple-lang div a {
@@ -1751,7 +1742,7 @@ address,
     .share-button {
         font-size: 0.7rem;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         height: 8rem;
     }
     .title {
@@ -1781,7 +1772,6 @@ address,
     .submit-button {
         padding: 0.66em 1em;
     }
-    
     .address {
         height: 37em;
     }
@@ -1790,10 +1780,13 @@ address,
     }
 }
 
+
 /* ----------- Aspire E1 Laptop Landscape ----------- */
 
-@media screen and ( max-width: 1370px ) {
-    html {font-size: 18px;}
+@media screen and ( max-width: 1370px) and (max-height: 670px) {
+    html {
+        font-size: 18px;
+    }
     .main-nav {
         padding-top: 2%;
     }
@@ -1837,7 +1830,6 @@ address,
     .div-block {
         margin-top: 3em;
     }
-    
     .top-news-title {
         font-size: 1rem;
     }
@@ -1850,7 +1842,6 @@ address,
     .call-to-action-section {
         padding: 50px;
     }
-    
     .address {
         height: 30em;
     }
@@ -1859,10 +1850,16 @@ address,
     }
 }
 
+
 /* ----------- Laptop with Touch ----------- */
 
-@media screen and ( max-width: 1281px ) {
-    html {font-size: 22px;}
+@media screen and ( max-width: 1280px) {
+    html {
+        font-size: 22px;
+    }
+    .main-nav {
+        padding-top: 10%;
+    }
     .share-website {
         margin-top: 14%;
     }
@@ -1883,9 +1880,10 @@ address,
     }
 }
 
+
 /* ----------- Laptop with MDPI screen----------- */
 
-@media screen and ( max-width: 1281px ) {
+@media screen and ( max-width: 1280px) and (max-height: 800px) {
     .main-nav {
         padding-top: 4%;
     }
@@ -1909,10 +1907,13 @@ address,
     }
 }
 
+
 /* ----------- S Tab 10.1 Landscape ----------- */
 
-@media screen and ( max-width: 1280px ) {
-    html {font-size: 18px;}
+@media screen and ( max-width: 1281px) and (max-height: 670px) {
+    html {
+        font-size: 18px;
+    }
     .main-nav {
         padding-top: 2%;
     }
@@ -1945,9 +1946,10 @@ address,
     }
 }
 
+
 /* ----------- Aspire V3 Laptop Landscape ----------- */
 
-@media screen and ( max-width: 1100px ) {
+@media screen and ( max-width: 1100px) {
     html {
         font-size: 16px;
     }
@@ -1969,24 +1971,23 @@ address,
     .share-button {
         font-size: 0.8rem;
     }
-    
     .social-container {
         bottom: 10px;
     }
     .social-container p {
         margin-bottom: 5px;
     }
-    
     .bulletin-text {
         font-size: 1.3rem;
     }
     .bulletin-pgraph {
         font-size: 1.1rem;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         height: 7rem;
     }
-    .title, .date-published {
+    .title,
+    .date-published {
         padding-left: 10px;
     }
     .bulletin-download {
@@ -1997,7 +1998,6 @@ address,
     }
     .news-container {
         height: 1750px;
-        padding: 0 50px;
     }
     .news {
         margin-bottom: 160px;
@@ -2019,9 +2019,10 @@ address,
     }
 }
 
+
 /* ----------- iPad Pro Potrait------------------*/
 
-@media screen and ( max-width: 1024px ) {
+@media screen and ( max-width: 1024px) {
     html {
         font-size: 16px;
     }
@@ -2029,41 +2030,58 @@ address,
         padding-left: 0%;
     }
     .section {
-        padding-top: 98px;
+        padding: 7em 0em;
     }
     #welcome {
-        padding: 6em 1em 7em;
+        padding: 8em 0em;
+        height: 78%;
     }
     .plan-visit {
         padding-top: 20%;
     }
+    .title h1 {
+        font-size: 5rem;
+        line-height: 1em;
+    }
+    
+    .title h3 {
+        font-size: 3rem;
+        line-height: 1em;
+    }
     .close-button {
-        top: 20%;
+        font-size: 1.5rem;
+        padding: 0.6em 0.7em;
+        top: 5%;
+
     }
     .form-container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     .form-row {
         width: 100%;
     }
     .selection {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-    select {
+    select, #attendance-date {
         width: 49%;
         margin-bottom: 10px;
+        font-size: 1.5rem;
+        height: 56px;
     }
     #attendance-date {
         padding-top: 5px;
-        width: 42%;
-        margin-bottom: 10px;
+    }
+    .plan-submit.button.full-width {
+        margin-top: 18%;
+        height: 56px;
     }
     .service-time {
-        width: 85.5%;
+        width: 99.5%;
     }
     .select-date {
         padding-top: 5px;
@@ -2072,6 +2090,9 @@ address,
     .attend-service {
         padding-top: 5px;
         width: 120px;
+    }
+    .select-date, .attend-service {
+        display: none;
     }
     .plan-submit {
         margin-top: 15%;
@@ -2083,15 +2104,15 @@ address,
         height: 10%;
         width: 100%;
         -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     }
     .mobile-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         align-items: center;
         padding: 0 30px;
         position: relative;
@@ -2101,19 +2122,28 @@ address,
     .COGS-title {
         display: inline-block;
         -webkit-box-flex: 6;
-            -ms-flex: 6;
-                flex: 6;
+        -ms-flex: 6;
+        flex: 6;
         color: white;
     }
-    .COGS-title h1 {
+    
+    .COGS-title h1, .navburger h1, .bulletin-text, .feedback-text, .call-to-action-heading, .title, .date-published {
         font-size: 2.5rem;
+    }
+    
+    .hollow-button, .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph, .bulletin-download, .welcome-pgraph, .welcome-author, .group-photo-caption, .visit,
+    .history {
+        font-size: 2rem;
+    }
+    
+    .COGS-title h1 {
         font-weight: 500;
         margin-bottom: 0;
     }
     .navburger {
         -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
+        -ms-flex: 1;
+        flex: 1;
         display: flex;
         align-items: center;
         z-index: 1000;
@@ -2122,24 +2152,22 @@ address,
         display: inline-block;
         color: white;
         margin-bottom: 0;
-        font-size: 2.5rem;
         flex: 1;
     }
     .main-nav {
         display: none;
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        right: 0px;
         bottom: auto;
         width: 100%;
-        min-height: 1400px;
+        padding-top: 5%;
         float: none;
         z-index: 1001;
     }
     .hamburger {
         display: inline-block;
         flex: 1;
+    }
+    .cogs-logo {
+        margin-bottom: 30px;
     }
     .menu-links {
         -webkit-transition: 50ms;
@@ -2163,9 +2191,10 @@ address,
         background-repeat: no-repeat
     }
     .nav-container {
-        padding-top: 40px;
+        height: 1200px;
     }
-    .brand-logo, .brand-logo p {
+    .brand-logo,
+    .brand-logo p {
         font-size: 4rem;
         font-weight: 700;
     }
@@ -2197,11 +2226,12 @@ address,
         margin-top: 60px;
     }
     .social-container {
-        bottom: 60px;
+        bottom: unset;
+        margin: 50px auto;
     }
     .social-container p {
-        font-size: 3rem;
         line-height: 1em;
+        margin-bottom: 20px;
     }
     .social-icon-link img {
         width: 3.5rem;
@@ -2221,7 +2251,7 @@ address,
     .share-button {
         font-size: 2rem;
     }
-    .web__share > .share-icon {
+    .web__share>.share-icon {
         width: 80px;
         height: 80px;
         line-height: 80px;
@@ -2230,15 +2260,16 @@ address,
     .card__share {
         display: block;
     }
-    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
-        font-size: 1.4rem;
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
         line-height: 1.3em;
     }
     .title {
         font-weight: 500;
     }
     .container {
-        height: 125px;
+        height: 100%;
     }
     .bible-verse {
         font-size: 3.5rem;
@@ -2247,74 +2278,176 @@ address,
     .bible-book {
         font-size: 3rem;
     }
-    
     .hero-title-wrapper {
         position: relative;
         top: 80%;
         transform: perspective(1px) translateY(-80%);
     }
     .hero-heading {
-        font-size: 7rem;
-        letter-spacing: 0.04em;
-        margin-bottom: 0.5em;
+        font-size: 8rem;
+        line-height: 0.9em;
+        margin-bottom: 30px;
+    }
+    .hero-subheading, .section-subheading.center {
+        font-size: 3rem;
     }
     .hero-subheading {
-        font-size: 3rem;
-        margin-bottom: 1em;
-    }
-    .hollow-button {
-        font-size: 1.5rem;
+        line-height: 1em;
+        margin-bottom: 30px;
     }
     .bulletin-section {
-        padding: 20px;
+        padding: 0;
     }
-    .bulletin-text, .feedback-text, .call-to-action-heading {
-        font-size: 1.9rem;
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
         line-height: 1.3em;
     }
-    .bulletin-row-2 {
-        width: 24em;
-        height: 9em;
+    .bulletin-container-1 {
+        margin-bottom: 30px;
+        padding: 0;
     }
-    .title {
-        font-size: 1.5rem;
+    .bulletin-text {
+        margin-top: 0;
     }
-    .date-published {
-        font-size: 1.2rem;
+    .bulletin-pgraph {
+        margin-bottom: 0;
     }
-    .bulletin-download {
-        font-size: 1.3rem;
+    .bulletin-flex {
+        flex-direction: column;
+        align-items: left;
     }
+    
+    .bulletin-row {
+        width: 40em;
+        height: 14em;
+    }
+    
     
     /*Welcome Home*/
     .section-heading.centered {
+        font-size: 7rem;
+        margin-bottom: 50px;
+    }
+    .column-3 {
+        padding-right: 5px;
+        padding-left: 0;
+    }
+    .welcome-pgraph, .welcome-author {
+        text-align: left;
+    }
+    .group-photo-container {
+        padding: 15px 0;
+    }
+    .group-photo-caption {
+        text-align: center;
+    }
+    .div-block {
+        margin-top: 3em;
+        text-align: left;
+        position: absolute;
+        width: 600px;
+    }
+    
+    .feedback-section {
+        padding: 0;
+    }
+    
+    .news-container {
+        height: 2200px;
+    }
+    .main-news-title {
         font-size: 6rem;
-        margin-bottom: 40px;
     }
-    .section-subheading.center {
-        font-size: 2.4rem;
+    .news-pgraph1 {
+        font-size: 2.5rem;
     }
-    .welcome-pgraph, .welcome-author, .group-photo-caption {
-        font-size: 1.5rem;
+    .social-container p  {
+        font-size: 3rem;
     }
-    .visit, .history {
-        font-size: 1.5rem;
+    
+    .top-news {
+        height: 78%;
+    }
+    .news {
+        height: 200px;
+    }
+    .news, .resize-img1 {
+        width: 280px;
     }
     
     .top-news-title {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     .news-pgraph2 {
-        font-size: 1rem;
-    }
-    .call-to-action-section {
-        padding: 40px;
-    }
-    .googlemap iframe {
-        height: 27.8em;
+        font-size: 1.5rem;
     }
     .newsdescription {
+        height: 210px;
         padding: 1.2em 1em;
+    }
+    .share-icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 21px;
+    }
+    .card__social {
+        width: 465%;
+    }
+    .card__share {
+        margin-top: -60px;
+    }
+    
+    
+    .call-to-action-section {
+        height: 26%;
+    }
+    .call-to-action-description, .cogs-news-form {
+        margin-bottom: 15px;
+    }
+    .call-to-action-description, .call-to-action-form {
+        padding: 0;
+    }
+    .call-to-action-form {
+        width: 100%;
+    }
+    .call-to-action-row {
+        flex-direction: column;
+        align-items: left;
+    }
+    .call-to-action-heading, .call-to-action-pgraph, call-to-action-form {
+        text-align: left;
+    }
+    .align-right {
+        margin-top: 0;
+    }
+    .cogs-news-form > .text-field {
+        width: 80%;
+    }
+    
+    .text-field, .submit-button, .nospam, .form-field, .button.full-width, .direction-button {
+        font-size: 1.5rem;
+    }
+    .form-field.text-area {
+        min-height: 200px;
+    }
+    .submit-button {
+        padding: 15px;
+    }
+    
+    .address {
+        height: 33em;
+    }
+    
+    .location h2, .contact-info h2, .office-hour h2 {
+        font-size: 2rem;
+    }
+    address, .contact-info p, .office-hour p {
+        font-size: 1.3rem;
+    }
+    .googlemap iframe {
+        height: 29em;
     }
     .footer.center {
         padding: 1.5em 0;
@@ -2322,141 +2455,78 @@ address,
     .footer-text {
         font-size: 2rem;
     }
+    .adjust-padding-td {
+        padding: 50px 0;
+    }
+    .adjust-padding-lr {
+        padding: 0 80px;
+    }
 }
+
 
 /* ----------- iPad Landscape ----------- */
 
-@media screen and ( max-width: 1024px ) {
-    .COGS-title {
-        flex: 7;
+@media screen and ( max-width: 1024px) and ( max-height: 770px) {
+    html {
+        font-size: 14px;
     }
-    .nav-container {
-        padding-top: 0;
-    }
-    .COGS-title h1, .navburger h1 {
-        font-size: 2rem;
-    }
-    .hamburger {
-        background-size: 2.6rem;
+    .COGS-title h1, .navburger h1, .bulletin-text, .feedback-text, .call-to-action-heading, .title, .date-published {
+        font-weight: 400;
     }
     .menu-links .closebtn {
-        background-size: 2.6rem;
-        top: 18px;
-    }
-    .brand-logo, .brand-logo p {
-        font-size: 2.5rem;
-        font-weight: 500;
-    }
-    .beta {
-        top: -13px;
-        font-size: 1.2rem;
-    }
-    .multiple-lang {
-        margin-top: 5px;
-    }
-    .multiple-lang div a {
-        font-size: 1.4rem;
-    }
-    .chinese {
-        margin: 0 10px;
-    }
-    .navbar {
-        padding-top: 20px;
-    }
-    .menu-links a {
-        font-size: 1.8rem;
+        top: 2%;
+        right: 3.5%;
     }
     .nav-link {
+        font-size: 2.5rem;
         padding: 1.2em 0;
     }
-    .share-website {
-        margin-top: 25px;
+    .title, .date-published {
+        padding-left: 10%;
+        font-weight: 500;
     }
-    .share-container {
-        width: 78%;
-        display: flex;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
+    .bulletin-download {
+        margin-left: 10%;
     }
-    .share-container p {
-        font-size: 1.5rem;
-        margin-top: 0;
-        margin-bottom: 0;
-        flex: 2.5;
+    #welcome {
+        height: 120%
     }
-    .share-button {
-        font-size: 1.2rem;
-        flex: 1;
+    .call-to-action-section {
+        height: 42%;
     }
-    .web__share > .share-icon {
-        width: 48px;
-        height: 48px;
-        line-height: 45px;
-        font-size: 25px;
+    .news-container {
+        height: 2100px;
     }
-    .social-container {
-        bottom: unset;
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .top-news {
+        height: 75%;
     }
-    .social-container p {
-        font-size: 1.8rem;
-        flex: 1;
-        text-align: right;
-        padding-right: 20px;
-        margin-bottom: 7px;
-    }
-    .social-icons {
-        flex: 1;
-        text-align: left;
-    }
-    .social-icon-link img {
-        width: 2rem;
+    .newsdescription {
+        height: 180px;
     }
     
-    .hero-heading {
-        font-size: 6rem;
-    }
-    .hero-subheading {
-        font-size: 2.5rem;
-    }
-    
-    /*Plan Visit Session*/
-    .plan-visit {
-        padding-top: 5%;
-    }
-    .close-button {
-        top: 5%;
-    }
-    .align-right {
-        margin-top: 28px;
-    }
-    .nospam {
-        margin-top: -5px;
-    }
     .address {
         height: 31em;
     }
-    address, .contact-info p, .office-hour p {
-        font-size: 1.2rem;
+    .googlemap iframe {
+        height: 27.3em;
     }
     .bible-verse, .bible-book {
-        font-size: 2rem;
-    }
-    .footer.center {
-        padding: 1em 0;
+        font-size: 2.8rem;
     }
     .footer-text {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        margin: 0 auto;
+    }
+    .footer.center {
+        height: 8%;
+        padding: 2% 0;
     }
 }
 
+
 /* ----------- iPad Mini 4 Landscape ----------- */
 
-@media screen and ( max-width: 1024px ) {
+@media screen and ( max-width: 1024px) and ( max-height: 680px) {
     .main-nav {
         padding-top: 2%;
     }
@@ -2478,7 +2548,6 @@ address,
     .section-title-group {
         margin-bottom: 2em;
     }
-    
     /*Plan Visit Session*/
     .plan-visit {
         padding-top: 0;
@@ -2496,7 +2565,6 @@ address,
     .plan-submit {
         margin-top: 13%;
     }
-    
     .footer.center {
         padding: 0.8em 0;
     }
@@ -2505,9 +2573,10 @@ address,
     }
 }
 
+
 /* ----------- Lenova IdeaPad Laptop Landscape ----------- */
 
-@media screen and ( max-width: 1024px ) {
+@media screen and ( max-width: 1024px) and ( max-height: 510px) {
     html {
         font-size: 16px;
     }
@@ -2517,7 +2586,8 @@ address,
     .COGS-title {
         flex: 8;
     }
-    .COGS-title h1, .navburger h1 {
+    .COGS-title h1,
+    .navburger h1 {
         font-size: 1.5rem;
     }
     .hamburger {
@@ -2525,11 +2595,12 @@ address,
         height: 2.2rem;
     }
     .menu-links .closebtn {
-        top:10px;
+        top: 10px;
         height: 2.2rem;
         background-size: 2.2rem;
     }
-    .brand-logo, .brand-logo p {
+    .brand-logo,
+    .brand-logo p {
         font-size: 2rem;
     }
     .beta {
@@ -2557,7 +2628,7 @@ address,
     .share-button {
         font-size: 1rem;
     }
-    .web__share > .share-icon {
+    .web__share>.share-icon {
         width: 38px;
         height: 38px;
         line-height: 38px;
@@ -2583,7 +2654,6 @@ address,
     .hollow-button {
         font-size: 1.1rem;
     }
-    
     /*Welcome Message*/
     .section-heading.centered {
         font-size: 5rem;
@@ -2591,10 +2661,10 @@ address,
     .section-subheading.center {
         font-size: 2rem;
     }
-    .visit, .history {
+    .visit,
+    .history {
         font-size: 1.1rem;
     }
-    
     /*Plan a Visit*/
     .title h1 {
         font-size: 2rem;
@@ -2612,24 +2682,22 @@ address,
     .reduce-width {
         width: 32%;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         width: 22em;
         height: 8em;
     }
-    .date-published, .bulletin-download {
+    .date-published,
+    .bulletin-download {
         font-size: 1.1rem;
     }
-    
     .top-news {
         padding: 0 50px;
     }
-    
-
     .w-form {
         margin: 0 0 15px;
     }
-    
-    .bible-verse, .bible-book {
+    .bible-verse,
+    .bible-book {
         font-size: 1.5rem;
     }
     .footer-text {
@@ -2638,13 +2706,15 @@ address,
     }
 }
 
+
 /* ----------- S Note 8.0 Landscape ----------- */
 
-@media screen and ( max-width: 970px ) {
+@media screen and ( max-width: 970px) and (max-height: 490px) {
     html {
         font-size: 14px;
     }
-    .brand-logo, .brand-logo p {
+    .brand-logo,
+    .brand-logo p {
         font-size: 2rem;
     }
     .menu-links .closebtn {
@@ -2660,7 +2730,6 @@ address,
     .social-container {
         margin-top: 12px;
     }
-    
     /*Welcome Message Session*/
     #welcome {
         padding: 5em 1em 3em;
@@ -2668,27 +2737,32 @@ address,
     .section-heading.centered {
         margin-bottom: 25px;
     }
-    .section-title-group, .welcome-pgraph {
+    .section-title-group,
+    .welcome-pgraph {
         margin-bottom: 1.5em;
     }
-    .welcome-pgraph, .welcome-author, .group-photo-caption {
+    .welcome-pgraph,
+    .welcome-author,
+    .group-photo-caption {
         font-size: 1.4rem;
     }
     .div-block {
         margin-top: 2em;
     }
-    
-    .bulletin-row-2 {
+    .bulletin-row {
         width: 20em;
         height: 7em;
     }
-    
     /*Plan a visit*/
     .container .title {
         padding-top: 25px;
         margin-bottom: 15px;
     }
-    select, .select-date, #attendance-date, .attend-service, .service-time {
+    select,
+    .select-date,
+    #attendance-date,
+    .attend-service,
+    .service-time {
         font-size: 1rem;
     }
     .button.full-width {
@@ -2697,7 +2771,6 @@ address,
     .section {
         padding: 6em 1em 3em;
     }
-    
     .call-to-action-section {
         padding: 10px;
     }
@@ -2720,11 +2793,15 @@ address,
     .googlemap iframe {
         height: 21em;
     }
-    .location h2, .contact-info h2, .office-hour h2 {
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
         font-size: 1.5rem;
         line-height: 1em;
     }
-    address, .contact-info p, .office-hour p {
+    address,
+    .contact-info p,
+    .office-hour p {
         font-size: 1rem;
     }
     /*body {
@@ -2927,7 +3004,6 @@ address,
     #announcements {
         height: 2800px;
     }*/
-    
     .news-container {
         padding: 0;
     }
@@ -2936,9 +3012,10 @@ address,
     }
 }
 
+
 /* ----------- S Tab 10.1 Potrait ----------- */
 
-@media screen and ( max-width: 800px ){
+@media screen and ( max-width: 800px) and (max-height: 1140px) {
     html {
         font-size: 14px;
     }
@@ -2955,7 +3032,7 @@ address,
     .share-container p {
         margin: 0.3em 0 0.6em;
     }
-    .web__share > .share-icon {
+    .web__share>.share-icon {
         width: 65px;
         height: 65px;
         line-height: 65px;
@@ -2973,7 +3050,6 @@ address,
         margin: 0 5px;
         width: 3.5rem;
     }
-    
     /*Home Page*/
     .hero-heading {
         font-size: 6.5rem;
@@ -2981,25 +3057,27 @@ address,
     .hero-subheading {
         font-size: 2.75rem;
     }
-    
-    .bulletin-text, .feedback-text, .call-to-action-heading {
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
         font-size: 1.8rem;
         line-height: 1.2em;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         height: 10em;
     }
     .bulletin-image {
         flex: 1.5;
     }
-    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
         font-size: 1.5rem;
     }
     .date-published {
         font-size: 1.4rem;
         margin: 0.5em 0;
     }
-    
     /*Welcome Message Session*/
     .section-heading.centered {
         font-size: 5.5rem;
@@ -3015,7 +3093,6 @@ address,
         display: flex;
         position: absolute;
     }
-    
     /*Plan a Visit*/
     .attend-service {
         display: none;
@@ -3026,7 +3103,6 @@ address,
     .button.full-width {
         margin-top: 16%;
     }
-    
     .call-to-action-form {
         padding: 10px 0;
     }
@@ -3034,13 +3110,12 @@ address,
         flex-direction: column;
         align-items: left;
     }
-    .cogs-news-form > .text-field {
+    .cogs-news-form>.text-field {
         margin-bottom: 15px;
     }
     .align-right {
         margin-top: 25px;
     }
-    
     /*Announcement*/
     #announcements {
         padding: 6em 1em 26em;
@@ -3048,7 +3123,6 @@ address,
     .news {
         margin-bottom: 160px;
     }
-    
     /*Contact Session*/
     .address {
         height: 27em;
@@ -3056,16 +3130,16 @@ address,
     .googlemap iframe {
         height: 24em;
     }
-    
     /*Bible Words*/
     .verse-container {
         top: 50%;
     }
 }
 
+
 /* ----------- iPad Potrait----------- */
 
-@media screen and ( max-width: 768px ){
+@media screen and ( max-width: 768px) {
     /*
     .section {
         padding-right: 10px;
@@ -3151,7 +3225,9 @@ address,
     .bulletin-download {
         margin-left: 8px;
     }*/
-    html {font-size: 13px;}
+    html {
+        font-size: 13px;
+    }
     .main-nav {
         padding-top: 0;
     }
@@ -3165,38 +3241,39 @@ address,
         font-size: 3rem;
         margin-bottom: 20px;
     }
-    
     /*Plan a Visit*/
     .close-button {
         top: 5%;
     }
-    
-    
     .bulletin-section {
         padding: 35px 30px 30px;
     }
     .bulletin-container-1 {
         padding: 0 15px 10px;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         height: 9em;
         width: 23em;
     }
-    .bulletin-text, .feedback-text, .call-to-action-heading {
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
         font-size: 1.6rem;
         margin-top: 0;
     }
-    
     /*Welcome Message*/
     #welcome {
         padding: 6em 1em 4em;
     }
 }
 
+
 /* ----------- iPad Mini4 Potrait----------- */
 
-@media screen and ( max-width: 768px ) {
-    html {font-size: 12px;}
+@media screen and ( max-width: 768px) and (max-height: 930px) {
+    html {
+        font-size: 12px;
+    }
     .nav-container {
         padding-top: 30px;
     }
@@ -3207,7 +3284,6 @@ address,
         top: 23px;
         right: 22px;
     }
-    
     .social-container {
         margin-top: 25px;
     }
@@ -3219,48 +3295,49 @@ address,
         margin: 0 3px;
         width: 3rem;
     }
-    
-    .bulletin-row-2 {
+    .bulletin-row {
         height: 8em;
         width: 21em;
     }
-    
     .title {
         font-size: 1.6rem;
     }
-    
-    .title, .date-published {
+    .title,
+    .date-published {
         padding-left: 10px;
     }
     .bulletin-download {
         margin-left: 10px;
     }
-    
     #welcome {
         padding: 6em 1em 2em;
     }
     .div-block {
         right: 15px;
     }
-    
     /*Contact us*/
     .address {
         height: 31em;
     }
-    .location h2, .contact-info h2, .office-hour h2 {
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
         font-size: 2.5rem;
     }
-    address, .contact-info p, .office-hour p {
+    address,
+    .contact-info p,
+    .office-hour p {
         font-size: 1.5rem;
     }
     .googlemap iframe {
         height: 28.25em;
     }
-}   
+}
+
 
 /* ----------- iPone 6 Plus Landscape ----------- */
 
-@media screen and ( max-width: 740px ) {
+@media screen and ( max-width: 740px) and (max-height: 420px) {
     .mobile-container {
         padding: 0 20px;
     }
@@ -3301,7 +3378,7 @@ address,
         font-size: 1.2rem;
         flex: 2.7;
     }
-    .web__share > .share-icon {
+    .web__share>.share-icon {
         width: 30px;
         height: 30px;
         line-height: 30px;
@@ -3319,57 +3396,62 @@ address,
         width: 1.5em;
         margin: 0;
     }
-    
     /*Home Page*/
-    .hero-heading, .section-heading.centered {
+    .hero-heading,
+    .section-heading.centered {
         font-size: 5rem;
         margin-bottom: 0.3em;
     }
-    .hero-subheading, .section-subheading.center {
+    .hero-subheading,
+    .section-subheading.center {
         font-size: 2.1rem;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         height: 7em;
         width: 19em;
     }
-    .title, .date-published {
+    .title,
+    .date-published {
         padding-left: 5px;
     }
     .bulletin-download {
         margin-left: 5px;
     }
-    
     /*Welcome Message */
     #welcome {
         padding: 6em 1em 4em;
     }
-    .welcome-pgraph, .welcome-author, .group-photo-caption {
+    .welcome-pgraph,
+    .welcome-author,
+    .group-photo-caption {
         font-size: 1.5rem;
         text-align: left;
     }
     .div-block {
         left: 27px;
     }
-    .group-photo-container, .group-photo-caption {
+    .group-photo-container,
+    .group-photo-caption {
         text-align: center;
     }
     .column-3 {
         height: 80%;
     }
-    
     /*Plan a visit*/
     .container .title {
         padding-top: 20px;
         margin-bottom: 7px;
     }
-    .plan-visit > .form-field {
+    .plan-visit>.form-field {
         margin-bottom: 7px;
     }
     .selection {
         padding: 7px 0;
         margin-bottom: 7px;
     }
-    select, #attendance-date, .plan-visit > .form-field {
+    select,
+    #attendance-date,
+    .plan-visit>.form-field {
         height: 30px;
     }
     .select-date {
@@ -3378,22 +3460,22 @@ address,
     #attendance-date {
         width: 49%;
     }
-    select, #attendance-date, .attend-service, .service-time {
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time {
         margin-bottom: 7px;
     }
     .button.full-width {
         margin-top: 11%;
     }
-    
     #announcements {
         padding: 6em 1em 5em;
     }
-    
     .call-to-action-section {
         padding: 20px;
     }
-    
-    /*Contact US*/ 
+    /*Contact US*/
     .column-remove-padding {
         padding: 0;
     }
@@ -3406,10 +3488,14 @@ address,
     .googlemap iframe {
         height: 21.25em;
     }
-    .location h2, .contact-info h2, .office-hour h2 {
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
         font-size: 2rem;
     }
-    address, .contact-info p, .office-hour p {
+    address,
+    .contact-info p,
+    .office-hour p {
         font-size: 1.2rem;
     }
     .verse-container {
@@ -3417,9 +3503,10 @@ address,
     }
 }
 
+
 /* ----------- iPone 6 Landscape ----------- */
 
-@media screen and ( max-width: 670px ) {
+@media screen and ( max-width: 670px) and (max-height: 375px) {
     .menu-links a {
         font-size: 1.6rem;
         padding: 1em 0;
@@ -3430,7 +3517,6 @@ address,
     .social-container {
         margin-top: 11px;
     }
-    
     .plan-visit form .form-field {
         margin-bottom: 5px;
         height: 30px;
@@ -3445,15 +3531,17 @@ address,
         padding: 0;
         margin-bottom: 0;
     }
-    
     .bulletin-section {
         padding: 30px 25px 25px;
     }
-    
-    .bulletin-text, .feedback-text, .call-to-action-heading {
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
         font-size: 1.5rem;
     }
-    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
         font-size: 1.3rem;
     }
     #welcome {
@@ -3462,39 +3550,34 @@ address,
     .column-3 {
         height: 75%;
     }
-    .section-title-group, welcome-pgraph {
+    .section-title-group,
+    welcome-pgraph {
         margin-bottom: 1em;
     }
     .div-block {
         margin-top: 1em;
     }
-    
     .feedback-section {
         padding: 25px 60px;
     }
-    
     .news-container {
         height: 1550px;
     }
-    
     .main-news {
         height: 350px;
     }
-    
     .main-news-description {
         top: -350px;
         padding-top: 50px;
     }
-    
     .news {
         width: 200px;
         height: 140px;
     }
-    
     .card__social--active {
         -webkit-transform: translateX(-33px);
- 		    -ms-transform: translateX(-33px);
- 		        transform: translateX(-33px);
+        -ms-transform: translateX(-33px);
+        transform: translateX(-33px);
     }
     .card__share {
         margin-right: 3px;
@@ -3511,28 +3594,33 @@ address,
         -ms-transform: scale(1.1);
         transform: scale(1.1);
     }
-    
-    .cogs-news-form > .text-field, .submit-button {
+    .cogs-news-form>.text-field,
+    .submit-button {
         height: 30px;
     }
     .submit-button {
         padding: 0.1em 1em;
     }
-    
-    address, .contact-info p, .office-hour p {
+    address,
+    .contact-info p,
+    .office-hour p {
         margin-bottom: 10px;
     }
 }
 
+
 /* ----------- S Galaxy S5 ----------- */
 
-@media screen and ( max-width: 640px ) {
+@media screen and ( max-width: 640px) and (max-height: 360px) {
     .menu-links a {
         padding: 0.9em 0;
     }
     .container .title {
         padding-top: 20px;
         margin-bottom: 15px;
+    }
+    .share-container {
+        width: 75%;
     }
     .title h1 {
         display: none;
@@ -3543,7 +3631,6 @@ address,
     .plan-visit form .button.full-width {
         margin-top: 11%;
     }
-    
     .card__social--active {
         transform: translateX(-18px);
     }
@@ -3565,23 +3652,21 @@ address,
         -ms-transform: scale(1.2);
         transform: scale(1.2);
     }
-    
     .cogs-news-form {
         margin-top: 15px;
     }
 }
 
+
 /* ----------- S Galaxy Note 3 Neo ----------- */
 
-@media screen and ( max-width: 640px ) {
+@media screen and ( max-width: 640px) and (max-height: 280px) {
     .mobile-nav {
         height: 15%;
     }
-    
     .title h1 {
         display: none;
     }
-    
     .container .title {
         padding-top: 15px;
         margin-bottom: 15px;
@@ -3589,8 +3674,10 @@ address,
     .plan-visit form .form-field {
         height: 25px;
     }
-    
-    select, #attendance-date, .attend-service, .service-time {
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time {
         height: 25px;
         padding: 2px 10px;
         margin-bottom: 0;
@@ -3601,7 +3688,6 @@ address,
     #attendance-date {
         padding: 10px;
     }
-    
     .plan-visit .form-field.text-area {
         min-height: 50px;
     }
@@ -3612,9 +3698,13 @@ address,
     }
 }
 
+
 /* ----------- iPhone 7 Landscape ----------- */
 
-@media screen and ( max-width: 635px ) {
+@media screen and ( max-width: 635px) and (max-height: 420px) {
+    .nav-container {
+        padding-top: 40px;
+    }
     .share-container {
         width: 75%;
     }
@@ -3622,7 +3712,9 @@ address,
         flex: 2.3;
         margin: auto;
     }
-    
+    .social-container {
+        margin-top: 20px;
+    }
     .social-container p {
         font-size: 1.3rem;
         margin-bottom: 3px;
@@ -3630,11 +3722,10 @@ address,
     .social-icon-link img {
         width: 1.3em;
     }
-    
     .bulletin-container-1 {
         padding: 0 5px 0;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         height: 7em;
         width: 17em;
     }
@@ -3644,13 +3735,16 @@ address,
     .date-published {
         font-size: 1.3rem;
     }
-    .bulletin-text, .feedback-text, .call-to-action-heading {
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
         font-size: 1.5rem;
     }
-    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
         font-size: 1.4rem;
     }
-    
     .container .title {
         padding-top: 30px;
         margin-bottom: 20px;
@@ -3662,24 +3756,19 @@ address,
     .reduce-width {
         width: 32.5%;
     }
-    
     .plan-visit form textarea {
         margin-bottom: 0;
     }
-    
     .plan-visit form .button.full-width {
         margin-top: 13%;
         padding: 0.4em;
     }
-    
     .feedback-section {
         padding: 30px 45px;
     }
-    
     .news-container {
         height: 1500px;
     }
-    
     .main-news {
         height: 350px;
     }
@@ -3690,7 +3779,6 @@ address,
     .main-news-title {
         margin-bottom: 25px;
     }
-    
     .news {
         width: 185px;
         height: 130px;
@@ -3710,8 +3798,6 @@ address,
         line-height: 32px;
         font-size: 15px;
     }
-    
-    
     .address {
         height: 25em;
     }
@@ -3723,9 +3809,12 @@ address,
 
 /* ----------- S Note 8.0 Potrait ----------- */
 
-@media screen and ( max-width: 610px ) {
-    html {font-size: 12px;}
-    .brand-logo, .brand-logo p {
+@media screen and ( max-width: 610px) and (max-height: 850px) {
+    html {
+        font-size: 12px;
+    }
+    .brand-logo,
+    .brand-logo p {
         font-size: 3rem;
         font-weight: 500;
     }
@@ -3737,7 +3826,9 @@ address,
     .multiple-lang {
         margin-top: 10px;
     }
-    .multiple-lang div a, .share-container p, .social-container p {
+    .multiple-lang div a,
+    .share-container p,
+    .social-container p {
         font-size: 2rem;
     }
     .nav-link {
@@ -3747,7 +3838,10 @@ address,
     .share-button {
         font-size: 1.5rem;
     }
-    .web__share > .share-icon {
+    .share-container {
+        width: 100%;
+    }
+    .web__share>.share-icon {
         width: 45px;
         height: 45px;
         line-height: 45px;
@@ -3770,7 +3864,6 @@ address,
         width: 2.5rem;
         margin: 0;
     }
-    
     .hero-heading {
         font-size: 5.5rem;
         letter-spacing: 0.01em;
@@ -3780,8 +3873,7 @@ address,
         font-size: 2.7rem;
         margin-bottom: 0.8em;
     }
-    
-    .bulletin-row-1 {
+    .bulletin-flex {
         flex-direction: column;
         align-items: left;
         padding: 0.5em;
@@ -3789,16 +3881,20 @@ address,
     .bulletin-container-1 {
         padding: 0;
     }
-    .bulletin-text, .feedback-text, .call-to-action-heading {
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
         font-size: 2.5rem;
     }
-    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
         font-size: 1.8rem;
     }
     .bulletin-pgraph {
         margin-bottom: 20px;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         width: 33em;
         height: 12em;
     }
@@ -3811,11 +3907,15 @@ address,
     .bulletin-download {
         font-size: 1.8rem;
     }
-    
-    .column-3, .column-4 {
+    .column-3 {
+        height: 100%;
+    }
+    .column-3,
+    .column-4 {
         margin-bottom: 40px;
     }
-    .welcome-pgraph, .welcome-author {
+    .welcome-pgraph,
+    .welcome-author {
         font-size: 2rem;
         text-align: left;
     }
@@ -3825,9 +3925,12 @@ address,
     .group-photo-caption {
         font-size: 2rem;
     }
-    
     #announcements {
         padding: 6em 1em 8em;
+    }
+    .news-container {
+        height: 2550px;
+        padding: 0 25px;
     }
     .main-news {
         height: 320px;
@@ -3839,11 +3942,10 @@ address,
     .main-news-title {
         margin-bottom: 25px;
     }
-    
     .top-news {
         height: 2250px;
+        padding: 0;
     }
-    
     .news {
         width: 100%;
         height: 160px;
@@ -3867,7 +3969,7 @@ address,
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0);
     }
     .top-news-title {
         font-size: 2.5rem;
@@ -3887,14 +3989,14 @@ address,
         width: 240px;
     }
     .card__social--active {
- 		-webkit-transform: translateX(-15px);
- 		    -ms-transform: translateX(-15px);
- 		        transform: translateX(-15px);
+        -webkit-transform: translateX(-15px);
+        -ms-transform: translateX(-15px);
+        transform: translateX(-15px);
     }
     .news:hover .card__share {
         display: flex;
     }
-    .card__social >.share-icon {
+    .card__social>.share-icon {
         margin-left: 5px;
         width: 50px;
         height: 50px;
@@ -3907,11 +4009,11 @@ address,
         line-height: 50px;
         font-size: 23px;
     }
-    
     .call-to-action-section .container {
         height: 250px;
     }
-    .call-to-action-heading, .call-to-action-pgraph {
+    .call-to-action-heading,
+    .call-to-action-pgraph {
         text-align: left;
     }
     .call-to-action-description {
@@ -3920,24 +4022,22 @@ address,
     .call-to-action-form {
         width: 100%;
     }
-    
     .call-to-action-row {
         display: flex;
         flex-direction: column;
     }
-    
-    .cogs-news-form > .text-field {
+    .cogs-news-form>.text-field {
         width: 100%;
-        
     }
-    .submit-button, .cogs-news-form > .text-field {
-       font-size: 1.5rem; 
+    .submit-button,
+    .cogs-news-form>.text-field {
+        font-size: 1.5rem;
         line-height: 1em;
     }
-    .nospam, .form-field {
+    .nospam,
+    .form-field {
         font-size: 1.5rem;
     }
-    
     .column-remove-padding {
         padding: 0;
     }
@@ -3945,16 +4045,19 @@ address,
         margin-top: 2%;
         font-size: 1.5rem;
     }
-    
     .address {
         display: flex;
         flex-direction: column;
         height: 68em;
     }
-    .location h2, .contact-info h2, .office-hour h2 {
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
         font-size: 3rem;
     }
-    address, .contact-info p, .office-hour p {
+    address,
+    .contact-info p,
+    .office-hour p {
         font-size: 1.8rem;
     }
     .location {
@@ -3966,8 +4069,8 @@ address,
     .direction-button {
         font-size: 1.5rem;
     }
-    
-    .bible-verse, .bible-book {
+    .bible-verse,
+    .bible-book {
         font-size: 2.8rem;
     }
     .footer.center {
@@ -3978,20 +4081,25 @@ address,
     }
 }
 
+
 /* ----------- iPhone 5 Landscape ----------- */
 
-@media screen and ( max-width: 568px ) {
+@media screen and ( max-width: 568px) {
     .mobile-nav {
         height: 15%;
     }
-    .COGS-title h1, .navburger h1 {
+    .COGS-title h1,
+    .navburger h1 {
         font-weight: 400;
     }
-    .hero-heading, .hero-heading, .section-heading.centered {
+    .hero-heading,
+    .hero-heading,
+    .section-heading.centered {
         font-size: 4.5rem;
         margin-bottom: 0.3em;
     }
-    .hero-subheading, .section-subheading.center {
+    .hero-subheading,
+    .section-subheading.center {
         font-size: 2.5rem;
         margin-bottom: 0.5em;
     }
@@ -4001,7 +4109,8 @@ address,
     .menu-links a {
         padding: 0.8em 0;
     }
-    .brand-logo, .brand-logo p {
+    .brand-logo,
+    .brand-logo p {
         font-size: 2rem;
     }
     .beta {
@@ -4012,7 +4121,9 @@ address,
     .multiple-lang {
         margin-top: 5px;
     }
-    .multiple-lang div a, .share-container p, .social-container p {
+    .multiple-lang div a,
+    .share-container p,
+    .social-container p {
         font-size: 1.3rem;
     }
     .share-container {
@@ -4021,32 +4132,35 @@ address,
     .share-button {
         font-size: 1.1rem;
     }
-    .web__share > .share-icon {
+    .web__share>.share-icon {
         width: 32px;
         height: 32px;
         line-height: 32px;
         font-size: 16px;
     }
-    
-    .bulletin-text, .feedback-text, .call-to-action-heading {
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
         font-size: 1.8rem;
     }
-    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
         font-size: 1.6rem;
         font-weight: 300;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         width: 31.5em;
         height: 12em;
     }
-    .title, .date-published {
+    .title,
+    .date-published {
         padding-left: 10px;
     }
     .bulletin-download {
         margin-left: 10px;
         font-size: 2rem;
     }
-    
     .column-3 {
         height: 100%;
     }
@@ -4056,7 +4170,7 @@ address,
     .group-photo-caption {
         font-size: 1.6rem;
     }
-    .container-3 {
+    .welcome-container {
         margin-bottom: 0;
     }
     .news-container {
@@ -4081,13 +4195,13 @@ address,
     .card__social {
         width: 200px;
     }
-    .share-toggle, .card__share .card__social .share-icon {
+    .share-toggle,
+    .card__share .card__social .share-icon {
         width: 40px;
         height: 40px;
         line-height: 40px;
         font-size: 17px;
     }
-    
     .call-to-action-section {
         padding: 40px 20px;
     }
@@ -4101,40 +4215,42 @@ address,
     .cogs-news-form {
         margin-top: 0;
     }
-    .submit-button, .cogs-news-form > .text-field {
+    .submit-button,
+    .cogs-news-form>.text-field {
         line-height: 0;
         height: 35px;
     }
     .nospam {
         margin-top: 0;
     }
-    .nospam, .form-field {
+    .nospam,
+    .form-field {
         font-size: 1.3rem;
     }
     .address {
         height: 62em;
     }
-    
-    .bible-verse, .bible-book {
+    .bible-verse,
+    .bible-book {
         font-size: 1.7rem;
     }
     .footer-text {
         font-size: 1.2rem;
     }
-    
 }
+
 
 /* ----------- VIVO 5 Samsung J Landscape ----------- */
 
-@media screen and ( max-width: 560px ) {
-    
+@media screen and ( max-width: 560px) {
     .mobile-nav {
         height: 15%;
     }
     .menu-links .closebtn {
         top: 1%;
     }
-    .brand-logo, .brand-logo p {
+    .brand-logo,
+    .brand-logo p {
         font-size: 1.5rem;
     }
     .beta {
@@ -4151,16 +4267,17 @@ address,
     .share-button {
         font-size: 1.1rem;
     }
-    .multiple-lang div a, .share-container p, .social-container p {
+    .multiple-lang div a,
+    .share-container p,
+    .social-container p {
         font-size: 1.2rem;
     }
-    .web__share > .share-icon {
+    .web__share>.share-icon {
         width: 35px;
         height: 35px;
         line-height: 35px;
         font-size: 17px;
     }
-    
     .social-container {
         margin-top: 20px;
     }
@@ -4171,23 +4288,30 @@ address,
     .social-icon-link img {
         width: 2rem;
     }
-    .hero-heading, .section-heading.centered {
+    .hero-heading,
+    .section-heading.centered {
         font-size: 4.5rem;
     }
-    .hero-subheading, .section-subheading.center {
+    .hero-subheading,
+    .section-subheading.center {
         font-size: 2.2rem;
     }
-    .bulletin-text, .feedback-text, .call-to-action-heading {
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
         font-size: 1.8rem;
     }
-    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
         font-size: 1.6rem;
         font-weight: 300;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         width: 31em;
     }
-    .title, .date-published {
+    .title,
+    .date-published {
         padding-left: 10px;
     }
     .bulletin-download {
@@ -4215,7 +4339,9 @@ address,
     #welcome {
         padding: 5em 1em 0;
     }
-    .welcome-pgraph, .welcome-author, .group-photo-caption {
+    .welcome-pgraph,
+    .welcome-author,
+    .group-photo-caption {
         font-size: 1.6rem;
     }
     .column-3 {
@@ -4224,11 +4350,11 @@ address,
     .photo-pcc {
         max-width: 92%;
     }
-    
     .news-container {
         height: 2500px;
     }
-    .share-toggle, .card__share .card__social .share-icon {
+    .share-toggle,
+    .card__share .card__social .share-icon {
         width: 40px;
         height: 40px;
         line-height: 40px;
@@ -4260,29 +4386,36 @@ address,
     .cogs-news-form {
         margin-top: 0;
     }
-    .submit-button, .cogs-news-form > .text-field {
+    .submit-button,
+    .cogs-news-form>.text-field {
         line-height: 0;
         height: 35px;
     }
     .nospam {
         margin-top: 0;
     }
-    .nospam, .form-field {
+    .nospam,
+    .form-field {
         font-size: 1.3rem;
     }
     .address {
         height: 50em;
     }
-    .location h2, .contact-info h2, .office-hour h2 {
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
         font-size: 1.8rem;
     }
-    address, .contact-info p, .office-hour p {
+    address,
+    .contact-info p,
+    .office-hour p {
         font-size: 1.4rem;
     }
     .googlemap iframe {
         height: 18em;
     }
-    .bible-verse, .bible-book {
+    .bible-verse,
+    .bible-book {
         font-size: 1.7rem;
     }
     .footer-text {
@@ -4290,9 +4423,10 @@ address,
     }
 }
 
+
 /* ----------- iPhone 6S Landscape ----------- */
 
-@media screen and ( max-width: 540px ) {
+@media screen and ( max-width: 540px) {
     .menu-links a {
         padding: 0.9em 0;
     }
@@ -4301,63 +4435,72 @@ address,
     }
 }
 
+
 /* ----------- HuaWei Mate 9 Landscape ----------- */
 
-@media screen and ( max-width: 530px ) {
+@media screen and ( max-width: 530px) {
     .menu-links a {
         padding: 0.8em 0;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         width: 29em;
         height: 11em;
     }
-    .title, .date-published {
+    .title,
+    .date-published {
         padding-left: 5px;
     }
     .bulletin-download {
         margin-left: 5px;
     }
-    .bible-verse, .bible-book {
+    .bible-verse,
+    .bible-book {
         font-size: 1.5rem;
     }
 }
+
+
 /* ----------- iPhone 4 Landscape ----------- */
 
-@media screen and ( max-width: 480px ) {
+@media screen and ( max-width: 480px) {
     .mobile-nav {
         height: 20%;
     }
     .menu-links .closebtn {
         top: 0.6%;
     }
-    .hero-heading, .section-heading.centered {
+    .hero-heading,
+    .section-heading.centered {
         font-size: 3.5rem;
-        margin-bottom : 0.1em;
+        margin-bottom: 0.1em;
     }
-    .hero-subheading, .section-subheading.center {
+    .hero-subheading,
+    .section-subheading.center {
         font-size: 1.8rem;
     }
     .menu-links a {
         padding: 0.6em 0;
     }
-    
-    .bulletin-row-2 {
+    .bulletin-row {
         width: 26em;
         height: 10em;
     }
-    .title, .date-published{
+    .title,
+    .date-published {
         font-size: 1.8rem;
     }
     .bulletin-download {
         font-size: 1.2em;
     }
-    .column-3, .column-4 {
+    .column-3,
+    .column-4 {
         margin-bottom: 0;
     }
     #announcements {
         padding: 4em 1em 8em;
     }
-    .bible-verse, .bible-book {
+    .bible-verse,
+    .bible-book {
         font-size: 1.3rem;
     }
     .footer-text {
@@ -4368,34 +4511,44 @@ address,
     }
 }
 
+
 /* ----------- iPhone 6 PLUS Potrait----------- */
 
-@media screen and ( max-width: 420px ) {
-    html {font-size: 14px;}
-    .COGS-title h1, .navburger h1 {
+@media screen and ( max-width: 420px) and (max-height: 740px) {
+    html {
+        font-size: 14px;
+    }
+    .mobile-container {
+        padding: 0 20px;
+    }
+    .COGS-title h1,
+    .navburger h1 {
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 500;                                                    
     }
     .hamburger {
-        background-size: 2.4rem;
+        background-size: 2.7rem;
     }
     .mobile-nav {
         height: 12%;
     }
     .menu-links .closebtn {
-        top: 2.1%;
+        top: 2%;
         right: 11px;
     }
     .cogs-logo {
         position: unset;
     }
-    .brand-logo, .brand-logo p {
+    .brand-logo,
+    .brand-logo p {
         font-size: 2rem;
     }
     .multiple-lang {
-        margin-bottom: 30px;
+        margin-bottom: 0;
     }
-    .multiple-lang div a, .share-container p, .social-container p {
+    .multiple-lang div a,
+    .share-container p,
+    .social-container p {
         font-size: 1.6rem;
     }
     .menu-links a {
@@ -4403,14 +4556,15 @@ address,
         padding: 1.2em 0;
     }
     .share-container {
-        padding: 4%;
+        padding: 3% 0;
         flex-direction: column;
+        width: 100%;
     }
     .share-container p {
         font-size: 1.4rem;
         margin-bottom: 10px;
     }
-    .web__share > .share-icon {
+    .web__share>.share-icon {
         width: 38px;
         height: 38px;
         line-height: 38px;
@@ -4419,7 +4573,6 @@ address,
     .social-container {
         margin-top: 40px;
     }
-    
     .hero-heading {
         font-size: 6rem;
         line-height: 0.9em;
@@ -4430,9 +4583,23 @@ address,
         margin-bottom: 20px;
     }
     .hero-subheading {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
         line-height: 1em;
+        margin: 0 auto;
         margin-bottom: 20px;
+        width: 64%;
+    }
+    .hero-button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hollow-button.white {
+        margin-bottom: 10px;
+    }
+    .hollow-button {
+        width: 64%;
+        margin: 0 auto;
     }
     .section-subheading.center {
         font-size: 1.6rem;
@@ -4442,7 +4609,9 @@ address,
         padding-left: 20px;
         padding-right: 10px;
     }
-    .welcome-pgraph, .welcome-author, .group-photo-caption {
+    .welcome-pgraph,
+    .welcome-author,
+    .group-photo-caption {
         font-size: 1.4rem;
     }
     .div-block {
@@ -4455,18 +4624,22 @@ address,
     .photo-pcc {
         max-width: 95%;
     }
-    .bulletin-text, .feedback-text, .call-to-action-heading{
+    .bulletin-text,
+    .feedback-text,
+    .call-to-action-heading {
         font-size: 1.7rem;
     }
-    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph {
+    .bulletin-pgraph,
+    .feedback-pgraph,
+    .call-to-action-pgraph {
         font-size: 1.4rem;
     }
-    
-    .bulletin-row-2 {
+    .bulletin-row {
         width: 22em;
         height: 8em;
     }
-    .title, .date-published {
+    .title,
+    .date-published {
         font-size: 1.5rem;
     }
     .date-published {
@@ -4475,7 +4648,6 @@ address,
     .bulletin-download {
         font-size: 1rem;
     }
-    
     .plan-visit {
         padding-top: 25%;
     }
@@ -4495,7 +4667,10 @@ address,
         margin-top: 1px;
         padding: 5px;
     }
-    select, #attendance-date, .attend-service, .service-time {
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time {
         padding: 0 10px;
         height: 40px;
         margin-bottom: 5px;
@@ -4509,7 +4684,9 @@ address,
     .selection {
         height: 135px;
     }
-    
+    .feedback-section {
+        padding: 30px;
+    }
     .main-news {
         margin-bottom: 15px;
         height: 300px;
@@ -4531,7 +4708,8 @@ address,
     .newsdescription {
         padding: 15px;
     }
-    .newsdescription .top-news-title, .news-pgraph2 {
+    .newsdescription .top-news-title,
+    .news-pgraph2 {
         font-size: 1.3rem;
         line-height: 1.2em;
         margin-bottom: 2px;
@@ -4543,6 +4721,7 @@ address,
     }
     .news-container {
         height: 1700px;
+        padding: 0;
     }
     .top-news {
         height: 1500px;
@@ -4571,24 +4750,31 @@ address,
     .address {
         height: 66em;
     }
-    .location h2, .contact-info h2, .office-hour h2 {
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
         font-size: 2.5rem;
         margin: 20px auto 10px;
     }
-    address, .contact-info p, .office-hour p {
+    address,
+    .contact-info p,
+    .office-hour p {
         font-size: 1.6rem;
         margin-bottom: 20px;
     }
     .form-field {
         padding: 5px 10px;
     }
-    .form-field, .send-message-button.full-width, .direction-button {
+    .form-field,
+    .send-message-button.full-width,
+    .direction-button {
         font-size: 1.2rem;
     }
     .googlemap iframe {
         height: 24em;
     }
-    .bible-verse, .bible-book {
+    .bible-verse,
+    .bible-book {
         font-size: 2rem;
     }
     .verse-container {
@@ -4600,8 +4786,8 @@ address,
     .footer.center {
         padding: 0.8em 0;
     }
-    
-    .submit-button, .cogs-news-form > .text-field {
+    .submit-button,
+    .cogs-news-form>.text-field {
         font-size: 1.1rem;
     }
     .nospam {
@@ -4610,9 +4796,10 @@ address,
     }
 }
 
+
 /* ----------- iPhone 7, iPhone 6 PLUS Potrait ----------- */
 
-@media screen and ( max-width: 420px ) and ( max-height: 630px ) {
+@media screen and ( max-width: 420px) and ( max-height: 630px) {
     .plan-visit {
         padding-top: 10%;
     }
@@ -4639,11 +4826,15 @@ address,
     }
 }
 
+
 /* ----------- iPhone 6  Potrait----------- */
 
-@media screen and ( max-width: 380px ) {
-    html {font-size: 12px;}
-    .brand-logo, .brand-logo p {
+@media screen and ( max-width: 380px) {
+    html {
+        font-size: 12px;
+    }
+    .brand-logo,
+    .brand-logo p {
         font-size: 2.3rem;
     }
     .menu-links .closebtn {
@@ -4662,10 +4853,11 @@ address,
     .social-container {
         margin-top: 30px;
     }
-    .bulletin-row-2 {
+    .bulletin-row {
         width: 19.5em;
     }
-    .title, .date-published {
+    .title,
+    .date-published {
         padding-left: 10px;
     }
     .bulletin-download {
@@ -4687,7 +4879,8 @@ address,
         top: -155px;
         right: 10px;
     }
-    .share-toggle, .card__share .card__social .share-icon {
+    .share-toggle,
+    .card__share .card__social .share-icon {
         width: 36px;
         height: 36px;
         line-height: 36px;
@@ -4697,17 +4890,22 @@ address,
     .address {
         height: 60em;
     }
-    .location h2, .contact-info h2, .office-hour h2 {
+    .location h2,
+    .contact-info h2,
+    .office-hour h2 {
         font-size: 2.3rem;
     }
-    address, .contact-info p, .office-hour p {
+    address,
+    .contact-info p,
+    .office-hour p {
         font-size: 1.5rem;
     }
 }
 
+
 /* ----------- iPhone 6  Potrait----------- */
 
-@media screen and ( max-width: 380px ) and ( max-height: 560px ) {
+@media screen and ( max-width: 380px) and ( max-height: 560px) {
     .menu-links a {
         font-size: 1.8rem;
     }
@@ -4717,10 +4915,13 @@ address,
     }
 }
 
+
 /* ----------- iPhone 6 Potrait ----------- */
 
-@media screen and ( max-width: 380px ) and ( max-height: 540px ) {
-    html {font-size: 11px}
+@media screen and ( max-width: 380px) and ( max-height: 540px) {
+    html {
+        font-size: 11px
+    }
     .menu-links .closebtn {
         top: 1.7%;
         right: 0;
@@ -4750,7 +4951,13 @@ address,
     .plan-visit {
         padding-top: 0;
     }
-    .plan-visit .form-container .form-row .form-field, .plan-visit .form-field.text-area, select, #attendance-date, .attend-service, .service-time, .plan-visit form .button.full-width {
+    .plan-visit .form-container .form-row .form-field,
+    .plan-visit .form-field.text-area,
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time,
+    .plan-visit form .button.full-width {
         font-size: 1.3rem;
     }
     .address {
@@ -4758,10 +4965,15 @@ address,
     }
 }
 
+
 /* ----------- iPhone 6S Potrait ----------- */
 
-@media screen and ( max-width: 380px ) and ( max-height: 540px ) {
-    .plan-visit .form-container .form-row .form-field, select, #attendance-date, .attend-service, .service-time {
+@media screen and ( max-width: 380px) and ( max-height: 540px) {
+    .plan-visit .form-container .form-row .form-field,
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time {
         height: 35px;
     }
     .selection {
@@ -4769,9 +4981,10 @@ address,
     }
 }
 
+
 /* ----------- Galaxy Note 3 Potrait  ----------- */
 
-@media screen and ( max-width: 360px ) and ( max-height: 640px ) {
+@media screen and ( max-width: 360px) and ( max-height: 640px) {
     .menu-links a {
         font-size: 1.8rem;
     }
@@ -4802,9 +5015,10 @@ address,
     }
 }
 
+
 /* ----------- VIVO 5, S Note 3 Neo Potrait  ----------- */
 
-@media screen and ( max-width: 360px ) and ( max-height: 560px ) {
+@media screen and ( max-width: 360px) and ( max-height: 560px) {
     .plan-visit {
         padding-top: 5%;
     }
@@ -4816,13 +5030,18 @@ address,
     }
 }
 
+
 /* ----------- HuaWei Mate9 Potrait  ----------- */
 
-@media screen and ( max-width: 360px ) and ( max-height: 530px ) {
+@media screen and ( max-width: 360px) and ( max-height: 530px) {
     .social-container {
         margin-top: 12px;
     }
-    .plan-visit .form-container .form-row .form-field, select, #attendance-date, .attend-service, .service-time {
+    .plan-visit .form-container .form-row .form-field,
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time {
         height: 30px;
     }
     .menu-links a {
@@ -4834,27 +5053,23 @@ address,
     .multiple-lang {
         margin-bottom: 15px;
     }
-    
 }
+
 
 /* ----------- YES M631Y Potrait  ----------- */
 
-@media screen and ( max-width: 360px ) and ( max-height: 512px ) {
-    
-}
+@media screen and ( max-width: 360px) and ( max-height: 512px) {}
+
 
 /* ----------- iPhone 5 and 5S Potrait ----------- */
- 
-@media screen and ( max-width: 320px ) and ( max-height: 568px ) {
-    
-}
+
+@media screen and ( max-width: 320px) and ( max-height: 568px) {}
+
 
 /* ----------- iPhone 4 and 4S Potrait----------- */
 
+@media screen and ( max-width: 320px) and ( max-height: 480px) {}
 
-@media screen and ( max-width: 320px ) and ( max-height: 480px ) {
-    
-}
 
 /*@media screen and (min-height: 736px) and (max-height: 737px) {
     .nav-link {
@@ -5125,7 +5340,7 @@ address,
         font-size: 19px;
         line-height: 19px;
     }
-    .container-3 {
+    .welcome-container {
         margin-bottom: 0;
     }
     .news-image {

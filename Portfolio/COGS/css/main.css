@@ -1502,7 +1502,6 @@ address,
 }
 
 .bible-verse {
-    margin-bottom: 5px;
     color: #edeff2;
     font-size: 1.5rem;
     line-height: 1.2em;
@@ -2247,7 +2246,7 @@ address,
         text-align: center;
     }
     .welcome-button-container {
-        margin-top: 3em;
+        padding-top: 3em;
         text-align: left;
         position: absolute;
         width: 600px;
@@ -2612,8 +2611,15 @@ address,
         line-height: 50px;
         font-size: 21px;
     }
+    .section {
+        padding: 6em 0;
+    }
     #welcome {
-        height: 180%;
+        height: 155%;
+        padding: 5em 0 0;
+    }
+    .welcome-button-container {
+        padding-top: 1em;
     }
     .main-news {
         height: 350px;
@@ -2657,6 +2663,37 @@ address,
         height: 30px;
         line-height: 30px;
         font-size: 14px;
+    }
+    .title, .date-published {
+        padding-left: 0;
+    }
+    .bulletin-download {
+        margin-left: 0;
+        font-size: 2.5rem;
+    }
+    .hollow-button, .visit, .history {
+        font-size: 1.8rem;
+    }
+    .group-photo-caption {
+        font-size: 2.2rem;
+    }
+    .bulletin-pgraph, .feedback-pgraph, .call-to-action-pgraph, .welcome-pgraph, .welcome-author {
+        font-size: 2.5rem;
+    }
+    .text-field, .submit-button, .nospam, .form-field, .plan-submit.button.full-width, .direction-button, address, .contact-info p, .office-hour p {
+        font-size: 1.8rem;
+    }
+    .form-field, select, #attendance-date {
+        margin-bottom: 5px;
+    }
+    .selection {
+        padding-bottom: 0;
+    }
+    select, #attendance-date, .form-field, .plan-submit.button.full-width {
+        height: 40px;
+    }
+    .call-to-action-section {
+        height: 64%;
     }
 }
 
@@ -2835,6 +2872,18 @@ address,
     .form-field {
         margin-bottom: 0.5em;
     }
+    #announcements .adjust-padding-lr {
+        padding: 0 60px;
+    }
+    .call-to-action-section {
+        height: 37%;
+    }
+    .verse-container {
+        top: 55%;
+    }
+    .bible-verse {
+        font-size: 3rem;
+    }
 }
 
 
@@ -2902,10 +2951,10 @@ address,
         font-size: 10px
     }
     .menu-links .closebtn {
-        height: 2.5rem;
-        width: 2.5rem;
-        background-size: 2.5rem;
-        top: 2%;
+        height: 3rem;
+        width: 3rem;
+        background-size: 3rem;
+        top: 3%;
         right: 4%;
     }
     .brand-logo,
@@ -2962,6 +3011,9 @@ address,
     .contact-info p,
     .office-hour p {
         font-size: 1.7rem;
+    }
+    .bible-verse {
+        font-size: 2.5rem;
     }
 }
 

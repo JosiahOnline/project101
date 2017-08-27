@@ -154,7 +154,7 @@
             </nav>
         </div>
     </div>
-    <div class="mobile-nav">
+    <div id="scrollDown" class="mobile-nav">
         <div class="mobile-container">
             <div class="COGS-title">
                 <h1>COGS SANDAKAN</h1>
@@ -691,6 +691,20 @@
             });
         });
 
+    </script>
+    <script>
+        var iScrollPos = 0;
+        $(window).scroll(function() {
+            var iCurScrollPos = $(this).scrollTop();
+            if (window.matchMedia("(max-width: 1024px)").matches) {
+                  if (iCurScrollPos > iScrollPos) {
+                    $("#scrollDown").css('display', 'none');
+                } else {
+                    $("#scrollDown").css('display', 'block');
+                }
+                iScrollPos = iCurScrollPos;  
+            }
+        });
     </script>
 </body>
 

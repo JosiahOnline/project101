@@ -3685,25 +3685,34 @@ address,
     }
     .COGS-title h1,
     .navburger h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 500;
     }
     .hamburger {
-        background-size: 2.7rem;
+        background-size: 2.5rem;
     }
     .mobile-nav {
-        height: 12%;
+        height: 10%;
+    }
+    .nav-container {
+        padding-top: 0;
     }
     .menu-links .closebtn {
-        top: 2%;
-        right: 11px;
+        top: 2.6%;
+        right: 6.6%;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-size: 2.5rem;
+    }
+    .beta {
+        font-size: 1.2rem;
     }
     .cogs-logo {
         position: unset;
     }
     .brand-logo,
     .brand-logo p {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .multiple-lang {
         margin-bottom: 0;
@@ -3711,11 +3720,11 @@ address,
     .multiple-lang div a,
     .share-container p,
     .social-container p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     .menu-links a {
-        font-size: 2rem;
-        padding: 1.2em 0;
+        font-size: 1.8rem;
+        padding: 1.3em 0;
     }
     .share-container {
         padding: 3% 0;
@@ -3724,7 +3733,10 @@ address,
     }
     .share-container p {
         font-size: 1.4rem;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    .share-button {
+        font-size: 1.2rem;
     }
     .web__share>.share-icon {
         width: 38px;
@@ -3733,13 +3745,21 @@ address,
         font-size: 18px;
     }
     .social-container {
-        margin-top: 40px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .social-icon-link img {
+        width: 2rem;
     }
     .hero-heading {
         font-size: 3.5rem;
     }
+    .hero-heading, .section-heading.centered, .hero-subheading {
+        padding-bottom: 15px;
+    }
     .section-heading.centered {
         font-size: 3rem;
+        padding-top: 0;
     }
     .hero-subheading {
         font-size: 2rem;
@@ -3766,6 +3786,7 @@ address,
     }
     #welcome {
         height: 120%;
+        padding: 5em 0 0;
     }
     .welcome-column-1 {
         padding-right: 0;
@@ -3874,14 +3895,14 @@ address,
         top: -300px;
     }
     .main-news-title {
-        font-size: 5rem;
+        font-size: 4rem;
         line-height: 1em;
-        padding-top: 15%;
+        padding-top: 20%;
         margin-bottom: 15px;
     }
     .news-pgraph1 {
         font-size: 1.6rem;
-        padding: 0 20px;
+        padding: 0 40px;
         line-height: 1.3em;
     }
     .newsdescription {
@@ -3923,6 +3944,12 @@ address,
     .card__social--active {
         transform: translateX(-10px);
     }
+    .card__social {
+        width: 177px;
+    }
+    .card__social>.share-icon {
+        margin-left: 0;
+    }
     .form-wrapper.squeezed {
         margin-bottom: 40px;
     }
@@ -3930,21 +3957,23 @@ address,
         height: 42%;
     }
     .section {
-        padding: 5em 0;
+        padding: 4em 0;
     }
     .address {
-        height: 66em;
+        height: 60em;
     }
     .location h2,
     .contact-info h2,
     .office-hour h2 {
-        font-size: 2.5rem;
-        margin: 20px auto 10px;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 5px auto;
     }
     address,
     .contact-info p,
     .office-hour p {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
+        font-weight: 300;
         margin-bottom: 20px;
     }
     .form-field {
@@ -3965,14 +3994,15 @@ address,
         font-size: 1.2rem;
     }
     .footer.center {
-        padding: 18px 0;
+        padding: 12px 0;
+        height: 6%;
     }
     .submit-button,
     .cogs-news-form>.text-field {
         font-size: 1.1rem;
     }
     .nospam {
-        font-weight: 1.2rem;
+        font-size: 1.2rem;
         font-weight: 300;
     }
     .adjust-padding-lr {
@@ -3987,29 +4017,80 @@ address,
 /* ----------- iPhone 7, iPhone 6 PLUS Potrait ----------- */
 
 @media screen and ( max-width: 420px) and ( max-height: 630px) {
-    .plan-visit {
-        padding-top: 10%;
+    .brand-logo, .brand-logo p {
+        font-size: 2.5rem;
     }
-    .menu-links a {
-        font-size: 1.5rem;
+    .beta {
+        font-size: 1.1rem;
+    }
+    .cogs-logo {
+        margin-bottom: 20px;
+    }
+    .multiple-lang {
+        margin-top: 0;
+    }
+    .multiple-lang div a, .share-container p, .social-container p {
+        font-size: 1.3rem;
     }
     .menu-links .closebtn {
-        top: 1.7%;
-        right: 10px;
+        top: 2.2%;
+        right: 6.5%;
     }
-    .share-container {
-        padding: 2%;
+    .menu-links a {
+        font-size: 1.6rem;
+        padding: 1.1em 0;
     }
-    .social-container {
-        margin-top: 20px;
+    .share-website {
+        margin-top: 30px;
     }
-    .social-container p {
-        font-size: 1.3rem;
-        padding-right: 5px;
-        margin-bottom: 5px;
+    .share-button {
+        font-size: 1.1rem;
     }
     .social-icon-link img {
-        width: 1.7rem;
+        font-size: 1.7rem;
+    }
+    #welcome {
+        height: 140%;
+    }
+    .cogs-news-form {
+        margin-bottom: 10px;
+    }
+    .call-to-action-section {
+        height: 51%;
+    }
+    .newsdescription .top-news-title {
+        font-size: 1.2rem;
+    }
+    .news-pgraph2 {
+        font-size: 1.1rem;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 17px;
+    }
+    .card__share {
+        top: -155px;
+    }
+    .card__social {
+        width: 160px;
+    }
+    .social-container p {
+        padding-top: 6px;
+    }
+    .address {
+        height: 59em;
+    }
+    .location {
+        padding: 1.5em;
+    }
+    
+    .bible-verse {
+        font-size: 1.6rem;
+    }
+    .footer-text {
+        font-size: 1rem;
     }
 }
 

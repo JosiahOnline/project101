@@ -3024,6 +3024,17 @@ address,
     #welcome {
         height: 300%;
     }
+    .bulletin-row {
+        height: 11em;
+        width: 29em;
+        padding: 0;
+    }
+    .bulletin-description {
+        padding-left: 10px;
+    }
+    .bulletin-download {
+        font-size: 2rem;
+    }
     .main-news-title {
         font-size: 7rem;
     }
@@ -3039,8 +3050,20 @@ address,
     .call-to-action-section {
         height: 85%;
     }
+    #announcements .adjust-padding-lr {
+        padding: 0 40px;
+    }
     .adjust-padding-lr {
         padding: 0 40px;
+    }
+    .bible-verse {
+        font-size: 2rem;
+    }
+    .footer.center {
+        height: 9%;
+    }
+    .footer-text {
+        font-size: 1.5rem;
     }
 }
 
@@ -3075,9 +3098,24 @@ address,
 /* ----------- S Galaxy Note 3 Neo ----------- */
 
 @media screen and ( max-width: 640px) and (max-height: 280px) {
-    html {font-size: 8px;}
+    html {font-size: 9px;}
     #welcome {
         height: 405%;
+    }
+    .call-to-action-section {
+        height: 110%;
+    }
+    .address {
+        min-height: 30em;
+        height: 31em;
+    }
+    .googlemap iframe {
+        min-height: 27em;
+        height: 27.8em;
+    }
+    .footer.center {
+        padding: 1.6% 0;
+        height: 10%;
     }
 }
 
@@ -3130,9 +3168,15 @@ address,
     .social-container p {
         font-size: 2rem;
     }
+    .navbar {
+        padding-top: 0;
+    }
     .nav-link {
         font-size: 2.5rem;
         padding: 1.3em 0;
+    }
+    .share-website {
+        margin-top: 40px;
     }
     .share-button {
         font-size: 1.5rem;
@@ -3149,7 +3193,7 @@ address,
     .social-container {
         display: flex;
         justify-content: center;
-        margin-top: 60px;
+        margin: 30px auto;
     }
     .social-container p {
         margin-right: 5px;
@@ -3173,9 +3217,7 @@ address,
         margin-bottom: 0.8em;
     }
     .bulletin-flex {
-        flex-direction: column;
-        align-items: left;
-        padding: 0.5em;
+        
     }
     .bulletin-container-1 {
         padding: 0;
@@ -3185,14 +3227,7 @@ address,
     .call-to-action-heading {
         font-size: 2.5rem;
     }
-    .bulletin-pgraph,
-    .feedback-pgraph,
-    .call-to-action-pgraph {
-        font-size: 1.8rem;
-    }
-    .bulletin-pgraph {
-        margin-bottom: 20px;
-    }
+    
     .bulletin-row {
         width: 33em;
         height: 12em;
@@ -3206,30 +3241,38 @@ address,
     .bulletin-download {
         font-size: 1.8rem;
     }
+    #welcome {
+        height: 130%;
+        padding: 4em 0 0;
+    }
     .welcome-column-1 {
         height: 100%;
+        margin-bottom: 22%;
     }
-    .welcome-column-1,
     .welcome-column-2 {
-        margin-bottom: 40px;
+        padding-left: 0;
     }
     .welcome-pgraph,
     .welcome-author {
         font-size: 2rem;
         text-align: left;
+        margin-bottom: 0;
     }
     .welcome-button-container {
-        left: 30px;
+        width: 100%;
+        padding-top: 15px;
     }
     .group-photo-caption {
         font-size: 2rem;
     }
     #announcements {
-        padding: 6em 1em 8em;
+        padding: 5em 0 4em;
+    }
+    .section-heading.centered {
+        padding-bottom: 25px;
     }
     .news-container {
-        height: 2550px;
-        padding: 0 25px;
+        height: 2480px;
     }
     .main-news {
         height: 320px;
@@ -3239,11 +3282,21 @@ address,
         padding-top: 5%;
     }
     .main-news-title {
+        font-size: 5rem;
         margin-bottom: 25px;
     }
+    .section-title-group, .main-news {
+        margin-bottom: 20px;
+    }
+    .news-pgraph1 {
+        font-size: 2.1rem;
+    }
     .top-news {
-        height: 2250px;
+        height: 2100px;
         padding: 0;
+    }
+    .newsdescription .top-news-title {
+        font-size: 2.1rem;
     }
     .news {
         width: 100%;
@@ -3308,8 +3361,8 @@ address,
         line-height: 50px;
         font-size: 23px;
     }
-    .call-to-action-section .container {
-        height: 250px;
+    .call-to-action-section {
+        height: 44%;
     }
     .call-to-action-heading,
     .call-to-action-pgraph {
@@ -3376,6 +3429,12 @@ address,
     }
     .footer-text {
         font-size: 1.6rem;
+    }
+    .adjust-padding-lr {
+        padding: 0 40px;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 40px;
     }
 }
 

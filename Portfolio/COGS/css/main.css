@@ -4079,6 +4079,13 @@ address,
     .social-container p {
         padding-top: 6px;
     }
+    .plan-visit {
+        padding-top: 15%;
+        padding-bottom: 0;
+    }
+    .container .title {
+        padding: 0;
+    }
     .address {
         height: 59em;
     }
@@ -4088,6 +4095,9 @@ address,
     
     .bible-verse {
         font-size: 1.6rem;
+    }
+    .footer.center {
+        padding: 10px 0;
     }
     .footer-text {
         font-size: 1rem;
@@ -4101,72 +4111,70 @@ address,
     html {
         font-size: 12px;
     }
-    .brand-logo,
-    .brand-logo p {
-        font-size: 2.3rem;
-    }
-    .menu-links .closebtn {
-        top: 2%;
-        right: 5px;
-    }
-    .share-website {
-        margin-top: 25px;
-    }
-    .share-button {
-        font-size: 1.4rem;
-    }
-    .share-container {
-        padding: 3%;
-    }
-    .social-container {
-        margin-top: 30px;
+    .cogs-logo {
+        margin-bottom: 20px;
     }
     .bulletin-row {
-        width: 19.5em;
+        width: 20em;
     }
-    .title,
-    .date-published {
-        padding-left: 10px;
+    .hero-subheading {
+        width: 65%;
     }
-    .bulletin-download {
-        font-size: 1.3rem;
-        margin-left: 10px;
-        padding: 10px;
-        line-height: 1em;
+    #welcome {
+        height: 115%;
     }
     .welcome-column-1 {
-        height: 95%;
+        margin-bottom: 90px;
+    }
+    .container .title {
+        padding: 0;
     }
     .main-news-title {
-        padding-top: 20%;
+        font-size: 5rem;
+        margin-bottom: 10px;
+        padding-top: 22%;
+    }
+    .news-container {
+        height: 1620px;
+    }
+    .main-news {
+        margin-bottom: 10px;
+    }
+    .news, .newsdescription {
+        height: 100px;
+    }
+    .newsdescription {
+        top: -100px;
+    }
+    .top-news {
+        height: 1320px;
+    }
+    .share-toggle, .card__share .card__social .share-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 17px;
     }
     .card__social {
-        width: 170px;
+        width: 155px;
     }
     .card__share {
-        top: -155px;
-        right: 10px;
+        top: -145px;
     }
-    .share-toggle,
-    .card__share .card__social .share-icon {
-        width: 36px;
-        height: 36px;
-        line-height: 36px;
-        font-size: 15px;
-        margin-left: 0;
+    .cogs-news-form {
+        margin-bottom: 5px;
     }
     .address {
-        height: 60em;
+        height: 55em;
     }
-    .location h2,
-    .contact-info h2,
-    .office-hour h2 {
-        font-size: 2.3rem;
+    .location {
+        padding: 15px;
     }
-    address,
-    .contact-info p,
-    .office-hour p {
-        font-size: 1.5rem;
+    address {
+        margin-bottom: 15px;
+    }
+    .cogs-news-form>.text-field {
+        margin-bottom: 10px;
     }
 }
 
@@ -4174,12 +4182,31 @@ address,
 /* ----------- iPhone 6  Potrait----------- */
 
 @media screen and ( max-width: 380px) and ( max-height: 560px) {
-    .menu-links a {
-        font-size: 1.8rem;
+    .cogs-logo {
+        margin-bottom: 15px;
     }
-    .menu-links .closebtn {
-        top: 1.5%;
-        right: 5px;
+    .plan-visit {
+        padding-top: 12%;
+        margin-bottom: 0;
+    }
+    .close-button {
+        top: 3%;
+    }
+    .plan-visit .form-container .form-row .form-field, select, #attendance-date {
+        height: 35px;
+    }
+    .selection {
+        height: unset;
+        padding-bottom: 0;
+    }
+    .plan-visit form .button.full-width {
+        margin-bottom: 0;
+    }
+    #welcome {
+        height: 135%;
+    }
+    .footer.center {
+        padding: 7px 0;
     }
 }
 
@@ -4190,12 +4217,27 @@ address,
     html {
         font-size: 11px
     }
-    .menu-links .closebtn {
-        top: 1.7%;
-        right: 0;
+    .beta {
+        top: -8px;
+        left: -6px;
+    }
+    .brand-logo, .brand-logo p {
+        font-size: 2.8rem;
+    }
+    .multiple-lang div a {
+        font-size: 1.5rem;
+    }
+    .share-container p, .social-container p {
+        font-size: 1.4rem;
+    }
+    .share-container p {
+        margin-bottom: 10px;
+    }
+    .share-button {
+        font-size: 1.2rem;
     }
     .social-container {
-        margin-top: 20px;
+        margin-top: 11px;
     }
     .social-container p {
         font-size: 1.5rem;
@@ -4208,16 +4250,29 @@ address,
         margin-bottom: 20px;
     }
     .menu-links a {
+        font-size: 1.8rem;
         padding: 1em 0;
     }
     .hero-subheading {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+    .section-heading.centered {
+        padding-bottom: 5px;
+    }
+    .title, .date-published {
+        font-size: 1.8rem;
+    }
+    .bulletin-download {
+        font-size: 1.5rem;
     }
     .welcome-column-1 {
         height: 75%;
     }
+    .newsdescription {
+        padding: 10px;
+    }
     .plan-visit {
-        padding-top: 0;
+        padding-top: 10%;
     }
     .plan-visit .form-container .form-row .form-field,
     .plan-visit .form-field.text-area,
@@ -4231,21 +4286,26 @@ address,
     .address {
         height: 57em;
     }
-}
-
-
-/* ----------- iPhone 6S Potrait ----------- */
-
-@media screen and ( max-width: 380px) and ( max-height: 540px) {
     .plan-visit .form-container .form-row .form-field,
     select,
     #attendance-date,
     .attend-service,
-    .service-time {
+    .service-time,
+    .plan-visit form .button.full-width{
         height: 35px;
     }
     .selection {
         height: 120px;
+    }
+    .call-to-action-section {
+        height: 48%;
+    }
+    .direction-button, .send-message-button.full-width {
+        height: 35px;
+        padding: 7px;
+    }
+    .address {
+        height: 54em;
     }
 }
 

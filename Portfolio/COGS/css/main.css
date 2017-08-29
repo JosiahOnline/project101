@@ -2405,11 +2405,7 @@ address,
     }
     .title,
     .date-published {
-        padding-left: 10%;
         font-weight: 500;
-    }
-    .bulletin-download {
-        margin-left: 10%;
     }
     #welcome {
         height: 110%
@@ -3480,12 +3476,7 @@ address,
         width: 28em;
         height: 10em;
     }
-    .title,
-    .date-published {
-        padding-left: 10px;
-    }
     .bulletin-download {
-        margin-left: 10px;
         font-size: 2rem;
     }
     .welcome-column-1 {
@@ -3625,17 +3616,6 @@ address,
 @media screen and ( max-width: 530px) {
     .menu-links a {
         padding: 0.8em 0;
-    }
-    .bulletin-row {
-        width: 29em;
-        height: 11em;
-    }
-    .title,
-    .date-published {
-        padding-left: 5px;
-    }
-    .bulletin-download {
-        margin-left: 5px;
     }
     .bible-verse {
         font-size: 1.5rem;
@@ -4313,23 +4293,49 @@ address,
 /* ----------- Galaxy Note 3 Potrait  ----------- */
 
 @media screen and ( max-width: 360px) and ( max-height: 640px) {
+    .brand-logo, .brand-logo p {
+        font-size: 2.8rem;
+    }
+    .beta {
+        top: -10px;
+    }
     .menu-links a {
         font-size: 1.8rem;
+        padding: 1.2em 0;
     }
     .social-container {
         margin-top: 30px;
     }
+    .hero-subheading {
+        font-size: 2.2rem;
+        width: 75%;
+    }
     .plan-visit {
         padding-top: 15%;
     }
-    .card__social {
-        width: 165px;
+    .bulletin-row {
+        width: 18em;
+        height: 7em;
+    }
+    .bulletin-description {
+        padding-left: 7px;
+    }
+    .section {
+        padding: 4em 0 3em;
+    }
+    #welcome {
+        height: 120%;
+        padding: 4em 0;
     }
     .welcome-column-2 {
         height: 80%;
     }
-    .news-container {
-        height: 1580px;
+    .card__share {
+        top: -140px;
+        right: 5px;
+    }
+    .card__social {
+        width: 160px;
     }
     .top-news {
         height: 1330px;
@@ -4340,6 +4346,25 @@ address,
     .newsdescription {
         top: -100px;
         height: 100px;
+        padding: 10px;
+    }
+    .submit-button, .cogs-news-form>.text-field, .direction-button, .send-message-button.full-width {
+        height: 35px;
+        padding: 8px 15px;
+        font-size: 1.2rem;
+        border: 0;
+    }
+    .verse-container {
+        width: 75%;
+    }
+    .footer.center {
+        padding: 10px 0;
+    }
+    .adjust-padding-lr {
+        padding: 0 30px;
+    }
+    #announcements .adjust-padding-lr {
+        padding: 0 20px;
     }
 }
 
@@ -4347,14 +4372,33 @@ address,
 /* ----------- VIVO 5, S Note 3 Neo Potrait  ----------- */
 
 @media screen and ( max-width: 360px) and ( max-height: 560px) {
+    .menu-links a {
+        font-size: 1.7rem;
+        padding: 1em 0;
+    }
+    #welcome {
+        height: 135%;
+    }
     .plan-visit {
-        padding-top: 5%;
+        padding-top: 13%;
+    }
+    select, #attendance-date, .attend-service, .service-time, .plan-visit form .button.full-width {
+        height: 35px;
     }
     .share-container {
-        padding: 4% 2%;
+        padding: 3% 2%;
     }
-    .card__share {
-        top: -150px;
+    .share-button {
+        font-size: 1.2rem;
+    }
+    .social-container {
+        margin-top: 20px;
+    }
+    .bible-verse {
+        font-size: 1.8rem;
+    }
+    .footer.center {
+        padding: 7px 0;
     }
 }
 
@@ -4362,8 +4406,17 @@ address,
 /* ----------- HuaWei Mate9 Potrait  ----------- */
 
 @media screen and ( max-width: 360px) and ( max-height: 530px) {
+    .hero-subheading {
+        width: 70%;
+    }
     .social-container {
         margin-top: 12px;
+    }
+    .bulletin-row {
+        width: 19em;
+    }
+    .bulletin-description {
+        padding-left: 1px;
     }
     .plan-visit .form-container .form-row .form-field,
     select,
@@ -4375,18 +4428,26 @@ address,
     .menu-links a {
         font-size: 1.7rem;
     }
-    .menu-links .closebtn {
-        top: 1.4%;
-    }
     .multiple-lang {
         margin-bottom: 15px;
+    }
+    .share-website {
+        margin-top: 25px;
+    }
+    .share-button {
+        font-size: 1.3rem;
+    }
+    .call-to-action-section {
+        height: 52%;
     }
 }
 
 
 /* ----------- YES M631Y Potrait  ----------- */
 
-@media screen and ( max-width: 360px) and ( max-height: 512px) {}
+@media screen and ( max-width: 360px) and ( max-height: 512px) {
+    
+}
 
 
 /* ----------- iPhone 5 and 5S Potrait ----------- */

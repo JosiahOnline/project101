@@ -1,10 +1,13 @@
-body, html {
+body,
+html {
     padding: 0;
     margin: 0;
     font-family: 'Merriweather', serif;
 }
 
+
 /*Navbar Styling*/
+
 a:hover {
     text-decoration: none;
 }
@@ -15,20 +18,21 @@ a:hover {
     align-items: center;
     height: 70px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .navbar .navbar-brand {
     color: white;
     padding-top: 10px;
-    padding-left: 12px;/*to have the same padding as "BACK" Button*/
+    padding-left: 12px;
+    /*to have the same padding as "BACK" Button*/
 }
 
 .navbar .navbar-brand:hover {
     color: white;
 }
 
-.navbar a > p {
+.navbar a>p {
     padding: 7px 12px 5px;
     font-size: 18px;
     background-color: #23B5D3;
@@ -38,12 +42,16 @@ a:hover {
     text-decoration: none;
 }
 
+
 /*End of Navbar Styling*/
 
 .row {
     margin: 0;
 }
+
+
 /*Carousel*/
+
 .carousel {
     top: 45px;
 }
@@ -57,20 +65,22 @@ a:hover {
     padding: 0;
     z-index: 1;
 }
-.carousel .title > h1 {
+
+.carousel .title>h1 {
     width: 100%;
     margin: 0 auto;
-    background-color: rgba(20,30,40,0.5);
+    background-color: rgba(20, 30, 40, 0.5);
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 25px;
     line-height: 25px;
-   
 }
+
 .carousel-indicators {
     bottom: -30px;
 }
+
 .carousel-indicators li {
     height: 6px;
 }
@@ -89,7 +99,7 @@ a:hover {
     height: 30px;
     position: relative;
     color: white;
-    bottom: -65px; 
+    bottom: -65px;
 }
 
 .new-caption-area p {
@@ -98,9 +108,10 @@ a:hover {
 }
 
 section.main {
-    background-color: rgba(20,30,40,1);
+    background-color: rgba(20, 30, 40, 1);
     height: 100vh;
 }
+
 
 /*Share This Page Section*/
 
@@ -139,12 +150,12 @@ section.main {
     text-transform: uppercase;
     font-weight: 500;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     -webkit-transition: -webkit-transform 1s ease;
     transition: -webkit-transform 1s ease;
     -o-transition: transform 1s ease;
@@ -152,16 +163,18 @@ section.main {
     transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
-.navbar > a p:hover, .share-button:hover {
+.navbar>a p:hover,
+.share-button:hover {
     background-color: #EA526F;
 }
+
 .web__share {
     display: none;
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     -webkit-transition: -webkit-transform 0.35s ease;
     transition: -webkit-transform 0.35s ease;
     -o-transition: transform 0.35s ease;
@@ -197,13 +210,13 @@ section.main {
     transition: all 0.3s ease;
     outline: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .share-icon:hover,
 .share-icon:focus {
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -239,9 +252,10 @@ section.main {
     color: #eee;
 }
 
+
 /* ----------- Laptop with HiDPI ----------- */
 
-@media screen and ( max-width: 1441px ) and ( max-height: 901px ) {
+@media screen and ( max-width: 1441px) and ( max-height: 901px) {
     .carousel {
         top: 100px;
     }
@@ -256,16 +270,17 @@ section.main {
     }
 }
 
+
 /* ----------- iPad Pro Landscape ----------- */
 
-@media screen and ( max-width: 1370px ) and ( max-height: 1024px ) {
+@media screen and ( max-width: 1370px) and ( max-height: 1024px) {
     .navbar {
         height: 100px;
     }
     .navbar-brand {
         font-size: 2rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 1.2rem;
         padding: 10px 12px 6px;
     }
@@ -277,7 +292,7 @@ section.main {
         top: -25px;
         left: 30%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 2rem;
     }
     .img-fluid {
@@ -302,16 +317,17 @@ section.main {
     }
 }
 
+
 /* ----------- Aspire E1 Laptop Landscape ----------- */
 
-@media screen and ( max-width: 1370px ) and ( max-height: 670px ) {
+@media screen and ( max-width: 1370px) and ( max-height: 670px) {
     .navbar {
         height: 70px;
     }
     .navbar-brand {
         font-size: 1.3rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 0.8rem;
         padding: 7px 12px 5px;
     }
@@ -321,7 +337,7 @@ section.main {
     .carousel .title {
         top: -10px;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1.4rem;
     }
     .img-fluid {
@@ -354,16 +370,17 @@ section.main {
     }
 }
 
+
 /* ----------- Laptop with Touch ----------- */
 
-@media screen and ( max-width: 1281px ) and ( max-height: 951px ) {
+@media screen and ( max-width: 1281px) and ( max-height: 951px) {
     .navbar .navbar-brand {
         font-size: 1.5rem;
     }
     .carousel {
         top: 100px;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1.5rem;
     }
     .img-fluid {
@@ -377,9 +394,10 @@ section.main {
     }
 }
 
+
 /* ----------- Laptop with MDPI screen----------- */
 
-@media screen and ( max-width: 1281px ) and ( max-height: 801px ) {
+@media screen and ( max-width: 1281px) and ( max-height: 801px) {
     .carousel {
         top: 60px;
     }
@@ -402,16 +420,17 @@ section.main {
     }
 }
 
+
 /* ----------- S Tab 10.1 Landscape ----------- */
 
-@media screen and ( max-width: 1280px ) and ( max-height: 656px ) {
+@media screen and ( max-width: 1280px) and ( max-height: 656px) {
     .navbar .navbar-brand {
         font-size: 1.2rem;
     }
     .carousel {
         top: 25px;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1.3rem;
     }
     .new-caption-area {
@@ -430,16 +449,17 @@ section.main {
     }
 }
 
+
 /* ----------- Aspire V3 Laptop Landscape ----------- */
 
-@media screen and ( max-width: 1100px ) and ( max-height: 520px ) {
+@media screen and ( max-width: 1100px) and ( max-height: 520px) {
     .navbar {
         height: 60px;
     }
     .navbar-brand {
         font-size: 1.2rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 0.7rem;
     }
     .carousel {
@@ -448,7 +468,7 @@ section.main {
     .carousel .title {
         top: -10px;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1rem;
         padding: 5px;
     }
@@ -480,9 +500,10 @@ section.main {
     }
 }
 
+
 /* ----------- iPad Pro Potrait------------------*/
 
-@media screen and ( max-width: 1024px ) and ( max-height: 1367px ) {
+@media screen and ( max-width: 1024px) and ( max-height: 1367px) {
     .navbar {
         height: 130px;
         padding: 30px;
@@ -490,11 +511,11 @@ section.main {
     h1.navbar-brand {
         font-size: 2.5rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 2.2rem;
         background-color: unset;
     }
-    .navbar a > p:hover {
+    .navbar a>p:hover {
         background-color: unset;
     }
     .carousel {
@@ -506,7 +527,7 @@ section.main {
         left: 7%;
         width: 86%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 2.5rem;
     }
     .img-fluid {
@@ -544,9 +565,10 @@ section.main {
     }
 }
 
+
 /* ----------- iPad Landscape ----------- */
 
-@media screen and ( max-width: 1024px ) and ( max-height: 768px ) {
+@media screen and ( max-width: 1024px) and ( max-height: 768px) {
     .navbar {
         height: 70px;
         padding: 0 15px;
@@ -554,10 +576,11 @@ section.main {
     h1.navbar-brand {
         font-size: 1.3rem;
     }
-    .navbar a > p, .share-button {
+    .navbar a>p,
+    .share-button {
         font-size: 1rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         padding: 7px 12px 5px;
         background-color: #23B5D3;
     }
@@ -569,7 +592,7 @@ section.main {
         left: 23%;
         width: 54%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1.5rem;
     }
     .img-fluid {
@@ -604,9 +627,10 @@ section.main {
     }
 }
 
+
 /* ----------- iPad Mini 4 Landscape ----------- */
 
-@media screen and ( max-width: 1024px ) and ( max-height: 672px ) {
+@media screen and ( max-width: 1024px) and ( max-height: 672px) {
     .carousel {
         top: 17%;
     }
@@ -615,16 +639,17 @@ section.main {
     }
 }
 
+
 /* ----------- Lenova IdeaPad Laptop Landscape ----------- */
 
-@media screen and ( max-width: 1024px ) and ( max-height: 510px ) {
+@media screen and ( max-width: 1024px) and ( max-height: 510px) {
     .navbar {
         height: 60px;
     }
     h1.navbar-brand {
         font-size: 1.1rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 0.7rem;
     }
     .carousel {
@@ -635,7 +660,7 @@ section.main {
         left: 32%;
         width: 36%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1.2rem;
     }
     .carousel-indicators {
@@ -666,9 +691,10 @@ section.main {
     }
 }
 
+
 /* ----------- S Note 8.0 Landscape ----------- */
 
-@media screen and ( max-width: 970px ) and ( max-height: 490px ) {
+@media screen and ( max-width: 970px) and ( max-height: 490px) {
     .carousel {
         top: 20%;
     }
@@ -680,16 +706,18 @@ section.main {
     }
 }
 
+
 /* ----------- S Tab 10.1 Potrait ----------- */
 
-@media screen and ( max-width: 800px ) and ( max-height: 1136px ) {
-    h1.navbar-brand, .navbar a > p {
+@media screen and ( max-width: 800px) and ( max-height: 1136px) {
+    h1.navbar-brand,
+    .navbar a>p {
         font-size: 2rem;
     }
     .carousel {
         top: 26%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 2.2rem;
     }
     .img-fluid {
@@ -698,7 +726,8 @@ section.main {
     .new-caption-area {
         bottom: -90px;
     }
-    .share-button, .new-caption-area p {
+    .share-button,
+    .new-caption-area p {
         font-size: 1.5rem;
     }
     .share-icon {
@@ -708,16 +737,17 @@ section.main {
     }
 }
 
+
 /* ----------- iPad Potrait----------- */
 
-@media screen and ( max-width: 768px ) and ( max-height: 1024px ) {
+@media screen and ( max-width: 768px) and ( max-height: 1024px) {
     .navbar {
         height: 100px;
     }
     h1.navbar-brand {
         font-size: 2rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 1.8rem;
     }
     .carousel {
@@ -727,27 +757,26 @@ section.main {
         left: 10%;
         width: 80%;
     }
-    .carousel-indicators {
-        
-    }
+    .carousel-indicators {}
     .img-fluid {
         max-height: 40vh;
     }
     .new-caption-area p {
-       font-size: 1.5rem;
+        font-size: 1.5rem;
     }
     .share-button {
         font-size: 1.5rem;
     }
 }
 
+
 /* ----------- iPad Mini4 Potrait----------- */
 
-@media screen and ( max-width: 768px ) and ( max-height: 930px ) {
+@media screen and ( max-width: 768px) and ( max-height: 930px) {
     .carousel .title {
         top: -30px;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 2rem;
     }
     .carousel-indicators {
@@ -761,9 +790,10 @@ section.main {
     }
 }
 
+
 /* ----------- iPone 6 Plus Landscape ----------- */
 
-@media screen and ( max-width: 740px ) and ( max-height: 420px ) {
+@media screen and ( max-width: 740px) and ( max-height: 420px) {
     .navbar {
         height: 50px;
         padding: 0 15px;
@@ -771,7 +801,8 @@ section.main {
     .navbar .navbar-brand {
         font-size: 1rem;
     }
-    .navbar a > p, .share-button {
+    .navbar a>p,
+    .share-button {
         font-size: 0.6rem;
     }
     .carousel {
@@ -780,7 +811,7 @@ section.main {
     .carousel .title {
         top: -10px;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1rem;
     }
     .img-fluid {
@@ -813,16 +844,17 @@ section.main {
     }
 }
 
+
 /* ----------- iPone 6 Landscape ----------- */
 
-@media screen and ( max-width: 670px ) and ( max-height: 380px ) {
+@media screen and ( max-width: 670px) and ( max-height: 380px) {
     .navbar {
         height: 40px;
     }
     .navbar .navbar-brand {
         font-size: 0.8rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 0.5rem;
         padding: 7px 8px 5px;
     }
@@ -834,7 +866,7 @@ section.main {
         left: 33%;
         width: 34%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 0.8rem;
         padding: 10px;
     }
@@ -863,16 +895,16 @@ section.main {
         line-height: 26px;
         font-size: 12px;
     }
-    
 }
+
 
 /* ----------- iPhone 7 Landscape ----------- */
 
-@media screen and ( max-width: 630px ) and ( max-height: 420px ) {
+@media screen and ( max-width: 630px) and ( max-height: 420px) {
     .navbar .navbar-brand {
         font-size: 0.8rem;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1rem;
         padding: 8px;
     }
@@ -887,29 +919,26 @@ section.main {
     }
 }
 
+
 /* ----------- S Note 8.0 Potrait ----------- */
 
-@media screen and ( max-width: 610px ) and ( max-height: 850px ) {
+@media screen and ( max-width: 610px) and ( max-height: 850px) {
     .navbar {
         height: 80px;
     }
-    h1.navbar-brand, .navbar a > p{
+    h1.navbar-brand,
+    .navbar a>p {
         font-size: 1.5rem;
     }
-    .carousel .title {
-       
-    }
-    .carousel .title > h1 {
+    .carousel .title {}
+    .carousel .title>h1 {
         font-size: 1.5rem;
     }
     .img-fluid {
         max-height: 38vh;
     }
-    .carousel-indicators {
-        
-    }
-    .new-caption-area {
-    }
+    .carousel-indicators {}
+    .new-caption-area {}
     .new-caption-area p {
         font-size: 1rem;
     }
@@ -926,9 +955,10 @@ section.main {
     }
 }
 
+
 /* ----------- iPhone 5 Landscape ----------- */
 
-@media screen and ( max-width: 568px ) and ( max-height: 320px ) {
+@media screen and ( max-width: 568px) and ( max-height: 320px) {
     .navbar {
         height: 40px;
         padding: 0 10px;
@@ -937,7 +967,7 @@ section.main {
         font-size: 0.7rem;
         padding-left: 0;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 0.5rem;
         padding: 6px 8px 5px;
     }
@@ -949,7 +979,7 @@ section.main {
         width: 40%;
         left: 30%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 0.7rem;
     }
     .carousel-indicators {
@@ -980,16 +1010,17 @@ section.main {
     }
 }
 
+
 /* ----------- VIVO 5 Samsung J Landscape ----------- */
 
-@media screen and ( max-width: 560px ) and ( max-height: 360px ) {
+@media screen and ( max-width: 560px) and ( max-height: 360px) {
     .navbar {
         height: 40px;
     }
     .navbar .navbar-brand {
         font-size: 0.7rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 0.6rem;
         padding: 5px 6px 3px;
     }
@@ -997,16 +1028,14 @@ section.main {
         left: 25%;
         width: 50%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 0.8rem;
     }
-    .carousel-indicators {
-    }
+    .carousel-indicators {}
     .img-fluid {
         max-height: 50vh;
     }
-    .new-caption-area {
-    }
+    .new-caption-area {}
     .new-caption-area p {
         font-size: 0.7rem;
     }
@@ -1029,14 +1058,15 @@ section.main {
     }
 }
 
+
 /* ----------- iPhone 6S Landscape ----------- */
 
-@media screen and ( max-width: 540px ) and ( max-height: 380px ) {
+@media screen and ( max-width: 540px) and ( max-height: 380px) {
     .navbar {
         height: 40px;
         padding: 0 10px;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 0.7rem;
     }
     .carousel {
@@ -1046,16 +1076,14 @@ section.main {
         left: 25%;
         width: 50%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1rem;
     }
-    .carousel-indicators {
-    }
+    .carousel-indicators {}
     .img-fluid {
         max-height: 50vh;
     }
-    .new-caption-area {
-    }
+    .new-caption-area {}
     .new-caption-area p {
         font-size: 0.7rem;
     }
@@ -1076,16 +1104,15 @@ section.main {
     }
 }
 
+
 /* ----------- HuaWei Mate 9 Landscape ----------- */
 
-@media screen and ( max-width: 525px ) and ( max-height: 360px ) {
-    .carousel .title > h1 {
+@media screen and ( max-width: 525px) and ( max-height: 360px) {
+    .carousel .title>h1 {
         font-size: 0.9rem;
     }
-    .carousel-indicators {
-    }
-    .new-caption-area {
-    }
+    .carousel-indicators {}
+    .new-caption-area {}
     .share-info {
         top: -5.3px;
     }
@@ -1095,11 +1122,11 @@ section.main {
     }
 }
 
+
 /* ----------- iPhone 4 Landscape ----------- */
 
-@media screen and ( max-width: 480px ) and ( max-height: 320px ) {
-    
-    .navbar a > p {
+@media screen and ( max-width: 480px) and ( max-height: 320px) {
+    .navbar a>p {
         font-size: 0.4rem;
         padding: 6px 7px 5px;
     }
@@ -1128,9 +1155,10 @@ section.main {
     }
 }
 
+
 /* ----------- iPhone 6 PLUS Potrait----------- */
 
-@media screen and ( max-width: 420px ) and ( max-height: 740px ) {
+@media screen and ( max-width: 420px) and ( max-height: 740px) {
     .navbar {
         height: 60px;
         padding: 10px 15px;
@@ -1138,16 +1166,15 @@ section.main {
     .navbar .navbar-brand {
         font-size: 1rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 1rem;
         background-color: unset;
     }
     .carousel {
         top: 30%;
     }
-    .carousel .title {
-    }
-    .carousel .title > h1 {
+    .carousel .title {}
+    .carousel .title>h1 {
         font-size: 1.1rem;
     }
     .img-fluid {
@@ -1177,9 +1204,10 @@ section.main {
     }
 }
 
+
 /* ----------- iPhone 7 Potrait ----------- */
 
-@media screen and ( max-width: 420px ) and ( max-height: 630px ) {
+@media screen and ( max-width: 420px) and ( max-height: 630px) {
     .carousel {
         top: 22%;
     }
@@ -1206,13 +1234,12 @@ section.main {
     }
 }
 
+
 /* ----------- iPhone 6  Potrait----------- */
 
-@media screen and ( max-width: 380px ) and ( max-height: 670px ) {
-    .carousel {
-    }
-    .img-fluid {
-    }
+@media screen and ( max-width: 380px) and ( max-height: 670px) {
+    .carousel {}
+    .img-fluid {}
     .carousel-indicators {
         bottom: -20px;
     }
@@ -1221,7 +1248,7 @@ section.main {
         left: 0;
         width: 100%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1rem;
     }
     .new-caption-area {
@@ -1244,9 +1271,10 @@ section.main {
     }
 }
 
+
 /* ----------- iPhone 6S Potrait ----------- */
 
-@media screen and ( max-width: 380px ) and ( max-height: 540px ) {
+@media screen and ( max-width: 380px) and ( max-height: 540px) {
     .carousel {
         top: 25%;
     }
@@ -1258,21 +1286,21 @@ section.main {
     }
 }
 
+
 /* ----------- Galaxy Note 3 Potrait  ----------- */
 
-@media screen and ( max-width: 360px ) and ( max-height: 640px ) {
+@media screen and ( max-width: 360px) and ( max-height: 640px) {
     .carousel {
         top: 28%;
     }
-    .new-caption-area {
-    }
-    .carousel-indicators {
-    }
+    .new-caption-area {}
+    .carousel-indicators {}
 }
+
 
 /* ----------- VIVO 5, S Note 3 Neo Potrait  ----------- */
 
-@media screen and ( max-width: 360px ) and ( max-height: 560px ) {
+@media screen and ( max-width: 360px) and ( max-height: 560px) {
     .carousel {
         top: 25%;
     }
@@ -1284,20 +1312,19 @@ section.main {
     }
 }
 
+
 /* ----------- HuaWei Mate9 Potrait  ----------- */
 
-@media screen and ( max-width: 360px ) and ( max-height: 530px ) {
+@media screen and ( max-width: 360px) and ( max-height: 530px) {
     .navbar {
         height: 50px;
         padding: 0 15px;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1rem;
     }
-    .carousel-indicators {
-    }
-    .new-caption-area {
-    }
+    .carousel-indicators {}
+    .new-caption-area {}
     .carousel-indicators li {
         max-width: 15px;
     }
@@ -1305,29 +1332,29 @@ section.main {
         bottom: 15px;
     }
 }
+
+
 /* ----------- YES M631Y Potrait  ----------- */
 
-@media screen and ( max-width: 360px ) and ( max-height: 512px ) {
-    .carousel .title {
-    }
+@media screen and ( max-width: 360px) and ( max-height: 512px) {
+    .carousel .title {}
 }
 
+
 /* ----------- iPhone 5 and 5S Potrait ----------- */
- 
-@media screen and ( max-width: 320px ) and ( max-height: 568px ) {
+
+@media screen and ( max-width: 320px) and ( max-height: 568px) {
     .carousel {
         top: 30%;
     }
-    .carousel .title > h1 {
+    .carousel .title>h1 {
         font-size: 1rem;
     }
     .img-fluid {
         max-height: 28vh;
     }
-    .carousel-indicators {
-    }
-    .new-caption-area {
-    }
+    .carousel-indicators {}
+    .new-caption-area {}
     .new-caption-area p {
         font-size: 0.7rem;
     }
@@ -1336,52 +1363,51 @@ section.main {
     }
 }
 
+
 /* ----------- iPhone 4 and 4S Potrait----------- */
 
-
-@media screen and ( max-width: 320px ) and ( max-height: 480px ) { 
+@media screen and ( max-width: 320px) and ( max-height: 480px) {
     .navbar {
         height: 50px;
         -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     }
-    .navbar > a {
+    .navbar>a {
         margin-right: -15px;
     }
     .navbar .navbar-brand {
         font-size: 1rem;
     }
-    .navbar a > p {
+    .navbar a>p {
         font-size: 0.9rem;
         background-color: unset;
     }
-    .navbar a > p:hover {
+    .navbar a>p:hover {
         background-color: unset;
     }
     .carousel {
         top: 25%;
     }
-    .carousel .title {
-    }
+    .carousel .title {}
     .carousel .title h1 {
         font-size: 0.8rem;
     }
-    .carousel-indicators {;
+    .carousel-indicators {
+        ;
     }
     .img-fluid {
         max-height: 34vh;
     }
-    .new-caption-area {
-    }
+    .new-caption-area {}
     .new-caption-area p {
         font-size: 0.7rem;
     }
     .share-info {
         bottom: 20px;
     }
-      .share-container {
-          background-color:unset;
-      }
+    .share-container {
+        background-color: unset;
+    }
     .share-button {
         font-size: 0.7rem;
         width: 180px;

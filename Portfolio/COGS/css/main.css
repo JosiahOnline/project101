@@ -1580,7 +1580,7 @@ address,
     padding: 0 80px;
 }
 #announcements .adjust-padding-lr {
-    padding: 0 100px;
+    padding: 0 120px;
 }
 
 
@@ -1635,6 +1635,9 @@ address,
     }
     .mission-statement-section {
         height: 94%;
+    }
+    #announcements .adjust-padding-lr {
+    padding: 0 80px;
     }
 }
 

@@ -46,14 +46,18 @@ h3 {
 
 .visit {
     margin-right: 10px;
+    flex: 1;
+    text-align: right;
 }
 
 .share-info {
     margin-left: 10px;
+    flex: 1;
+    text-align: left;
 }
 
 .visit a {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     font-size: 0.9rem;
     line-height: 1.1em;
@@ -86,6 +90,8 @@ tr td:first-child {
 tr td:nth-child(2) {
     text-align: left;
 }
+
+
 /*Begining of Plan A Visit Section*/
 
 .plan-visit {
@@ -109,7 +115,6 @@ tr td:nth-child(2) {
 
 .container .title {
     text-align: center;
-    padding-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -125,15 +130,18 @@ tr td:nth-child(2) {
 .title h3 {
     display: block;
     color: black;
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto 5px;
+}
+
+.title h1 {
     font-weight: 700;
-    font-family: Oswald, sans-serif;
-    font-size: 2.5rem;
+    line-height: 1em;
+    font-size: 4rem;
 }
 
 .title h3 {
-    margin: 10px auto;
     font-weight: 400;
-    font-family: Oswald, sans-serif;
     font-size: 1.5rem;
 }
 
@@ -187,18 +195,16 @@ textarea.w-input {
 }
 
 .form-row {
-    width: 32.5%;
+    width: 32.6%;
 }
 
 .form-field {
-    padding: 1.2em 0.6em;
+    padding: 0 1.2em;
     margin-right: 1px;
     margin-bottom: 10px;
     border: 0px solid #000;
-    border-radius: 0.2em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-    font-size: 1rem;
 }
 
 .form-field:focus {
@@ -214,15 +220,8 @@ textarea.w-input {
 .close-button {
     font-size: 1rem;
     line-height: 1.1em;
-    padding: 0.6em 1.2em;
+    padding: 0.6em 0.8em;
     border-radius: 0.2em;
-
-    
-    
-    
-
-
-       
     color: white;
     text-decoration: none;
     position: absolute;
@@ -234,7 +233,6 @@ textarea.w-input {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
-
 .close-button:hover {
     border-radius: 4px;
     background-color: #cf404d;
@@ -245,8 +243,8 @@ textarea.w-input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 0 10px;
-    height: 50px;
+    padding: 5px 0 15px;
+    height: 55px;
     margin: auto;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -259,44 +257,47 @@ textarea.w-input {
 select {
     font-weight: 400;
     font-family: Oswald, sans-serif;
-    font-size: 18px;
-    width: 18%;
-    padding: 5px 10px;
-    height: 40px;
+    font-size: 0.9rem;
+    width: 16.4%;
+    padding: 0.6em 1.2em;
     background-color: white;
-    border-radius: 2px;
+    border-radius: 0.2em;
     border-width: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
-.attend-service,
-.select-date,
-.service-date {
-    height: 40px;
-    padding: 6px;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: Oswald, sans-serif;
-    margin-bottom: 0;
-}
-
-.attend-service,
-.select-date {
-    margin-top: 0px;
-    color: black;
-}
 
 #attendance-date {
+    padding: 0.6em 1.2em;
+    font-weight: 400;
+    margin-bottom: 0;
     text-align: left;
-    height: 40px;
-    border-radius: 2px;
+    width: 22%;
     color: black;
     background-color: white;
-    padding: 10px;
     border-width: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+select.service-time {
+    width: 24%;
+}
+
+.form-field,
+#attendance-date,
+.plan-submit {
+    font-size: 0.9rem;
+    border-radius: 0.2em;
+}
+
+.form-field {
+    height: 48px;
+}
+
+select, #attendance-date, .plan-submit {
+    height: 45px;
 }
 
 .button {
@@ -322,7 +323,8 @@ select {
     display: block;
     width: 100%;
     background-color: #2e80b6;
-    font-size: 20px;
+    font-size: 1rem;
+    border-radius: 0.2em;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
@@ -353,398 +355,421 @@ input.w-button {
 /* ----------- Laptop with HiDPI ----------- */
 
 @media screen and ( max-width: 1441px) and (orientation: landscape) {
-html {
-    font-size: 22px;
-}
-/*main navigation*/
-.plan-visit {
-    padding-top: 15%;
-}
+    html {
+        font-size: 22px;
+    }
+    /*main navigation*/
+    .plan-visit {
+        padding-top: 15%;
+    }
 }
 
 
 /* ----------- iPad Pro Landscape ----------- */
 
 @media screen and ( max-width: 1370px) and (orientation: landscape) {
-html {
-    font-size: 20px;
-}
-.share-container {
-    padding: 2%;
-}
-.share-button {
-    font-size: 0.7rem;
-}
+    html {
+        font-size: 20px;
+    }
+    .share-button {
+        font-size: 0.7rem;
+    }
+    .selection {
+        height: 65px;
+    }
+    .form-field {
+        height: 60px;
+    }
+    
+    .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        height: 55px;
+    }
+    .plan-submit {
+        padding: 8px;
+    }
 }
 
 
 /* ----------- Aspire E1 Laptop Landscape ----------- */
 
 @media screen and ( max-width: 1370px) and (max-height: 670px) {
-html {
-    font-size: 18px;
-}
-.share-container {
-    padding: 0 2%;
-}
-.share-button {
-    font-size: 0.9rem;
-}
-.title {
-    font-size: 1.3rem;
-}
-.plan-visit {
-    padding-top: 7%;
-}
+    html {
+        font-size: 18px;
+    }
+    .share-button {
+        font-size: 0.9rem;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+    .plan-visit {
+        padding-top: 7%;
+    }
+    .container .title {
+        padding-top: 0;
+    }
+    .selection {
+        height: 55px;
+    }
+    .form-field, .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        height: 45px;
+    }
 }
 
 
 /* ----------- Laptop with Touch ----------- */
 
 @media screen and ( max-width: 1280px) {
-html {
-    font-size: 20px;
-}
-.plan-visit {
-    padding-top: 15%;
-}
+    html {
+        font-size: 20px;
+    }
+    .plan-visit {
+        padding-top: 15%;
+    }
 }
 
 
 /* ----------- Laptop with MDPI screen----------- */
 
+@media screen and ( max-width: 1280px) and (max-height: 800px) {
+    .plan-visit {
+        padding-top: 10%;
+    }
+    .form-field {
+        height: 50px;
+    }
+    .selection {
+        height: 55px;
+    }
+    .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        height: 45px;
+    }
+} 
 
 /* ----------- S Tab 10.1 Landscape ----------- */
 
-@media screen and ( max-width: 1281px) and (max-height: 670px) {
-html {
-    font-size: 18px;
-}
-.plan-visit {
-    padding-top: 8%;
-}
+@media screen and ( max-width: 1280px) and (max-height: 670px) {
+    html {
+        font-size: 18px;
+    }
+    .plan-visit {
+        padding-top: 8%;
+    }
 }
 
 
 /* ----------- Aspire V3 Laptop Landscape ----------- */
 
 @media screen and ( max-width: 1100px) {
-html {
-    font-size: 16px;
-}
-.share-button {
-    font-size: 0.8rem;
-}
-
-.social-container p {
-    margin-bottom: 5px;
-}
-.plan-visit {
-    padding-top: 1%;
-}
-.select-date, .attend-service {
-    display: none;
-}
-.service-time {
-    width: 24%;
-}
+    html {
+        font-size: 16px;
+    }
+    .share-button {
+        font-size: 0.8rem;
+    }
+    .social-container p {
+        margin-bottom: 5px;
+    }
+    .plan-visit {
+        padding-top: 3%;
+    }
+    .title h1 {
+        font-size: 3rem;
+    }
+    .title h3 {
+        font-size: 1.2rem;
+    }
+    .form-field {
+        height: 45px;
+    }
+    .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        height: 40px;
+    }
+    .selection {
+        height: 50px;
+    }
 }
 
 
 /* ----------- iPad Pro Potrait------------------*/
 
 @media screen and ( max-width: 1024px) {
-html {
-    font-size: 16px;
-}
-.plan-visit {
-    padding-top: 20%;
-    padding-bottom: 20px;
-}
-.title h1 {
-    font-size: 5rem;
-    line-height: 1em;
-}
-.title h3 {
-    font-size: 3rem;
-    line-height: 1em;
-}
-.close-button {
-    font-size: 1.5rem;
-    padding: 0.6em 0.7em;
-    top: 5%;
-}
-.form-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-.form-row {
-    width: 100%;
-}
-.selection {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-select,
-#attendance-date {
-    width: 49.5%;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    height: 56px;
-}
-#attendance-date {
-    padding-top: 5px;
-}
-.plan-submit.button.full-width {
-    height: 56px;
-}
-.service-time {
-    width: 99.5%;
-}
-.select-date {
-    padding-top: 5px;
-    width: 50px;
-}
-.attend-service {
-    padding-top: 5px;
-    width: 120px;
-}
-.select-date,
-.attend-service {
-    display: none;
-}
-.plan-submit {
-    margin-bottom: 10%;
-}
-.title {
-    font-size: 2.5rem;
-}
-.visit {
-    font-size: 2rem;
-}
-.share-container {
-    padding: 2%;
-    border-radius: 0;
-}
-.share-button {
-    font-size: 2rem;
-}
-.web__share>.share-icon {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    font-size: 35px;
-}
-.title {
-    font-weight: 500;
-}
-.container {
-    height: 100%;
-}
-/*Welcome Home*/
+    html {
+        font-size: 16px;
+    }
+    .plan-visit {
+        padding-top: 20%;
+        padding-bottom: 20px;
+    }
+    
+    .container {
+        height: 100%;
+    }
+    .title {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    .form-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .form-row {
+        width: 100%;
+    }
+    .form-field.text-area {
+        min-height: 200px;
+    }
+    .form-field {
+        height: 70px;
+    }
+    .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        height: 70px;
+    }
+    .selection {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    select,
+    #attendance-date {
+        width: 49.5%;
+    }
+    select.service-time {
+        width: 99.5%;
+    }
+    
+    .visit a {
+        font-size: 1rem;
+    }
 
-.form-field,
-.button.full-width {
-    font-size: 1.5rem;
-}
-.form-field.text-area {
-    min-height: 200px;
-}
+    .web__share>.share-icon {
+        width: 68px;
+        height: 68px;
+        line-height: 68px;
+        font-size: 34px;
+    }
+    
 }
 
 
 /* ----------- iPad Landscape ----------- */
 
 @media screen and ( max-width: 1024px) and ( max-height: 770px) {
-html {
-    font-size: 12px;
-}
-.title {
-    font-weight: 400;
-}
-.web__share>.share-icon {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 27px;
-}
-.title {
-    font-weight: 500;
-}
-.plan-visit {
-    padding-top: 5%;
-}
+    html {
+        font-size: 12px;
+    }
+    .web__share>.share-icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+    }
+    .container .title {
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .plan-visit {
+        padding-top: 8%;
+    }
+    .form-container {
+        flex-direction: row;
+    }
+    .form-field.text-area {
+        margin-bottom: 5px;
+    }
+    .selection {
+        padding-bottom: 0;
+    }
+    .form-field, .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .form-row {
+        width: 32.6%;
+    }
 }
 
 
 /* ----------- iPad Mini 4 Landscape ----------- */
 
 @media screen and ( max-width: 1024px) and ( max-height: 680px) {
-html {
-    font-size: 12px;
-}
-.share-container {
-    padding: 1% 0 2%;
-}
+    html {
+        font-size: 12px;
+    }
+    .plan-visit {
+        padding-top: 4%;
+    }
+    .form-field, .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        height: 45px;
+    }
+    .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        height: 
+    }
 }
 
 
 /* ----------- Lenova IdeaPad Laptop Landscape ----------- */
 
 @media screen and ( max-width: 1024px) and ( max-height: 510px) {
-html {
-    font-size: 10px;
-}
-.plan-visit {
-    padding-top: 5%;
-}
-.title {
-    font-size: 3rem;
-}
-.visit {
-    font-size: 2.5rem;
-}
-.form-field,
-.button.full-width {
-    font-size: 2rem;
-}
+    html {
+        font-size: 10px;
+    }
+    .plan-visit {
+        padding-top: 5%;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .form-field,
+    .button.full-width {
+        font-size: 2rem;
+    }
 }
 
 
 /* ----------- S Note 8.0 Landscape ----------- */
 
 @media screen and ( max-width: 970px) and (max-height: 490px) {
-html {
-    font-size: 10px;
-}
-.web__share>.share-icon {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 21px;
-}
-.share-icon {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 14px;
-}
-.title {
-    padding-left: 0;
-}
-.visit {
-    font-size: 1.8rem;
-}
-.form-field, .plan-submit.button.full-width {
-    font-size: 1.8rem;
-}
-.form-field, select, #attendance-date {
-    margin-bottom: 5px;
-}
-.selection {
-    padding-bottom: 0;
-}
-select, #attendance-date, .form-field, .plan-submit.button.full-width {
-    height: 40px;
-}
+    html {
+        font-size: 10px;
+    }
+    .web__share>.share-icon {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 19px;
+    }
+    .share-icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .title {
+        padding-left: 0;
+    }
+    .form-field,
+    .plan-submit.button.full-width {
+        font-size: 1.8rem;
+    }
+    .form-field,
+    select,
+    #attendance-date {
+        margin-bottom: 5px;
+    }
+    .selection {
+        padding-bottom: 0;
+    }
+    select,
+    #attendance-date,
+    .form-field,
+    .plan-submit.button.full-width {
+        height: 40px;
+    }
 }
 
 
 /* ----------- S Tab 10.1 Potrait ----------- */
 
 @media screen and ( max-width: 800px) and (max-height: 1140px) {
-html {
-    font-size: 14px;
-}
-/*Navigation Bar */
-.share-container {
-    padding: 2% 1%;
-}
-.web__share>.share-icon {
-    width: 65px;
-    height: 65px;
-    line-height: 65px;
-    font-size: 25px;
-}
-
-/*Home Page*/
-/*Welcome Message Session*/
-/*Plan a Visit*/
-.attend-service {
-    display: none;
-}
-.service-time {
-    width: 99.6%;
-}
-/*Announcement*/
-/*Contact Session*/
-/*Bible Words*/
+    html {
+        font-size: 14px;
+    }
+    /*Navigation Bar */
+    .web__share>.share-icon {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 23px;
+    }
+    /*Home Page*/
+    /*Welcome Message Session*/
+    /*Plan a Visit*/
+    .attend-service {
+        display: none;
+    }
+    .service-time {
+        width: 99.6%;
+    }
+    /*Announcement*/
+    /*Contact Session*/
+    /*Bible Words*/
 }
 
 
 /* ----------- iPad Potrait----------- */
 
 @media screen and ( max-width: 768px) {
-.share-icon {
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    font-size: 15px;
-}
-.plan-visit {
-    padding: 5% 0;
-}
-select,
-#attendance-date,
-.form-field {
-    margin-bottom: 0.5em;
-}
+    .share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 15px;
+    }
+    .plan-visit {
+        padding: 5% 0;
+    }
+    select,
+    #attendance-date,
+    .form-field {
+        margin-bottom: 0.5em;
+    }
 }
 
 
 /* ----------- iPad Mini4 Potrait----------- */
 
 @media screen and ( max-width: 768px) and (max-height: 930px) {
-html {
-    font-size: 12px;
-}
-.plan-visit {
-    padding: 5% 0;
-}
-select,
-#attendance-date,
-.form-field {
-    margin-bottom: 0.5em;
-}
-/*Contact us*/
+    html {
+        font-size: 12px;
+    }
+    .plan-visit {
+        padding: 5% 0;
+    }
+    select,
+    #attendance-date,
+    .form-field {
+        margin-bottom: 0.5em;
+    }
+    /*Contact us*/
 }
 
 
 /* ----------- iPone 6 Plus Landscape ----------- */
 
 @media screen and ( max-width: 740px) and (max-height: 420px) {
-html {
-    font-size: 10px
-}
-.web__share>.share-icon {
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    font-size: 19px;
-}
-select,
-#attendance-date,
-.form-field,
-.plan-submit.button.full-width {
-    font-size: 1.6rem;
-    height: 40px;
-}
+    html {
+        font-size: 10px
+    }
+    .web__share>.share-icon {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 18px;
+    }
+    select,
+    #attendance-date,
+    .form-field,
+    .plan-submit.button.full-width {
+        font-size: 1.6rem;
+        height: 40px;
+    }
 }
 
 
 /* ----------- iPone 6 Landscape ----------- */
+
+@media screen and ( max-width: 670px) and (max-height: 380px) {
+    .web__share>.share-icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+}
 
 
 /* ----------- S Galaxy S5 ----------- */
@@ -753,7 +778,9 @@ select,
 /* ----------- S Galaxy Note 3 Neo ----------- */
 
 @media screen and ( max-width: 640px) and (max-height: 280px) {
-html {font-size: 9px;}
+    html {
+        font-size: 9px;
+    }
 }
 
 
@@ -763,47 +790,48 @@ html {font-size: 9px;}
 /* ----------- S Note 8.0 Potrait ----------- */
 
 @media screen and ( max-width: 610px) and (max-height: 850px) {
-html {
-    font-size: 12px;
-}
-.share-button {
-    font-size: 1.5rem;
-}
-.share-container {
-    width: 100%;
-}
-.web__share>.share-icon {
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    font-size: 21px;
-}
-
-.title {
-    font-size: 2.5rem;
-}
-.form-field {
-    font-size: 1.5rem;
-}
+    html {
+        font-size: 12px;
+    }
+    .share-button {
+        font-size: 1.5rem;
+    }
+    .share-container {
+        width: 100%;
+    }
+    .web__share>.share-icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 21px;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .form-field {
+        font-size: 1.5rem;
+    }
 }
 
 
 /* ----------- iPhone 5 5s Landscape ----------- */
 
 @media screen and ( max-width: 568px) {
-html {font-size: 10px;}
-.share-container {
-    width: 90%;
-}
-.web__share>.share-icon {
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    font-size: 16px;
-}
-.form-field {
-    font-size: 1.3rem;
-}
+    html {
+        font-size: 10px;
+    }
+    .share-container {
+        width: 90%;
+    }
+    .web__share>.share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
+    }
+    .form-field {
+        font-size: 1.3rem;
+    }
 }
 
 
@@ -819,324 +847,326 @@ html {font-size: 10px;}
 /* ----------- iPhone 4 Landscape ----------- */
 
 @media screen and ( max-width: 480px) and (max-height: 215px) {
-.visit {
-    font-size: 1.3rem;
-}
-.title {
-    font-size: 2rem;
-}
+    
+    .title {
+        font-size: 2rem;
+    }
 }
 
 
 /* ----------- iPhone 6 PLUS Potrait----------- */
 
 @media screen and ( max-width: 420px) and (max-height: 740px) {
-html {
-    font-size: 14px;
-}
-.share-container {
-    padding: 3% 0;
-    flex-direction: column;
-    width: 100%;
-}
-.share-button {
-    font-size: 1.2rem;
-}
-.web__share>.share-icon {
-    width: 38px;
-    height: 38px;
-    line-height: 38px;
-    font-size: 18px;
-}
-.visit {
-    font-size: 1.4rem;
-}
-.title {
-    font-size: 1.5rem;
-}
-.plan-visit {
-    padding-top: 25%;
-}
-.close-button {
-    font-size: 1.2rem;
-    padding: 7px 10px;
-}
-.container .title {
-    margin-bottom: 15px;
-}
-.title h1 {
-    font-size: 3rem;
-    margin-bottom: 5px;
-}
-.title h3 {
-    font-size: 1.5rem;
-    margin: 0 auto;
-}
-.plan-visit .form-container .form-row .form-field {
-    height: 40px
-}
-.plan-visit .form-field.text-area {
-    min-height: 130px;
-}
-select,
-#attendance-date,
-.attend-service,
-.service-time {
-    padding: 0 10px;
-    height: 40px;
-    margin-bottom: 5px;
-}
-.plan-visit .form-container .form-row .form-field, select, #attendance-date {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-.plan-visit form .button.full-width {
-    font-size: 1.2rem;
-    height: 40px;
-    margin-top: 1px;
-    padding: 5px;
-}
-.form-container {
-    flex-direction: column;
-}
-.selection {
-    height: 135px;
-}
-.form-field {
-    padding: 5px 10px;
-}
-.form-field {
-    font-size: 1.2rem;
-}
+    html {
+        font-size: 14px;
+    }
+    .share-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .share-button {
+        font-size: 1.2rem;
+    }
+    .web__share>.share-icon {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 18px;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    .plan-visit {
+        padding-top: 25%;
+    }
+    .close-button {
+        font-size: 1.2rem;
+        padding: 7px 10px;
+    }
+    .container .title {
+        margin-bottom: 15px;
+    }
+    .title h1 {
+        font-size: 3rem;
+        margin-bottom: 5px;
+    }
+    .title h3 {
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    .plan-visit .form-container .form-row .form-field {
+        height: 40px
+    }
+    .plan-visit .form-field.text-area {
+        min-height: 130px;
+    }
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time {
+        padding: 0 10px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    .plan-visit .form-container .form-row .form-field,
+    select,
+    #attendance-date {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .plan-visit form .button.full-width {
+        font-size: 1.2rem;
+        height: 40px;
+        margin-top: 1px;
+        padding: 5px;
+    }
+    .form-container {
+        flex-direction: column;
+    }
+    .selection {
+        height: 135px;
+    }
+    .form-field {
+        padding: 5px 10px;
+    }
+    .form-field {
+        font-size: 1.2rem;
+    }
 }
 
 
 /* ----------- iPhone 7, iPhone 6 PLUS Potrait ----------- */
 
 @media screen and ( max-width: 420px) and ( max-height: 630px) {
-.share-button {
-    font-size: 1.1rem;
-}
-.plan-visit {
-    padding-top: 15%;
-    padding-bottom: 0;
-}
-.container .title {
-    padding: 0;
-}
+    .share-button {
+        font-size: 1.1rem;
+    }
+    .plan-visit {
+        padding-top: 15%;
+        padding-bottom: 0;
+    }
+    .container .title {
+        padding: 0;
+    }
 }
 
 
 /* ----------- iPhone 6  Potrait----------- */
 
 @media screen and ( max-width: 380px) {
-html {
-    font-size: 12px;
-}
-.container .title {
-    padding: 0;
-}
+    html {
+        font-size: 12px;
+    }
+    .container .title {
+        padding: 0;
+    }
 }
 
 
 /* ----------- iPhone 6  Potrait----------- */
 
 @media screen and ( max-width: 380px) and ( max-height: 560px) {
-.plan-visit {
-    padding-top: 12%;
-    margin-bottom: 0;
-}
-.close-button {
-    top: 3%;
-}
-.plan-visit .form-container .form-row .form-field, select, #attendance-date {
-    height: 35px;
-}
-.selection {
-    height: unset;
-    padding-bottom: 0;
-}
-.plan-visit form .button.full-width {
-    margin-bottom: 0;
-}
+    .plan-visit {
+        padding-top: 12%;
+        margin-bottom: 0;
+    }
+    .close-button {
+        top: 3%;
+    }
+    .plan-visit .form-container .form-row .form-field,
+    select,
+    #attendance-date {
+        height: 35px;
+    }
+    .selection {
+        height: unset;
+        padding-bottom: 0;
+    }
+    .plan-visit form .button.full-width {
+        margin-bottom: 0;
+    }
 }
 
 
 /* ----------- iPhone 6 Potrait ----------- */
 
 @media screen and ( max-width: 380px) and ( max-height: 540px) {
-html {
-    font-size: 11px
-}
-.share-button {
-    font-size: 1.2rem;
-}
-.title {
-    font-size: 1.8rem;
-}
-.plan-visit {
-    padding-top: 10%;
-}
-.plan-visit .form-container .form-row .form-field,
-.plan-visit .form-field.text-area,
-select,
-#attendance-date,
-.attend-service,
-.service-time,
-.plan-visit form .button.full-width {
-    font-size: 1.3rem;
-}
-.plan-visit .form-container .form-row .form-field,
-select,
-#attendance-date,
-.attend-service,
-.service-time,
-.plan-visit form .button.full-width{
-    height: 35px;
-}
-.selection {
-    height: 120px;
-}
+    html {
+        font-size: 11px
+    }
+    .share-button {
+        font-size: 1.2rem;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .plan-visit {
+        padding-top: 10%;
+    }
+    .plan-visit .form-container .form-row .form-field,
+    .plan-visit .form-field.text-area,
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time,
+    .plan-visit form .button.full-width {
+        font-size: 1.3rem;
+    }
+    .plan-visit .form-container .form-row .form-field,
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time,
+    .plan-visit form .button.full-width {
+        height: 35px;
+    }
+    .selection {
+        height: 120px;
+    }
 }
 
 
 /* ----------- Galaxy Note 3 Potrait  ----------- */
 
 @media screen and ( max-width: 360px) and ( max-height: 640px) {
-.social-container {
-    margin-top: 30px;
-}
-.plan-visit {
-    padding-top: 15%;
-}
+    .social-container {
+        margin-top: 30px;
+    }
+    .plan-visit {
+        padding-top: 15%;
+    }
 }
 
 
 /* ----------- VIVO 5, S Note 3 Neo Potrait  ----------- */
 
 @media screen and ( max-width: 360px) and ( max-height: 560px) {
-.plan-visit {
-    padding-top: 13%;
-}
-select, #attendance-date, .attend-service, .service-time, .plan-visit form .button.full-width {
-    height: 35px;
-}
-.share-container {
-    padding: 3% 2%;
-}
-.share-button {
-    font-size: 1.2rem;
-}
-.social-container {
-    margin-top: 20px;
-}
+    .plan-visit {
+        padding-top: 13%;
+    }
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time,
+    .plan-visit form .button.full-width {
+        height: 35px;
+    }
+    .share-button {
+        font-size: 1.2rem;
+    }
+    .social-container {
+        margin-top: 20px;
+    }
 }
 
 
 /* ----------- HuaWei Mate9 Potrait  ----------- */
 
 @media screen and ( max-width: 360px) and ( max-height: 530px) {
-.social-container {
-    margin-top: 12px;
-}
-.plan-visit .form-container .form-row .form-field,
-select,
-#attendance-date,
-.attend-service,
-.service-time {
-    height: 30px;
-}
-.share-button {
-    font-size: 1.3rem;
-}
+    .social-container {
+        margin-top: 12px;
+    }
+    .plan-visit .form-container .form-row .form-field,
+    select,
+    #attendance-date,
+    .attend-service,
+    .service-time {
+        height: 30px;
+    }
+    .share-button {
+        font-size: 1.3rem;
+    }
 }
 
 
 /* ----------- YES M631Y Potrait  ----------- */
 
 @media screen and ( max-width: 360px) and ( max-height: 512px) {
-.share-container {
-    padding: 2%;
-}
-.selection {
-    height: 110px;
-}
-.plan-visit {
-    padding-top: 10%;
-}
+    .selection {
+        height: 110px;
+    }
+    .plan-visit {
+        padding-top: 10%;
+    }
 }
 
 
 /* ----------- iPhone 5 and 5S Potrait ----------- */
 
 @media screen and ( max-width: 320px) and ( max-height: 568px) {
-.share-button {
-    font-size: 1.2rem;
+    .share-button {
+        font-size: 1.2rem;
+    }
+    .social-container {
+        margin-top: 25px;
+    }
+    .web__share>.share-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 16px;
+    }
+    .title {
+        font-size: 1.4rem;
+    }
 }
-.social-container {
-    margin-top: 25px;
-}
-.web__share>.share-icon {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    font-size: 16px;
-}
-.title {
-    font-size: 1.4rem;
-}
-}
+
 
 /* ----------- iPhone 4 and 4S Potrait----------- */
 
 @media screen and ( max-width: 320px) and ( max-height: 480px) {
-.share-button {
-    font-size: 1.2rem;
+    .share-button {
+        font-size: 1.2rem;
+    }
+    .social-container {
+        margin-top: 15px;
+    }
+    .web__share>.share-icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 15px;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    .plan-visit {
+        padding-top: 13%;
+    }
+    .plan-visit .form-field.text-area {
+        min-height: 100px;
+    }
 }
-.social-container {
-    margin-top: 15px;
-}
-.web__share>.share-icon {
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    font-size: 15px;
-}
-.title {
-    font-size: 1.6rem;
-}
-.plan-visit {
-    padding-top: 13%;
-}
-.plan-visit .form-field.text-area {
-    min-height: 100px;
-}
-}
+
 
 /* iPhone 5S Potrait */
 
 @media screen and ( max-width: 320px) and ( max-height: 460px) {
-.social-container {
-    margin-top: 12px;
+    .social-container {
+        margin-top: 12px;
+    }
+    .plan-visit {
+        padding-top: 10%;
+    }
+    .title h1 {
+        font-size: 2.6rem;
+    }
+    .plan-visit form .button.full-width {
+        height: 30px;
+    }
 }
-.plan-visit {
-    padding-top: 10%;
-}
-.title h1 {
-    font-size: 2.6rem;
-}
-.plan-visit form .button.full-width {
-    height: 30px;
-}
-}
+
+
 /*End of Plan a Visit Section*/
+
+
 /*Share This Page Section*/
-.share-info {
-    text-align: center;
-}
+
 .share-container {
     width: 100%;
 }
+
 .share-button {
     display: inline-block;
     margin: 0 auto;
@@ -1154,10 +1184,11 @@ select,
     transition: transform 1s ease;
     transition: transform 1s ease, -webkit-transform 1s ease;
 }
+
 .share-button span {
     display: block;
     margin: 0 auto;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.1em;
     font-weight: 500;
     padding: 0.6em 0.8em;
@@ -1165,11 +1196,13 @@ select,
     color: white;
     background-color: #cf404d;
 }
+
 .share-button span:hover {
     font-weight: 500;
     background-color: #2e80b6;
     color: white;
 }
+
 .web__share {
     display: none;
     -webkit-transform: translateZ(0);
@@ -1183,9 +1216,11 @@ select,
     transition: transform 0.35s ease;
     transition: transform 0.35s ease, -webkit-transform 0.35s ease;
 }
+
 .web__share .share-icon {
     padding: 0;
 }
+
 .share-icon {
     display: inline-block;
     width: 1.9rem;
@@ -1203,6 +1238,7 @@ select,
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
+
 .share-icon:hover,
 .share-icon:focus {
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
@@ -1211,32 +1247,43 @@ select,
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
+
 .facebook {
     background-color: #3b5998;
 }
+
 .twitter {
     background-color: #00abe3;
 }
+
 .googleplus {
     background-color: #d3492c;
 }
+
 .whatsapp {
     background-color: #25D366;
 }
+
 .facebook,
 .twitter,
 .googleplus,
 .whatsapp {
     color: #fff;
 }
+
 .facebook:hover,
 .twitter:hover,
 .googleplus:hover,
 .whatsapp:hover {
     color: #eee;
 }
+
+
 /*End of Share this Info Section*/
+
+
 /* ----------- Laptop with HiDPI ----------- */
+
 @media screen and ( max-width: 1441px) and (orientation: landscape) {
     html {
         font-size: 22px;
@@ -1245,7 +1292,10 @@ select,
         margin-top: 14%;
     }
 }
+
+
 /* ----------- iPad Pro Landscape ----------- */
+
 @media screen and ( max-width: 1370px) and (orientation: landscape) {
     html {
         font-size: 28px;
@@ -1254,7 +1304,10 @@ select,
         margin-top: 16%;
     }
 }
+
+
 /* ----------- Aspire E1 Laptop Landscape ----------- */
+
 @media screen and ( max-width: 1370px) and (max-height: 670px) {
     html {
         font-size: 20px;
@@ -1263,13 +1316,19 @@ select,
         margin-top: 6%;
     }
 }
+
+
 /* ----------- Laptop with Touch ----------- */
+
 @media screen and ( max-width: 1280px) {
     html {
         font-size: 24px;
     }
 }
+
+
 /* ----------- Laptop with MDPI screen----------- */
+
 @media screen and ( max-width: 1280px) and (max-height: 800px) {
     html {
         font-size: 20px;
@@ -1278,7 +1337,10 @@ select,
         margin-top: 12%;
     }
 }
+
+
 /* ----------- S Tab 10.1 Landscape ----------- */
+
 @media screen and ( max-width: 1281px) and (max-height: 670px) {
     html {
         font-size: 20px;
@@ -1287,7 +1349,10 @@ select,
         margin-top: 6%;
     }
 }
+
+
 /* ----------- Aspire V3 Laptop Landscape ----------- */
+
 @media screen and ( max-width: 1100px) {
     html {
         font-size: 16px;
@@ -1296,7 +1361,10 @@ select,
         margin-top: 3%;
     }
 }
+
+
 /* ----------- iPad Pro Potrait------------------*/
+
 @media screen and ( max-width: 1024px) {
     html {
         font-size: 30px;
@@ -1305,7 +1373,10 @@ select,
         margin-top: 35%;
     }
 }
+
+
 /* ----------- iPad Landscape ----------- */
+
 @media screen and ( max-width: 1024px) and ( max-height: 770px) {
     html {
         font-size: 20px;
@@ -1314,7 +1385,10 @@ select,
         margin-top: 14%;
     }
 }
+
+
 /* ----------- iPad Mini 4 Landscape ----------- */
+
 @media screen and ( max-width: 1024px) and ( max-height: 680px) {
     html {
         font-size: 18px;
@@ -1323,7 +1397,10 @@ select,
         margin-top: 12%;
     }
 }
+
+
 /* ----------- Lenova IdeaPad Laptop Landscape ----------- */
+
 @media screen and ( max-width: 1024px) and ( max-height: 510px) {
     html {
         font-size: 16px;
@@ -1332,7 +1409,10 @@ select,
         margin-top: 3%;
     }
 }
+
+
 /* ----------- S Note 8.0 Landscape ----------- */
+
 @media screen and ( max-width: 970px) and (max-height: 490px) {
     html {
         font-size: 16px;
@@ -1341,7 +1421,10 @@ select,
         margin-top: 1%;
     }
 }
+
+
 /* ----------- S Tab 10.1 Potrait ----------- */
+
 @media screen and ( max-width: 800px) and (max-height: 1140px) {
     html {
         font-size: 26px;
@@ -1351,7 +1434,10 @@ select,
         margin-top: 40%;
     }
 }
+
+
 /* ----------- iPad Potrait----------- */
+
 @media screen and ( max-width: 768px) {
     html {
         font-size: 24px;
@@ -1360,7 +1446,10 @@ select,
         margin-top: 38%;
     }
 }
+
+
 /* ----------- iPad Mini4 Potrait----------- */
+
 @media screen and ( max-width: 768px) and (max-height: 930px) {
     html {
         font-size: 24px;
@@ -1369,7 +1458,10 @@ select,
         margin-top: 32%;
     }
 }
+
+
 /* ----------- iPone 6 Plus Landscape ----------- */
+
 @media screen and ( max-width: 740px) and (max-height: 420px) {
     html {
         font-size: 16px;
@@ -1379,31 +1471,45 @@ select,
         margin-top: 2%;
     }
 }
+
+
 /* ----------- iPone 6 Landscape ----------- */
+
 @media screen and ( max-width: 670px) and (max-height: 380px) {
     html {
         font-size: 14px;
     }
 }
+
+
 /* ----------- S Galaxy S5 ----------- */
+
 @media screen and ( max-width: 640px) and (max-height: 360px) {
     html {
         font-size: 14px;
     }
 }
+
+
 /* ----------- S Galaxy Note 3 Neo ----------- */
+
 @media screen and ( max-width: 640px) and (max-height: 280px) {
     html {
         font-size: 14px;
     }
     .services-container {
         font-size: 1.3rem;
-        padding: 0 0 10px;
+        padding: 0;
         margin-top: 0;
     }
 }
+
+
 /* ----------- iPhone 7 Landscape ----------- */
+
+
 /* ----------- S Note 8.0 Potrait ----------- */
+
 @media screen and ( max-width: 610px) and (max-height: 850px) {
     html {
         font-size: 20px;
@@ -1412,7 +1518,10 @@ select,
         margin-top: 36%;
     }
 }
+
+
 /* ----------- iPhone 5 5s Landscape ----------- */
+
 @media screen and ( max-width: 568px) {
     html {
         font-size: 14px;
@@ -1421,7 +1530,10 @@ select,
         margin-top: 0;
     }
 }
+
+
 /* ----------- VIVO 5 Samsung J Landscape ----------- */
+
 @media screen and ( max-width: 560px) and (max-height: 360px) {
     html {
         font-size: 14px;
@@ -1430,7 +1542,10 @@ select,
         margin-top: 6%;
     }
 }
+
+
 /* ----------- iPhone 6S Landscape ----------- */
+
 @media screen and ( max-width: 540px) {
     html {
         font-size: 14px;
@@ -1439,7 +1554,10 @@ select,
         margin-top: 8%;
     }
 }
+
+
 /* ----------- HuaWei Mate 9 Landscape ----------- */
+
 @media screen and ( max-width: 530px) {
     html {
         font-size: 14px;
@@ -1448,13 +1566,19 @@ select,
         margin-top: 6%;
     }
 }
+
+
 /* ----------- iPhone 4 Landscape ----------- */
+
 @media screen and ( max-width: 480px) and (max-height: 215px) {
     html {
         font-size: 14px;
     }
 }
+
+
 /* ----------- iPhone 6 PLUS Potrait----------- */
+
 @media screen and ( max-width: 420px) and (max-height: 740px) {
     html {
         font-size: 14px;
@@ -1478,7 +1602,10 @@ select,
         line-height: 2.2em;
     }
 }
+
+
 /* ----------- iPhone 7, iPhone 6 PLUS Potrait ----------- */
+
 @media screen and ( max-width: 420px) and ( max-height: 630px) {
     html {
         font-size: 14px;
@@ -1487,7 +1614,10 @@ select,
         margin-top: 30%;
     }
 }
+
+
 /* ----------- iPhone 6  Potrait----------- */
+
 @media screen and ( max-width: 380px) {
     html {
         font-size: 14px;
@@ -1496,7 +1626,10 @@ select,
         margin-top: 40%;
     }
 }
+
+
 /* ----------- iPhone 6  Potrait----------- */
+
 @media screen and ( max-width: 380px) and ( max-height: 560px) {
     html {
         font-size: 14px;
@@ -1508,13 +1641,19 @@ select,
         height: 2.5rem;
     }
 }
+
+
 /* ----------- iPhone 6 Potrait ----------- */
+
 @media screen and ( max-width: 380px) and ( max-height: 540px) {
     html {
         font-size: 14px;
     }
 }
+
+
 /* ----------- Galaxy Note 3 Potrait  ----------- */
+
 @media screen and ( max-width: 360px) and ( max-height: 640px) {
     html {
         font-size: 14px;
@@ -1522,20 +1661,41 @@ select,
     .services-container tr {
         height: 2.5rem;
     }
+    .visit {
+        margin-right: 5px;
+    }
+    .share-info {
+        margin-left: 5px;
+    }
+    .web__share>.share-icon {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 17px;
+    }
 }
+
+
 /* ----------- VIVO 5, S Note 3 Neo Potrait  ----------- */
+
 @media screen and ( max-width: 360px) and ( max-height: 560px) {
     html {
         font-size: 14px;
     }
 }
+
+
 /* ----------- HuaWei Mate9 Potrait  ----------- */
+
 @media screen and ( max-width: 360px) and ( max-height: 530px) {
     html {
         font-size: 14px;
     }
 }
+
+
 /* ----------- YES M631Y Potrait  ----------- */
+
 @media screen and ( max-width: 360px) and ( max-height: 512px) {
     html {
         font-size: 14px;
@@ -1547,7 +1707,10 @@ select,
         height: 2.3rem;
     }
 }
+
+
 /* ----------- iPhone 5 and 5S Potrait ----------- */
+
 @media screen and ( max-width: 320px) and ( max-height: 568px) {
     html {
         font-size: 13px;
@@ -1557,7 +1720,10 @@ select,
         margin-bottom: 5px;
     }
 }
+
+
 /* ----------- iPhone 4 and 4S Potrait----------- */
+
 @media screen and ( max-width: 320px) and ( max-height: 480px) {
     html {
         font-size: 13px;
@@ -1566,7 +1732,10 @@ select,
         margin-top: 30%;
     }
 }
+
+
 /* iPhone 5S Potrait */
+
 @media screen and ( max-width: 320px) and ( max-height: 460px) {
     html {
         font-size: 13px;
@@ -1575,4 +1744,3 @@ select,
         margin-top: 25%;
     }
 }
-

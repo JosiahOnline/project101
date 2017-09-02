@@ -863,6 +863,35 @@ input.w-button {
     html {
         font-size: 12px;
     }
+    .plan-visit {
+        padding-top: 15%;
+    }
+    .close-button {
+        top: 3%;
+        font-size: 0.9rem;
+    }
+    .title h1 {
+        font-size: 2.5rem;
+    }
+    .title h3 {
+        font-size: 1rem;
+    }
+    
+    .form-field {
+        height: 50px;
+    }
+    .adult, .child, .infant, .service-date, #attendance-date, .service-time {
+        height: 45px;
+        padding-top: 10px;
+    }
+    #attendance-date {
+        padding-top: 13px;
+    }
+    .plan-submit {
+        height: 45px;
+        padding-top: 8px;
+    }
+    
     .share-button {
         font-size: 1.5rem;
     }
@@ -884,6 +913,24 @@ input.w-button {
     html {
         font-size: 10px;
     }
+    .plan-visit {
+        padding-top: 8%;
+    }
+    .close-button {
+        top: 5%;
+    }
+    .form-field {
+        height: 35px;
+    }
+    .adult, .child, .infant, .service-date, .service-time {
+        height: 30px;
+        padding-top: 4px;
+    }
+    #attendance-date {
+        height: 30px;
+        padding-top: 10px;
+    }
+    
     .share-container {
         width: 90%;
     }
@@ -892,9 +939,6 @@ input.w-button {
         height: 32px;
         line-height: 32px;
         font-size: 16px;
-    }
-    .form-field {
-        font-size: 1.3rem;
     }
 }
 
@@ -932,70 +976,56 @@ input.w-button {
         font-size: 1.2rem;
     }
     .web__share>.share-icon {
-        width: 38px;
-        height: 38px;
-        line-height: 38px;
-        font-size: 18px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
     }
     
-    .title {
-        font-size: 1.5rem;
-    }
     .plan-visit {
         padding-top: 25%;
     }
     .close-button {
-        font-size: 1.2rem;
-        padding: 7px 10px;
+        top: 3%;
+        font-size: 1.1rem;
     }
     .container .title {
         margin-bottom: 15px;
     }
     .title h1 {
         font-size: 3rem;
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
     .title h3 {
-        font-size: 1.5rem;
-        margin: 0 auto;
+        font-size: 1.3rem;
     }
-    .plan-visit .form-container .form-row .form-field {
-        height: 40px
+    .form-row {
+        width: 100%;
     }
-    .plan-visit .form-field.text-area {
-        min-height: 130px;
-    }
-    select,
-    #attendance-date,
-    .attend-service,
-    .service-time {
-        padding: 0 10px;
-        height: 40px;
-        margin-bottom: 5px;
-    }
-    .plan-visit .form-container .form-row .form-field,
-    select,
-    #attendance-date {
-        font-size: 1.2rem;
-        margin-bottom: 5px;
-    }
-    .plan-visit form .button.full-width {
-        font-size: 1.2rem;
-        height: 40px;
-        margin-top: 1px;
-        padding: 5px;
+    .form-field.text-area {
+        min-height: 140px;
     }
     .form-container {
         flex-direction: column;
     }
+    .form-field {
+        height: 40px;
+    }
+    .adult, .child, .infant, .service-date, .service-time {
+        height: 37px;
+        padding-top: 6px;
+    }
+    #attendance-date {
+        height: 37px;
+    }
+    .form-field, .form-field.text-area, .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        margin-bottom: 5px;
+    }
+    .plan-submit.button {
+        height: 37px;
+    }
     .selection {
-        height: 135px;
-    }
-    .form-field {
-        padding: 5px 10px;
-    }
-    .form-field {
-        font-size: 1.2rem;
+        padding: 0 0 2px;
     }
 }
 
@@ -1007,11 +1037,23 @@ input.w-button {
         font-size: 1.1rem;
     }
     .plan-visit {
-        padding-top: 15%;
+        padding-top: 18%;
         padding-bottom: 0;
     }
     .container .title {
         padding: 0;
+    }
+    .title h3 {
+        padding: 5px 0;
+    }
+    form-field {
+        height: 37px;
+    }
+    .adult, .child, .infant, .service-date, .service-time {
+        height: 35px;
+    }
+    .plan-submit.button {
+        height: 35px;
     }
 }
 
@@ -1022,8 +1064,8 @@ input.w-button {
     html {
         font-size: 12px;
     }
-    .container .title {
-        padding: 0;
+    .plan-visit {
+        padding-top: 20%;
     }
 }
 
@@ -1037,18 +1079,18 @@ input.w-button {
     }
     .close-button {
         top: 3%;
+        font-size: 0.9rem;
+        padding: 0.7em;
     }
-    .plan-visit .form-container .form-row .form-field,
-    select,
-    #attendance-date {
-        height: 35px;
+    .title h1 {
+        font-size: 2.5rem;
     }
-    .selection {
-        height: unset;
+    .title h3 {
         padding-bottom: 0;
-    }
-    .plan-visit form .button.full-width {
         margin-bottom: 0;
+    }
+    .form-field.text-area {
+        min-height: 130px;
     }
 }
 
@@ -1062,31 +1104,12 @@ input.w-button {
     .share-button {
         font-size: 1.2rem;
     }
-    .title {
-        font-size: 1.8rem;
-    }
-    .plan-visit {
-        padding-top: 10%;
-    }
-    .plan-visit .form-container .form-row .form-field,
-    .plan-visit .form-field.text-area,
-    select,
-    #attendance-date,
-    .attend-service,
-    .service-time,
-    .plan-visit form .button.full-width {
-        font-size: 1.3rem;
-    }
-    .plan-visit .form-container .form-row .form-field,
-    select,
-    #attendance-date,
-    .attend-service,
-    .service-time,
-    .plan-visit form .button.full-width {
+    
+    .form-field, .form-field.text-area, .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
         height: 35px;
     }
-    .selection {
-        height: 120px;
+    .plan-submit.button {
+        padding-top: 7px;
     }
 }
 
@@ -1097,8 +1120,12 @@ input.w-button {
     .social-container {
         margin-top: 30px;
     }
-    .plan-visit {
-        padding-top: 15%;
+    .close-button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    .form-field, .form-field.text-area, .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        height: 35px;
     }
 }
 
@@ -1131,15 +1158,12 @@ input.w-button {
     .social-container {
         margin-top: 12px;
     }
-    .plan-visit .form-container .form-row .form-field,
-    select,
-    #attendance-date,
-    .attend-service,
-    .service-time {
-        height: 30px;
-    }
     .share-button {
         font-size: 1.3rem;
+    }
+    
+    .form-field, .form-field.text-area, .adult, .child, .infant, .service-date, #attendance-date, .service-time, .plan-submit {
+        height: 32px;
     }
 }
 
@@ -1147,11 +1171,14 @@ input.w-button {
 /* ----------- YES M631Y Potrait  ----------- */
 
 @media screen and ( max-width: 360px) and ( max-height: 512px) {
-    .selection {
-        height: 110px;
-    }
     .plan-visit {
         padding-top: 10%;
+    }
+    .container .title {
+        margin-bottom: 10px;
+    }
+    select {
+        margin-bottom: 0;
     }
 }
 
@@ -1159,6 +1186,12 @@ input.w-button {
 /* ----------- iPhone 5 and 5S Potrait ----------- */
 
 @media screen and ( max-width: 320px) and ( max-height: 568px) {
+    .plan-visit {
+        padding-top: 18%;
+    }
+    .form-field.text-area {
+        min-height: 120px;
+    }
     .share-button {
         font-size: 1.2rem;
     }
@@ -1166,13 +1199,10 @@ input.w-button {
         margin-top: 25px;
     }
     .web__share>.share-icon {
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        font-size: 16px;
-    }
-    .title {
-        font-size: 1.4rem;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
     }
 }
 
@@ -1192,14 +1222,25 @@ input.w-button {
         line-height: 32px;
         font-size: 15px;
     }
-    .title {
-        font-size: 1.6rem;
-    }
+    
     .plan-visit {
         padding-top: 13%;
     }
     .plan-visit .form-field.text-area {
         min-height: 100px;
+    }
+    .selection {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    select {
+        width: 49%;
+    }
+    #attendance-date {
+        width: 49%;
+    }
+    select.service-time {
+        width: 100%;
     }
 }
 
@@ -1211,13 +1252,11 @@ input.w-button {
         margin-top: 12px;
     }
     .plan-visit {
-        padding-top: 10%;
+        padding-top: 7%;
     }
-    .title h1 {
-        font-size: 2.6rem;
-    }
-    .plan-visit form .button.full-width {
-        height: 30px;
+    .plan-submit.button {
+        height: 32px;
+        padding-top: 8px;
     }
 }
 
@@ -1730,12 +1769,6 @@ input.w-button {
     }
     .share-info {
         margin-left: 5px;
-    }
-    .web__share>.share-icon {
-        width: 34px;
-        height: 34px;
-        line-height: 34px;
-        font-size: 17px;
     }
 }
 
